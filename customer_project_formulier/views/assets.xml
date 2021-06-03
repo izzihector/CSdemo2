@@ -1,0 +1,12 @@
+<odoo>
+    <data>
+        <template id="assets_frontend" inherit_id="website.assets_frontend" name="Opportunity">
+            <xpath expr="." position="inside">
+                <script type="text/javascript" src="/customer_project_formulier/static/src/js/customer_formulier_form.js"></script>
+                <script type="text/javascript" src="/customer_project_formulier/static/src/js/product_formulier_form.js"></script>
+                <script type="text/javascript" src="/customer_project_formulier/static/src/js/email_validation.js"></script>
+                <link rel="stylesheet" href="/customer_project_formulier/static/src/css/customer_form.css"/>
+            </xpath>
+        </template>
+    </data>
+</odoo>

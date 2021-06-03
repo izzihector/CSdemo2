@@ -1,0 +1,6 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_formulier_type,formulier.type,model_formulier_type,,1,1,1,1
+access_formulier_type_option,formulier.type.option,model_formulier_type_option,,1,1,1,1
+access_formulier_type_install,formulier.type.install,model_formulier_type_install,,1,1,1,1
+access_partner_formulier_type_option,partner.formulier.type.option,model_partner_formulier_type_option,,1,1,1,1
+access_partner_formulier_type_install,partner.formulier.type.install,model_partner_formulier_type_install,,1,1,1,1

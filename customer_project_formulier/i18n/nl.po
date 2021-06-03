@@ -1,0 +1,363 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* customer_project_formulier
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 14.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-05-14 12:58+0000\n"
+"PO-Revision-Date: 2021-05-14 12:58+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: customer_project_formulier
+#: model_terms:ir.ui.view,arch_db:customer_project_formulier.customer_data_form
+msgid "+31687654321"
+msgstr ""
+
+#. module: customer_project_formulier
+#: model_terms:ir.ui.view,arch_db:customer_project_formulier.customer_data_form
+msgid "1234AA"
+msgstr ""
+
+#. module: customer_project_formulier
+#: model_terms:ir.ui.view,arch_db:customer_project_formulier.customer_data_form
+msgid ""
+"<span class=\"text-success phone_alert\" style=\"display:none;\">Begin met "
+"een \"+\" gevolgd door de laatste 2 cijfers van het landnummer, gevolgd door"
+" het abonneenummer zonder \"0\"</span>"
+msgstr ""
+
+#. module: customer_project_formulier
+#: model_terms:ir.ui.view,arch_db:customer_project_formulier.customer_data_form
+msgid ""
+"<span id=\"found_data\" class=\"text-success\" style=\"display:none;\">\n"
+"                        Uw gegevenszijn reeds aanwezig in onze database.\n"
+"                        Onderstaand de aanwezige gegevens,pas deze aan indien nodig.\n"
+"                    </span>"
+msgstr ""
+
+#. module: customer_project_formulier
+#: model:ir.model,name:customer_project_formulier.model_res_partner
+msgid "Contact"
+msgstr ""
+
+#. module: customer_project_formulier
+#: model_terms:ir.ui.view,arch_db:customer_project_formulier.customer_formulier_type_form
+msgid "Contactgegevens:"
+msgstr ""
+
+#. module: customer_project_formulier
+#: model_terms:ir.ui.view,arch_db:customer_project_formulier.customer_opportunity_link
+msgid "Create customer"
+msgstr ""
+
+#. module: customer_project_formulier
+#: model:ir.model.fields,field_description:customer_project_formulier.field_formulier_type__create_uid
+#: model:ir.model.fields,field_description:customer_project_formulier.field_formulier_type_install__create_uid
+#: model:ir.model.fields,field_description:customer_project_formulier.field_formulier_type_option__create_uid
+#: model:ir.model.fields,field_description:customer_project_formulier.field_partner_formulier_type_install__create_uid
+#: model:ir.model.fields,field_description:customer_project_formulier.field_partner_formulier_type_option__create_uid
+msgid "Created by"
+msgstr ""
+
+#. module: customer_project_formulier
+#: model:ir.model.fields,field_description:customer_project_formulier.field_formulier_type__create_date
+#: model:ir.model.fields,field_description:customer_project_formulier.field_formulier_type_install__create_date
+#: model:ir.model.fields,field_description:customer_project_formulier.field_formulier_type_option__create_date
+#: model:ir.model.fields,field_description:customer_project_formulier.field_partner_formulier_type_install__create_date
+#: model:ir.model.fields,field_description:customer_project_formulier.field_partner_formulier_type_option__create_date
+msgid "Created on"
+msgstr ""
+
+#. module: customer_project_formulier
+#: model:ir.model.fields,field_description:customer_project_formulier.field_formulier_type__display_name
+#: model:ir.model.fields,field_description:customer_project_formulier.field_formulier_type_install__display_name
+#: model:ir.model.fields,field_description:customer_project_formulier.field_formulier_type_option__display_name
+#: model:ir.model.fields,field_description:customer_project_formulier.field_partner_formulier_type_install__display_name
+#: model:ir.model.fields,field_description:customer_project_formulier.field_partner_formulier_type_option__display_name
+#: model:ir.model.fields,field_description:customer_project_formulier.field_product_template__display_name
+#: model:ir.model.fields,field_description:customer_project_formulier.field_res_partner__display_name
+msgid "Display Name"
+msgstr ""
+
+#. module: customer_project_formulier
+#: model_terms:ir.ui.view,arch_db:customer_project_formulier.customer_data_form
+#: model_terms:ir.ui.view,arch_db:customer_project_formulier.customer_formulier_type_form
+msgid "Door:"
+msgstr "Toevoeging"
+
+#. module: customer_project_formulier
+#: model_terms:ir.ui.view,arch_db:customer_project_formulier.customer_data_form
+#: model_terms:ir.ui.view,arch_db:customer_project_formulier.customer_email_form
+#: model_terms:ir.ui.view,arch_db:customer_project_formulier.customer_formulier_type_form
+msgid "E-mail address:"
+msgstr "E-mailadres:"
+
+#. module: customer_project_formulier
+#: model_terms:ir.ui.view,arch_db:customer_project_formulier.customer_email_form
+msgid ""
+"Er is geen geldig email adres ingegeven controleer of er een '@' en '.' is "
+"engevoerd"
+msgstr ""
+
+#. module: customer_project_formulier
+#: model_terms:ir.ui.view,arch_db:customer_project_formulier.customer_data_form
+#: model_terms:ir.ui.view,arch_db:customer_project_formulier.customer_formulier_type_form
+msgid "First Name:"
+msgstr "Voornaam:"
+
+#. module: customer_project_formulier
+#: model:ir.model.fields,field_description:customer_project_formulier.field_product_product__xaa_aa_formulier_type
+#: model:ir.model.fields,field_description:customer_project_formulier.field_product_template__xaa_aa_formulier_type
+msgid "Formulier Type"
+msgstr ""
+
+#. module: customer_project_formulier
+#: model:ir.model.fields,field_description:customer_project_formulier.field_partner_formulier_type_install__xaa_aa_formulier_type
+#: model:ir.model.fields,field_description:customer_project_formulier.field_partner_formulier_type_option__xaa_aa_formulier_type
+msgid "Formulier type"
+msgstr ""
+
+#. module: customer_project_formulier
+#: model:ir.model.fields,field_description:customer_project_formulier.field_partner_formulier_type_install__xaa_aa_formulier_type_install
+msgid "Formulier type install"
+msgstr ""
+
+#. module: customer_project_formulier
+#: model:ir.model.fields,field_description:customer_project_formulier.field_partner_formulier_type_option__xaa_aa_formulier_type_option
+msgid "Formulier type option"
+msgstr ""
+
+#. module: customer_project_formulier
+#: model_terms:ir.ui.view,arch_db:customer_project_formulier.customer_data_form
+msgid "Get address"
+msgstr ""
+
+#. module: customer_project_formulier
+#: model_terms:ir.ui.view,arch_db:customer_project_formulier.customer_data_form
+#: model_terms:ir.ui.view,arch_db:customer_project_formulier.customer_formulier_type_form
+msgid "House number:"
+msgstr "Huisnummer:"
+
+#. module: customer_project_formulier
+#: model:ir.model.fields,field_description:customer_project_formulier.field_formulier_type__id
+#: model:ir.model.fields,field_description:customer_project_formulier.field_formulier_type_install__id
+#: model:ir.model.fields,field_description:customer_project_formulier.field_formulier_type_option__id
+#: model:ir.model.fields,field_description:customer_project_formulier.field_partner_formulier_type_install__id
+#: model:ir.model.fields,field_description:customer_project_formulier.field_partner_formulier_type_option__id
+#: model:ir.model.fields,field_description:customer_project_formulier.field_product_template__id
+#: model:ir.model.fields,field_description:customer_project_formulier.field_res_partner__id
+msgid "ID"
+msgstr ""
+
+#. module: customer_project_formulier
+#: model_terms:ir.ui.view,arch_db:customer_project_formulier.formulier_type_product_install_form
+msgid "Installateur keuze(s):"
+msgstr ""
+
+#. module: customer_project_formulier
+#: model:ir.model.fields,field_description:customer_project_formulier.field_formulier_type____last_update
+#: model:ir.model.fields,field_description:customer_project_formulier.field_formulier_type_install____last_update
+#: model:ir.model.fields,field_description:customer_project_formulier.field_formulier_type_option____last_update
+#: model:ir.model.fields,field_description:customer_project_formulier.field_partner_formulier_type_install____last_update
+#: model:ir.model.fields,field_description:customer_project_formulier.field_partner_formulier_type_option____last_update
+#: model:ir.model.fields,field_description:customer_project_formulier.field_product_template____last_update
+#: model:ir.model.fields,field_description:customer_project_formulier.field_res_partner____last_update
+msgid "Last Modified on"
+msgstr ""
+
+#. module: customer_project_formulier
+#: model_terms:ir.ui.view,arch_db:customer_project_formulier.customer_data_form
+#: model_terms:ir.ui.view,arch_db:customer_project_formulier.customer_formulier_type_form
+msgid "Last Name:"
+msgstr "Achternaam:"
+
+#. module: customer_project_formulier
+#: model:ir.model.fields,field_description:customer_project_formulier.field_formulier_type__write_uid
+#: model:ir.model.fields,field_description:customer_project_formulier.field_formulier_type_install__write_uid
+#: model:ir.model.fields,field_description:customer_project_formulier.field_formulier_type_option__write_uid
+#: model:ir.model.fields,field_description:customer_project_formulier.field_partner_formulier_type_install__write_uid
+#: model:ir.model.fields,field_description:customer_project_formulier.field_partner_formulier_type_option__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: customer_project_formulier
+#: model:ir.model.fields,field_description:customer_project_formulier.field_formulier_type__write_date
+#: model:ir.model.fields,field_description:customer_project_formulier.field_formulier_type_install__write_date
+#: model:ir.model.fields,field_description:customer_project_formulier.field_formulier_type_option__write_date
+#: model:ir.model.fields,field_description:customer_project_formulier.field_partner_formulier_type_install__write_date
+#: model:ir.model.fields,field_description:customer_project_formulier.field_partner_formulier_type_option__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: customer_project_formulier
+#: model_terms:ir.ui.view,arch_db:customer_project_formulier.customer_data_form
+#: model_terms:ir.ui.view,arch_db:customer_project_formulier.customer_email_form
+#: model_terms:ir.ui.view,arch_db:customer_project_formulier.customer_formulier_type_form
+#: model_terms:ir.ui.view,arch_db:customer_project_formulier.formulier_type_product_form
+#: model_terms:ir.ui.view,arch_db:customer_project_formulier.formulier_type_product_install_form
+#: model_terms:ir.ui.view,arch_db:customer_project_formulier.formulier_type_product_option_form
+msgid "Next step"
+msgstr "volgende"
+
+#. module: customer_project_formulier
+#: model:ir.model.fields,field_description:customer_project_formulier.field_formulier_type__option_ids
+msgid "Option"
+msgstr ""
+
+#. module: customer_project_formulier
+#: model_terms:ir.ui.view,arch_db:customer_project_formulier.customer_data_form
+#: model_terms:ir.ui.view,arch_db:customer_project_formulier.customer_formulier_type_form
+msgid "Postal Code:"
+msgstr "Postcode:"
+
+#. module: customer_project_formulier
+#: model_terms:ir.ui.view,arch_db:customer_project_formulier.customer_data_form
+#: model_terms:ir.ui.view,arch_db:customer_project_formulier.customer_formulier_type_form
+#: model_terms:ir.ui.view,arch_db:customer_project_formulier.formulier_type_product_form
+#: model_terms:ir.ui.view,arch_db:customer_project_formulier.formulier_type_product_install_form
+#: model_terms:ir.ui.view,arch_db:customer_project_formulier.formulier_type_product_option_form
+msgid "Previous step"
+msgstr "vorige"
+
+#. module: customer_project_formulier
+#: model:ir.model.fields,field_description:customer_project_formulier.field_res_partner__xaa_aa_formulier_type
+#: model:ir.model.fields,field_description:customer_project_formulier.field_res_users__xaa_aa_formulier_type
+msgid "Product Formulier"
+msgstr ""
+
+#. module: customer_project_formulier
+#: model:ir.model.fields,field_description:customer_project_formulier.field_res_partner__xaa_aa_formulier_type_install
+#: model:ir.model.fields,field_description:customer_project_formulier.field_res_users__xaa_aa_formulier_type_install
+msgid "Product Formulier Installation"
+msgstr ""
+
+#. module: customer_project_formulier
+#: model:ir.model.fields,field_description:customer_project_formulier.field_res_partner__xaa_aa_formulier_type_option
+#: model:ir.model.fields,field_description:customer_project_formulier.field_res_users__xaa_aa_formulier_type_option
+msgid "Product Formulier Option"
+msgstr ""
+
+#. module: customer_project_formulier
+#: model:ir.model,name:customer_project_formulier.model_product_template
+msgid "Product Template"
+msgstr ""
+
+#. module: customer_project_formulier
+#: model_terms:ir.ui.view,arch_db:customer_project_formulier.view_partner_form
+msgid "Product information"
+msgstr ""
+
+#. module: customer_project_formulier
+#: model_terms:ir.ui.view,arch_db:customer_project_formulier.formulier_type_product_form
+#: model_terms:ir.ui.view,arch_db:customer_project_formulier.formulier_type_product_option_form
+msgid "Product keuze(s):"
+msgstr "Installateur keuze(s):"
+
+#. module: customer_project_formulier
+#: model_terms:ir.ui.view,arch_db:customer_project_formulier.customer_data_form
+msgid "Save"
+msgstr ""
+
+#. module: customer_project_formulier
+#: model_terms:ir.ui.view,arch_db:customer_project_formulier.customer_data_form
+#: model_terms:ir.ui.view,arch_db:customer_project_formulier.customer_formulier_type_form
+msgid "Street name:"
+msgstr "Straatnaam:"
+
+#. module: customer_project_formulier
+#: model_terms:ir.ui.view,arch_db:customer_project_formulier.customer_data_form
+#: model_terms:ir.ui.view,arch_db:customer_project_formulier.customer_formulier_type_form
+msgid "Telephone number:"
+msgstr "Telefoonnummer:"
+
+#. module: customer_project_formulier
+#: model_terms:ir.ui.view,arch_db:customer_project_formulier.customer_data_form
+#: model_terms:ir.ui.view,arch_db:customer_project_formulier.customer_formulier_type_form
+msgid "Title:"
+msgstr "Aanhef"
+
+#. module: customer_project_formulier
+#: model:ir.model.fields,field_description:customer_project_formulier.field_formulier_type__xaa_aa_name
+msgid "Type"
+msgstr ""
+
+#. module: customer_project_formulier
+#: model_terms:ir.ui.view,arch_db:customer_project_formulier.customer_formulier_type_form
+msgid "Uw Keuze(s):"
+msgstr ""
+
+#. module: customer_project_formulier
+#: model_terms:ir.ui.view,arch_db:customer_project_formulier.customer_data_form
+msgid ""
+"We konden de combinatie van postcode en huisnummer niet vinden.\n"
+"Klopt deze wel? <br/>Vul de straatnaam en woonplaats handmatig in."
+msgstr ""
+
+#. module: customer_project_formulier
+#: model_terms:ir.ui.view,arch_db:customer_project_formulier.customer_data_form
+msgid "Wijzig het adres"
+msgstr ""
+
+#. module: customer_project_formulier
+#: model_terms:ir.ui.view,arch_db:customer_project_formulier.customer_data_form
+msgid "Wijzig naam en/-of telefoonnummer"
+msgstr ""
+
+#. module: customer_project_formulier
+#: model:ir.model.fields,field_description:customer_project_formulier.field_partner_formulier_type_install__xaa_aa_partner_id
+#: model:ir.model.fields,field_description:customer_project_formulier.field_partner_formulier_type_option__xaa_aa_partner_id
+msgid "Xaa Aa Partner"
+msgstr ""
+
+#. module: customer_project_formulier
+#: model:ir.model,name:customer_project_formulier.model_formulier_type
+msgid "formulier type"
+msgstr ""
+
+#. module: customer_project_formulier
+#: model:ir.model,name:customer_project_formulier.model_formulier_type_install
+msgid "formulier type installation"
+msgstr ""
+
+#. module: customer_project_formulier
+#: model:ir.model,name:customer_project_formulier.model_formulier_type_option
+msgid "formulier type option"
+msgstr ""
+
+#. module: customer_project_formulier
+#: model:ir.model.fields,field_description:customer_project_formulier.field_formulier_type__install_ids
+msgid "installation"
+msgstr ""
+
+#. module: customer_project_formulier
+#: model:ir.model,name:customer_project_formulier.model_partner_formulier_type_option
+msgid "partner formulier type"
+msgstr ""
+
+#. module: customer_project_formulier
+#: model:ir.model,name:customer_project_formulier.model_partner_formulier_type_install
+msgid "partner formulier type install"
+msgstr ""
+
+#. module: customer_project_formulier
+#: model:ir.model.fields,field_description:customer_project_formulier.field_formulier_type_install__xaa_aa_name
+msgid "product installation"
+msgstr ""
+
+#. module: customer_project_formulier
+#: model:ir.model.fields,field_description:customer_project_formulier.field_formulier_type_option__xaa_aa_name
+msgid "product option"
+msgstr ""
+
+#. module: customer_project_formulier
+#: model_terms:ir.ui.view,arch_db:customer_project_formulier.customer_data_form
+#: model_terms:ir.ui.view,arch_db:customer_project_formulier.customer_formulier_type_form
+msgid "residence:"
+msgstr "Woonplaats:"

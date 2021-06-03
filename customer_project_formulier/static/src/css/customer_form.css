@@ -1,0 +1,67 @@
+@media (max-width: 1023px) {
+    .custom-text-right{
+        text-align: left;
+    }
+}
+@media (min-width: 1023px) {
+    .custom-text-right{
+        text-align: right;
+    }
+}
+.formulier_type{
+    background-color: lightgray;
+    padding: 8px;
+    border: 1px solid;
+    margin: 20px;
+}
+.formulier_type_next{
+    background-color: lightgray;
+    padding: 8px;
+    border: 1px solid;
+    margin: 20px;
+    margin-bottom: 0px;
+}
+.formulier_type_option{
+    padding: 8px;
+    border: 1px solid;
+    margin: 20px;
+    margin-top: 0px;
+}
+.formulier_type_install{
+    background-color: lightgray;
+    padding: 8px;
+    border: 1px solid;
+    margin: 20px;
+    margin-bottom: 0px;
+    display: none;
+}
+.formulier_type_install_option{
+    padding: 8px;
+    border: 1px solid;
+    margin: 20px;
+    margin-top: 0px;
+}
+.formulier_type.active{
+    background-color: cadetblue;
+    padding: 8px;
+    border: 1px solid cadetblue;
+    margin: 20px;
+    color: white;
+}
+.formulier_type_next.active{
+    background-color: cadetblue;
+    padding: 8px;
+    border: 1px solid cadetblue;
+    margin: 20px;
+    color: white;
+    margin-bottom: 0px;
+}
+.formulier_type_install.active{
+    background-color: cadetblue;
+    padding: 8px;
+    border: 1px solid cadetblue;
+    margin: 20px;
+    color: white;
+    margin-bottom: 0px;
+    display: block;
+}

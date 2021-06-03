@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="formulier_type_product_form" name="Customer Email Form ata">
+        <div class="text-center">
+            <div class="form-group row mt24">
+                <div class="col-lg-12 text-center">
+                    <h3>Product keuze(s):</h3>
+                </div>
+            </div>
+            <div class="form-group row mt24 ml32">
+                <t t-foreach="request.env['formulier.type'].search([])" t-as="formulier_type">
+                    <div class="col-lg-4 text-center formulier_type" t-att-data-id="formulier_type.id">
+                        <strong><t t-esc="formulier_type.xaa_aa_name"/></strong>
+                    </div>
+                </t>
+            </div>
+        </div>
+        <div class="form-group row mt64" id="next_privious">
+            <div class="col-md-12 row col-lg-12 col-sm-12">
+                <div class="col-md-6 col-lg-6 col-sm-6 text-right">
+                    <button class="btn btn-primary btn-oppo-privoius"
+                        data-id="customer_form_tab"
+                        type="Button">Previous step
+                    </button>
+                </div>
+                <div class="col-md-6 col-lg-6 col-sm-6 col-6 text-right">
+                    <button class="btn btn-primary btn-oppo-next"
+                        data-id="formulier_type_product_option_tab" type="Button">
+                        Next step
+                    </button>
+                </div>
+            </div>
+        </div>
+    </template>
+    <template id="formulier_type_product_option_form" name="Customer Email Form ata">
+        <div class="text-center">
+            <div class="form-group row mt24">
+                <div class="col-lg-12 text-center">
+                    <h3>Product keuze(s):</h3>
+                </div>
+            </div>
+            <div class="form-group row mt24 ml32">
+                <t t-foreach="request.env['formulier.type'].search([])" t-as="formulier_type">
+                    <div class="col-lg-6">
+                        <div class="col-lg-8 text-center formulier_type_next" t-att-data-id="formulier_type.id">
+                            <strong><t t-esc="formulier_type.xaa_aa_name"/></strong>
+                        </div>
+                        <div class="col-lg-8 text-left formulier_type_option" t-if="formulier_type.option_ids.ids">
+                            <t t-foreach="formulier_type.option_ids" t-as="formulier_type_option">
+                                <div t-att-data-id="formulier_type_option.id">
+                                    <input class="type_option" type="radio" t-att-name="formulier_type.xaa_aa_name" t-att-value="formulier_type_option.id"/>
+                                    <span class="" t-esc="formulier_type_option.xaa_aa_name"/>
+                                </div>
+                            </t>
+                        </div>
+                    </div>
+                </t>
+
+            </div>
+        </div>
+        <div class="form-group row mt64" id="next_privious">
+            <div class="col-md-12 row col-lg-12 col-sm-12">
+                <div class="col-md-6 col-lg-6 col-sm-6 text-right">
+                    <button class="btn btn-primary btn-oppo-privoius"
+                        data-id="formulier_type_product_tab"
+                        type="Button">Previous step
+                    </button>
+                </div>
+                <div class="col-md-6 col-lg-6 col-sm-6 col-6 text-right">
+                    <button class="btn btn-primary btn-oppo-next"
+                        data-id="formulier_type_product_install_tab" type="Button">
+                        Next step
+                    </button>
+                </div>
+            </div>
+        </div>
+    </template>
+    <template id="formulier_type_product_install_form" name="Customer Email Form ata">
+        <div class="text-center">
+            <div class="form-group row mt24">
+                <div class="col-lg-12 text-center">
+                    <h3>Installateur keuze(s):</h3>
+                </div>
+            </div>
+            <div class="form-group row mt24 ml32">
+                <t t-foreach="request.env['formulier.type'].search([])" t-as="formulier_type">
+                    <div class="col-lg-6">
+                        <div class="col-lg-8 text-center formulier_type_install" t-att-data-id="formulier_type.id">
+                            <strong><t t-esc="formulier_type.xaa_aa_name"/></strong>
+                        </div>
+                        <div class="col-lg-8 text-left formulier_type_install_option" t-if="formulier_type.install_ids.ids">
+                            <t t-foreach="formulier_type.install_ids" t-as="formulier_type_install">
+                                <div t-att-data-id="formulier_type_install.id">
+                                    <input type="checkbox" class="type_install" t-att-name="formulier_type.xaa_aa_name" t-att-value="formulier_type_install.id"/>
+                                    <span class="" t-esc="formulier_type_install.xaa_aa_name"/>
+                                </div>
+                            </t>
+                        </div>
+                    </div>
+                </t>
+
+            </div>
+        </div>
+        <div class="form-group row mt64" id="next_privious">
+            <div class="col-md-12 row col-lg-12 col-sm-12">
+                <div class="col-md-6 col-lg-6 col-sm-6 text-right">
+                    <button class="btn btn-primary btn-oppo-privoius"
+                        data-id="formulier_type_product_option_tab"
+                        type="Button">Previous step
+                    </button>
+                </div>
+                <div class="col-md-6 col-lg-6 col-sm-6 col-6 text-right">
+                    <button class="btn btn-primary btn-oppo-next customer_formulier_type_data"
+                        data-id="customer_formulier_type_product_tab" type="Button">
+                        Next step
+                    </button>
+                </div>
+            </div>
+        </div>
+    </template>
+    <template id="customer_formulier_type_form" name="Customer product form data">
+        <div>
+            <div class="form-group row mt24">
+                <div class="col-lg-12 text-center">
+                    <h3>Contactgegevens:</h3>
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-lg-5 col-md-5 col-sm-12 custom-text-right">
+                    <label>E-mail address:</label>
+                </div>
+                <div class="col-lg-7 col-md-7 col-sm-12">
+                    <span class="filled_email"/>
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-lg-5 col-md-5 col-sm-12 custom-text-right">
+                    <label>Title:</label>
+                </div>
+                <div class="col-lg-7 col-md-7 col-sm-12">
+                    <span class="title"/>
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-lg-5 col-md-5 col-sm-12 custom-text-right">
+                    <label>First Name:</label>
+                </div>
+                <div class="col-lg-7 col-md-7 col-sm-12">
+                    <span class="first_name" style="text-transform: capitalize;"/>
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-lg-5 col-md-5 col-sm-12 custom-text-right">
+                    <label>Last Name:</label>
+                </div>
+                <div class="col-lg-7 col-md-7 col-sm-12">
+                    <span class="last_name" style="text-transform: capitalize;"/>
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-lg-5 col-md-5 col-sm-12 custom-text-right">
+                    <label>Telephone number:</label>
+                </div>
+                <div class="col-lg-7 col-md-7 col-sm-12">
+                    <span class="phone"/>
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-lg-5 col-md-5 col-sm-12 custom-text-right">
+                    <label>Postal Code:</label>
+                </div>
+                <div class="col-lg-7 col-md-7 col-sm-12">
+                    <span class="zip" style="text-transform: uppercase"/>
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-lg-5 col-md-5 col-sm-12 custom-text-right">
+                    <label>House number:</label>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-6">
+                    <span class="street_number"/>
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-lg-5 col-md-5 col-sm-12 custom-text-right">
+                    <label>Door:</label>
+                </div>
+                <div class="col-lg-7 col-md-7 col-sm-12">
+                    <span class="street_number2"/>
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-lg-5 col-md-5 col-sm-12 custom-text-right">
+                    <label>Street name:</label>
+                </div>
+                <div class="col-lg-7 col-md-7 col-sm-12">
+                    <span class="street_name"/>
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-lg-5 col-md-5 col-sm-12 custom-text-right">
+                    <label>residence:</label>
+                </div>
+                <div class="col-lg-7 col-md-7 col-sm-12">
+                    <span class="city"/>
+                </div>
+            </div>
+            <hr style="border-top:4px solid rgba(0, 0, 0, 0.8)"/>
+            <div class="form-group row mt24">
+                <div class="col-lg-12 text-center">
+                    <h3>Uw Keuze(s):</h3>
+                </div>
+            </div>
+            <div class="form-group row mt24 product_details">
+            </div>
+        </div>
+        <div class="form-group row mt64" id="next_privious">
+            <div class="col-md-12 row col-lg-12 col-sm-12">
+                <div class="col-md-6 col-lg-6 col-sm-6 text-right">
+                    <button class="btn btn-primary btn-oppo-privoius"
+                        data-id="formulier_type_product_install_tab"
+                        type="Button">Previous step
+                    </button>
+                </div>
+                <div class="col-md-6 col-lg-6 col-sm-6 col-6 text-right">
+                    <button class="btn-lead-create btn-primary btn-oppo-next"
+                        data-id="customer_formulier_type_product_tab" type="Button">
+                        Save
+                    </button>
+                </div>
+            </div>
+        </div>
+    </template>
+</odoo>

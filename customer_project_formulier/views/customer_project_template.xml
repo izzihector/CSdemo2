@@ -1,0 +1,73 @@
+<odoo>
+    <template id="customer_opportunity_link" name="Link to frontend opportunity" inherit_id="portal.user_dropdown">
+        <xpath expr="//*[@id='o_logout_divider']" position="before">
+            <a href="/customer_opportunity_form" role="menuitem" class="dropdown-item">Create customer</a>
+        </xpath>
+    </template>
+
+    <template id="customer_opportunity_form" name="Opportunity Form">
+        <t t-call="website.layout">
+            <div class="container">
+                <div class="row">
+                    <form t-attf-action="/customer/opportunity/submit" method="POST" data-model_name="crm.lead" class="s_website_form form-horizontal col-lg-8 col-md-9 col-sm-12"  enctype="multipart/form-data" autocomplete="off">
+                        <div class="container">
+                            <ul class="nav nav-pills">
+                                <li class="active customer_tabs_li" id="email_tab">
+                                    <a  href="#email_tab_form" data-toggle="tab">
+                                        <span></span>
+                                    </a>
+                                </li>
+                                <li class="customer_tabs_li" id="customer_form_tab">
+                                    <a href="#customer_form_tab_form" data-toggle="tab">
+                                        <span></span>
+                                    </a>
+                                </li>
+                                <li class="customer_tabs_li" id="formulier_type_product_tab">
+                                    <a href="#formulier_type_product_tab_form" data-toggle="tab">
+                                        <span></span>
+                                    </a>
+                                </li>
+                                <li class="customer_tabs_li" id="formulier_type_product_option_tab">
+                                    <a href="#formulier_type_product_option_tab_form" data-toggle="tab">
+                                        <span></span>
+                                    </a>
+                                </li>
+                                <li class="customer_tabs_li" id="formulier_type_product_install_tab">
+                                    <a href="#formulier_type_product_install_tab_form" data-toggle="tab">
+                                        <span></span>
+                                    </a>
+                                </li>
+                                <li class="customer_tabs_li" id="customer_formulier_type_product_tab">
+                                    <a href="#customer_formulier_type_product_tab_form" data-toggle="tab">
+                                        <span></span>
+                                    </a>
+                                </li>
+                            </ul>
+                            <div class="tab-content clearfix">
+                                <div class="tab-pane active" id="email_tab_form">
+                                    <t t-call="customer_project_formulier.customer_email_form"/>
+                                </div>
+                                <div class="tab-pane" id="customer_form_tab_form">
+                                    <t t-call="customer_project_formulier.customer_data_form"/>
+                                </div>
+                                <div class="tab-pane" id="formulier_type_product_tab_form">
+                                    <t t-call="customer_project_formulier.formulier_type_product_form"/>
+                                </div>
+                                <div class="tab-pane" id="formulier_type_product_option_tab_form">
+                                    <t t-call="customer_project_formulier.formulier_type_product_option_form"/>
+                                </div>
+                                <div class="tab-pane" id="formulier_type_product_install_tab_form">
+                                    <t t-call="customer_project_formulier.formulier_type_product_install_form"/>
+                                </div>
+                                <div class="tab-pane" id="customer_formulier_type_product_tab_form">
+                                    <t t-call="customer_project_formulier.customer_formulier_type_form"/>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </t>
+    </template>
+</odoo>
+
