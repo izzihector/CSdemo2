@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="roof_detail_page_7">
+        <div class="mt24 mb24">
+            <table class="table table-bordered formulier-roof-table">
+                <t t-call="formulier_type_4.pv_roof_header_form"/>
+                <tbody>
+                    <tr>
+                        <td>
+                            <span class="xaa_aa_roof_type_seven"/>
+                        </td>
+                        <td>
+                            <span class="xaa_aa_covering_type_seven"/>
+                        </td>
+                        <td>
+                            <span class="xaa_aa_orientaion_type_seven"/>
+                        </td>
+                        <td>
+                            <span class="xaa_aa_inclination_angle_seven"/>
+                        </td>
+                        <td>
+                            <span class="xaa_aa_roof_tiles_one"/>
+                        </td>
+                        <td>
+                            <span class="xaa_aa_visual_estimate_panels_seven"/>
+                        </td>
+                        <td>
+                            <span class="xaa_aa_schadow_seven"/>
+                        </td>
+                        <td class="roof-remark-column">
+                            <span class="xaa_aa_remark_seven"/>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="form-group row form-field">
+                <div class="col-lg-3 col-md-4 col-sm-4 custom-text">
+                    <label class="col-form-label" for="xaa_aa_solar_color_seven">
+                        What color panel is desired:
+                    </label>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6">
+                    <div class="div_product">
+                        <select class="form-control" name="xaa_aa_solar_color_seven">
+                            <t t-foreach="solar_type_ids" t-as="st">
+                                <option t-att-value="st.id" t-att-selected="st.id in formulier_id.xaa_aa_solar_color_seven.ids">
+                                    <t t-esc="st.xaa_aa_name"/>
+                                </option>
+                            </t>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group row form-field">
+                <div class="col-lg-3 col-md-4 col-sm-4 custom-text">
+                    <label class="col-form-label" for="xaa_aa_solar_product_seven">
+                        Choose the panels:
+                    </label>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6">
+                    <div class="div_product">
+                        <select class="form-control" name="xaa_aa_solar_product_seven">
+                            <t t-foreach="solar_product_seven_ids" t-as="st">
+                                <option t-att-value="st.id" t-att-selected="st.id in formulier_id.xaa_aa_solar_product_seven.ids">
+                                    <t t-esc="st.xaa_aa_name"/>
+                                </option>
+                            </t>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group row form-field">
+                <div class="col-lg-3 col-md-4 col-sm-4 custom-text">
+                    <label class="col-form-label" for="xaa_aa_mounting_system_seven">
+                        Mounting System:
+                    </label>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6">
+                    <div class="div_product">
+                        <select class="form-control" name="xaa_aa_mounting_system_seven">
+                            <option></option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group row form-field">
+                <div class="col-lg-3 col-md-4 col-sm-4 col-lg-offset-1 col-md-offset-1 custom-text">
+                    <label class="col-form-label" for="xaa_aa_no_of_panels_seven">
+                        Choose the number of panels:
+                    </label>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-3">
+                    <input type="text" name="xaa_aa_no_of_panels_seven" class="form-control" t-att-value="formulier_id.xaa_aa_no_of_panels_seven"/>
+                </div>
+                <span> = </span>
+                <div class="col-lg-3 col-md-3 col-sm-3">
+                    <input type="text" name="xaa_aa_panel_inclination_seven" class="form-control" 
+                    t-att-value="formulier_id.xaa_aa_panel_inclination_seven"/>
+                    The position and angle of inclination of the panels have been taken into account in the calculation
+                </div>
+            </div>
+        </div>
+    </template>
+</odoo>

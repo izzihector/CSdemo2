@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="project_formulier_image" inherit_id="project_formulier.project_formulier_image">
+        <xpath expr="." position="inside">
+            <t t-if="formulier_id.xaa_aa_formulier_type == 'formulier_four'">
+            </t>
+        </xpath>
+    </template>
+
+    <template id="project_formulier_web_container" inherit_id="project_formulier.opportunity_tab_template">
+        <xpath expr="//div[hasclass('container')]" position="attributes">
+        	<attribute name="class"/>
+        </xpath>
+    </template>
+
+</odoo>

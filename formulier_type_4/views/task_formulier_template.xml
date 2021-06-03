@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <template id="task_formulier_template" inherit_id="project_formulier.task_formulier_template">
+        <xpath expr="." position="inside">
+            <t t-if="formulier_id.xaa_aa_formulier_type == 'formulier_four'">
+                <div class="text-center text-primary">
+                    <h3><u>General</u></h3>
+                </div>
+            </t>
+        </xpath>
+    </template>
+
+</odoo>

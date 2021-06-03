@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <template id="online_formulier_pv_projectform">
+        <t t-if="formulier_id.xaa_aa_formulier_type == 'formulier_four'">
+            <ul class="nav nav-pills">
+                <li class="active online_pv_tabs_li" id="pv_roof_select_tab">
+                    <a  href="#pv_roof_select_form" data-toggle="tab">
+                         <span></span>
+                    </a>
+                </li>
+                <li class="online_pv_tabs_li" id="pv_panel_calculation_tab">
+                    <a href="#pv_panel_calculation_form" role="tab" data-toggle="tab">
+                        <span></span>
+                    </a>
+                </li>
+            </ul>
+            <div class="tab-content tabs">
+                <div class="tab-pane active" id="pv_roof_select_form">
+                    <t t-call="formulier_type_4.pv_roof_select_form"/>
+                </div>
+                <div class="tab-pane" id="pv_panel_calculation_form">
+                    <t t-call="formulier_type_4.pv_panel_calculation_form"/>
+                </div>
+                
+            </div>
+        </t>
+    </template>
+</odoo>

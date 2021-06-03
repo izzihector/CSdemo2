@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+	<template id="assets_frontend" inherit_id="web.assets_frontend" name="Quote">
+        <xpath expr="." position="inside">
+            <script type="text/javascript" src="/formulier_type_4/static/src/js/online_pv_quote.js"></script>
+            <script type="text/javascript" src="/formulier_type_4/static/src/js/solar_panel_calculation.js"></script>
+            <link rel="stylesheet" href="/formulier_type_4/static/src/css/online_web_formulier.css"/>
+        </xpath>
+    </template>
+
+</odoo>
