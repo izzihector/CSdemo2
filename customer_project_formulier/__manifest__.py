@@ -9,7 +9,7 @@
 {
     'name': "customer_project_formulier",
     'version': '14.1',
-    'summary': """ customer form work update. """,
+    'summary': """ customer form work """,
     'description': """ """,
     'author': "Aardug, Arjan Rosman",
     'website': "http://www.aardug.nl/",
