@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <record id="view_task_form2_project_inherit" model="ir.ui.view">
+            <field name="name">view.task.form2.inherit</field>
+            <field name="model">project.task</field>
+            <field name="inherit_id" ref="project.view_task_form2"/>
+            <field name="arch" type="xml">
+                <!-- Move to Service Tab in view view_task_form2_industry_fsm_inherit -->
+                <xpath expr="//field[@name='parent_id']" position="replace"></xpath>
+            </field>
+        </record>
+
+		<record id="project_task_view_form_inherit_sale_timesheet_inherit" model="ir.ui.view">
+            <field name="name">view.task.form2.inherit</field>
+            <field name="model">project.task</field>
+            <field name="inherit_id" ref="sale_timesheet.project_task_view_form_inherit_sale_timesheet"/>
+            <field name="arch" type="xml">
+            	<!-- Move to Service Tab in view view_task_form2_industry_fsm_inherit -->
+            	<xpath expr="//field[@name='timesheet_product_id']" position="attributes">
+            		<attribute name="invisible">1</attribute>
+            	</xpath>
+            </field>
+        </record>
+
+        <record id="view_task_form2_industry_fsm_inherit" model="ir.ui.view">
+            <field name="name">view.task.form2.inherit</field>
+            <field name="model">project.task</field>
+            <field name="inherit_id" ref="industry_fsm.view_task_form2_inherit"/>
+            <field name="arch" type="xml">
+                <xpath expr="//page[last()]" position="after">
+                    <page name="service_page" string="Service">
+                        <group>
+                            <group>
+                                <field name="timesheet_product_id" attrs="{'invisible': ['|', '|', '|', '|', ('allow_billable', '=', False), ('allow_timesheets', '=', False), '&amp;', ('partner_id', '=', False), ('bill_type', '=', 'customer_project'), ('sale_order_id', '!=', False), '&amp;', ('pricing_type', '!=', 'fixed_rate'), ('bill_type', '!=', 'customer_task')]}" context="{'default_type': 'service', 'default_service_policy': 'delivered_timesheet', 'default_service_type': 'timesheet'}" placeholder="Leave empty if non-billable"/>
+                                <field name="parent_id" domain="[('parent_id', '=', False)]" attrs="{'invisible' : [('allow_subtasks', '=', False)]}"/>
+                            </group>
+                            <group>
+                                <label for="planned_date_begin" string="Planned Date" attrs="{'invisible': [('display_fsm_dates', '=', False)]}"/>
+                                <div class="w-100" attrs="{'invisible': [('display_fsm_dates', '=', False)]}">
+                                    <div class="o_row">
+                                        <field name="planned_date_begin" widget="daterange" options='{"related_end_date": "planned_date_end"}'/>
+                                        <i class="fa fa-long-arrow-right mx-2 oe_edit_only" aria-label="Arrow icon" title="Arrow"/>
+                                        <i class="fa fa-long-arrow-right mx-2 oe_read_only" aria-label="Arrow icon" title="Arrow" attrs="{'invisible': [('planned_date_begin', '=', False), ('planned_date_end', '=', False)]}"/>
+                                        <field name="planned_date_end" widget="daterange" options='{"related_start_date": "planned_date_begin"}'/>
+                                    </div>
+                                </div>
+                            </group>
+                        </group>
+                    </page>
+                </xpath>
+                <xpath expr="//label[@for='planned_date_begin']" position="replace"></xpath>
+                <xpath expr="//div[hasclass('w-100')]" position="replace"></xpath>
+            </field>
+        </record>
+
+    </data>
+</odoo>

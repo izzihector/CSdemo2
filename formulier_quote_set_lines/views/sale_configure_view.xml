@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="sale_line_configure_form_view_inh" model="ir.ui.view">
+        <field name="name">sale.line.config.form.inh</field>
+        <field name="model">sale.line.config</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="xaa_aa_formulier_type"/>
+                            <field name="xaa_aa_qty"/>
+                            <field name="xaa_aa_qty_hours"/>
+                            <!-- <field name="xaa_aa_team_time"/> -->
+                            <field name="xaa_aa_team_cost"/>
+                            <field name="xaa_aa_overhead_one"/>
+                            <field name="xaa_aa_overhead_two"/>
+                            <field name="xaa_aa_cost_option_one"/>
+                            <field name="xaa_aa_cost_option_two"/>
+                            <field name="xaa_aa_overhead_total" widget="monetary"/>
+                            <field name="xaa_aa_total" widget="monetary"/>
+                        </group>
+                        <group>
+                            <field name="xaa_aa_team_sale"/>
+                            <field name="xaa_aa_sales_overhead_one"/>
+                            <field name="xaa_aa_sales_overhead_two"/>
+                            <field name="xaa_aa_sales_option_one"/>
+                            <field name="xaa_aa_sales_option_two"/>
+                            <field name="xaa_aa_commission"/>
+                            <field name="xaa_aa_sales_overhead_total" widget="monetary"/>
+                            <field name="xaa_aa_sales_total" widget="monetary"/>
+                        </group>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+    <record id="sale_line_configure_tree_view_inh" model="ir.ui.view">
+        <field name="name">sale.line.config.tree.inh</field>
+        <field name="model">sale.line.config</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="xaa_aa_formulier_type"/>
+                <field name="xaa_aa_qty"/>
+                <field name="xaa_aa_qty_hours"/>
+                <!-- <field name="xaa_aa_team_time"/> -->
+                <field name="xaa_aa_team_cost"/>
+                <field name="xaa_aa_team_sale"/>
+                <field name="xaa_aa_overhead_one"/>
+                <field name="xaa_aa_sales_overhead_one"/>
+                <field name="xaa_aa_overhead_two"/>
+                <field name="xaa_aa_sales_overhead_two"/>
+                <field name="xaa_aa_cost_option_one"/>
+                <field name="xaa_aa_sales_option_one"/>
+                <field name="xaa_aa_cost_option_two"/>
+                <field name="xaa_aa_sales_option_two"/>
+                <field name="xaa_aa_commission"/>
+                <field name="xaa_aa_overhead_total" widget="monetary"/>
+                <field name="xaa_aa_sales_overhead_total" widget="monetary"/>
+                <field name="xaa_aa_total" widget="monetary"/>
+                <field name="xaa_aa_sales_total" widget="monetary"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="view_order_form_inh" model="ir.ui.view">
+        <field name="name">sale.order.form.inh</field>
+        <field name="model">sale.order</field>
+        <field name="inherit_id" ref="sale.view_order_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='order_line']" position="before">
+                <button string="Add lines" class="oe_highlight mt8 mb8" type="object" name="add_formulier_lines"  attrs="{'invisible': [('xaa_aa_formulier_type', '=', False)]}"/>
+            </xpath>
+        </field>
+    </record>
+
+    <record id="action_sale_line_configure" model="ir.actions.act_window">
+        <field name="name">Sales table</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">sale.line.config</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+            <p class="oe_view_nocontent_create">
+                Click here to create your sale lines configuration.
+            </p>
+        </field>
+    </record>
+    <menuitem id="menu_sale_line_configure"
+        name="Sales table"
+        parent="project_formulier_quote.menu_formulier_configure_settings"
+        action="formulier_quote_set_lines.action_sale_line_configure" sequence="3"/>
+    <menuitem id="menu_sale_line_configure_sales"
+        name="Sales table"
+        parent="sale.menu_sale_config"
+        action="formulier_quote_set_lines.action_sale_line_configure" sequence="3"/>
+</odoo>

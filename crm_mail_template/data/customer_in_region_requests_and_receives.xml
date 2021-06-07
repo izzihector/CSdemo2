@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <!-- Mail E - Customer in region requests and receives mail - version 1.0-->
+        <record id="quote_is_about_to_expire_mail_template" model="mail.template">
+            <field name="name">Mail E - Customer in region requests and receives mail - version 1.0</field>
+            <field name="email_from">${(object.company_id.email or '')|safe}</field>
+            <field name="subject">Application for energy-saving measure Energie control NL</field>
+            <field name="email_to">${object.email_from|safe}</field>
+            <field name="model_id" ref="crm.model_crm_lead"/>
+            <field name="lang">${object.partner_id.lang}</field>
+            <field name="body_html"><![CDATA[
+                <p style="margin:0px 0px 9px 0px;">Dear sir/madam,</p>
+                <p style="margin:0px 0px 9px 0px;">
+                   You have just made an offer for an energy-saving measure.
+                </p>
+                <p style="margin:0px 0px 9px 0px;">
+                    At Energie control NL we have been working on making the Netherlands more sustainable for more than 10 years. We are a company with 70 employees and multiple branches. We are proud to be able to complete thousands of projects every year.
+                </p>
+                <p style="margin:0px 0px 9px 0px;">
+                    We understand that every application is unique and therefore requires a unique approach;<br/>You can choose how you prefer to receive your quote!
+                </p>
+                <p style="margin:0px 0px 9px 0px;">
+                    Using the buttons below you can indicate yourself what type of contact and when it is best for you. If you do not use the options below, you will be called on a weekday between 8 and 5 to make an appointment with one of our advisers at your home.
+                </p>
+                <p style="margin:0px 0px 9px 0px;"> 
+                    If this often proves inconvenient, plan below the desired time to be called for making this appointment, then click on: 'I want to be called at a specific time'.<br/>Would you rather receive more information by email first? Then click on: 'I would like to receive more information first'. You will then automatically receive further information from us.
+                </p>
+                <p style="margin:0px 0px 9px 0px;"> 
+                    Do you not want a consultation at home but would you like to be extensively informed by one of our advisers? Then you can schedule a telephone or video call online with one of our advisers. They will be happy to help you further! In this conversation, one of our advisers explains the possibilities for you. Click on: 'I would like a telephone / video advice call' button so that you can schedule a call yourself.
+                </p>
+                <p style="margin:0px 0px 9px 0px;"><br/><br/><a href="/book/calendar/4/${object.id}" style="background-color: #1abc9c; padding: 15px; text-decoration: none; color: #fff; border-radius: 5px; font-size: 13px;" class="o_default_snippet_text">I want to be called at a specific time</a></p>
+                <p style="margin:0px 0px 9px 0px;"><br/><br/><a href="/crm/stage/${object.id}/review" style="background-color: #1abc9c; padding: 15px; text-decoration: none; color: #fff; border-radius: 5px; font-size: 13px;" class="o_default_snippet_text">I would like to receive more information first</a></p>
+                <p style="margin:0px 0px 9px 0px;"><br/><br/><a href="/book/calendar/3/${object.id}" style="background-color: #1abc9c; padding: 15px; text-decoration: none; color: #fff; border-radius: 5px; font-size: 13px;" class="o_default_snippet_text">I would like a telephone / video consultation</a></p>
+                <br/>
+                <p style="margin:0px 0px 9px 0px;"><b>
+                    Customers rate us with an average of 8.5!<br/>
+                    <a href="https://www.klantenvertellen.nl/reviews/1038837/energie_control" style="padding: 20px; font-size: 14px;" class="o_default_snippet_text" target="_blank">Tell customers image + tell customers link</a></b>
+                </p>
+                <p style="margin:0px 0px 9px 0px;">
+                    Energie control NL is the specialist in energy-saving measures:<br/>
+                            = Solar panels  &nbsp;&nbsp;&nbsp;&nbsp;= Asbestos remediation<br/>
+                            = Cavity wall insulation &nbsp;&nbsp;&nbsp;&nbsp;= Roof renovation<br/>
+                            = Floor insulation &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;= Charging stations<br/>
+                            = Roof insulation &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;= Heat pumps<br/>
+                </p>
+                <p style="margin:0px 0px 9px 0px;">
+                    We sincerely hope to get in touch with you and look forward to a cooperation!
+                </p>
+                <br/>
+                <p style="margin:0px 0px 9px 0px;">
+                    With best regards,<br/>
+                    <img src="/crm_mail_template/static/src/img/company_logo.png" style="width:100px;height:100px;"/><br/>
+                    Team Energiecontrol NL<br/>
+                     <a href="https://www.facebook.com/energiecontrolnl/" target="_blank">
+                        <img src="/crm_mail_template/static/src/img/facebook.jpeg" style="width:30px;height:30px;"/>
+                    </a>
+                    <a href="https://www.instagram.com/energiecontrolnl/" target="_blank">
+                        <img src="/crm_mail_template/static/src/img/instagram.jpeg" style="width:30px;height:30px;"/>
+                    </a>
+                    <br/>
+                    <br/>
+                    <img src="/crm_mail_template/static/src/img/image_1.jpeg" style="width:200px;height:200px;"/>
+                    <img src="/crm_mail_template/static/src/img/image_2.JPG" style="width:200px;height:200px;"/>
+                    <img src="/crm_mail_template/static/src/img/image_3.jpg" style="width:200px;height:200px;"/>
+                </p>
+                ]]>
+            </field>
+        </record>
+    </data>
+</odoo>

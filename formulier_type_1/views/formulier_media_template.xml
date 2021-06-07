@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="project_formulier_image" inherit_id="project_formulier.project_formulier_image">
+        <xpath expr="." position="inside">
+            <t t-if="formulier_id.xaa_aa_formulier_type == 'formulier_one'">
+                <div class="form-group row form-field" id="four_image_section">
+                    <input type="file" name="xaa_aa_image_1" class="hide_input_image form-control o_website_form_input"/>
+                    <input type="file" name="xaa_aa_image_2" class="hide_input_image form-control o_website_form_input"/>
+                    <input type="file" name="xaa_aa_image_3" class="hide_input_image form-control o_website_form_input"/>
+                    <input type="file" name="xaa_aa_image_4" class="hide_input_image form-control o_website_form_input"/>
+                    <input type="file" name="xaa_aa_image_5" class="hide_input_image form-control o_website_form_input"/>
+                    <input type="file" name="xaa_aa_image_6" class="hide_input_image form-control o_website_form_input"/>
+                    <input type="file" name="xaa_aa_image_7" class="hide_input_image form-control o_website_form_input"/>
+                    <input type="file" name="xaa_aa_image_8" class="hide_input_image form-control o_website_form_input"/>
+                    <input type="file" name="xaa_aa_plattegrond_img" class="hide_input_image form-control o_website_form_input"/>
+                    <input type="file" name="xaa_aa_fundering_img" class="hide_input_image form-control o_website_form_input"/>
+                    <div class="col-lg-3 col-md-3 col-sm-3 text-right">
+                        <h5 class="text-center">Left view of object</h5>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-3">
+                        <button aria-label="Edit" class="fa fa-pencil pull-right fa-lg edit_button" title="Edit" ></button>
+                        <img class="img img-fluid" id="xaa_aa_image_1" t-attf-src="/web/image/question.formulier/{{formulier_id.id}}/xaa_aa_image_1"/>
+                    </div>
+                    <div class="col-lg-2 col-md-2 col-sm-3 text-right">
+                        <h5 class="text-center">Front view of object</h5>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-3">
+                        <button aria-label="Edit" class="fa fa-pencil pull-right fa-lg edit_button" title="Edit" ></button>
+                        <img class="img img-fluid" id='xaa_aa_image_2' t-attf-src="/web/image/question.formulier/{{formulier_id.id}}/xaa_aa_image_2"/>
+                    </div>
+                </div>
+                <div class="form-group row form-field">
+                    <div class="col-lg-3 col-md-3 col-sm-3 text-right">
+                        <h5 class="text-center">Right view of object</h5>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-3">
+                        <button aria-label="Edit" class="fa fa-pencil pull-right fa-lg edit_button" title="Edit" ></button>
+                        <img class="img img-fluid" id="xaa_aa_image_3" t-attf-src="/web/image/question.formulier/{{formulier_id.id}}/xaa_aa_image_3"/>
+                    </div>
+                    <div class="col-lg-2 col-md-2 col-sm-2 text-right">
+                        <h5 class="text-center">Level Measurement</h5>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-3">
+                        <button aria-label="Edit" class="fa fa-pencil pull-right fa-lg edit_button" title="Edit" ></button>
+                        <img class="img img-fluid" id="xaa_aa_image_4" t-attf-src="/web/image/question.formulier/{{formulier_id.id}}/xaa_aa_image_4"/>
+                    </div>
+                </div>
+                <div class="form-group row form-field">
+                    <div class="col-lg-3 col-md-3 col-sm-3 text-right">
+                        <h5 class="text-center">Accessibility for Crane</h5>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-3">
+                        <button aria-label="Edit" class="fa fa-pencil pull-right fa-lg edit_button" title="Edit" ></button>
+                        <img class="img img-fluid" id="xaa_aa_image_5" t-attf-src="/web/image/question.formulier/{{formulier_id.id}}/xaa_aa_image_5"/>
+                    </div>
+                    <div class="col-lg-2 col-md-2 col-sm-2 text-right">
+                        <h5 class="text-center">Excavated Foundation</h5>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-3">
+                        <button aria-label="Edit" class="fa fa-pencil pull-right fa-lg edit_button" title="Edit" ></button>
+                        <img class="img img-fluid" id="xaa_aa_image_6" t-attf-src="/web/image/question.formulier/{{formulier_id.id}}/xaa_aa_image_6"/>
+                    </div>
+                </div>
+                <div class="form-group row form-field">
+                    <div class="col-lg-3 col-md-3 col-sm-3 text-right">
+                        <h5 class="text-center">Crack in Masonry</h5>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-3">
+                        <button aria-label="Edit" class="fa fa-pencil pull-right fa-lg edit_button" title="Edit" ></button>
+                        <img class="img img-fluid" id="xaa_aa_image_7" t-attf-src="/web/image/question.formulier/{{formulier_id.id}}/xaa_aa_image_7"/>
+                    </div>
+                    <div class="col-lg-2 col-md-2 col-sm-2 text-right">
+                        <h5 class="text-center">Additional Information</h5>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-3">
+                        <button aria-label="Edit" class="fa fa-pencil pull-right fa-lg edit_button" title="Edit" ></button>
+                        <img class="img img-fluid" id="xaa_aa_image_8" t-attf-src="/web/image/question.formulier/{{formulier_id.id}}/xaa_aa_image_8"/>
+                    </div>
+                </div>
+                <div class="form-group row form-field">
+                    <div class="col-lg-3 col-md-3 col-sm-3 text-right">
+                        <h5 class="text-center">Plattegrond</h5>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-3">
+                        <button aria-label="Edit" class="fa fa-pencil pull-right fa-lg edit_button" title="Edit" ></button>
+                        <img class="img img-fluid" id="xaa_aa_plattegrond_img" t-attf-src="/web/image/question.formulier/{{formulier_id.id}}/xaa_aa_plattegrond_img"/>
+                    </div>
+                    <div class="col-lg-2 col-md-2 col-sm-2 text-right">
+                        <h5 class="text-center">Sondering</h5>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-3">
+                        <button aria-label="Edit" class="fa fa-pencil pull-right fa-lg edit_button" title="Edit" ></button>
+                        <img class="img img-fluid" id="xaa_aa_fundering_img" t-attf-src="/web/image/question.formulier/{{formulier_id.id}}/xaa_aa_fundering_img"/>
+                    </div>
+                </div>
+            </t>
+        </xpath>
+    </template>
+</odoo>

@@ -1,0 +1,46 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#   * opportunity_from_quote
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 14.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-11-02 12:43+0000\n"
+"PO-Revision-Date: 2020-11-02 12:43+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: opportunity_from_quote
+#: model_terms:ir.ui.view,arch_db:opportunity_from_quote.view_order_form_inh
+msgid "<span class=\"o_stat_text\">Opportunity</span>"
+msgstr "<span class=\"o_stat_text\">Verkoopkans</span>"
+
+#. module: opportunity_from_quote
+#: model_terms:ir.ui.view,arch_db:opportunity_from_quote.view_order_form_inh
+msgid "Create Opportunity"
+msgstr "Creëren Verkoopkans"
+
+#. module: opportunity_from_quote
+#: model:crm.stage,name:opportunity_from_quote.stage_lead6
+msgid "Looked"
+msgstr "Keek"
+
+#. module: opportunity_from_quote
+#: model:crm.lost.reason,name:opportunity_from_quote.lost_reason1
+msgid "Order Cancelled"
+msgstr "Bestelling geannuleerd"
+
+#. module: opportunity_from_quote
+#: model:ir.model.fields,field_description:opportunity_from_quote.field_sale_order__xaa_aa_formulier_type
+msgid "Question Type"
+msgstr "Vraag Type"
+
+#. module: opportunity_from_quote
+#: model:crm.stage,name:opportunity_from_quote.stage_lead5
+msgid "Send Quote"
+msgstr "Stuur een offerte"

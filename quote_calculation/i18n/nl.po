@@ -1,0 +1,61 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#   * quote_calculation
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 14.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-10-16 10:42+0000\n"
+"PO-Revision-Date: 2020-10-16 10:42+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: quote_calculation
+#: model:ir.model.fields,field_description:quote_calculation.field_sale_order__xaa_aa_related_amount_untaxed
+msgid "Untaxed Amount"
+msgstr "bedrag exclusief"
+
+#. module: quote_calculation
+#: model:ir.model.fields,field_description:quote_calculation.field_sale_order__xaa_aa_watt_piek
+msgid "Watt Peak"
+msgstr "Watt piek"
+
+#. module: quote_calculation
+#: model:ir.model.fields,field_description:quote_calculation.field_sale_order__xaa_aa_rendement
+msgid "Efficiency"
+msgstr "Rendement"
+
+#. module: quote_calculation
+#: model:ir.model.fields,field_description:quote_calculation.field_sale_order__xaa_aa_jaaropbrengsten
+msgid "Annual yields"
+msgstr "Jaaropbrengsten"
+
+#. module: quote_calculation
+#: model:ir.model.fields,field_description:quote_calculation.field_sale_order__xaa_aa_jaaropbrengst_prijs_van
+msgid "Annual yield price of"
+msgstr "Jaaropbrengst prijs van"
+
+#. module: quote_calculation
+#: model:ir.model.fields,field_description:quote_calculation.field_sale_order__xaa_aa_totale_verwachte_jaaropbrengst_van_de
+msgid "Total expected annual yield of the"
+msgstr "Totale verwachte jaaropbrengst van de"
+
+#. module: quote_calculation
+#: model:ir.model.fields,field_description:quote_calculation.field_sale_order__xaa_aa_verwachte_terugverdientijd
+msgid "Expected payback time"
+msgstr "Verwachte terugverdientijd"
+
+#. module: quote_calculation
+#: model_terms:ir.ui.view,arch_db:quote_calculation.view_sale_form_inherited
+msgid "Calculation"
+msgstr "Berekening"
+
+#. module: quote_calculation
+#: model_terms:ir.ui.view,arch_db:quote_calculation.snippet_calculation_table
+msgid "<h2 class=\"text-left\">Calculations</h2>"
+msgstr "<h2 class=\"text-left\">Berekeningen</h2>"

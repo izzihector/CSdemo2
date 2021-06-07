@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="customer_quote_formulier_construction_year" name="Formulier Quote Construction">
+        <div class="div_padding_left">
+            <div class="row form-group mt32">
+                <div class="col-lg-12 col-md-12 col-sm-12 ">
+                    <div class="form_lable mt16">
+                        <label class="montserrat-extrabold_24">
+                            What is the year of construction of your home?
+                        </label>
+                    </div>
+                </div>
+                <div class="col-lg-10 col-md-10 col-sm-12 checkbox_div">
+                    <div>
+                        <div class="checkbox mb8 mt16">
+                            <input type="radio" class="radio_design" name="xaa_aa_quote_construction_year" t-att-checked="formulier_id.xaa_aa_quote_construction_year == 'voor 1935'" value="voor 1935"/>
+                            <label class="ng-binding col-form-label ml16" for="xaa_aa_quote_construction_year">voor 1935
+                            </label>
+                        </div>
+                        <div class="checkbox mb8">
+                            <input type="radio" class="radio_design" name="xaa_aa_quote_construction_year" t-att-checked="formulier_id.xaa_aa_quote_construction_year == 'tussen 1935 en 1975'" value="tussen 1935 en 1975"/>
+                            <label class="ng-binding col-form-label ml16" for="xaa_aa_quote_construction_year">tussen 1935 en 1975
+                            </label>
+                        </div>
+                        <div class="checkbox mb8">
+                            <input type="radio" class="radio_design" name="xaa_aa_quote_construction_year" t-att-checked="formulier_id.xaa_aa_quote_construction_year == 'na 1975'" value="na 1975"/>
+                            <label class="ng-binding col-form-label ml16" for="xaa_aa_quote_construction_year">na 1975
+                            </label>
+                        </div>
+                        <div class="checkbox">
+                            <input type="radio" class="radio_design" name="xaa_aa_quote_construction_year" t-att-checked="formulier_id.xaa_aa_quote_construction_year == 'Ik weet het niet'" value="Ik weet het niet"/>
+                            <label class="ng-binding col-form-label ml16" for="xaa_aa_quote_construction_year">Ik weet het niet
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row form-group mt32 house_insulated" t-att-style="'display:block;'if formulier_id.xaa_aa_quote_construction_year == 'tussen 1935 en 1975' else 'display:none;'">
+                <div class="col-lg-12 col-md-12 col-sm-12 ">
+                    <div class="form_lable mt16">
+                        <label class="montserrat-extrabold_24">
+                            How do you want your house to be insulated?
+                        </label>
+                    </div>
+                </div>
+                <div class="col-lg-10 col-md-10 col-sm-12 checkbox_div">
+                    <div>
+                        <div class="checkbox mb8 mt16">
+                            <input type="radio" class="radio_design" name="xaa_aa_quote_house_insulated" t-att-checked="formulier_id.xaa_aa_quote_house_insulated == 'Knauf Supafil minerals inblaaswol(aanbevolen)'" value="Knauf Supafil minerals inblaaswol(aanbevolen)"/>
+                            <label class="ng-binding col-form-label ml16" for="xaa_aa_quote_house_insulated">Knauf Supafil minerals inblaaswol(aanbevolen)
+                            </label>
+                        </div>
+                        <div class="checkbox mb8">
+                            <input type="radio" class="radio_design" name="xaa_aa_quote_house_insulated" t-att-checked="formulier_id.xaa_aa_quote_house_insulated == 'HR++ Grijze EPS Parels'" value="HR++ Grijze EPS Parels"/>
+                            <label class="ng-binding col-form-label ml16" for="xaa_aa_quote_house_insulated">HR++ Grijze EPS Parels
+                            </label>
+                        </div>
+                        <div class="checkbox mb8">
+                            <input type="radio" class="radio_design" name="xaa_aa_quote_house_insulated" t-att-checked="formulier_id.xaa_aa_quote_house_insulated == 'Energie Foam wit isolatieschuim'" value="Energie Foam wit isolatieschuim"/>
+                            <label class="ng-binding col-form-label ml16" for="xaa_aa_quote_house_insulated">Energie Foam wit isolatieschuim
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row form-group mt16 montserrat_regular construction_year_1975 ml8" t-att-style="'display:flex;'if formulier_id.xaa_aa_quote_construction_year == 'Energie Foam wit isolatieschuim' else 'display:none;'">
+                <img class="img img-fluid mr8 warning_image"
+                    src="/project_formulier_quote/static/src/images/Warning icon.png">
+                    <span class="mt4">Dit is in verhouding een relatief dure oplossing en meer geschikt voor woningen na 1975 en herstel van oude isolatie / na-isolatie.</span>
+                </img>
+            </div>
+            <div class="row form-group mt16 montserrat_regular construction_year_next_text ml8" t-att-style="'display:flex;'if formulier_id.xaa_aa_quote_construction_year == 'voor 1935' else 'display:none;'">
+                <img class="img img-fluid mr8 warning_image"
+                    src="/project_formulier_quote/static/src/images/Warning icon.png">
+                    <span class="mt4">Deze woning is waarschijnlijk niet geschikt voor woningisolatie.<br/>
+                    Wij kunnen er helaas geen offerte voor uitbrengen</span>
+                </img>
+            </div>
+        </div>
+        <div class="form-group row mt64 construction_year_next" id="next_privious" t-att-style="'display:none;'if formulier_id.xaa_aa_quote_construction_year == 'voor 1935' else 'display:block;'">
+            <div class="col-md-12 col-lg-12 col-sm-12 text-center">
+                <button class="btn btn-next mt16"
+                    data-id="cavity_thickness_tab" type="Button"
+                    t-att-value="formulier_id.id">
+                    Next step
+                </button>
+            </div>
+        </div>
+    </template>
+</odoo>

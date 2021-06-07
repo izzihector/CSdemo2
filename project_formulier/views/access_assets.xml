@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+   <template id="assets_editor" inherit_id="website.assets_editor"  name="Custom Editor">
+        <xpath expr="." position="inside">
+            <script type="text/javascript" src="/project_formulier/static/src/js/media_dialog.js"/>
+        </xpath>
+    </template>
+    <template id="assets_backend" name="Formulier backend assets" inherit_id="web.assets_backend">
+        <xpath expr="." position="inside">
+            <link rel="stylesheet" href="/project_formulier/static/src/css/formulier.css"/>
+        </xpath>
+    </template>
+    <template id="assets_frontend" inherit_id="web.assets_frontend" name="Formulier fronted assets">
+        <xpath expr="." position="inside">
+            <script type="text/javascript" src="/project_formulier/static/src/js/upload_formulier_media.js"/>
+            <script type="text/javascript" src="/project_formulier/static/src/js/formulier_tabs.js"/>
+            <script type="text/javascript" src="/project_formulier/static/src/js/image_customization.js"/>
+            <link rel="stylesheet" href="/project_formulier/static/src/less/custom_style.css"/>
+        </xpath>
+    </template>
+    <template id="assets_snippet_s_website_form_js_000" inherit_id="website_form.assets_snippet_s_website_form_js_000">
+        <xpath expr="script[@src='/website_form/static/src/snippets/s_website_form/000.js']" position="replace">
+            <script type="text/javascript" src="/project_formulier/static/src/js/website_form.js"/>
+        </xpath>
+    </template>
+</odoo>

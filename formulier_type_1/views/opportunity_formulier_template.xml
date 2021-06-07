@@ -1,0 +1,473 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="opportunity_formulier_template" inherit_id="project_formulier.opportunity_formulier_template">
+        <xpath expr="." position="inside">
+            <t t-if="formulier_id.xaa_aa_formulier_type == 'formulier_one'">
+                <div class="form-group row form-field">
+                    <div class="col-lg-3 col-md-3 col-sm-3 custom-text">
+                        <label class="col-form-label" for="xaa_aa_house_info">Description of the House</label>
+                    </div>
+                    <div class="col-lg-8 col-md-8 col-sm-8">
+                        <textarea rows="3" name="xaa_aa_house_info" class="form-control"><t t-esc="formulier_id.xaa_aa_house_info"/></textarea>
+                    </div>
+                </div>
+                <div class="form-group row form-field">
+                    <div class="col-lg-3 col-md-3 col-sm-3 custom-text">
+                        <label class="col-form-label" for="xaa_aa_goal_owner">Wish Owner</label>
+                    </div>
+                    <div class="col-lg-8 col-md-8 col-sm-8">
+                        <textarea rows="3" name="xaa_aa_goal_owner" class="form-control"><t t-esc="formulier_id.xaa_aa_goal_owner"/></textarea>
+                    </div>
+                </div>
+                <div class="form-group row form-field">
+                    <div class="col-lg-3 col-md-3 col-sm-3 custom-text">
+                        <label class="col-form-label" for="xaa_aa_analysis_settlement">Our Analysis</label>
+                    </div>
+                    <div class="col-lg-8 col-md-8 col-sm-8">
+                        <textarea rows="3" name="xaa_aa_analysis_settlement" class="form-control"><t t-esc="formulier_id.xaa_aa_analysis_settlement"/></textarea>
+                    </div>
+                </div>
+                <div class="form-group row form-field">
+                    <div class="col-lg-3 col-md-3 col-sm-3 custom-text">
+                        <label class="col-form-label" for="xaa_aa_faced_construction">Façade Construction</label>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6">
+                        <div class="form-group">
+                            <select name="xaa_aa_faced_construction" t-attf-class="form-control">
+                                <option></option>
+                                <option value='Spouwmuur' t-att-selected="formulier_id.xaa_aa_faced_construction == 'Spouwmuur'">
+                                    Spouwmuur
+                                </option>
+                                <option value='Steensmuur' t-att-selected="formulier_id.xaa_aa_faced_construction == 'Steensmuur'">
+                                    Steensmuur
+                                </option>
+                                <option value='Halfsteensmuur met klamp' t-att-selected="formulier_id.xaa_aa_faced_construction == 'Halfsteensmuur met klamp'">
+                                    Halfsteensmuur met klamp
+                                </option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group row form-field">
+                    <div class="col-lg-3 col-md-3 col-sm-3 custom-text">
+                        <label class="col-form-label" for="xaa_aa_area">Area</label>
+                    </div>
+                    <div class="col-lg-5 col-md-5 col-sm-5">
+                        <div t-attf-class="form-group">
+                            <select name="xaa_aa_area" t-attf-class="form-control">
+                                <option></option>
+                                <option value='Noord' t-att-selected="formulier_id.xaa_aa_area == 'Noord'">
+                                    Noord
+                                </option>
+                                <option value='Midden' t-att-selected="formulier_id.xaa_aa_area == 'Midden'">
+                                    Midden
+                                </option>
+                                <option value='Zuid' t-att-selected="formulier_id.xaa_aa_area == 'Zuid'">
+                                    Zuid
+                                </option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group row form-field">
+                    <div class="col-lg-3 col-md-3 custom-text">
+                        <label class="col-form-label" for="xaa_aa_floor_construction">Floor Construction bgg</label>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6">
+                        <div t-attf-class="form-group">
+                            <select name="xaa_aa_floor_construction" t-attf-class="form-control">
+                                <option></option>
+                                <option value='zie tekening' t-att-selected="formulier_id.xaa_aa_floor_construction == 'zie tekening'">
+                                    zie tekening
+                                </option>
+                                <option value='Beton ; plaat op zand - Vrij tussen muren' t-att-selected="formulier_id.xaa_aa_floor_construction == 'Beton ; plaat op zand - Vrij tussen muren'">
+                                    Beton ; plaat op zand - Vrij tussen muren
+                                </option>
+                                <option value='Beton ; plaat op zand – verbonden aan muren' t-att-selected="formulier_id.xaa_aa_floor_construction == 'Beton ; plaat op zand – verbonden aan muren'">
+                                    Beton ; plaat op zand – verbonden aan muren
+                                </option>
+                                <option value='Hout; vloerbalken oplegging – zijgevel' t-att-selected="formulier_id.xaa_aa_floor_construction == 'Hout; vloerbalken oplegging – zijgevel'">
+                                    Hout; vloerbalken oplegging – zijgevel
+                                </option>
+                                <option value='Hout; vloerbalken oplegging – achtergevel' t-att-selected="formulier_id.xaa_aa_floor_construction == 'Hout; vloerbalken oplegging – achtergevel'">
+                                    Hout; vloerbalken oplegging – achtergevel
+                                </option>
+                                <option value='Hout; vloerbalken oplegging – zie tekening' t-att-selected="formulier_id.xaa_aa_floor_construction == 'Hout; vloerbalken oplegging – zie tekening'">
+                                    Hout; vloerbalken oplegging – zie tekening
+                                </option>
+                                <option value='Broodjes; balken oplegging – zijgevel' t-att-selected="formulier_id.xaa_aa_floor_construction == 'Broodjes; balken oplegging – zijgevel'">
+                                    Broodjes; balken oplegging – zijgevel
+                                </option>
+                                <option value='Broodjes; balken oplegging – achtergevel' t-att-selected="formulier_id.xaa_aa_floor_construction == 'Broodjes; balken oplegging – achtergevel'">
+                                    Broodjes; balken oplegging – achtergevel
+                                </option>
+                                <option value='Broodjes; balken oplegging - zie tekening' t-att-selected="formulier_id.xaa_aa_floor_construction == 'Broodjes; balken oplegging - zie tekening'">
+                                    Broodjes; balken oplegging - zie tekening
+                                </option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group row form-field">
+                    <div class="col-lg-3 col-md-3 col-sm-3 custom-text">
+                        <label class="col-form-label" for="xaa_aa_floor_construction_verd">Floor Construction 1* verdieping</label>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6">
+                        <div t-attf-class="form-group">
+                            <select name="xaa_aa_floor_construction_verd" t-attf-class="form-control">
+                                <option></option>
+                                <option value='zie tekening' t-att-selected="formulier_id.xaa_aa_floor_construction_verd == 'zie tekening'">
+                                    zie tekening
+                                </option>
+                                <option value='Beton; kanaalplaat oplegging – zijgevel' t-att-selected="formulier_id.xaa_aa_floor_construction_verd == 'Beton; kanaalplaat oplegging – zijgevel'">
+                                    Beton; kanaalplaat oplegging – zijgevel
+                                </option>
+                                <option value='Beton; kanaalplaat oplegging – achtergevel' t-att-selected="formulier_id.xaa_aa_floor_construction_verd == 'Beton; kanaalplaat oplegging – achtergevel'">
+                                    Beton; kanaalplaat oplegging – achtergevel
+                                </option>
+                                <option value='Beton; kanaalplaat oplegging - zie tekening' t-att-selected="formulier_id.xaa_aa_floor_construction_verd == 'Beton; kanaalplaat oplegging - zie tekening'">
+                                    Beton; kanaalplaat oplegging - zie tekening
+                                </option>
+                                <option value='Hout; vloerbalken oplegging – zijgevel' t-att-selected="formulier_id.xaa_aa_floor_construction_verd == 'Hout; vloerbalken oplegging – zijgevel'">
+                                    Hout; vloerbalken oplegging – zijgevel
+                                </option>
+                                <option value='Hout; vloerbalken oplegging – achtergevel' t-att-selected="formulier_id.xaa_aa_floor_construction_verd == 'Hout; vloerbalken oplegging – achtergevel'">
+                                    Hout; vloerbalken oplegging – achtergevel
+                                </option>
+                                <option value='Hout; vloerbalken oplegging – zie tekening' t-att-selected="formulier_id.xaa_aa_floor_construction_verd == 'Hout; vloerbalken oplegging – zie tekening'">
+                                    Hout; vloerbalken oplegging – zie tekening
+                                </option>
+                                <option value='Niet van toepassing' t-att-selected="formulier_id.xaa_aa_floor_construction_verd == 'Niet van toepassing'">
+                                    Niet van toepassing
+                                </option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group row form-field">
+                    <div class="col-lg-3 col-md-3 col-sm-3 custom-text">
+                        <label class="col-form-label" for="xaa_aa_floor_construction_verd_2">Floor Construction 2* verdieping</label>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6">
+                        <div t-attf-class="form-group">
+                            <select name="xaa_aa_floor_construction_verd_2" t-attf-class="form-control">
+                                <option></option>
+                                <option value='zie tekening' t-att-selected="formulier_id.xaa_aa_floor_construction_verd_2 == 'zie tekening'">
+                                    zie tekening
+                                </option>
+                                <option value='Beton; kanaalplaat oplegging – zijgevel' t-att-selected="formulier_id.xaa_aa_floor_construction_verd_2 == 'Beton; kanaalplaat oplegging – zijgevel'">
+                                    Beton; kanaalplaat oplegging – zijgevel
+                                </option>
+                                <option value='Beton; kanaalplaat oplegging – achtergevel' t-att-selected="formulier_id.xaa_aa_floor_construction_verd_2 == 'Beton; kanaalplaat oplegging – achtergevel'">
+                                    Beton; kanaalplaat oplegging – achtergevel
+                                </option>
+                                <option value='Beton; kanaalplaat oplegging - zie tekening' t-att-selected="formulier_id.xaa_aa_floor_construction_verd_2 == 'Beton; kanaalplaat oplegging - zie tekening'">
+                                    Beton; kanaalplaat oplegging - zie tekening
+                                </option>
+                                <option value='Hout; vloerbalken oplegging – zijgevel' t-att-selected="formulier_id.xaa_aa_floor_construction_verd_2 == 'Hout; vloerbalken oplegging – zijgevel'">
+                                    Hout; vloerbalken oplegging – zijgevel
+                                </option>
+                                <option value='Hout; vloerbalken oplegging – achtergevel' t-att-selected="formulier_id.xaa_aa_floor_construction_verd_2 == 'Hout; vloerbalken oplegging – achtergevel'">
+                                    Hout; vloerbalken oplegging – achtergevel
+                                </option>
+                                <option value='Hout; vloerbalken oplegging – zie tekening' t-att-selected="formulier_id.xaa_aa_floor_construction_verd_2 == 'Hout; vloerbalken oplegging – zie tekening'">
+                                    Hout; vloerbalken oplegging – zie tekening
+                                </option>
+                                <option value='Niet van toepassing' t-att-selected="formulier_id.xaa_aa_floor_construction_verd_2 == 'Niet van toepassing'">
+                                    Niet van toepassing
+                                </option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group row form-field">
+                    <div class="col-lg-3 col-md-3 col-sm-3 custom-text">
+                        <label class="col-form-label" for="xaa_aa_leads">Leads</label>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6">
+                        <div t-attf-class="form-group">
+                            <select name="xaa_aa_leads" t-attf-class="form-control">
+                                <option></option>
+                                <option value='zie tekening' t-att-selected="formulier_id.xaa_aa_leads == 'zie tekening'">
+                                    zie tekening
+                                </option>
+                                <option value='Beton; kanaalplaat oplegging – zijgevel' t-att-selected="formulier_id.xaa_aa_leads == 'Beton; kanaalplaat oplegging – zijgevel'">
+                                    Beton; kanaalplaat oplegging – zijgevel
+                                </option>
+                                <option value='Beton; kanaalplaat oplegging – achtergevel' t-att-selected="formulier_id.xaa_aa_leads == 'Beton; kanaalplaat oplegging – achtergevel'">
+                                    Beton; kanaalplaat oplegging – achtergevel
+                                </option>
+                                <option value='Beton; kanaalplaat oplegging - zie tekening' t-att-selected="formulier_id.xaa_aa_leads == 'Beton; kanaalplaat oplegging - zie tekening'">
+                                    Beton; kanaalplaat oplegging - zie tekening
+                                </option>
+                                <option value='Hout; vloerbalken oplegging – zijgevel' t-att-selected="formulier_id.xaa_aa_leads == 'Hout; vloerbalken oplegging – zijgevel'">
+                                    Hout; vloerbalken oplegging – zijgevel
+                                </option>
+                                <option value='Hout; vloerbalken oplegging – achtergevel' t-att-selected="formulier_id.xaa_aa_leads == 'Hout; vloerbalken oplegging – achtergevel'">
+                                    Hout; vloerbalken oplegging – achtergevel
+                                </option>
+                                <option value='Hout; vloerbalken oplegging – zie tekening' t-att-selected="formulier_id.xaa_aa_leads == 'Hout; vloerbalken oplegging – zie tekening'">
+                                    Hout; vloerbalken oplegging – zie tekening
+                                </option>
+                                <option value='Niet van toepassing' t-att-selected="formulier_id.xaa_aa_leads == 'Niet van toepassing'">
+                                    Niet van toepassing
+                                </option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group row form-field">
+                    <div class="col-lg-3 col-md-3 col-sm-3 custom-text">
+                        <label class="col-form-label" for="xaa_aa_dakbouw">Dakbouw</label>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6">
+                        <div t-attf-class="form-group">
+                            <select name="xaa_aa_dakbouw" t-attf-class="form-control">
+                                <option></option>
+                                <option value='Zie tekening' t-att-selected="formulier_id.xaa_aa_dakbouw == 'Zie tekening'">
+                                    Zie tekening
+                                </option>
+                                <option value='Houten kapcontructie' t-att-selected="formulier_id.xaa_aa_dakbouw == 'Houten kapcontructie'">
+                                    Houten kapcontructie
+                                </option>
+                                <option value='Platdak Hout' t-att-selected="formulier_id.xaa_aa_dakbouw == 'Platdak Hout'">
+                                    Platdak Hout
+                                </option>
+                                <option value='Platdak Beton' t-att-selected="formulier_id.xaa_aa_dakbouw == 'Platdak Beton'">
+                                    Platdak Beton
+                                </option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group row form-field">
+                    <div class="col-lg-3 col-md-3 col-sm-3 custom-text">
+                        <label class="col-form-label" for="xaa_aa_roof_covering">Roof covering</label>
+                    </div>
+                    <div class="col-lg-5 col-md-5 col-sm-5">
+                        <div t-attf-class="form-group">
+                            <select name="xaa_aa_roof_covering" t-attf-class="form-control">
+                                <option></option>
+                                <option value='dakpan' t-att-selected="formulier_id.xaa_aa_roof_covering == 'dakpan'">
+                                    dakpan
+                                </option>
+                                <option value='bitumen' t-att-selected="formulier_id.xaa_aa_roof_covering == 'bitumen'">
+                                    bitumen
+                                </option>
+                                <option value='glas' t-att-selected="formulier_id.xaa_aa_roof_covering == 'glas'">
+                                    glas
+                                </option>
+                                <option value='riet' t-att-selected="formulier_id.xaa_aa_roof_covering == 'riet'">
+                                    riet
+                                </option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group row form-field">
+                    <div class="col-lg-3 col-md-3 col-sm-3 custom-text">
+                        <label class="col-form-label" for="xaa_aa_foundation_construction_ids">Foundation Construction</label>
+                    </div>
+                    <div class="col-lg-8 col-md-8 col-sm-8">
+                        <div class="row">
+                            <t t-foreach="formulier_id.xaa_aa_foundation_construction_ids" t-as="foundation_image">
+                                <div class="col-lg-3 col-md-3  col-sm-3 mt8">
+                                    <input type="radio" name="xaa_aa_foundation_name" t-att-value="foundation_image.id" class="mr4" t-att-checked="foundation_image.xaa_aa_is_selected"><t t-esc="foundation_image.xaa_aa_name"/></input>
+                                    <img class="img img-fluid foundation_image" t-attf-src="/web/image/foundation.image.selection/{{foundation_image.id}}/xaa_aa_image"/>
+                                </div>
+                            </t>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group row form-field">
+                    <div class="col-lg-3 col-md-3 col-sm-3 custom-text">
+                        <label class="col-form-label" for="xaa_aa_inspection_foundation_depth">Inspection well Foundation depth Groundwater</label>
+                    </div>
+                    <div class="col-lg-8 col-md-8 col-sm-8">
+                        <textarea rows="3" name="xaa_aa_inspection_foundation_depth" class="form-control"><t t-esc="formulier_id.xaa_aa_inspection_foundation_depth"/></textarea>
+                    </div>
+                </div>
+                <div class="form-group row form-field">
+                    <div class="col-lg-3 col-md-3 col-sm-3 custom-text">
+                        <label class="col-form-label" for="xaa_aa_location_pipping_ground">Location of piping in the Ground (Info Residents)</label>
+                    </div>
+                    <div class="col-lg-8 col-md-8 col-sm-8">
+                        <textarea rows="3" name="xaa_aa_location_pipping_ground" class="form-control"><t t-esc="formulier_id.xaa_aa_location_pipping_ground"/></textarea>
+                    </div>
+                </div>
+                <div class="form-group row form-field">
+                    <div class="col-lg-3 col-md-3 col-sm-3 custom-text">
+                        <label class="col-form-label" for="xaa_aa_possible_settings">Possible cause of Setting</label>
+                    </div>
+                    <div class="col-lg-8 col-md-8 col-sm-8">
+                        <textarea rows="3" name="xaa_aa_possible_settings" class="form-control"><t t-esc="formulier_id.xaa_aa_possible_settings"/></textarea>
+                    </div>
+                </div>
+                <div class="form-group row form-field">
+                    <div class="col-lg-12 col-md-12 col-sm-12 text-center">
+                        <label class="col-form-label" for="xaa_aa_access">Aandacht / Knelpunten</label>
+                    </div>
+                </div>
+                <!-- 8 questions  -->
+                <div class="form-group row form-field">
+                    <div class="col-lg-3 col-md-3 col-sm-3 custom-text">
+                        <label class="col-form-label" for="xaa_aa_parkeren">Parkeren</label>
+                    </div>
+                    <div class="col-lg-8 col-md-8 col-sm-8">
+                        <textarea rows="3" name="xaa_aa_parkeren" class="form-control"><t t-esc="formulier_id.xaa_aa_parkeren"/></textarea>
+                    </div>
+                </div>
+                <div class="form-group row form-field">
+                    <div class="col-lg-3 col-md-3 col-sm-3 custom-text">
+                        <label class="col-form-label" for="xaa_aa_toegang">Toegang</label>
+                    </div>
+                    <div class="col-lg-8 col-md-8 col-sm-8">
+                        <textarea rows="3" name="xaa_aa_toegang" class="form-control"><t t-esc="formulier_id.xaa_aa_toegang"/></textarea>
+                    </div>
+                </div>
+                <div class="form-group row form-field">
+                    <div class="col-lg-3 col-md-3 col-sm-3 custom-text">
+                        <label class="col-form-label" for="xaa_aa_tuin">Tuin</label>
+                    </div>
+                    <div class="col-lg-8 col-md-8 col-sm-8">
+                        <textarea rows="3" name="xaa_aa_tuin" class="form-control"><t t-esc="formulier_id.xaa_aa_tuin"/></textarea>
+                    </div>
+                </div>
+                <div class="form-group row form-field">
+                    <div class="col-lg-3 col-md-3 col-sm-3 custom-text">
+                        <label class="col-form-label" for="xaa_aa_bomen">Bomen</label>
+                    </div>
+                    <div class="col-lg-8 col-md-8 col-sm-8">
+                        <textarea rows="3" name="xaa_aa_bomen" class="form-control"><t t-esc="formulier_id.xaa_aa_bomen"/></textarea>
+                    </div>
+                </div>
+                <div class="form-group row form-field">
+                    <div class="col-lg-3 col-md-3 col-sm-3 custom-text">
+                        <label class="col-form-label" for="xaa_aa_kraan">Kraan</label>
+                    </div>
+                    <div class="col-lg-8 col-md-8 col-sm-8">
+                        <textarea rows="3" name="xaa_aa_kraan" class="form-control"><t t-esc="formulier_id.xaa_aa_kraan"/></textarea>
+                    </div>
+                </div>
+                <div class="form-group row form-field">
+                    <div class="col-lg-3 col-md-3 col-sm-3 custom-text">
+                        <label class="col-form-label" for="xaa_aa_grondwerk">Grondwerk</label>
+                    </div>
+                    <div class="col-lg-8 col-md-8 col-sm-8">
+                        <textarea rows="3" name="xaa_aa_grondwerk" class="form-control"><t t-esc="formulier_id.xaa_aa_grondwerk"/></textarea>
+                    </div>
+                </div>
+                <div class="form-group row form-field">
+                    <div class="col-lg-3 col-md-3 col-sm-3 custom-text">
+                        <label class="col-form-label" for="xaa_aa_aanvullend">Aanvullend</label>
+                    </div>
+                    <div class="col-lg-8 col-md-8 col-sm-8">
+                        <textarea rows="3" name="xaa_aa_aanvullend" class="form-control"><t t-esc="formulier_id.xaa_aa_aanvullend"/></textarea>
+                    </div>
+                </div>
+                <div class="form-group row form-field">
+                    <div class="col-lg-3 col-md-3 col-sm-3 custom-text">
+                        <label class="col-form-label" for="xaa_aa_action_resident">Action Resident</label>
+                    </div>
+                    <div class="col-lg-8 col-md-8 col-sm-8">
+                        <textarea rows="3" name="xaa_aa_action_resident" class="form-control"><t t-esc="formulier_id.xaa_aa_action_resident"/></textarea>
+                    </div>
+                </div>
+                <div class="form-group row form-field">
+                    <div class="col-lg-3 col-md-3 col-sm-3 custom-text">
+                        <label class="col-form-label" for="xaa_aa_action_total_wall">Action Total Wall</label>
+                    </div>
+                    <div class="col-lg-8 col-md-8 col-sm-8">
+                        <textarea rows="3" name="xaa_aa_action_total_wall" class="form-control"><t t-esc="formulier_id.xaa_aa_action_total_wall"/></textarea>
+                    </div>
+                </div>
+                <div class="form-group row form-field">
+                    <div class="col-lg-3 col-md-3 col-sm-3 custom-text">
+                        <label class="col-form-label" for="xaa_aa_level_measurement_result">Level Measurement Result on Supplied Construction Plan</label>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-4">
+                        <input type="text" rows="2" name="xaa_aa_level_measurement_result" class="form-control" t-att-value="formulier_id.xaa_aa_level_measurement_result"/>
+                        <label  class="col-form-label text-muted">Note: Add Measurement in mm.</label>
+                    </div>
+                </div>
+                <div class="form-group row form-field">
+                    <div class="col-lg-3 col-md-3 col-sm-3 custom-text">
+                        <label class="col-form-label" for="xaa_aa_notes_calculation">Points for implementation</label>
+                    </div>
+                    <div class="col-lg-8 col-md-8 col-sm-8">
+                        <textarea rows="3" name="xaa_aa_notes_calculation" class="form-control"><t t-esc="formulier_id.xaa_aa_notes_calculation"/></textarea>
+                    </div>
+                </div>
+
+                <div class="form-group row form-field">
+                    <div class="col-lg-3 col-md-3 col-sm-3 custom-text">
+                        <label class="col-form-label" for="xaa_aa_aantal_schroefpalen">Aantal Schroefpalen</label>
+                    </div>
+                    <div class="col-lg-8 col-md-8 col-sm-8">
+                        <input type="number" name="xaa_aa_aantal_schroefpalen" class="form-control" t-att-value="formulier_id.xaa_aa_aantal_schroefpalen"/>
+                    </div>
+                </div>
+                 <div class="form-group row form-field">
+                    <div class="col-lg-3 col-md-3 col-sm-3 custom-text">
+                        <label class="col-form-label" for="xaa_aa_schroefpaaldiameter">schroefpaal diameter</label>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6">
+                        <div t-attf-class="form-group">
+                            <select name="xaa_aa_schroefpaaldiameter" t-attf-class="form-control">
+                                <option></option>
+                                <option value='360' t-att-selected="formulier_id.xaa_aa_schroefpaaldiameter == '360'">
+                                    360
+                                </option>
+                                <option value='260' t-att-selected="formulier_id.xaa_aa_schroefpaaldiameter == '260'">
+                                    260
+                                </option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group row form-field">
+                    <div class="col-lg-3 col-md-3 col-sm-3 custom-text">
+                        <label class="col-form-label" for="xaa_aa_sondering_diepte">Depth-bearing primer t.o. reference</label>
+                    </div>
+                    <div class="col-lg-8 col-md-8 col-sm-6">
+                        <input type="number" name="xaa_aa_sondering_diepte" class="form-control" t-att-value="formulier_id.xaa_aa_sondering_diepte"/>
+                    </div>
+                </div>
+                <div class="form-group row form-field">
+                    <div class="col-lg-3 col-md-3 col-sm-3 custom-text">
+                        <label class="col-form-label" for="xaa_aa_gkosten_funderingsherstel">Gkosten Funderingsherstel</label>
+                    </div>
+                    <div class="col-lg-8 col-md-8 col-sm-8">
+                        <input type="number" name="xaa_aa_gkosten_funderingsherstel" class="form-control" t-att-value="formulier_id.xaa_aa_gkosten_funderingsherstel"/>
+                    </div>
+                </div>
+                <div class="form-group row form-field">
+                    <div class="col-lg-3 col-md-3 col-sm-3 custom-text">
+                        <label class="col-form-label" for="xaa_aa_gkosten_scheurherstel">Gkosten Scheurherstel</label>
+                    </div>
+                    <div class="col-lg-8 col-md-8 col-sm-8">
+                        <input type="number" name="xaa_aa_gkosten_scheurherstel" class="form-control" t-att-value="formulier_id.xaa_aa_gkosten_scheurherstel"/>
+                    </div>
+                </div>
+                <t t-if="user_id.has_group('base.group_user')">
+                    <div class="form-group row form-field">
+                        <div class="col-lg-3 col-md-3 col-sm-3 custom-text">
+                            <label class="col-form-label" for="note_show">Extra information</label>
+                        </div>
+                        <div class="col-lg-1 col-md-1 col-sm-1">
+                            <input type="checkbox" class="form-control" id="note_show"/>
+                        </div>
+                    </div>
+                    <div class="form-group row form-field note_field" style="display:none;">
+                        <div class="col-lg-3 col-md-3 col-sm-3 custom-text">
+                            <label class="col-form-label" for="xaa_aa_note">Note</label>
+                        </div>
+                        <div class="col-lg-8 col-md-8 col-sm-8">
+                            <textarea rows="3" name="xaa_aa_note" class="form-control"><t t-esc="formulier_id.xaa_aa_note"/></textarea>
+                        </div>
+                    </div>
+                </t>
+            </t>
+        </xpath>
+    </template>
+</odoo>

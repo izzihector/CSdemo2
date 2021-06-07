@@ -1,0 +1,73 @@
+<odoo>
+    <data>
+        <record id="crm_lead_source_reclmeerdatum_tree" model="ir.ui.view">
+            <field name="name">crm.lead.source.tree.reclmeerdatum</field>
+            <field name="model">lead.source</field>
+            <field name="inherit_id" ref="lead_source.lead_source_tree"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='xaa_aa_name']" position="after">
+                    <field name="xaa_aa_days"/>
+                </xpath>
+            </field>
+        </record>
+
+        <record id="crm_lead_source_reclmeerdatum_form" model="ir.ui.view">
+            <field name="name">crm.lead.source.form.reclmeerdatum</field>
+            <field name="model">lead.source</field>
+            <field name="inherit_id" ref="lead_source.lead_source_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='xaa_aa_name']" position="after">
+                    <field name="xaa_aa_days"/>
+                </xpath>
+            </field>
+        </record>
+
+        <record id="crm_lead_crm_stage_form" model="ir.ui.view">
+            <field name="name">crm.lead.crm.stage.reclmeerdatum</field>
+            <field name="model">crm.stage</field>
+            <field name="inherit_id" ref="crm.crm_stage_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='fold']" position="after">
+                    <field name="xaa_aa_log_reclameer"/>
+                </xpath>
+            </field>
+        </record>
+
+        <record id="crm_reclameerdatum_from_custom" model="ir.ui.view">
+            <field name="name">crm.lead.reclameerdatum.form.lead</field>
+            <field name="model">crm.lead</field>
+            <field name="inherit_id" ref="lead_source.crm_lead_view_form_inherit"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='xaa_aa_lead_lead_source']" position="after">
+                    <field name="xaa_aa_reclameer_date"/>
+                    <field name="xaa_aa_log_attr" invisible="1"/>
+                    <field name="xaa_aa_log_reclameer" attrs="{'readonly': [('xaa_aa_log_attr','=',True)]}"/>
+                </xpath>
+            </field>
+        </record>
+
+        <record id="crm_reclameerdatum_opportunity_search" model="ir.ui.view">
+            <field name="name">crm.lead.search</field>
+            <field name="model">crm.lead</field>
+            <field name="inherit_id" ref="crm.view_crm_case_opportunities_filter"/>
+            <field name="arch" type="xml">
+                <xpath expr="//filter[@name='activities_today']" position="after">
+                    <field name="xaa_aa_meeting_date"/>
+                    <filter string="Reclameren vandaag" name="complain_today"
+                        domain="[('xaa_aa_reclameer_date', '=', context_today().strftime('%Y-%m-%d'))]"/>
+                    <filter string="ontmoeting in het verleden" name="meeting_past" domain="['&amp;',('stage_id.name','=','afspraak gepland'),('xaa_aa_meeting_date', '&gt;=', context_today().strftime('%Y-%m-%d')),('xaa_aa_meeting_date', '&lt;=', (context_today()+datetime.timedelta(days=-20)).strftime('%Y-%m-%d'))]" context="{'group_by':'user_id'}"/>
+                    <filter string="Reclameren morgen" name="complain_tomorrow"
+                        domain="['&amp;', ('xaa_aa_reclameer_date', '&gt;=', context_today().strftime('%Y-%m-%d')),('xaa_aa_reclameer_date', '&lt;=', (context_today()+datetime.timedelta(days=2)).strftime('%Y-%m-%d'))]"/>
+                    <filter string="Reclameren 3 dagen" name="complain_3_days"
+                        domain="['&amp;', ('xaa_aa_reclameer_date', '&gt;=', context_today().strftime('%Y-%m-%d')),('xaa_aa_reclameer_date', '&lt;=', (context_today()+datetime.timedelta(days=3)).strftime('%Y-%m-%d'))]"/>
+                    <filter string="Reclameren gisteren" name="complain_yesterday"
+                        domain="['&amp;', ('xaa_aa_reclameer_date', '&gt;=', context_today().strftime('%Y-%m-%d')),('xaa_aa_reclameer_date', '&lt;=', (context_today()+datetime.timedelta(days=-1)).strftime('%Y-%m-%d'))]"/>
+                    <filter string="Reclameren over 1 dag" name="complain_past_2_day"
+                        domain="['&amp;', ('xaa_aa_reclameer_date', '&gt;=', context_today().strftime('%Y-%m-%d')),('xaa_aa_reclameer_date', '&lt;=', (context_today()+datetime.timedelta(days=-2)).strftime('%Y-%m-%d'))]"/>
+                    <filter string="Reclameren 2 gisteren" name="complain_past_3_day"
+                        domain="['&amp;', ('xaa_aa_reclameer_date', '&gt;=', context_today().strftime('%Y-%m-%d')),('xaa_aa_reclameer_date', '&lt;=', (context_today()+datetime.timedelta(days=-3)).strftime('%Y-%m-%d'))]"/>
+                </xpath>
+            </field>
+        </record>
+    </data>
+</odoo>

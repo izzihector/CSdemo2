@@ -1,0 +1,39 @@
+.custom-image-size{
+    width: 40% !important;
+}
+.custom-image-size img{
+    max-height:150px;
+}
+.img-border-style{
+    border-style: groove;
+    height: 80%;
+}
+.backend_image_zoom img:hover{
+    transform: scale(5.9);
+    position: absolute;
+    z-index: 1;
+}
+.custom-border > input, .custom-border > select, .custom-border > textarea{
+    border: 1px solid #1A8786 !important;
+}
+.o_form_readonly .custom-border {
+    border: 1px solid #1A8786 !important;
+    min-height: 22px;
+}
+@media (min-width: 768px){
+    .custom-text{
+        text-align: right;
+    }
+}
+@media (max-width: 376px) {
+    .custom-text{
+        text-align: left;
+        margin-left: 6px;
+    }
+}
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px){
+    .custom-text{
+        margin-left: 6px;
+    }
+}
+

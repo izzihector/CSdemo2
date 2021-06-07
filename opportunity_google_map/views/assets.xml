@@ -1,0 +1,15 @@
+<odoo>
+
+    <template id="assets_backend" name="map assets" inherit_id="web_map.assets_backend">
+        <xpath expr="//script[@src='/web_map/static/src/js/map_renderer.js']" position="replace">
+            <script type="text/javascript" src="/opportunity_google_map/static/src/js/custom_map_renderer.js"/>
+        </xpath>
+    </template>
+
+    <template id="map_assets_backend" name="maps assets backend" inherit_id="web.assets_backend">
+        <xpath expr="." position="inside">
+            <script type="text/javascript" src="/opportunity_google_map/static/src/js/opportunity_map_view.js"/>
+        </xpath>
+    </template>
+
+</odoo>

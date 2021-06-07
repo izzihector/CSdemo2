@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="iso_quote_tab" inherit_id="project_formulier.opportunity_tab_template" name="Project Formulier iso">
+        <xpath expr="//ul/li[2]" position="after">
+            <li t-if="formulier_id.xaa_aa_formulier_type == 'formulier_two'" class="nav-item">
+                <a class="nav-link" 
+                    id="nav_tabs_iso" 
+                    data-toggle="tab"
+                    href="#nav_tabs_iso_form" 
+                    role="tab" aria-controls="nav_tabs_iso_form"
+                    aria-selected="false">PF Quote</a>
+            </li>
+        </xpath>
+        <xpath expr="//div[hasclass('card-body')]" position="inside">
+            <div t-if="formulier_id.xaa_aa_formulier_type == 'formulier_two'" class="tab-pane fade"
+                id="nav_tabs_iso_form"
+                role="tabpanel"
+                aria-labelledby="nav_tabs_iso">
+                <t t-call="formulier_type_2.online_formulier_iso_quote"/>
+            </div>
+        </xpath>
+    </template>
+</odoo>

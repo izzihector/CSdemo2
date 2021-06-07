@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="customer_quote_formulier_energy" name="Quote Formulier Energy consumption">
+        <div id="energy_first_section">
+            <div class="div_padding_left" >
+                <div class="form_lable mt16">
+                    <label class="montserrat-extrabold_24">
+                        What is your energy consumption?
+                    </label>
+                </div>
+                <div class="form-group row mt16">
+                    <div class="col-lg-2 col-md-4 col-sm-4 col-6">
+                        <input type="number" name="xaa_aa_energy_consumption"
+                            class="form-control"
+                            t-att-value="'%.0f'%(formulier_id.xaa_aa_energy_consumption)"/>
+                    </div>
+                    <div class="mt8">
+                        <span class="montserrat_regular">kWh</span>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group row mt64" id="next_privious">
+                <div class="col-md-4 col-lg-4 col-sm-4 col-6">
+                    <a class="btn-privoius mt16" type="Button"
+                        data-id="data_id" t-att-value="formulier_id.id">
+                        <i class="fa fa-chevron-left" aria-hidden="false"/>Previous step
+                    </a>
+                </div>
+                <div class="col-md-6 col-lg-6 col-sm-4 col-6">
+                    <button class="btn btn_dont_know mt16 mr16"
+                        type="Button" t-att-value="formulier_id.id">
+                        I do not know
+                    </button>
+                    <button class="btn btn-next mt16 mr16"
+                        data-id="quoteation_tab" type="Button"
+                        t-att-value="formulier_id.id">Next step
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div id="energy_second_section" style="display:none;">
+            <div class="tab inner_tabs div_padding_left" role="tabpanel">
+                <!-- Nav tabs -->
+                <ul class="nav nav-tabs tab_house_info" role="tablist">
+                    <li role="presentation" class="active inner_li"
+                        id="energy_consumption_inner_tab_1" style="margin-left:12%;">
+                        <a href="#energy_section_first" aria-controls="home"
+                            role="tab" data-toggle="tab">Aantal bewoners
+                        </a>
+                    </li>
+                    <li role="presentation" class="inner_li"
+                        id="energy_consumption_inner_tab" style="margin-left:10%;">
+                        <a href="#energy_section_two" aria-controls="profile"
+                            role="tab" data-toggle="tab">Soort huis
+                        </a>
+                    </li>
+                </ul>
+                <div class="tab-content tabs">
+                    <div role="tabpanel" class="tab-pane fade in active show" id="energy_section_first">
+                        <div class="div_padding_left">
+                            <div class="form_lable mt16">
+                                <label class="montserrat-extrabold_24">
+                                    How many people live in your house?
+                                </label>
+                            </div>
+                            <div class="form-group row mt24">
+                                <div class="col-lg-3 col-md-5 col-sm-6 col-9 tab_Data_form_col_lg3">
+                                    <div class="men_icon_border">
+                                        <a class="men_icon_class" value="1" data="1925"> <i class="fa fa-male" aria-hidden="false"></i></a>
+                                        <a class="men_icon_class" value="2" data="3005"> <i class="fa fa-male" aria-hidden="false"></i></a>
+                                        <a class="men_icon_class" value="3" data="3605"> <i class="fa fa-male" aria-hidden="false"></i></a>
+                                        <a class="men_icon_class" value="4" data="4155"> <i class="fa fa-male" aria-hidden="false"></i></a>
+                                        <a class="men_icon_class" value="5" data="4375"> <i class="fa fa-male" aria-hidden="false"></i></a>
+                                        <a class="men_icon_class" value="6" data="4385"> <i class="fa fa-male" aria-hidden="false"></i></a>
+                                    </div>
+                                    <input type="number" name="xaa_aa_count_people_in_house"
+                                    class="form-control" style="display:none;"/>
+                                </div>
+                                <div class="col-lg-4 col-md-4 col-sm-4 col-3">
+                                    <span class="montserrat_regular" for="xaa_aa_count_people_in_house">people</span>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <div class="col-lg-12 col-md-12 col-sm-12">
+                                    <div class="span_amount"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group row mt64" id="next_privious">
+                            <div class="col-md-5 col-lg-4 col-sm-5 col-6">
+                                <a class="btn-privoius mt16" data-id="data_id"
+                                    type="Button" t-att-value="formulier_id.id">
+                                    <i class="fa fa-chevron-left" aria-hidden="false"/>Previous step
+                                </a>
+                            </div>
+                            <div class="col-md-offset-1 col-md-4 col-lg-4 col-sm-5 col-5">
+                                <button class="btn btn-next mt16 mr8"
+                                    data-id="energy_consumption_inner_tab"
+                                    type="Button" t-att-value="formulier_id.id">
+                                    Next step
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div role="tabpanel" class="tab-pane fade" id="energy_section_two">
+                        <div class="div_padding_left" >
+                            <div class="form_lable mt16">
+                                <label class="montserrat-extrabold_24">
+                                    What type of house do you live in?
+                                </label>
+                            </div>
+                            <div class="form-group row mt24">
+                                <div class="col-lg-12 col-md-12"
+                                    style="display:block; list-style-type:none;">
+                                    <t t-foreach="formulier_id.env['house.info'].search([('xaa_aa_is_pv','=',True)])" t-as="house_info">
+                                        <div t-att-class="'col-lg-3 col-md-3 col-sm-4 col-5 padding_14_10 house_info_li selected text-center mt8' if formulier_id.xaa_aa_type_of_house_id and formulier_id.xaa_aa_type_of_house_id.id == house_info.id else 'col-lg-3 col-md-3 col-sm-4 col-5 padding_14_10 house_info_li text-center mt8'" 
+                                            t-att-data-id="house_info.id" t-att-data-name="house_info.xaa_aa_house_type">
+                                            <div class="img_house_info">
+                                                <img class="img img-fluid" 
+                                                    t-attf-src="/web/image/house.info/{{house_info.id}}/xaa_aa_house_image"/>
+                                            </div>
+                                            <div class="text-center name mt4">
+                                                <t t-esc="house_info.xaa_aa_house_type"/>
+                                            </div>
+                                        </div>
+                                    </t>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group row mt64" id="next_privious">
+                            <div class="col-md-5 col-lg-4 col-sm-5 col-6">
+                                <a class="btn-privoius mt16"
+                                    data-id="energy_consumption_inner_tab_1"
+                                    type="Button" t-att-value="formulier_id.id">
+                                    <i class="fa fa-chevron-left" aria-hidden="false"/>Previous step
+                                </a>
+                            </div>
+                            <div class="col-md-4 col-lg-4 col-sm-5 col-6 quotation_tab_next" t-att-style="'display:block;'if formulier_id.xaa_aa_type_of_house_id else 'display:none;'">
+                                <button class="btn btn-next mt16 mr16"
+                                    data-id="quoteation_tab" type="Button"
+                                    t-att-value="formulier_id.id" style="left:-10px;">
+                                    Next step
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </template>
+</odoo>

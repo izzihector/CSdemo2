@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="customer_quotation_question_template" name="Customer quotation question template">
+    </template>
+</odoo>

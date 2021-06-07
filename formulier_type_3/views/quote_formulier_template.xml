@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="quote_formulier_template" inherit_id="project_formulier.quote_formulier_template">
+        <xpath expr="." position="inside">
+            <t t-if="formulier_id.xaa_aa_formulier_type == 'formulier_three'">
+            </t>
+        </xpath>
+    </template>
+</odoo>

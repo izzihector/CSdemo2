@@ -1,0 +1,187 @@
+@media (max-width: 374px) {
+    .padding_14_10{
+        width: 140px !important;
+        margin-right: 5px !important;
+        padding: 0px 5px !important;
+        font-size: 13px !important;
+    }
+    .men_icon_border > a{
+        font-size: 25px;
+    }
+    #energy_consumption_inner_tab_1{
+        margin-left: 6% !important;
+    }
+}
+@media (max-width: 767px) {
+    .custom_banner{
+        background-size: contain;
+    }
+    .form_style{
+        padding-top: 0px;
+    }
+    .shadow_box_16{
+        font-size: 16px;
+    }
+    .montserrat-extrabold_32{
+        font-size:28px;
+        position: absolute;
+        top:8%;
+        color: #fff;
+        text-shadow: 2.5px 0.5px 0.5px grey;
+    }
+    .div_padding_left > div > div > input{
+        font-size: 16px;
+    }
+    .form_style label{
+        font-size: 16px;
+    }
+    .checkbox label{
+        font-size: 16px;
+    }
+    .custom-select{
+        width: 255px;
+        font-size: 16px;
+    }
+    .warning-image-display-flex span{
+        font-size: 13px;
+    }
+    .montserrat-extrabold_24{
+        font-size: 18px !important;
+    }
+    .montserrat_regular {
+        font-size: 16px;
+    }
+
+    /* menu tabs */
+    #exTab1 > .nav{
+        padding-left: 15%;
+    }
+    #exTab1.quote_tabs ul li.quote_tabs_li{
+        border: 0;
+        min-width: 55px;
+        width:55px;
+    }
+    #exTab1 > ul > .quote_tabs_li:nth-child(1) > a,
+    #exTab1 > ul > .quote_tabs_li:nth-child(3) > a{
+        padding-right: 0px;
+    }
+    #exTab1 > ul > .quote_tabs_li:nth-child(4) > a{
+        padding-right: 32px;
+    }
+    #exTab1 > ul > .quote_tabs_li:nth-child(4) > a.a_after{
+        border-top-right-radius: 25px;
+        border-bottom-right-radius: 25px;
+    }
+    #exTab1.quote_tabs ul li a{
+        padding-left: 30px;
+        height: 33px;
+    }
+    #exTab1 ul li a.a_after:before{
+        border-bottom: 18px solid rgba(0, 0, 0, 0);
+        border-left: 14px solid #1A8786;
+        border-top: 16px solid rgba(0, 0, 0, 0);
+        right: -13px;
+        top: 0px;
+        z-index: 2;
+    }
+    #exTab1 ul li a.a_after:after{
+        top: -4px;
+        right: -18px;
+    }
+    #exTab1 .nav-pills > li.active > a.a_after > .menu_span{
+        z-index: 5;
+        margin-left: -33px;
+        margin-top: 68%;
+        position: absolute;
+        color: #1A8786;
+    }
+    #exTab1 > ul > li.active:nth-child(2) > a.a_after > .menu_span{
+        margin-left: -85px;
+    }
+    #exTab1 > ul > li.active:nth-child(3) > a.a_after > .menu_span{
+        margin-left: -150px;
+    }
+    #exTab1 > ul > li.active:nth-child(4) > a.a_after > .menu_span{
+        margin-left: -200px;
+    }
+    /* form buttons */
+    .btn-next, .btn_dont_know, .btn-make-quote, .btn_iso_quote, .btn_formulier_submit{
+        font-size: 16px;
+        width: 150px;
+        height: 48px;
+    }
+    button[data-id="quoteation_tab"]{
+        left: 50%;
+        position: relative;
+    }
+    .inner_tabs .nav-tabs li a{
+        padding: 10px 5px;
+        font-size: 14px !important;
+    }
+    .inner_tabs .nav-tabs{
+        width: 99%;
+        margin-top: 35px;
+    }
+    .inner_tabs ul li.inner_li{
+        padding-right: 0px;
+        min-width: 30%;
+    }
+    .div_padding_left{
+        padding: 0px 0px 0px 2%;
+    }
+    .inner_tabs .tab-content{
+        padding: 0px 6px;
+    }
+    .padding_14_10 > .img_house_info{
+        height: 75px;
+    }
+    .padding_14_10{
+        width: 155px;
+        margin-right: 6px;
+        height: 140px;
+        padding: 0px 12px;
+        font-size: 14px;
+        line-height: normal;
+        padding-top: 4px;
+    }
+    .house_solar_panal_li >.text-center{
+        min-height: 35px;
+    }
+    .summary_head_desc{
+        font-size: 14px;
+    }
+    .solar-panel-desc{
+        font-size: 15px;
+        line-height:20px;
+    }
+    .solar_pannel_qty{
+        padding: 3px 5px 1px 12px;
+    }
+    #sub{
+        border: 2px solid #1A8786;
+        height: 36px;
+        font-size: 32px;
+    }
+    #add{
+        border: 2px solid #1A8786;
+        height: 36px;
+        font-size: 32px;
+    }
+}
+
+@media (min-width:768px) and (max-width:1024px) {
+    .custom_banner{
+        background-size: contain;
+    }
+    #exTab1 > ul > .quote_tabs_li:nth-child(1) > a,
+    #exTab1 > ul > .quote_tabs_li:nth-child(3) > a,
+    #exTab1 > ul > .quote_tabs_li:nth-child(4) > a{
+        padding-right:20px;
+    }
+    #exTab1.quote_tabs ul li.quote_tabs_li{
+        min-width: 15%;
+    }
+    #exTab1.quote_tabs ul li a{
+        padding-left: 25px;
+    }
+}

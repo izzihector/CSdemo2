@@ -1,0 +1,46 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#   * sale_global_discounts
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 14.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-10-29 06:21+0000\n"
+"PO-Revision-Date: 2020-10-29 06:21+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: sale_global_discounts
+#: model:ir.model.fields,field_description:sale_global_discounts.field_sale_order__global_discount
+msgid "Add Global Discount"
+msgstr "Toevoegen aanpassing"
+
+#. module: sale_global_discounts
+#: model:ir.model.fields.selection,name:sale_global_discounts.selection__sale_order__discount_type__fixed
+msgid "Fixed"
+msgstr "Vast"
+
+#. module: sale_global_discounts
+#: model:ir.model.fields,field_description:sale_global_discounts.field_sale_order__discount_type
+msgid "Discount Type"
+msgstr "Type korting"
+
+#. module: sale_global_discounts
+#: model:ir.model.fields,field_description:sale_global_discounts.field_sale_order__acs_discount_amount
+msgid "Discount Amount"
+msgstr "Korting hoeveelheid"
+
+#. module: sale_global_discounts
+#: model:ir.model.fields,field_description:sale_global_discounts.field_sale_order__discount_percentage
+msgid "Discount Percentage"
+msgstr "Kortingspercentage"
+
+#. module: sale_global_discounts
+#: model_terms:ir.ui.view,arch_db:sale_global_discounts.view_order_form
+msgid "Add Line"
+msgstr "toevoegen"

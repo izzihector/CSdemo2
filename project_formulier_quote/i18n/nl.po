@@ -1,0 +1,330 @@
+# Translation of Odoo Server.   
+# This file contains the translation of the following modules:
+#   * project_formulier_quote
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 14.1alpha1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-09-23 07:46+0000\n"
+"PO-Revision-Date: 2020-09-23 07:46+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: project_formulier_quote
+#: model:ir.model.fields,field_description:project_formulier_quote.field_product_template__xaa_aa_priority
+msgid "Priority"
+msgstr "Prioriteit"
+
+#. module: project_formulier_quote
+#: model:ir.model.fields,field_description:project_formulier_quote.field_product_template__xaa_aa_wq_header_1
+msgid "Header one"
+msgstr "Header een"
+
+#. module: project_formulier_quote
+#: model:ir.model.fields,field_description:project_formulier_quote.field_product_template__xaa_aa_wq_header_2
+msgid "Header two"
+msgstr "Kop twee"
+
+#. module: project_formulier_quote
+#: model:ir.model.fields,field_description:project_formulier_quote.field_product_template__xaa_aa_wq_image
+msgid "Image"
+msgstr "Beeld"
+
+#. module: project_formulier_quote
+#: model:ir.model.fields,field_description:project_formulier_quote.field_product_template__xaa_aa_is_solar_panel_product
+msgid "Solar Pannel Product?"
+msgstr "Zonnepaneelproduct?"
+
+#. module: project_formulier_quote
+#: model_terms:ir.ui.view,arch_db:project_formulier_quote.product_template_only_form_view_inh
+msgid "PF Quote"
+msgstr "PF offerte"
+
+#. module: project_formulier_quote
+#: model:ir.model.fields,field_description:project_formulier_quote.field_product_template__xaa_aa_product_type
+msgid "PF quote type"
+msgstr "PF offerte type"
+
+#. module: project_formulier_quote
+#: model:ir.model.fields,field_description:project_formulier_quote.field_sale_order_template__xaa_aa_task_product_id
+msgid "Task product"
+msgstr "Taak product"
+
+#. module: project_formulier_quote
+#: model:ir.model.fields,field_description:project_formulier_quote.field_question_formulier__xaa_aa_quote_template_id
+msgid "Choose your quote template"
+msgstr "Kies uw offertesjabloon"
+
+#. module: project_formulier_quote
+#: model:ir.model.fields,field_description:project_formulier_quote.field_house_info__create_date
+#: model:ir.model.fields,field_description:project_formulier_quote.field_roof_info__create_date
+#: model:ir.model.fields,field_description:project_formulier_quote.field_sale_order_line_temp__create_date
+msgid "Created on"
+msgstr "Aangemaakt op"
+
+#. module: project_formulier_quote
+#: model_terms:ir.ui.view,arch_db:project_formulier_quote.view_project_formulier_form_inh
+msgid "Formulier Quote"
+msgstr "Formulier Offerte"
+
+#. module: project_formulier_quote
+#: model:ir.model,name:project_formulier_quote.model_house_info
+msgid "Information about House"
+msgstr "Informatie over House"
+
+#. module: project_formulier_quote
+#: model:ir.model,name:project_formulier_quote.model_roof_info
+msgid "Information about Roof Of House"
+msgstr "Informatie over Roof Of House"
+
+#. module: project_formulier_quote
+#: model:ir.model.fields,field_description:project_formulier_quote.field_res_config_settings__xaa_aa_cost_4_hours
+msgid "4 Hours Cost Price"
+msgstr "4 Uren kostprijs"
+
+#. module: project_formulier_quote
+#: model:ir.model.fields,field_description:project_formulier_quote.field_res_config_settings__xaa_aa_cost_8_hours
+msgid "8 Hours Cost Price"
+msgstr "8 Uren kostprijs"
+
+#. module: project_formulier_quote
+#: model:ir.model.fields,field_description:project_formulier_quote.field_res_config_settings__xaa_aa_cost_12_hours
+msgid "12 Hours Cost Price"
+msgstr "12 Uren kostprijs"
+
+#. module: project_formulier_quote
+#: model:ir.model.fields,field_description:project_formulier_quote.field_res_config_settings__xaa_aa_cost_16_hours
+msgid "16 Hours Cost Price"
+msgstr "16 Uren kostprijs"
+
+#. module: project_formulier_quote
+#: model:ir.model.fields,field_description:project_formulier_quote.field_res_config_settings__xaa_aa_cost_24_hours
+msgid "24 Hours Cost Price"
+msgstr "24 Uren kostprijs"
+
+#. module: project_formulier_quote
+#: model:ir.model.fields,field_description:project_formulier_quote.field_res_config_settings__xaa_aa_cost_30_hours
+msgid "30 Hours Cost Price"
+msgstr "30 Uren kostprijs"
+
+#. module: project_formulier_quote
+#: model:ir.model.fields,field_description:project_formulier_quote.field_res_config_settings__xaa_aa_cost_32_hours
+msgid "32 Hours Cost Price"
+msgstr "32 Uren kostprijs"
+
+#. module: project_formulier_quote
+#: model:ir.model.fields,field_description:project_formulier_quote.field_res_config_settings__xaa_aa_cost_36_hours
+msgid "36 Hours Cost Price"
+msgstr "36 Uren kostprijs"
+
+#. module: project_formulier_quote
+#: model:ir.model.fields,field_description:project_formulier_quote.field_res_config_settings__xaa_aa_cost_40_hours
+msgid "40 Hours Cost Price"
+msgstr "40 Uren kostprijs"
+
+#. module: project_formulier_quote
+#: model:ir.model.fields,field_description:project_formulier_quote.field_res_config_settings__xaa_aa_sale_4_hours
+msgid "4 Hours Sales Price"
+msgstr "4 Uren verkoopprijs"
+
+#. module: project_formulier_quote
+#: model:ir.model.fields,field_description:project_formulier_quote.field_res_config_settings__xaa_aa_sale_8_hours
+msgid "8 Hours Sales Price"
+msgstr "8 Uren verkoopprijs"
+
+#. module: project_formulier_quote
+#: model:ir.model.fields,field_description:project_formulier_quote.field_res_config_settings__xaa_aa_sale_12_hours
+msgid "12 Hours Sales Price"
+msgstr "12 Uren verkoopprijs"
+
+#. module: project_formulier_quote
+#: model:ir.model.fields,field_description:project_formulier_quote.field_res_config_settings__xaa_aa_sale_16_hours
+msgid "16 Hours Sales Price"
+msgstr "16 Uren verkoopprijs"
+
+#. module: project_formulier_quote
+#: model:ir.model.fields,field_description:project_formulier_quote.field_res_config_settings__xaa_aa_sale_24_hours
+msgid "24 Hours Sales Price"
+msgstr "24 Uren verkoopprijs"
+
+#. module: project_formulier_quote
+#: model:ir.model.fields,field_description:project_formulier_quote.field_res_config_settings__xaa_aa_sale_30_hours
+msgid "30 Hours Sales Price"
+msgstr "30 Uren verkoopprijs"
+
+#. module: project_formulier_quote
+#: model:ir.model.fields,field_description:project_formulier_quote.field_res_config_settings__xaa_aa_sale_32_hours
+msgid "32 Hours Sales Price"
+msgstr "32 Uren verkoopprijs"
+
+#. module: project_formulier_quote
+#: model:ir.model.fields,field_description:project_formulier_quote.field_res_config_settings__xaa_aa_sale_36_hours
+msgid "36 Hours Sales Price"
+msgstr "36 Uren verkoopprijs"
+
+#. module: project_formulier_quote
+#: model:ir.model.fields,field_description:project_formulier_quote.field_res_config_settings__xaa_aa_sale_40_hours
+msgid "40 Hours Sales Price"
+msgstr "40 Uren verkoopprijs"
+
+#. module: project_formulier_quote
+#: model:ir.model.fields,field_description:project_formulier_quote.field_res_config_settings__xaa_aa_high_range
+msgid "High"
+msgstr "Hoog"
+
+#. module: project_formulier_quote
+#: model:ir.model.fields,field_description:project_formulier_quote.field_res_config_settings__xaa_aa_middle_range
+msgid "Middle"
+msgstr "Middel"
+
+#. module: project_formulier_quote
+#: model:ir.model.fields,field_description:project_formulier_quote.field_res_config_settings__xaa_aa_basic_range
+msgid "Basic"
+msgstr "Basis"
+
+#. module: project_formulier_quote
+#: model:ir.model.fields,field_description:project_formulier_quote.field_res_config_settings__xaa_aa_low_range
+msgid "Low"
+msgstr "Laag"
+
+#. module: project_formulier_quote
+#: model_terms:ir.ui.view,arch_db:project_formulier_quote.res_config_settings_view_form
+msgid "Installation Charges"
+msgstr "Installatiekosten"
+
+#. module: project_formulier_quote
+#: model_terms:ir.ui.view,arch_db:project_formulier_quote.action_product_brand
+msgid "Product Brands"
+msgstr "Productmerken"
+
+#. module: project_formulier_quote
+#: model:ir.ui.menu,name:project_formulier_quote.menu_formulier_configure_settings
+msgid "Configuration"
+msgstr "Configuratie"
+
+#. module: project_formulier_quote
+#: model:ir.ui.menu,name:project_formulier_quote.menu_formulier_settings
+msgid "Settings"
+msgstr "Instellingen"
+
+#. module: project_formulier_quote
+#: model:ir.ui.menu,name:project_formulier_quote.menu_product_brand
+msgid "Brand"
+msgstr "Merk"
+
+#. module: project_formulier_quote
+#: model:ir.model.fields,field_description:project_formulier_quote.field_product_template__xaa_aa_product_brand
+#: model:ir.model.fields,field_description:project_formulier_quote.field_product_brand__xaa_aa_name
+msgid "Brand"
+msgstr "Merk"
+
+#. module: project_formulier_quote
+#: model:ir.ui.menu,name:project_formulier_quote.menu_pf_product
+msgid "Products"
+msgstr "Producten"
+
+#. module: project_formulier_quote
+#: model:ir.model.fields.selection,name:project_formulier_quote.selection__product_template__xaa_aa_product_type__solar_panel
+msgid "Solar Panel"
+msgstr "Zonnepaneel"
+
+#. module: project_formulier_quote
+#: model:ir.model.fields.selection,name:project_formulier_quote.selection__product_template__xaa_aa_product_type__converter
+msgid "Converter"
+msgstr "omvormer"
+
+#. module: project_formulier_quote
+#: model:ir.model.fields.selection,name:project_formulier_quote.selection__product_template__xaa_aa_product_type__discount
+msgid "Discount"
+msgstr "Korting"
+
+#. module: project_formulier_quote
+#: model:ir.model.fields.selection,name:project_formulier_quote.selection__product_template__xaa_aa_product_type__flat_roof
+msgid "Flat Roof"
+msgstr "Plat dak"
+
+#. module: project_formulier_quote
+#: model:ir.model.fields.selection,name:project_formulier_quote.selection__product_template__xaa_aa_product_type__slanted_roof
+msgid "Slanted Roof"
+msgstr "Schuin dak"
+
+#. module: project_formulier_quote
+#: model:ir.model.fields.selection,name:project_formulier_quote.selection__product_template__xaa_aa_product_type__mix_roof
+msgid "Mix Roof"
+msgstr "Meerdere daken"
+
+#. module: project_formulier_quote
+#: model:ir.model.fields,field_description:project_formulier_quote.field_product_template__xaa_aa_min_product_range
+msgid "Minimum Range"
+msgstr "Minimum bereik"
+
+#. module: project_formulier_quote
+#: model:ir.model.fields,field_description:project_formulier_quote.field_product_template__xaa_aa_max_product_range
+msgid "Maximum Range"
+msgstr "Maximum bereik"
+
+#. module: project_formulier_quote
+#: model:ir.model.fields,field_description:project_formulier_quote.field_product_template__xaa_aa_wq_min_range
+msgid "WQ Minimum Range"
+msgstr "WQ Minimum bereik"
+
+#. module: project_formulier_quote
+#: model:ir.model.fields,field_description:project_formulier_quote.field_product_template__xaa_aa_wq_max_range
+msgid "WQ Maximum Range"
+msgstr "WQ Maximum bereik"
+
+#. module: project_formulier_quote
+#: model:ir.model.fields,field_description:project_formulier_quote.field_product_template__xaa_aa_show_product_user
+msgid "Show to all users"
+msgstr "Toon aan alle gebruikers"
+
+#. module: project_formulier_quote
+#: model:ir.model.fields,field_description:project_formulier_quote.field_product_template__xaa_aa_product_portal_user
+msgid "Show only to specific user"
+msgstr "Alleen weergeven aan een specifieke gebruiker"
+
+#. module: project_formulier_quote
+#: model:ir.model.fields,field_description:project_formulier_quote.field_product_template__xaa_aa_min_product_range
+msgid "Minimum Range"
+msgstr "Minimum bereik"
+
+#. module: project_formulier_quote
+#: model:ir.model.fields,field_description:project_formulier_quote.field_product_template__xaa_aa_solar_type
+#: model:ir.model.fields,field_description:project_formulier_quote.field_solar_type__xaa_aa_name
+msgid "Solar type"
+msgstr "zonnepaneel type"
+
+#. module: project_formulier_quote
+#: model:crm.stage,name:project_formulier_quote.stage_website_quote_sent
+msgid "Website quote sent"
+msgstr "Website offerte verstuurd"
+
+#. module: project_formulier_quote
+#: model:crm.stage,name:project_formulier_quote.stage_website_quote_questions
+msgid "Website quote questionnaire done"
+msgstr "Website vragen gereed"
+
+#. module: project_formulier_quote
+#: model_terms:ir.ui.view,arch_db:project_formulier_quote.portal_my_quotations
+msgid "Customer"
+msgstr "Klant"
+
+#. module: project_formulier_quote
+#: model_terms:ir.ui.view,arch_db:project_formulier_quote.portal_my_quotations
+msgid "Commission"
+msgstr "Commissie"
+
+#. module: project_formulier_quote
+#: model:ir.model.fields,field_description:project_formulier_quote.field_sale_order__xaa_aa_cost_price_total
+msgid "Total cost price"
+msgstr "Totale kostprijs"
+
+#. module: project_formulier_quote
+#: model:ir.model.fields,field_description:project_formulier_quote.field_sale_order__xaa_aa_commission
+msgid "Total commission"
+msgstr "Totale commissie"

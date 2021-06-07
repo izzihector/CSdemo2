@@ -16,15 +16,15 @@
                     <label class="col-form-label" for="total_yield_chosen_panels">Total yield for the chosen panels:</label>
                 </div>
                 <div class="col-lg-3 col-md-3 col-sm-3">
-                    <input type="text" name="total_yield_chosen_panels" class="form-control" t-att-value="formulier_id.total_yield_chosen_panels"/>
+                    <input type="text" name="total_yield_chosen_panels" class="form-control" t-att-value="formulier_id.total_yield_chosen_panels" readonly="1"/>
                 </div>
                 <span>KWh  = </span>
                 <div class="col-lg-3 col-md-3 col-sm-3">
                     <input type="text" name="annual_consumption_percentage" class="form-control" 
-                    t-att-value="formulier_id.annual_consumption_percentage"/>% of your annual consumption
+                    t-att-value="formulier_id.annual_consumption_percentage" readonly="1"/>% of your annual consumption
                 </div>
             </div>
-            <div class="text-center col-lg-12 col-md-12" id="annual_consumption_warning" style="display:none;">
+            <div class="text-center col-lg-12 col-md-12 panel-warning" id="annual_consumption_warning" style="display:none;">
                 <span style="color:red;">
                     <strong>Note: Your yield is too low for your annual consumption</strong>
                 </span>
@@ -135,9 +135,22 @@
                 <t t-call="formulier_type_4.roof_detail_page_8"/>
             </div>
         </div>
+        <div class="text-center form-group" id="inverter_detail">
+            <hr/>
+            <div class="col-md-12 col-lg-12 col-sm-12 col-12">
+                <a class="btn btn-primary btn-roof-details mt16 mr8"
+                    data-id="inverter_and_other_detail">
+                    <i class="fa-arrow-alt-circle-down" aria-hidden="false"/>
+                    INVERTER &amp; OTHER
+                </a>
+            </div>
+            <div id="inverter_and_other_detail" style="display:none;">
+                <t t-call="formulier_type_4.inverter_and_other_details"/>
+            </div>
+        </div>
         <div class="form-group row mt64" id="next_privious">
             <div class="col-md-6 col-lg-6 col-sm-6 col-6">
-                <button class="btn btn-primary btn_privoius_pv_formulier mt16 mr8 fa fa-chevron-right"
+                <button class="btn btn-primary btn_privoius_pv_formulier mt16 mr8 fa fa-chevron-right prev-data"
                     data-id="pv_roof_select_tab" type="Button"
                     t-att-value="formulier_id.id">Previous step
                 </button>

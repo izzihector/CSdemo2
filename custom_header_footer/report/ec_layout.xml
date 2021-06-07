@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+     <template id="web.external_layout">
+        <!-- Multicompany -->
+        <t t-if="not o and doc">
+            <t t-set="o" t-value="doc"/>
+        </t>
+        <t t-if="o and 'company_id' in o">
+            <t t-set="company" t-value="o.company_id"></t>
+        </t>
+        <t t-if="not o or not 'company_id' in o">
+            <t t-set="company" t-value="res_company"></t>
+        </t>
+        <t t-if="company.xaa_aa_for_all_report">
+            <div class="header" style="margin-left:-15px;margin-right:-15px;">
+                <img t-if="company.xaa_aa_trademark_id[0]['xaa_aa_report_header']" t-att-src="'data:image/png;base64,%s' %to_text(company.xaa_aa_trademark_id[0]['xaa_aa_report_header'])" style="max-height:150px;width:100%;"/>
+            </div>
+            <div class="article o_report_layout_standard"  t-att-data-oe-model="o and o._name" t-att-data-oe-id="o and o.id" t-att-data-oe-lang="o and o.env.context.get('lang')">
+                <t t-call="web.address_layout"/>
+                <t t-raw="0"/>
+            </div>
+            <div class="footer" style="margin-left:-15px;margin-right:-15px;">
+                 <img t-if="company.xaa_aa_trademark_id[0]['xaa_aa_report_footer']" t-att-src="'data:image/png;base64,%s' %to_text(company.xaa_aa_trademark_id[0]['xaa_aa_report_footer'])" style="max-height: 235px;width:100%;"/>
+            </div>
+        </t>
+        <t t-if="not company.xaa_aa_for_all_report">
+            <t t-if="company.external_report_layout_id" t-call="{{company.external_report_layout_id.key}}"><t t-raw="0"/></t>
+            <t t-else="else" t-raw="0"/>
+        </t>
+    </template>
+
+    <!-- sale Layout -->
+    <template id="ec_sale_external_layout">
+        <!-- Multicompany -->
+        <t t-if="not o and doc">
+            <t t-set="o" t-value="doc"/>
+        </t>
+        <t t-if="o and 'company_id' in o">
+            <t t-set="company" t-value="o.company_id"></t>
+        </t>
+        <t t-if="not o or not 'company_id' in o">
+            <t t-set="company" t-value="res_company"></t>
+        </t>
+        <t t-call="custom_header_footer.ec_sale_external_layout_header" />
+        <div class="article o_report_layout_standard"  t-att-data-oe-model="o and o._name" t-att-data-oe-id="o and o.id" t-att-data-oe-lang="o and o.env.context.get('lang')">
+                <t t-call="web.address_layout"/>
+                <t t-raw="0"/>
+            </div>
+        <t t-call="custom_header_footer.ec_sale_external_layout_footer" />
+    </template>
+    <template id="ec_sale_external_layout_header">
+        <div class="header" style="margin-left:-15px;margin-right:-15px;">
+            <t t-if="o and o.xaa_aa_trademark_id">
+                <img t-if="o.xaa_aa_trademark_id.xaa_aa_report_header" t-att-src="'data:image/png;base64,%s' %to_text(o.xaa_aa_trademark_id.xaa_aa_report_header)" style="max-height:150px;width:100%;"/>
+            </t>
+        </div>
+    </template>
+    <template id="ec_sale_external_layout_footer">
+        <div class="footer o_standard_footer" style="margin-left:-15px;margin-right:-15px;">
+            <t t-if="o and o.xaa_aa_trademark_id">
+                <img t-if="o.xaa_aa_trademark_id.xaa_aa_report_footer" t-att-src="'data:image/png;base64,%s' %to_text(o.xaa_aa_trademark_id.xaa_aa_report_footer)" style="max-height: 235px;width:100%;"/>
+            </t>
+        </div>
+    </template>
+
+    <!-- invoice report-->
+    <template id="ec_invoice_external_layout">
+        <!-- Multicompany -->
+        <t t-if="not o and doc">
+            <t t-set="o" t-value="doc"/>
+        </t>
+        <t t-if="o and 'company_id' in o">
+            <t t-set="company" t-value="o.company_id"></t>
+        </t>
+        <t t-if="not o or not 'company_id' in o">
+            <t t-set="company" t-value="res_company"></t>
+        </t>
+        <t t-call="custom_header_footer.ec_invoice_external_layout_header" />
+        <div class="article o_report_layout_standard"  t-att-data-oe-model="o and o._name" t-att-data-oe-id="o and o.id" t-att-data-oe-lang="o and o.env.context.get('lang')">
+                <t t-call="web.address_layout"/>
+                <t t-raw="0"/>
+        </div>
+        <t t-call="custom_header_footer.ec_invoice_external_layout_footer" />
+    </template>
+    <template id="ec_invoice_external_layout_header">
+        <div class="header" style="margin-left:-15px;margin-right:-15px;">
+            <t t-if="o and o.xaa_aa_trademark_id">
+                <img t-if="o.xaa_aa_trademark_id.xaa_aa_report_header" t-att-src="'data:image/png;base64,%s' %to_text(o.xaa_aa_trademark_id.xaa_aa_report_header)" style="max-height:150px;width:100%;"/>
+            </t>
+        </div>
+    </template>
+    <template id="ec_invoice_external_layout_footer">
+        <div class="footer" style="margin-left:-15px;margin-right:-15px;">
+            <t t-if="o and o.xaa_aa_trademark_id">
+                <img t-if="o.xaa_aa_trademark_id.xaa_aa_report_footer" t-att-src="'data:image/png;base64,%s' %to_text(o.xaa_aa_trademark_id.xaa_aa_report_footer)" style="max-height: 235px;width:100%;"/>
+            </t>
+        </div>
+    </template>
+</odoo>

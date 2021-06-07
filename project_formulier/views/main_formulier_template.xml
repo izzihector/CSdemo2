@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="main_formulier_template" name="Formulier Form">
+        <t t-call="web.login_layout">
+            <t t-if="user_id.has_group('base.group_user')">
+                <div t-ignore="true" class="text-center">
+                    This is a preview of the customer portal.
+                    <t t-set="backend_url" t-value="'/web#return_label=Website&amp;model=%s&amp;id=%s&amp;action=%s&amp;view_type=form' % (formulier_id._name, formulier_id.id, formulier_id.env.ref('project_formulier.action_project_formulier_form').id)"/>
+                    <a t-att-href="backend_url">
+                        <i class="fa fa-arrow-right"/> Back to edit mode 
+                    </a>
+                    <t t-if="formulier_id.xaa_aa_lead_id">
+                       OR 
+                       <t t-set="backend_url" t-value="'/web#return_label=Website&amp;model=%s&amp;id=%s&amp;action=%s&amp;view_type=form' % (formulier_id.xaa_aa_lead_id._name, formulier_id.xaa_aa_lead_id.id, formulier_id.xaa_aa_lead_id.env.ref('project_formulier.action_crm_lead_form_view').id)"/>
+                        <a t-att-href="backend_url">
+                            <i class="fa fa-arrow-right"/> Back to Opportunity
+                        </a>
+                    </t>
+                </div>
+            </t>
+            <div class="row mt-3">
+                <section id="forms" class="col">
+                     <form t-attf-action="/project/formulier/submit/#{formulier_id.id}/" method="POST" data-model_name="question.formulier" class=" s_website_form form-horizontal project_formulier_form"  enctype="multipart/form-data">
+                        <input type="hidden" name="formulier_id" id="formulier_id" t-att-value="formulier_id.id"/>
+                        <t t-if="formulier_id.xaa_aa_state in ['opportunity','opportunity_output']">
+                            <div class="row">
+                                <div class="col-md-12 text-center">
+                                    <h2>First Phase 
+                                        <t t-if="formulier_id.xaa_aa_state == 'opportunity_output'">
+                                            [Already Submitted]
+                                        </t>
+                                    </h2>
+                                </div>
+                            </div>
+                            <t t-call="project_formulier.opportunity_tab_template"/>
+                        </t>
+                        <t t-if="formulier_id.xaa_aa_state in ['quotation','quotation_output']">
+                            <div class="row">
+                                <div class="col-md-12 text-center">
+                                    <h2>Second Phase 
+                                        <t t-if="formulier_id.xaa_aa_state == 'quotation_output'">
+                                            [Already Submitted]
+                                        </t>
+                                    </h2>
+                                </div>
+                            </div>
+                            <t t-call="project_formulier.quote_tab_template"/>
+                        </t>
+                        <t t-if="formulier_id.xaa_aa_state in ['task','task_output']">
+                            <div class="row">
+                                <div class="col-md-12 text-center">
+                                    <h2>Third Phase 
+                                        <t t-if="formulier_id.xaa_aa_state == 'task_output'">
+                                            [Already Submitted]
+                                        </t>
+                                    </h2>
+                                </div>
+                            </div>
+                            <t t-call="project_formulier.task_tab_template"/>
+                        </t>
+                        <div class="form-group row">
+                            <div class="col-md-7 col-lg-6 col-8">
+                                <button class="btn btn-primary text-center o_website_form_send pull-right mt16 formulier_submit" type="submit" >Save</button>
+                            </div>
+                            <div class="col-md-4 col-lg-4 mt8">
+                                <span id="o_website_form_result"></span>
+                            </div>
+                        </div>
+                    </form>
+                </section>
+            </div>
+        </t>
+    </template>
+    <template id="portal_back_in_edit_mode_inherit" inherit_id="portal.portal_back_in_edit_mode" name="Back to Opportunity">
+        <xpath expr="//div" position="inside">
+            <t t-if="user_id.has_group('base.group_user')">
+                <t t-if="sale_order and sale_order.opportunity_id">
+                    <t t-set="backend_url" t-value="'/web#return_label=Website&amp;model=%s&amp;id=%s&amp;action=%s&amp;view_type=form' % (sale_order.opportunity_id._name, sale_order.opportunity_id.id, sale_order.opportunity_id.env.ref('project_formulier.action_crm_lead_form_view').id)"/>
+                    OR <a t-att-href="backend_url"> <i class="fa fa-arrow-right"/> Back to Opportunity</a>
+                </t>
+            </t>
+        </xpath>
+    </template>
+
+</odoo>

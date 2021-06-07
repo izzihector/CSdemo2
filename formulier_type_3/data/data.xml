@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+        <record id="black_solar_type" model="solar.type">
+            <field name="xaa_aa_name">Black</field>
+        </record>
+        <record id="ulta_black_solar_type" model="solar.type">
+            <field name="xaa_aa_name">Ultra Black</field>
+        </record>
+        <record id="cristal_solar_type" model="solar.type">
+            <field name="xaa_aa_name">Cristal</field>
+        </record>
+        <record id="premium_solar_type" model="solar.type">
+            <field name="xaa_aa_name">Premium</field>
+        </record>
+        <record id="formulier_custom_type_3" model="formulier.customer.type">
+            <field name="xaa_aa_name">intake PV</field>
+            <field name="xaa_aa_technical_name">formulier_three</field>
+        </record>
+    </data>
+</odoo>

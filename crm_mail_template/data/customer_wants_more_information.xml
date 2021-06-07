@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <!-- Mail W - Customer wants more information - version 1.0-->
+        <record id="customer_wants_more_information_mail_template" model="mail.template">
+            <field name="name">Mail W - Customer wants more information - version 1.0</field>
+            <field name="email_from">${(object.company_id.email or '')|safe}</field>
+            <field name="subject">Application for energy-saving measure Energie control NL</field>
+            <field name="email_to">${object.email_from|safe}</field>
+            <field name="model_id" ref="crm.model_crm_lead"/>
+            <field name="lang">${object.partner_id.lang}</field>
+            <field name="body_html"><![CDATA[
+                <p style="margin:0px 0px 9px 0px;">Dear sir/madam,</p>
+                <p style="margin:0px 0px 9px 0px;">
+                    You recently received an email from us in which you indicated that you would like to receive more information from us. We would like to provide you with this information, so we ask you to give some information in response to the email which information you would like to receive.
+                </p>
+                <p style="margin:0px 0px 9px 0px;">
+                    If we do not receive any information from you, we will first assess your application. It is possible that further information has already been provided via a website. If you do nothing, we will contact you automatically! Thank you in advance for your interest in our services.
+                </p>
+                <p style="margin:0px 0px 9px 0px;">
+                    Energie control NL is the specialist in energy-saving measures:<br/>
+                            = Solar panels  &nbsp;&nbsp;&nbsp;&nbsp;= Asbestos remediation<br/>
+                            = Cavity wall insulation &nbsp;&nbsp;&nbsp;&nbsp;= Roof renovation<br/>
+                            = Floor insulation &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;= Charging stations<br/>
+                            = Roof insulation &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;= Heat pumps<br/>
+                </p>
+                <p style="margin:0px 0px 9px 0px;">
+                    We sincerely hope to get in touch with you and look forward to a cooperation!
+                </p>
+                <br/>
+                <p style="margin:0px 0px 9px 0px;">
+                    With best regards,<br/>
+                    <img src="/crm_mail_template/static/src/img/company_logo.png" style="width:100px;height:100px;"/><br/>
+                    Team Energiecontrol NL<br/>
+                     <a href="https://www.facebook.com/energiecontrolnl/" target="_blank">
+                        <img src="/crm_mail_template/static/src/img/facebook.jpeg" style="width:30px;height:30px;"/>
+                    </a>
+                    <a href="https://www.instagram.com/energiecontrolnl/" target="_blank">
+                        <img src="/crm_mail_template/static/src/img/instagram.jpeg" style="width:30px;height:30px;"/>
+                    </a>
+                    <br/>
+                    <br/>
+                    <img src="/crm_mail_template/static/src/img/image_1.jpeg" style="width:200px;height:200px;"/>
+                    <img src="/crm_mail_template/static/src/img/image_2.JPG" style="width:200px;height:200px;"/>
+                    <img src="/crm_mail_template/static/src/img/image_3.jpg" style="width:200px;height:200px;"/>
+                </p>
+]]>
+            </field>
+        </record>
+    </data>
+</odoo>

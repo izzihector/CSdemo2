@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+        <record model="website.calendar" id="calendar_1">
+            <field name="name">calendar 2</field>
+            <field name="user_id">1</field>
+            <field name="calendar_name">Schedule your desired execution date</field>
+        </record>
+
+        <record model="website.calendar" id="calendar_2">
+            <field name="name">calendar 3</field>
+            <field name="user_id">1</field>
+            <field name="calendar_name">I would like to receive more information first</field>
+        </record>
+
+        <record model="website.calendar" id="calendar_3">
+            <field name="name">calendar 4</field>
+            <field name="user_id">1</field>
+            <field name="calendar_name">I want to be called at a specific time</field>
+        </record>
+
+    </data>
+</odoo>

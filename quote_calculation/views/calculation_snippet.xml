@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <template id="snippet_calculation_table" name="Calculations Table">
+            <section class="s_feature_grid">
+                <div class="container">
+                    <h2 class="text-left">Calculations</h2>
+                    <table class="table table-bordered">
+                        <tbody>
+                            <tr>
+                                <td>Totaal geïnstalleerd vermogen in watt piek</td>
+                                <td id="id_1" style="width:20%"></td>
+                            </tr>
+                            <tr>
+                                <td>Jaaropbrengst van de zonnepanelen worden berekend met een kWh prijs van</td>
+                                <td id="id_2" style="width:20%"></td>
+                            </tr>
+                            <tr>
+                                <td>Jaaropbrengsten van de zonnepanelen in kWh</td>
+                                <td id="id_3" style="width:20%"></td>
+                            </tr>
+                            <tr>
+                                <td>Jaaropbrengsten van de zonnepanelen berekend met een rendement van</td>
+                                <td id="id_4" style="width:20%"></td>
+                            </tr>
+                            <tr>
+                                <td>Verwachte terugverdientijd in jaren (zonder enige vorm van prijsverhoging)</td>
+                                <td id="id_5" style="width:20%"></td>
+                            </tr>
+                            <tr>
+                                <td>Totale verwachte jaaropbrengst van de zonnepanelen in €</td>
+                                <td id="id_6" style="width:20%"></td>
+                            </tr>
+                            <tr>
+                                <td>Bedrag te investeren excl btw in €</td>
+                                <td id="id_7" style="width:20%"></td>
+                            </tr>
+                      </tbody>
+                    </table>
+                </div>
+            </section>
+        </template>
+
+        <template id="website_snippet_inh" inherit_id="website.snippets" name="Snippets">
+            <xpath expr="//div[@id='snippet_content']/div[hasclass('o_panel_body')]" position="inside">
+                <t t-snippet="quote_calculation.snippet_calculation_table" t-thumbnail="/quote_calculation/static/src/img/table.png"/>
+            </xpath>
+            <xpath expr="//div[@id='snippet_content']/div[hasclass('o_panel_header')]" position="inside">
+                <script>
+                    get_caculation_data();
+                </script>
+            </xpath>
+        </template>
+        <template id="sale_order_portal_template_inh" inherit_id="sale.sale_order_portal_template" name="Add calculation">
+            <xpath expr="//div[1]" position="before">
+                <t t-set="cal" t-value="sale_order.fill_calculations_value()"/>
+            </xpath>
+        </template>
+    </data>
+</odoo>

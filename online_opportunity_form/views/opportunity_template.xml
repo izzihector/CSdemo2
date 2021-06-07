@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <template id="opportunity_link" name="Link to frontend opportunity" inherit_id="portal.user_dropdown">
+        <xpath expr="//*[@id='o_logout_divider']" position="before">
+            <a href="/opportunity_form" role="menuitem" class="dropdown-item">Create opportunity</a>
+        </xpath>
+    </template>
+
+    <template id="opportunity_template" name="Opportunity Form">
+        <t t-call="web.login_layout">
+            <div class="row mt24">
+                <section id="opportunity_form" class="col">
+                    <div class="form-group row form-field">
+                        <div class="col-lg-3 col-md-3 col-sm-4 col-lg-offset-1 col-md-offset-1 text-right">
+                            Title
+                        </div>
+                        <div class="col-lg-5 col-md-5 col-sm-6">
+                            <div class="div_title">
+                                <select class="form-control" name="title">
+                                    <option></option>
+                                    <t t-foreach="titles" t-as="title">
+                                        <option t-att-value="title.id">
+                                            <t t-esc="title.name"/>
+                                        </option>
+                                    </t>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group row form-field">
+                        <div class="col-lg-3 col-md-3 col-sm-4 col-lg-offset-1 col-md-offset-1 text-right">
+                            First Name
+                        </div>
+                        <div class="col-lg-5 col-md-5 col-sm-6">
+                            <input type="text" name="xaa_aa_first_name" id="first_name" class="form-control" placeholder="First Name"/>
+                        </div>
+                    </div>
+                    <div class="form-group row form-field">
+                        <div class="col-lg-3 col-md-3 col-sm-4 col-lg-offset-1 col-md-offset-1 text-right">
+                            Last Name
+                        </div>
+                        <div class="col-lg-5 col-md-5 col-sm-6">
+                            <input type="text" name="xaa_aa_last_name" id="last_name" class="form-control" placeholder="Last Name"/>
+                        </div>
+                    </div>
+                    <div class="form-group row form-field">
+                        <div class="col-lg-3 col-md-3 col-sm-4 col-lg-offset-1 col-md-offset-1 text-right">
+                            Street
+                        </div>
+                        <div class="col-lg-5 col-md-5 col-sm-6">
+                            <input type="text" name="street" id="street" class="form-control" placeholder="Street"/>
+                        </div>
+                    </div>
+                    <div class="form-group row form-field">
+                        <div class="col-lg-3 col-md-3 col-sm-4 col-lg-offset-1 col-md-offset-1 text-right">
+                            Zip
+                        </div>
+                        <div class="col-lg-5 col-md-5 col-sm-6">
+                            <input type="text" name="zip" id="zip" class="form-control" placeholder="Zip"/>
+                        </div>
+                    </div>
+                    <div class="form-group row form-field">
+                        <div class="col-lg-3 col-md-3 col-sm-4 col-lg-offset-1 col-md-offset-1 text-right">
+                            City
+                        </div>
+                        <div class="col-lg-5 col-md-5 col-sm-6">
+                            <input type="text" name="city" id="city" class="form-control" placeholder="City"/>
+                        </div>
+                    </div>
+                    <div class="form-group row form-field">
+                        <div class="col-lg-3 col-md-3 col-sm-4 col-lg-offset-1 col-md-offset-1 text-right">
+                            Country
+                        </div>
+                        <div class="col-lg-5 col-md-5 col-sm-6">
+                            <div t-attf-class="div_category">
+                                <select class="form-control" name="country">
+                                    <t t-foreach="countries" t-as="c">
+                                        <option t-att-value="c.id" t-att-selected="c.code == 'NL'">
+                                            <t t-esc="c.name"/>
+                                        </option>
+                                    </t>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group row form-field">
+                        <div class="col-lg-3 col-md-3 col-sm-4 col-lg-offset-1 col-md-offset-1 text-right">
+                            Phone
+                        </div>
+                        <div class="col-lg-5 col-md-5 col-sm-6">
+                            <input type="text" name="phone" id="phone" class="form-control" placeholder="Phone"/>
+                        </div>
+                    </div>
+                    <div class="form-group row form-field">
+                        <div class="col-lg-3 col-md-3 col-sm-4 col-lg-offset-1 col-md-offset-1 text-right">
+                            Email
+                        </div>
+                        <div class="col-lg-5 col-md-5 col-sm-6">
+                            <input type="text" name="email" id="email" class="form-control" placeholder="Email"/>
+                        </div>
+                    </div>
+                    <div class="form-group row form-field">
+                        <div class="col-lg-3 col-md-3 col-sm-4 col-lg-offset-1 col-md-offset-1 text-right">
+                            Lead Source
+                        </div>
+                        <div class="col-lg-5 col-md-5 col-sm-6">
+                            <div t-attf-class="div_category">
+                                <select class="form-control" name="xaa_aa_lead_lead_source">
+                                    <t t-foreach="user.xaa_aa_lead_lead_source" t-as="c_type">
+                                        <option t-att-value="c_type.id"><t t-esc="c_type.xaa_aa_name"/></option>
+                                    </t>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group row form-field">
+                        <div class="col-lg-3 col-md-3 col-sm-4 col-lg-offset-1 col-md-offset-1 text-right">
+                            Lead Category
+                        </div>
+                        <div class="col-lg-5 col-md-5 col-sm-6">
+                            <div t-attf-class="div_category">
+                                <select class="form-control" name="xaa_aa_lead_category">
+                                    <t t-foreach="user.xaa_aa_lead_category" t-as="c_type">
+                                        <option t-att-value="c_type.id"><t t-esc="c_type.xaa_aa_name"/></option>
+                                    </t>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group row form-field">
+                        <div class="col-lg-3 col-md-3 col-sm-4 col-lg-offset-1 col-md-offset-1 text-right">
+                            Question Type
+                        </div>
+                        <div class="col-lg-5 col-md-5 col-sm-6">
+                            <div t-attf-class="div_question">
+                                <select class="form-control" name="xaa_aa_formulier_type">
+                                    <t t-foreach="formulier_type" t-as="c_type">
+                                        <option t-att-value="c_type[0]"><t t-esc="c_type[1]"/></option>
+                                    </t>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-md-10 col-lg-10 text-center">
+                            <button class="btn btn-primary text-center o_website_opportunity_create col-lg-offset-8 col-md-offset-8" type="button" >Save</button>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </t>
+    </template>
+
+</odoo>

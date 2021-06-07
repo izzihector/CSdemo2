@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="_assets_secondary_variables_inher" inherit_id="web._assets_secondary_variables">
+        <xpath expr="//link" position="after">
+            <link rel="stylesheet" type="text/scss" href="/opportunity_meeting/static/src/scss/secondary_variables.scss"/>
+        </xpath>
+    </template>
+    <template id="assets_backend" name="calendar assets" inherit_id="web.assets_backend">
+        <xpath expr="." position="inside">
+            <script type="text/javascript" src="/opportunity_meeting/static/src/js/calendar_renderer.js"></script>
+        </xpath>
+    </template>
+
+</odoo>

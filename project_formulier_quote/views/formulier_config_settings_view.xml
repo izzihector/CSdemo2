@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <menuitem id="menu_formulier_configure_settings"
+        name="Configuration"
+        parent="project_formulier.project_formulier_menu_root"
+        sequence="1"
+        groups="base.group_system"/>
+
+</odoo>

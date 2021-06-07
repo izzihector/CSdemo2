@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <!-- Mail M - Reminder visit advisor - version 1.0-->
+        <record id="reminder_visit_advisor_mail_template" model="mail.template">
+            <field name="name">Mail M - Reminder visit advisor - version 1.0</field>
+            <field name="email_from">${(object.company_id.email or '')|safe}</field>
+            <field name="subject">Reminder of visit of advisor to Energie control NL</field>
+            <field name="email_to">${object.email_from|safe}</field>
+            <field name="model_id" ref="crm.model_crm_lead"/>
+            <field name="lang">${object.partner_id.lang}</field>
+            <field name="body_html"><![CDATA[
+                <p style="margin:0px 0px 9px 0px;">Dear sir/madam,</p>
+                <p style="margin:0px 0px 9px 0px;">
+                    This e-mail is a reminder for the appointment made at your home with our advisor. Tomorrow at 
+                    % if object.xaa_aa_meeting_date:
+                        ${object.convert_date_based_on_lang()}
+                    % endif
+                    our advisor will visit you to discuss and discuss the options for the requested energy-saving measure with you. Do you want to remember to prepare the energy bill?
+                </p>
+                <p style="margin:0px 0px 9px 0px;">
+                    If you have any questions, you can reach us at 0546-57 44 72 or email customer service@energie-control.nl and we will be happy to help you.
+                </p>
+                <br/><br/>
+                <p style="margin:0px 0px 9px 0px;">
+                    With best regards,<br/>
+                    <img src="/crm_mail_template/static/src/img/company_logo.png" style="width:100px;height:100px;"/><br/>
+                    Team Energiecontrol NL<br/>
+                     <a href="https://www.facebook.com/energiecontrolnl/" target="_blank">
+                        <img src="/crm_mail_template/static/src/img/facebook.jpeg" style="width:30px;height:30px;"/>
+                    </a>
+                    <a href="https://www.instagram.com/energiecontrolnl/" target="_blank">
+                        <img src="/crm_mail_template/static/src/img/instagram.jpeg" style="width:30px;height:30px;"/>
+                    </a>
+                </p>
+                ]]>
+            </field>
+        </record>
+    </data>
+</odoo>

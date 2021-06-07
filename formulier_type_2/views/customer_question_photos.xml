@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="iso_question_photos" name="House Photos">
+        <div class="div_padding_left">
+            <div class="mt32 montserrat_regular">
+                <span>We kindly request you to provide us with some photos: this will give us a good idea of your home and the work to be carried out.</span>
+            </div>
+            <div class="form-group row mt32" id="overview_image">
+                <div class="col-lg-12 col-md-12 col-sm-12">
+                   <label class="montserrat-extrabold_24">
+                        Overview photo (important)
+                    </label>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-3 div_image">
+                    <button aria-label="Edit" class="fa fa-pencil pull-right fa-lg edit_button" title="Edit" ></button>
+                    <img class="img img-fluid change_image" id="xaa_aa_quote_iso_overview_photo" t-attf-src="/web/image/question.formulier/{{formulier_id.id}}/xaa_aa_quote_iso_overview_photo" alt="Overview photo (important)"/>
+                    <input type="file" name="xaa_aa_quote_iso_overview_photo" class="hide_input_image form-control o_website_form_input"/>
+                    <input type="hidden" name="que_id" t-att-value="formulier_id.id"/>
+                </div>
+            </div>
+            <div class="form-group row mt32" id="overview_image">
+                <div class="col-lg-12 col-md-12 col-sm-12">
+                   <label class="montserrat-extrabold_24">
+                        Photo facade
+                    </label>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-3 div_image">
+                    <button aria-label="Edit" class="fa fa-pencil pull-right fa-lg edit_button" title="Edit" ></button>
+                    <img class="img img-fluid change_image" id="xaa_aa_quote_iso_faced_photo" t-attf-src="/web/image/question.formulier/{{formulier_id.id}}/xaa_aa_quote_iso_faced_photo"/>
+                    <input type="file" name="xaa_aa_quote_iso_faced_photo" class="hide_input_image form-control o_website_form_input"/>
+                </div>
+            </div>
+            <div class="form-group row mt32" id="overview_image">
+                <div class="col-lg-12 col-md-12 col-sm-12">
+                   <label class="montserrat-extrabold_24">
+                        Rear facade
+                    </label>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-3 div_image">
+                    <button aria-label="Edit" class="fa fa-pencil pull-right fa-lg edit_button" title="Edit" ></button>
+                    <img class="img img-fluid change_image" id="xaa_aa_quote_iso_rear_faced_photo" t-attf-src="/web/image/question.formulier/{{formulier_id.id}}/xaa_aa_quote_iso_rear_faced_photo"/>
+                    <input type="file" name="xaa_aa_quote_iso_rear_faced_photo" class="hide_input_image form-control o_website_form_input"/>
+                </div>
+            </div>
+            <div class="form-group row mt32" id="overview_image">
+                <div class="col-lg-12 col-md-12 col-sm-12">
+                   <label class="montserrat-extrabold_24">
+                        Side wall 1
+                    </label>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-3 div_image">
+                    <button aria-label="Edit" class="fa fa-pencil pull-right fa-lg edit_button" title="Edit" ></button>
+                    <img class="img img-fluid change_image" id="xaa_aa_quote_iso_side_wall_photo" t-attf-src="/web/image/question.formulier/{{formulier_id.id}}/xaa_aa_quote_iso_side_wall_photo"/>
+                    <input type="file" name="xaa_aa_quote_iso_side_wall_photo" class="hide_input_image form-control o_website_form_input"/>
+                </div>
+            </div>
+            <div class="form-group row mt32" id="overview_image">
+                <div class="col-lg-12 col-md-12 col-sm-12">
+                   <label class="montserrat-extrabold_24">
+                        Side wall 2
+                    </label>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-3 div_image">
+                    <button aria-label="Edit" class="fa fa-pencil pull-right fa-lg edit_button" title="Edit" ></button>
+                    <img class="img img-fluid change_image" id="xaa_aa_quote_iso_side_wall_two_photo" t-attf-src="/web/image/question.formulier/{{formulier_id.id}}/xaa_aa_quote_iso_side_wall_two_photo"/>
+                    <input type="file" name="xaa_aa_quote_iso_side_wall_two_photo" class="hide_input_image form-control o_website_form_input"/>
+                </div>
+            </div>
+            <div class="form-group row mt32" id="overview_image">
+                <div class="col-lg-12 col-md-12 col-sm-12">
+                   <label class="montserrat-extrabold_24">
+                        Attachment
+                    </label>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-3 div_image">
+                    <button aria-label="Edit" class="fa fa-pencil pull-right fa-lg edit_button" title="Edit" ></button>
+                    <img class="img img-fluid change_image" id="xaa_aa_quote_attachment_photo" t-attf-src="/web/image/question.formulier/{{formulier_id.id}}/xaa_aa_quote_attachment_photo"/>
+                    <input type="file" name="xaa_aa_quote_attachment_photo" class="hide_input_image form-control o_website_form_input"/>
+                </div>
+            </div>
+            <div class="form-group row mt32" id="overview_image">
+                <div class="col-lg-12 col-md-12 col-sm-12">
+                   <label class="montserrat-extrabold_24">
+                        Additional photo
+                    </label>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-3 div_image">
+                    <button aria-label="Edit" class="fa fa-pencil pull-right fa-lg edit_button" title="Edit" ></button>
+                    <img class="img img-fluid change_image" id="xaa_aa_quote_extra_photo_one" t-attf-src="/web/image/question.formulier/{{formulier_id.id}}/xaa_aa_quote_extra_photo_one"/>
+                    <input type="file" name="xaa_aa_quote_extra_photo_one" class="hide_input_image form-control o_website_form_input"/>
+                </div>
+            </div>
+            <div class="form-group row mt32" id="overview_image">
+                <div class="col-lg-12 col-md-12 col-sm-12">
+                   <label class="montserrat-extrabold_24">
+                        Additional photo
+                    </label>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-3 div_image">
+                    <button aria-label="Edit" class="fa fa-pencil pull-right fa-lg edit_button" title="Edit" ></button>
+                    <img class="img img-fluid change_image" id="xaa_aa_quote_extra_photo_two" t-attf-src="/web/image/question.formulier/{{formulier_id.id}}/xaa_aa_quote_extra_photo_two"/>
+                    <input type="file" name="xaa_aa_quote_extra_photo_two" class="hide_input_image form-control o_website_form_input"/>
+                </div>
+            </div>
+            <div class="mt32 montserrat_regular">
+                <span>Thank you for answering these questions. If you are interested in giving us - after we have given our final agreement - approval on the offer,</span>
+            </div>
+            <div class="form-group mt32">
+                <div class="col-lg-12 col-md-12 col-sm-12 ">
+                    <div class="form_lable mt16">
+                        <label class="montserrat-extrabold_24">
+                            so that you have your solar panels on the roof within five working days?
+                        </label>
+                    </div>
+                </div>
+                <div class="col-lg-8 col-md-10 col-sm-12 checkbox_div ">
+                    <div>
+                        <div class="checkbox mb8 mt16">
+                            <input type="radio" class="radio_design" name="xaa_aa_quote_iso_working_days" t-att-checked="formulier_id.xaa_aa_quote_iso_working_days == 'Ja, ik ben tevreden over de offerte en wil graag door Energiecontrol gebeld worden over dit aanbod.'" value="Ja, ik ben tevreden over de offerte en wil graag door Energiecontrol gebeld worden over dit aanbod."/>
+                            <label class="ng-binding col-form-label ml16" for="xaa_aa_quote_iso_working_days">Ja, ik ben tevreden over de offerte en wil graag door Energiecontrol gebeld worden over dit aanbod.
+                            </label>
+                        </div>
+                        <div class="checkbox mb8">
+                            <input type="radio" class="radio_design" name="xaa_aa_quote_iso_working_days" t-att-checked="formulier_id.xaa_aa_quote_iso_working_days == 'Nee, ik neem graag zelf contact met jullie op.'" value="Nee, ik neem graag zelf contact met jullie op."/>
+                            <label class="ng-binding col-form-label ml16" for="xaa_aa_quote_iso_working_days">Nee, ik neem graag zelf contact met jullie op.
+                            </label>
+                        </div>
+                        <div class="checkbox mb8">
+                            <input type="radio" class="radio_design" name="xaa_aa_quote_iso_working_days" t-att-checked="formulier_id.xaa_aa_quote_iso_working_days == 'Nee, ik zou graag nog andere offertes willen vergelijken.'" value="Nee, ik zou graag nog andere offertes willen vergelijken."/>
+                            <label class="ng-binding col-form-label ml16" for="xaa_aa_quote_iso_working_days">Nee, ik zou graag nog andere offertes willen vergelijken.
+                            </label>
+                        </div>
+                        <div class="checkbox mb8">
+                            <input type="radio" class="radio_design" name="xaa_aa_quote_iso_working_days" t-att-checked="formulier_id.xaa_aa_quote_iso_working_days == 'Nee, ik zou graag nog meer informatie van Energiecontrol willen ontvangen, en word graag door jullie gebeld.'" value="Nee, ik zou graag nog meer informatie van Energiecontrol willen ontvangen, en word graag door jullie gebeld."/>
+                            <label class="ng-binding col-form-label ml16" for="xaa_aa_quote_iso_working_days">Nee, ik zou graag nog meer informatie van Energiecontrol willen ontvangen, en word graag door jullie gebeld.
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group row mt64" id="next_privious">
+                <div class="col-md-5 col-lg-4 col-sm-5 col-6">
+                    <a class="btn-privoius mt16"
+                        data-id="iso_property_details_id"
+                        type="Button" t-att-value="formulier_id.id">
+                        <i class="fa fa-chevron-left" aria-hidden="false"/>Previous step
+                    </a>
+                </div>
+                <div class="col-md-4 col-lg-4 col-sm-5 col-5">
+                    <div class="">
+                        <button class="btn o_website_form_send mt16 formulier_submit btn_formulier_submit" type="submit" >Send</button>
+                    </div>
+                    <div class="">
+                        <span id="o_website_form_result"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </template>
+</odoo>

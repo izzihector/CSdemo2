@@ -1,0 +1,80 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules: 
+#   * crm_activity_log
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 14.1alpha1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-09-28 14:52+0000\n"
+"PO-Revision-Date: 2020-09-28 14:52+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: crm_activity_log
+#: model:ir.model.fields,field_description:crm_activity_log.field_activity_log__xaa_aa_activity_ids
+msgid "Activities"
+msgstr "Activiteiten"
+
+#. module: crm_activity_log
+#: model:ir.actions.act_window,name:crm_activity_log.activity_log_action
+#: model:ir.ui.menu,name:crm_activity_log.crm_menu_activity_log
+#: model_terms:ir.ui.view,arch_db:crm_activity_log.activity_log_form
+#: model_terms:ir.ui.view,arch_db:crm_activity_log.activity_log_view_tree
+msgid "Activity Log"
+msgstr "Activiteiten logboek"
+
+#. module: crm_activity_log
+#: model:ir.model,name:crm_activity_log.model_activity_log
+msgid "Describe Activity Log"
+msgstr "Beschrijf activiteitenlogboek"
+
+#. module: crm_activity_log
+#: model:ir.model.fields,field_description:crm_activity_log.field_activity_log__display_name
+#: model:ir.model.fields,field_description:crm_activity_log.field_crm_lead__display_name
+msgid "Display Name"
+msgstr "Schermnaam"
+
+#. module: crm_activity_log
+#: model:ir.model.fields,field_description:crm_activity_log.field_activity_log__xaa_aa_date
+msgid "Last Update Date"
+msgstr "Datum laatste update"
+
+#. module: crm_activity_log
+#: model:ir.model,name:crm_activity_log.model_crm_lead
+msgid "Lead/Opportunity"
+msgstr "Lead/Prospect"
+
+#. module: crm_activity_log
+#: model:ir.model.fields,field_description:crm_activity_log.field_activity_log__xaa_aa_login_user
+msgid "Login User"
+msgstr "Login gebruiker"
+
+#. module: crm_activity_log
+#: model:ir.model.fields,field_description:crm_activity_log.field_activity_log__xaa_aa_name
+msgid "Name"
+msgstr "Naam"
+
+#. module: crm_activity_log
+#: model:ir.model.fields,field_description:crm_activity_log.field_activity_log__xaa_aa_notes
+msgid "Note"
+msgstr "Notitie"
+
+#. module: crm_activity_log
+#: model:ir.model.fields,field_description:crm_activity_log.field_activity_log__xaa_aa_opportunity_id
+msgid "Opportunity"
+msgstr "Prospect"
+
+#. module: crm_activity_log
+#: model:ir.model.fields,field_description:crm_activity_log.field_activity_log__xaa_aa_privious_stage
+msgid "Previous Stage"
+msgstr "Vorige fase"
+
+#. module: crm_activity_log
+#: model:ir.model.fields,field_description:crm_activity_log.field_activity_log__xaa_aa_stage
+msgid "Stage Name"
+msgstr "Fase Naam"

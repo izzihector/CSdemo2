@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <record id="view_sale_form_inherited" model="ir.ui.view">
+            <field name="name">view.sale.order.form inherited</field>
+            <field name="model">sale.order</field>
+            <field name="inherit_id" ref="sale.view_order_form" />
+            <field name="arch" type="xml">
+                <xpath expr="//notebook" position="inside">
+                    <page string="Calculation">
+                        <group>
+                            <group>
+                                <field name="xaa_aa_watt_piek"/>
+                                <field name="xaa_aa_jaaropbrengst_prijs_van"/>
+                                <field name="xaa_aa_jaaropbrengsten"/>
+                                <field name="xaa_aa_related_amount_untaxed"/>
+                            </group>
+                            <group>
+                                <field name="xaa_aa_rendement"/>
+                                <field name="xaa_aa_verwachte_terugverdientijd"/>
+                                <field name="xaa_aa_totale_verwachte_jaaropbrengst_van_de"/>
+                            </group>
+                        </group>
+                    </page>
+                </xpath>
+            </field>
+        </record>
+
+    </data>
+</odoo>

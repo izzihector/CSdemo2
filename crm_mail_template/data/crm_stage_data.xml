@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record model="crm.stage" id="future_stage">
+        <field name="name">Future [18]</field>
+        <field name="sequence">10</field>
+    </record>
+
+    <record model="crm.stage" id="rate_stage">
+        <field name="name">Rate [3]</field>
+        <field name="sequence">11</field>
+    </record>
+
+</odoo>

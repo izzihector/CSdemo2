@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="view_project_formulier_form_inh" model="ir.ui.view">
+        <field name="name">question.formulier.form.inherit</field>
+        <field name="model">question.formulier</field>
+        <field name="inherit_id" ref="project_formulier_quote.view_project_formulier_form_inh"/>
+        <field name="arch" type="xml">
+            <xpath expr="//page[@name='website_formulier_quote']" position="inside">
+                <group attrs="{'invisible': [('xaa_aa_formulier_type', '!=', 'formulier_two')]}">
+                    <group>
+                        <field name="xaa_aa_quote_construction_year"/>
+                        <field name="xaa_aa_quote_house_insulated"/>
+                        <field name="xaa_aa_quote_cavity_thickness_home"/>
+                        <field name="xaa_aa_quote_type_of_house_id"/>
+                    </group>
+                    <group>
+                        <field name="xaa_aa_quote_need_insulated"/>
+                        <field name="xaa_aa_quote_many_extension"/>
+                        <field name="xaa_aa_qupte_do_crawl_space"/>
+                    </group>
+                </group>
+            </xpath>
+        </field>
+    </record>
+
+    <record id="view_question_formulier_quote_form" model="ir.ui.view">
+        <field name="name">question.formulier.form.quote</field>
+        <field name="model">question.formulier</field>
+        <field name="inherit_id" ref="project_formulier.view_project_formulier_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//page[@name='quotation_question']" position="inside">
+                <group attrs="{'invisible': [('xaa_aa_formulier_type', '!=', 'formulier_two')]}">
+                    <div class="h2-width ml8 mr8">
+                        <span>Thank you for your interest in Energy Control cavity wall insulation. When you answer the questions below, we will get a better picture of the required material and your specific wishes. To clarify the situation for us, we also ask you to upload some photos, if possible.</span>
+                    </div>
+                    <div class="text-center text-primary h2-width">
+                        <h2><u>Accessibility</u></h2>
+                    </div>
+                    <group name="xaa_aa_quote_home_free_install" string="Is each side of your home free to install a ladder?">
+                        <field name="xaa_aa_quote_home_free_install" nolabel="1"/>
+                    </group>
+                    <group name="xaa_aa_quote_iso_home_accessible" string="How accessible is your home?">
+                        <field name="xaa_aa_quote_iso_home_accessible" nolabel="1"/>
+                    </group>
+                    <group name="xaa_aa_quote_iso_home_parking" string="How is the parking at your home?">
+                        <field name="xaa_aa_quote_iso_home_parking" nolabel="1"/>
+                    </group>
+                    <group name="xaa_aa_quote_iso_estimate_height_gutter" string="How high do you estimate the height from the ground to the gutter?">
+                        <field name="xaa_aa_quote_iso_estimate_height_gutter" nolabel="1"/>
+                    </group>
+                    <div class="text-center text-primary h2-width">
+                        <h2><u>Property Details</u></h2>
+                    </div>
+                    <group name="xaa_aa_quote_iso_estimate_height_ridge" string="How high do you estimate the height from the ground to the ridge of your home?">
+                        <field name="xaa_aa_quote_iso_estimate_height_ridge" nolabel="1"/>
+                    </group>
+                    <group name="xaa_aa_quote_iso_square_meter_quotation" string="Is the number of square meters on the quotation correct?">
+                        <field name="xaa_aa_quote_iso_square_meter_quotation" nolabel="1"/>
+                    </group>
+                    <group name="xaa_aa_quote_iso_faced_covered_obstacles" string="Is your facade covered with vegetation or similar obstacles?">
+                        <field name="xaa_aa_quote_iso_faced_covered_obstacles" nolabel="1"/>
+                    </group>
+                    <group name="xaa_aa_quote_iso_thickness_cavity" string="What is the width / thickness of the cavity?">
+                        <field name="xaa_aa_quote_iso_thickness_cavity" nolabel="1"/>
+                    </group>
+                    <group name="xaa_aa_quote_iso_cavity_wall_insulation" string="Has your house already been checked for suitability for cavity wall insulation?">
+                        <field name="xaa_aa_quote_iso_cavity_wall_insulation" nolabel="1"/>
+                    </group>
+                    <group name="xaa_aa_quote_iso_cavity_contamination" string="Is there internal cavity contamination?">
+                        <field name="xaa_aa_quote_iso_cavity_contamination" nolabel="1"/>
+                    </group>
+                    <group name="xaa_aa_quote_iso_house_painted_faced" string="Does the house have a painted facade?">
+                        <field name="xaa_aa_quote_iso_house_painted_faced" nolabel="1"/>
+                    </group>
+                    <group name="xaa_aa_quote_iso_home_cutting_joint" string="Does your home have a cutting joint?">
+                        <field name="xaa_aa_quote_iso_home_cutting_joint" nolabel="1"/>
+                    </group>
+                    <group name="xaa_aa_quote_iso_crawl_space_use" string="Does your home have a crawl space and is it good to use?">
+                        <field name="xaa_aa_quote_iso_crawl_space_use" nolabel="1"/>
+                    </group>
+                    <div class="text-center text-primary h2-width">
+                        <h2><u>ISO Closing</u></h2>
+                    </div>
+                    <group name="xaa_aa_quote_iso_monumental_building" string="Do you have a monumental building, or a building where a permit is required to carry out these activities?">
+                        <field name="xaa_aa_quote_iso_monumental_building" nolabel="1"/>
+                    </group>
+                    <group name="xaa_aa_quote_iso_rental_owner_home" string="Do you have a rental or owner-occupied home?">
+                        <field name="xaa_aa_quote_iso_rental_owner_home" nolabel="1"/>
+                    </group>
+                    <group name="xaa_aa_quote_iso_insulation_description" string="Perhaps there are other things you think are important that we need to know to properly perform insulation. You can indicate these matters in the field below.">
+                        <field name="xaa_aa_quote_iso_insulation_description" nolabel="1"/>
+                    </group>
+                    <div class="text-center text-primary h2-width">
+                        <h2><u>Photos house</u></h2>
+                    </div>
+                    <div class="text-center text-primary h2-width">
+                        <span>We kindly request you to provide us with some photos: this will give us a good idea of your home and the work to be carried out.</span>
+                    </div>
+                    <group name="xaa_aa_quote_iso_overview_photo" string="Overview photo (important)">
+                        <field name="xaa_aa_quote_iso_overview_photo" nolabel="1" widget="image" class="custom-image-size"/>
+                    </group>
+                    <group name="xaa_aa_quote_iso_faced_photo" string="Photo facade">
+                        <field name="xaa_aa_quote_iso_faced_photo" nolabel="1" widget="image" class="custom-image-size"/>
+                    </group>
+                    <group name="xaa_aa_quote_iso_rear_faced_photo" string="Rear facade">
+                        <field name="xaa_aa_quote_iso_rear_faced_photo" nolabel="1" widget="image" class="custom-image-size"/>
+                    </group>
+                    <group name="xaa_aa_quote_iso_side_wall_photo" string="Side wall 1">
+                        <field name="xaa_aa_quote_iso_side_wall_photo" nolabel="1" widget="image" class="custom-image-size"/>
+                    </group>
+                    <group name="xaa_aa_quote_iso_side_wall_two_photo" string="Side wall 2">
+                        <field name="xaa_aa_quote_iso_side_wall_two_photo" nolabel="1" widget="image" class="custom-image-size"/>
+                    </group>
+                    <group name="xaa_aa_quote_attachment_photo" string="Attachment">
+                        <field name="xaa_aa_quote_attachment_photo" nolabel="1" widget="image" class="custom-image-size"/>
+                    </group>
+                    <group name="xaa_aa_quote_extra_photo_one" string="Additional photo">
+                        <field name="xaa_aa_quote_extra_photo_one" nolabel="1" widget="image" class="custom-image-size"/>
+                    </group>
+                    <group name="xaa_aa_quote_extra_photo_two" string="Additional photo">
+                        <field name="xaa_aa_quote_extra_photo_two" nolabel="1" widget="image" class="custom-image-size"/>
+                    </group>
+                    <div class="text-center text-primary h2-width">
+                        <span>Thank you for answering these questions. If you are interested in giving us - after we have given our final agreement - approval on the offer,</span>
+                    </div>
+                    <group name="xaa_aa_quote_iso_working_days" string="so that you have your solar panels on the roof within five working days?">
+                        <field name="xaa_aa_quote_iso_working_days" nolabel="1"/>
+                    </group>
+                </group>
+            </xpath>
+        </field>
+    </record>
+</odoo>

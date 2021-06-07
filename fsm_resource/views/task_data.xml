@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<odoo>
+    <data>
+        <record id="industry_fsm.fsm_menu_planning" model="ir.ui.menu">
+            <field name="groups_id" eval="[(6,0,[ref('base.group_system')])]"/>
+        </record>
+    </data>
+</odoo>

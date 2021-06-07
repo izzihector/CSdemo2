@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <!--EXPORT REPORT-->
+        <record id="view_export_report_invoice_form" model="ir.ui.view">
+            <field name="name">account.invoice.wizard.form</field>
+            <field name="model">account.invoice.wizard</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+            <form string="Invoice Export Report">
+                <group>
+                    <field name="xaa_aa_invoice_ids" nolabel="1" domain="[('move_type', 'in', ['out_invoice','out_refund'])]"/>
+                </group>
+                <footer>
+                <button icon="gtk-print" string="Maak Excel" name="invoice_export_excel" type="object" class="oe_highlight"/>
+                    or
+                    <button string="Cancel" class="oe_link" special="cancel" />
+                </footer>
+            </form>
+            </field>
+        </record>
+
+        <record id="action_export_invoice_report_excel_wizard" model="ir.actions.act_window">
+            <field name="name">Exporteer Factuur</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">account.invoice.wizard</field>
+            <field name="view_mode">form</field>
+            <field name="target">new</field>
+        </record>
+
+        <menuitem id="wiz_report_menu_export_invoice_report"
+            action="action_export_invoice_report_excel_wizard"
+            parent="account.menu_finance_receivables"/>
+
+        <record id="view_account_invoice_excel_form" model="ir.ui.view">
+            <field name="name">invoice.excel.form</field>
+            <field name="model">invoice.excel</field>
+            <field name="arch" type="xml">
+                <form string="Excel Report file">
+                    <group>
+                        <field name="xaa_aa_excel_file" readonly="1" filename="xaa_aa_file_name"/>
+                        <field name="xaa_aa_file_name" invisible="1"/>
+                    </group>
+                </form>
+            </field>
+        </record>
+
+        <record id="action_account_invoice_excel_form" model="ir.actions.act_window">
+            <field name="name">Invoice Excel Report </field>
+            <field name="view_id" ref="view_account_invoice_excel_form"/>
+            <field name="view_mode">form</field>
+            <field name="res_model">invoice.excel</field>
+            <field name="target">new</field>
+        </record>
+
+    </data>
+</odoo>

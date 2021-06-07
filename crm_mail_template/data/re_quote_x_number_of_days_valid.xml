@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <!-- Mail S - Re-quote x number of days valid - version 1.0  -->
+        <record id="re_quote_x_number_od_days_valid" model="mail.template">
+            <field name="name">Mail S - Re-quote x number of days valid - version 1.0</field>
+            <field name="email_from">${(object.company_id.email or '')|safe}</field>
+            <field name="subject">Reminder quote Energy control NL</field>
+            <field name="email_to">${object.email_from|safe}</field>
+            <field name="model_id" ref="crm.model_crm_lead"/>
+            <field name="lang">${object.partner_id.lang}</field>
+            <field name="body_html"><![CDATA[
+                <p style="margin:0px 0px 9px 0px;">Dear sir/madam,</p>
+                <p style="margin:0px 0px 9px 0px;">
+                   You recently received an offer from us for an energy-saving measure. Unfortunately we have not heard from you yet. The quotation you made is still valid for a few days.
+                </p>
+                <p style="margin:0px 0px 9px 0px;">
+                    You may have made the decision in the meantime and would like us to carry out the work. We would of course appreciate this and to make it easier for you, you can already plan the activities below. This can be done via the <b>Plan your desired execution date</b> button below, which gives you the opportunity to indicate your desired day yourself.
+                </p>
+                <p style="margin:0px 0px 9px 0px;"><br/><br/><a href="/book/calendar/2/${object.id}" style="background-color: #1abc9c; padding: 15px; text-decoration: none; color: #fff; border-radius: 5px; font-size: 13px;" class="o_default_snippet_text">Schedule your desired execution date</a><br/><br/></p>
+                <p style="margin:0px 0px 9px 0px;">
+                    If you have a question about this mail or our offer, you can contact our customer service every working day from 8:30 am to 5:00 pm 0546 - 57 4472 or send an e-mail to customerservice@energy-control.nl we will help you please continue.
+                </p>
+                <br/><br/>
+                <p style="margin:0px 0px 9px 0px;">
+                    With best regards,<br/>
+                    <img src="/crm_mail_template/static/src/img/company_logo.png" style="width:100px;height:100px;"/><br/>
+                    Team Energiecontrol NL<br/>
+                    Phone: 0546- 57 44 72<br/>
+                    <a href="https://www.facebook.com/energiecontrolnl/" target="_blank">
+                        <img src="/crm_mail_template/static/src/img/facebook.jpeg" style="width:30px;height:30px;"/>
+                    </a>
+                    <a href="https://www.instagram.com/energiecontrolnl/" target="_blank">
+                        <img src="/crm_mail_template/static/src/img/instagram.jpeg" style="width:30px;height:30px;"/>
+                    </a>
+                </p>
+]]>
+            </field>
+        </record>
+    </data>
+</odoo>

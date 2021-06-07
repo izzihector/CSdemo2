@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="view_project_formulier_form_inh" model="ir.ui.view">
+        <field name="name">question.formulier.form.pv.inh</field>
+        <field name="model">question.formulier</field>
+        <field name="inherit_id" ref="project_formulier_quote.view_project_formulier_form_inh"/>
+        <field name="arch" type="xml">
+            <xpath expr="//page[@name='website_formulier_quote']" position="inside">
+                <group attrs="{'invisible': [('xaa_aa_formulier_type', '!=', 'formulier_three')]}">
+                    <group>
+                        <field name="xaa_aa_details_are_correct"/>
+                        <field name="xaa_aa_energy_consumption"/>
+                        <field name="xaa_aa_count_people_in_house"/>
+                        <field name="xaa_aa_type_of_house_id"/>
+                        <field name="xaa_aa_type_of_roof_ids"/>
+                        <field name="xaa_aa_obstacles_on_roof"/>
+                        <field name="xaa_aa_shadow_cast_solar_panels"/>
+                        <field name="xaa_aa_tree"/>
+                        <field name="xaa_aa_another_building"/>
+                        <field name="xaa_aa_obstacle_dormer"/>
+                        <field name="xaa_aa_obstacle_chimney_or_air_inlet"/>
+                        <field name="xaa_aa_obstacle_otherwise_namely"/>
+                        <field name="xaa_aa_explain_otherwise_namely"/>
+                    </group>
+                    <group>
+                        <field name="xaa_aa_how_roof_covered"/>
+                        <field name="xaa_aa_how_flat_roof_covered"/>
+                        <field name="xaa_aa_location_of_roof"/>
+                        <field name="xaa_aa_percentage_correction"/>
+                        <field name="xaa_aa_calculated_energy"/>
+                        <field name="xaa_aa_solar_pannel_product_id"/>
+                        <field name="xaa_aa_choosen_panel_qty"/>
+                        <field name="xaa_aa_calculated_panel_qty"/>
+                        <field name="xaa_aa_energy_production"/>
+                    </group>
+                </group>
+            </xpath>
+        </field>
+    </record>
+
+    <record id="view_question_formulier_quote_form" model="ir.ui.view">
+        <field name="name">question.formulier.quote.form</field>
+        <field name="model">question.formulier</field>
+        <field name="inherit_id" ref="project_formulier.view_project_formulier_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//page[@name='quotation_question']" position="inside">
+                <group attrs="{'invisible': [('xaa_aa_formulier_type', '!=', 'formulier_three')]}">
+                    <div class="text-center text-primary h2-width">
+                        <h2><u>General introduction</u></h2>
+                    </div>
+                    <div class="row h2-width ml8 mr8">
+                        <span>Thank you for your interest in a solar panel installation from Energiecontrol. When you answer the questions below, we get a better picture of the required material and your specific wishes. To make the situation clear to us, we also ask you - if possible - to upload some photos.</span>
+                    </div>
+                    <div class="text-center text-primary h2-width">
+                        <h2><u>Accessibility</u></h2>
+                    </div>
+                    <group name="xaa_aa_quote_scaffolding" string="Is there a free space for scaffolding?">
+                        <field name="xaa_aa_quote_scaffolding" nolabel="1"/>
+                    </group>
+                    <group name="xaa_aa_quote_place_scaffolding" string="What is at the place where we place the scaffolding?">
+                        <field name="xaa_aa_quote_place_scaffolding" nolabel="1"/>
+                    </group>
+                    <div class="row h2-width  ml8 mr8">
+                        <h3 class="o_horizontal_separator">Is your home easily accessible?</h3>
+                        <p>- The walking route from our company cars to the home is no more than 20 meters.</p>
+                        <p>- If solar panels come at the back of the house, we can (easily) get there.</p>
+                        <p>- Your home is not in the middle of a center.</p>
+                        <p>- We do not have to install scaffolding in a public place.</p>
+                        <field name="xaa_aa_quote_home_accessible" nolabel="1"/>
+                    </div>
+                    <div class="row h2-width  ml8 mr8 mt8">
+                        <h3 class="o_horizontal_separator">How is the parking at your home?</h3>
+                        <p>- Can we leave our company car with trailer for your home?</p>
+                        <p>- Do we have to pay parking?</p>
+                        <p>- Our means of transport must be located near the home.</p>
+                        <field name="xaa_aa_quote_home_parking" nolabel="1"/>
+                    </div>
+                    <div class="text-center text-primary h2-width">
+                        <h2><u>Roof</u></h2>
+                    </div>
+                    <group name="xaa_aa_quote_type_of_roof" string="What type of roof do you have?">
+                        <field name="xaa_aa_quote_type_of_roof" nolabel="1"/>
+                    </group>
+                    <group name="xaa_aa_quote_schuin_roof_covered" string="How is your pitched roof covered?">
+                        <field name="xaa_aa_quote_schuin_roof_covered" nolabel="1"/>
+                    </group>
+                    <group name="xaa_aa_quote_plat_roof_covered" string="How is your flat roof covered?">
+                        <field name="xaa_aa_quote_plat_roof_covered" nolabel="1"/>
+                    </group>
+                    <group name="xaa_aa_quote_condition_roof" string="What is the condition of your roof?">
+                        <field name="xaa_aa_quote_condition_roof" nolabel="1"/>
+                    </group>
+                    <group name="xaa_aa_quote_edge_relevant_roof" string="How high do you estimate the height from the ground to the edge of the relevant roof?">
+                        <field name="xaa_aa_quote_edge_relevant_roof" nolabel="1"/>
+                    </group>
+                    <group name="xaa_aa_quote_incorporated_roof" string="Is asbestos incorporated in the roof?">
+                        <field name="xaa_aa_quote_incorporated_roof" nolabel="1"/>
+                    </group>
+                    <group name="xaa_aa_quote_slope_roof" string="What is the slope of the roof?">
+                        <field name="xaa_aa_quote_slope_roof" nolabel="1"/>
+                    </group>
+                    <div class="h2-width ml8 mr8 mt16">
+                        <span>You may already have an idea how you would like your solar panels installed. You can upload a photo at the end of this questionnaire for clarification. Don't have a photo? Then you can give a brief description in the field below.</span><br/>
+                    </div>
+                    <group name="xaa_aa_quote_description" string="Where do you want to mount your solar panels?">
+                        <field name="xaa_aa_quote_description" nolabel="1"/>
+                    </group>
+                    <div class="h2-width ml8 mr8 mt16">
+                        <span>The quote that you have received from us will state the dimensions of your inverter. There must be a natural ventilation of about 50 cm around this inverter. We will always try to place the inverter as close as possible to the panels. However, other places are also possible in consultation.</span><br/>
+                         <span>It is important that the inverter comes to hang on a sturdy wall, with cables attached to the bottom. A few cables come from the solar panels to the inverter; the so-called DC (direct voltage) cabling. In addition, a cable with approximately the thickness of an inch will come to the meter box: the so-called AC (alternating voltage) cabling.</span>
+                    </div>
+                    <group name="xaa_aa_quote_inverter_hang" string="Do you have a good place in mind where the inverter can hang?">
+                        <field name="xaa_aa_quote_inverter_hang" nolabel="1"/>
+                    </group>
+                    <group name="xaa_aa_quote_meter_cupboard" string="Is the router/internet port in the meter cupboard?">
+                        <field name="xaa_aa_quote_meter_cupboard" nolabel="1"/>
+                    </group>
+                     <div class="h2-width ml8 mr8 mt16">
+                        <span>You may already know how to lay the cables. In that case you can give a brief description in the field below. This field is not mandatory.</span>
+                    </div>
+                    <group name="xaa_aa_quote_lay_cable_description" string="How would you like to have the cables laid?">
+                        <field name="xaa_aa_quote_lay_cable_description" nolabel="1"/>
+                    </group>
+                    <div class="text-center text-primary h2-width">
+                        <h2><u>Concluding questions</u></h2>
+                    </div>
+                    <group name="xaa_aa_quote_building_permit_required" string="Do you have a monument and / or building where a permit is required to do work on the outside of your home?">
+                        <field name="xaa_aa_quote_building_permit_required" nolabel="1"/>
+                    </group>
+                    <group name="xaa_aa_quote_occupied_home" string="Do you have a rental or owner-occupied home?">
+                        <field name="xaa_aa_quote_occupied_home" nolabel="1"/>
+                    </group>
+                    <group name="xaa_aa_quote_entrepreneur" string="Are you an entrepreneur?">
+                        <field name="xaa_aa_quote_entrepreneur" nolabel="1"/>
+                    </group>
+                    <div class="h2-width">
+                        <span>Note: Make sure the energy bill is not in your name of the entrepreneur.</span>
+                    </div>
+                    <div class="h2-width">
+                        <span>Perhaps there are still things that you find important and that we should know to proceed with the proper placement of solar panels. You can indicate these matters in the field below. This field is not mandatory.</span>
+                    </div>
+                    <group name="xaa_aa_quote_solar_panel_description" string="Do you have any important additions?">
+                        <field name="xaa_aa_quote_solar_panel_description" nolabel="1"/>
+                    </group>
+                    <div class="text-center text-primary h2-width">
+                        <h2><u>Photos of your home</u></h2>
+                    </div>
+                    <div class="text-center h2-width mr16 ml16">
+                        <span>We kindly request you to provide us with some pictures: this way we get a good picture of your home and the work to be carried out.</span>
+                    </div>
+                    <group name="xaa_aa_quote_overview_roof_photo" string="Overview photo of the roof (important)">
+                        <field name="xaa_aa_quote_overview_roof_photo" nolabel="1" widget="image" class="custom-image-size"/>
+                    </group>
+                    <group name="xaa_aa_quote_location_inverter_photo" string="Photo of the preferred location of the inverter (important)">
+                        <field name="xaa_aa_quote_location_inverter_photo" nolabel="1" widget="image" class="custom-image-size"/>
+                    </group>
+                    <group name="xaa_aa_quote_meter_cupboard_photo" string="Photograph of your meter cupboard (important)">
+                        <field name="xaa_aa_quote_meter_cupboard_photo" nolabel="1" widget="image" class="custom-image-size"/>
+                    </group>
+                    <group name="xaa_aa_quote_placement_panels_photo" string="Photograph or drawing of the desired placement of solar panels">
+                        <field name="xaa_aa_quote_placement_panels_photo" nolabel="1" widget="image" class="custom-image-size"/>
+                    </group>
+                    <group name="xaa_aa_quote_where_cabling_photo" string="Photo of where the cabling can go">
+                        <field name="xaa_aa_quote_where_cabling_photo" nolabel="1" widget="image" class="custom-image-size"/>
+                    </group>
+                    <group name="xaa_aa_quote_extra_photo" string="Extra photos">
+                        <field name="xaa_aa_quote_extra_photo" nolabel="1" widget="image" class="custom-image-size"/>
+                    </group>
+                    <div class="text-primary h2-width">
+                        <span>Do we have to adjust your quotation with products from quotes already received? Then upload your quotation already received here. This is not mandatory.</span>
+                    </div>
+                    <group name="xaa_aa_quote_extra_photo_one" string="Previously received quotation">
+                        <field name="xaa_aa_quote_extra_photo_one" nolabel="1" widget="image" class="custom-image-size"/>
+                    </group>
+                    <div class="text-primary h2-width">
+                        <span>Thank you for filling in these questions. We would like to know what we can do for you now. If approved, it is possible to install the solar panels within now and five working days.</span>
+                    </div>
+                    <group name="xaa_aa_quote_final_approval" string="What can we do for you now?">
+                        <field name="xaa_aa_quote_final_approval" nolabel="1"/>
+                    </group>
+                    <group name="xaa_aa_quote_final_approval_text" string="Final approval description">
+                        <field name="xaa_aa_quote_final_approval_text" nolabel="1"/>
+                    </group>
+                    <group name="xaa_aa_quote_final_approval_date" string="At what time would you like to be called about this?">
+                        <field name="xaa_aa_quote_final_approval_date" nolabel="1"/>
+                    </group>
+                </group>
+            </xpath>
+        </field>
+    </record>
+</odoo>

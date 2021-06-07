@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="quote_question_roof" name="Roof Questions">
+        <div class="div_padding_left">
+           <div class="form-group mt32">
+                <div class="col-lg-12 col-md-12 col-sm-12 ">
+                    <div class="form_lable mt16">
+                        <label class="montserrat-extrabold_24">
+                            What type of roof do you have?
+                        </label>
+                    </div>
+                </div>
+                <div class="col-lg-8 col-md-10 col-sm-12 checkbox_div ">
+                    <div>
+                        <div class="checkbox mb8 mt16">
+                            <input type="radio" class="radio_design" name="xaa_aa_quote_type_of_roof" t-att-checked="formulier_id.xaa_aa_quote_type_of_roof == 'schuin'" value="schuin"/>
+                            <label class="ng-binding col-form-label ml16" for="xaa_aa_quote_type_of_roof">schuin
+                            </label>
+                        </div>
+                        <div class="checkbox mb8">
+                            <input type="radio" class="radio_design" name="xaa_aa_quote_type_of_roof" t-att-checked="formulier_id.xaa_aa_quote_type_of_roof == 'plat'" value="plat"/>
+                            <label class="ng-binding col-form-label ml16" for="xaa_aa_quote_type_of_roof">plat
+                            </label>
+                        </div>
+                        <div class="checkbox mb8">
+                            <input type="radio" class="radio_design" name="xaa_aa_quote_type_of_roof" t-att-checked="formulier_id.xaa_aa_quote_type_of_roof == 'beide'" value="beide"/>
+                            <label class="ng-binding col-form-label ml16" for="xaa_aa_quote_type_of_roof">beide
+                            </label>
+                        </div>
+                        <div class="checkbox mb8">
+                            <input type="radio" class="radio_design" name="xaa_aa_quote_type_of_roof" t-att-checked="formulier_id.xaa_aa_quote_type_of_roof == 'anders, namelijk'" value="anders, namelijk"/>
+                            <label class="ng-binding col-form-label ml16 mr4 pull-left" for="xaa_aa_quote_type_of_roof">anders, namelijk:
+                            </label>
+                            <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+                                <input  type="text" name="xaa_aa_quote_type_of_roof_text" class="form-control" t-att-value="formulier_id.xaa_aa_quote_type_of_roof_text"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group mt32 schuin_block" t-att-style="'display:block;'if formulier_id.xaa_aa_quote_type_of_roof == 'schuin' or formulier_id.xaa_aa_quote_type_of_roof == 'beide' else 'display:none;'">
+                <div class="col-lg-12 col-md-12 col-sm-12 ">
+                    <div class="form_lable mt16">
+                        <label class="montserrat-extrabold_24">
+                            How is your pitched roof covered?
+                        </label>
+                    </div>
+                </div>
+                <div class="col-lg-8 col-md-10 col-sm-12 checkbox_div ">
+                    <div>
+                        <div class="checkbox mb8 mt16">
+                            <input type="radio" class="radio_design" name="xaa_aa_quote_schuin_roof_covered" t-att-checked="formulier_id.xaa_aa_quote_schuin_roof_covered == 'pannen'" value="pannen"/>
+                            <label class="ng-binding col-form-label ml16" for="xaa_aa_quote_schuin_roof_covered">pannen
+                            </label>
+                        </div>
+                        <div class="checkbox mb8">
+                            <input type="radio" class="radio_design" name="xaa_aa_quote_schuin_roof_covered" t-att-checked="formulier_id.xaa_aa_quote_schuin_roof_covered == 'golfplaten'" value="golfplaten"/>
+                            <label class="ng-binding col-form-label ml16" for="xaa_aa_quote_schuin_roof_covered">golfplaten
+                            </label>
+                        </div>
+                        <div class="checkbox mb8">
+                            <input type="radio" class="radio_design" name="xaa_aa_quote_schuin_roof_covered" t-att-checked="formulier_id.xaa_aa_quote_schuin_roof_covered == 'metaal'" value="metaal"/>
+                            <label class="ng-binding col-form-label ml16" for="xaa_aa_quote_schuin_roof_covered">metaal
+                            </label>
+                        </div>
+                        <div class="checkbox mb8">
+                            <input type="radio" class="radio_design" name="xaa_aa_quote_schuin_roof_covered" t-att-checked="formulier_id.xaa_aa_quote_schuin_roof_covered == 'bitumen'" value="bitumen"/>
+                            <label class="ng-binding col-form-label ml16" for="xaa_aa_quote_schuin_roof_covered">bitumen
+                            </label>
+                        </div>
+                        <div class="checkbox mb8">
+                            <input type="radio" class="radio_design" name="xaa_aa_quote_schuin_roof_covered" t-att-checked="formulier_id.xaa_aa_quote_schuin_roof_covered == 'riet'" value="riet"/>
+                            <label class="ng-binding col-form-label ml16" for="xaa_aa_quote_schuin_roof_covered">riet
+                            </label>
+                        </div>
+                        <div class="checkbox mb8">
+                            <input type="radio" class="radio_design" name="xaa_aa_quote_schuin_roof_covered" t-att-checked="formulier_id.xaa_aa_quote_schuin_roof_covered == 'Ik weet het niet'" value="Ik weet het niet"/>
+                            <label class="ng-binding col-form-label ml16" for="xaa_aa_quote_schuin_roof_covered">Ik weet het niet
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group mt32 plat_block" t-att-style="'display:block;'if formulier_id.xaa_aa_quote_type_of_roof == 'plat' or formulier_id.xaa_aa_quote_type_of_roof == 'beide' else 'display:none;'">
+                <div class="col-lg-12 col-md-12 col-sm-12 ">
+                    <div class="form_lable mt16">
+                        <label class="montserrat-extrabold_24">
+                            How is your flat roof covered?
+                        </label>
+                    </div>
+                </div>
+                <div class="col-lg-8 col-md-10 col-sm-12 checkbox_div ">
+                    <div>
+                        <div class="checkbox mb8 mt16">
+                            <input type="radio" class="radio_design" name="xaa_aa_quote_plat_roof_covered" t-att-checked="formulier_id.xaa_aa_quote_plat_roof_covered == 'bitumen'" value="bitumen"/>
+                            <label class="ng-binding col-form-label ml16" for="xaa_aa_quote_plat_roof_covered">bitumen
+                            </label>
+                        </div>
+                        <div class="checkbox mb8">
+                            <input type="radio" class="radio_design" name="xaa_aa_quote_plat_roof_covered" t-att-checked="formulier_id.xaa_aa_quote_plat_roof_covered == 'kunststof'" value="kunststof"/>
+                            <label class="ng-binding col-form-label ml16" for="xaa_aa_quote_plat_roof_covered">kunststof
+                            </label>
+                        </div>
+                        <div class="checkbox mb8">
+                            <input type="radio" class="radio_design" name="xaa_aa_quote_plat_roof_covered" t-att-checked="formulier_id.xaa_aa_quote_plat_roof_covered == 'grind'" value="grind"/>
+                            <label class="ng-binding col-form-label ml16" for="xaa_aa_quote_plat_roof_covered">grind
+                            </label>
+                        </div>
+                        <div class="checkbox mb8">
+                            <input type="radio" class="radio_design" name="xaa_aa_quote_plat_roof_covered" t-att-checked="formulier_id.xaa_aa_quote_plat_roof_covered == 'sedum'" value="sedum"/>
+                            <label class="ng-binding col-form-label ml16" for="xaa_aa_quote_plat_roof_covered">sedum
+                            </label>
+                        </div>
+                        <div class="checkbox mb8">
+                            <input type="radio" class="radio_design" name="xaa_aa_quote_plat_roof_covered" t-att-checked="formulier_id.xaa_aa_quote_plat_roof_covered == 'Ik weet het niet'" value="Ik weet het niet"/>
+                            <label class="ng-binding col-form-label ml16" for="xaa_aa_quote_plat_roof_covered">Ik weet het niet
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group mt32">
+                <div class="col-lg-12 col-md-12 col-sm-12 ">
+                    <div class="form_lable mt16">
+                        <label class="montserrat-extrabold_24">
+                            What is the condition of your roof?
+                        </label>
+                    </div>
+                </div>
+                <div class="col-lg-8 col-md-10 col-sm-12 checkbox_div ">
+                    <div>
+                        <div class="checkbox mb8 mt16">
+                            <input type="radio" class="radio_design" name="xaa_aa_quote_condition_roof" t-att-checked="formulier_id.xaa_aa_quote_condition_roof == 'Het dak is goed'" value="Het dak is goed"/>
+                            <label class="ng-binding col-form-label ml16" for="xaa_aa_quote_condition_roof">Het dak is goed
+                            </label>
+                        </div>
+                        <div class="checkbox mb8">
+                            <input type="radio" class="radio_design" name="xaa_aa_quote_condition_roof" t-att-checked="formulier_id.xaa_aa_quote_condition_roof == 'Het dak is niet goed, maar ik laat hier iemand naar kijken'" value="Het dak is niet goed, maar ik laat hier iemand naar kijken"/>
+                            <label class="ng-binding col-form-label ml16" for="xaa_aa_quote_condition_roof">Het dak is niet goed, maar ik laat hier iemand naar kijken
+                            </label>
+                        </div>
+                        <div class="checkbox mb8">
+                            <input type="radio" class="radio_design" name="xaa_aa_quote_condition_roof" t-att-checked="formulier_id.xaa_aa_quote_condition_roof == 'Ik heb een nieuwbouwwoning'" value="Ik heb een nieuwbouwwoning"/>
+                            <label class="ng-binding col-form-label ml16" for="xaa_aa_quote_condition_roof">Ik heb een nieuwbouwwoning
+                            </label>
+                        </div>
+                        <div class="checkbox mb8">
+                            <input type="radio" class="radio_design" name="xaa_aa_quote_condition_roof" t-att-checked="formulier_id.xaa_aa_quote_condition_roof == 'Ik weet het niet'" value="Ik weet het niet"/>
+                            <label class="ng-binding col-form-label ml16" for="xaa_aa_quote_condition_roof">Ik weet het niet
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group mt32">
+                <div class="col-lg-12 col-md-12 col-sm-12 ">
+                    <div class="form_lable mt16">
+                        <label class="montserrat-extrabold_24">
+                            How high do you estimate the height from the ground to the edge of the relevant roof?
+                        </label>
+                    </div>
+                </div>
+                <div class="col-lg-8 col-md-10 col-sm-12 checkbox_div ">
+                    <div>
+                        <div class="checkbox mb8 mt16">
+                            <input type="radio" class="radio_design" name="xaa_aa_quote_edge_relevant_roof" t-att-checked="formulier_id.xaa_aa_quote_edge_relevant_roof == '2,5 t/m 5 meter'" value="2,5 t/m 5 meter"/>
+                            <label class="ng-binding col-form-label ml16" for="xaa_aa_quote_edge_relevant_roof">2,5 t/m 5 meter
+                            </label>
+                        </div>
+                        <div class="checkbox mb8">
+                            <input type="radio" class="radio_design" name="xaa_aa_quote_edge_relevant_roof" t-att-checked="formulier_id.xaa_aa_quote_edge_relevant_roof == '5 t/m 8 meter'" value="5 t/m 8 meter"/>
+                            <label class="ng-binding col-form-label ml16" for="xaa_aa_quote_edge_relevant_roof">5 t/m 8 meter
+                            </label>
+                        </div>
+                        <div class="checkbox mb8">
+                            <input type="radio" class="radio_design" name="xaa_aa_quote_edge_relevant_roof" t-att-checked="formulier_id.xaa_aa_quote_edge_relevant_roof == 'Hoger dan 8 meter'" value="Hoger dan 8 meter"/>
+                            <label class="ng-binding col-form-label ml16" for="xaa_aa_quote_edge_relevant_roof">Hoger dan 8 meter
+                            </label>
+                        </div>
+                        <div class="checkbox mb8">
+                            <input type="radio" class="radio_design" name="xaa_aa_quote_edge_relevant_roof" t-att-checked="formulier_id.xaa_aa_quote_edge_relevant_roof == 'Ik weet het niet'" value="Ik weet het niet"/>
+                            <label class="ng-binding col-form-label ml16" for="xaa_aa_quote_edge_relevant_roof">Ik weet het niet
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group mt32">
+                <div class="col-lg-12 col-md-12 col-sm-12 ">
+                    <div class="form_lable mt16">
+                        <label class="montserrat-extrabold_24">
+                            Is asbestos incorporated in the roof?
+                        </label>
+                    </div>
+                    <div>
+                        <span class="montserrat_light">Please note: mounting panels on a roof with asbestos is no problem:</span>
+                    </div>
+                    <div>
+                        <span class="montserrat_light">with this question we determine which mounting system we can use.</span>
+                    </div>
+                </div>
+                <div class="col-lg-8 col-md-10 col-sm-12 checkbox_div ">
+                    <div>
+                        <div class="checkbox mb8 mt16">
+                            <input type="radio" class="radio_design" name="xaa_aa_quote_incorporated_roof" t-att-checked="formulier_id.xaa_aa_quote_incorporated_roof == 'ja'" value="ja"/>
+                            <label class="ng-binding col-form-label ml16" for="xaa_aa_quote_incorporated_roof">ja
+                            </label>
+                        </div>
+                        <div class="checkbox mb8">
+                            <input type="radio" class="radio_design" name="xaa_aa_quote_incorporated_roof" t-att-checked="formulier_id.xaa_aa_quote_incorporated_roof == 'nee'" value="nee"/>
+                            <label class="ng-binding col-form-label ml16" for="xaa_aa_quote_incorporated_roof">nee
+                            </label>
+                        </div>
+                        <div class="checkbox mb8">
+                            <input type="radio" class="radio_design" name="xaa_aa_quote_incorporated_roof" t-att-checked="formulier_id.xaa_aa_quote_incorporated_roof == 'Ik weet het niet'" value="Ik weet het niet"/>
+                            <label class="ng-binding col-form-label ml16" for="xaa_aa_quote_incorporated_roof">Ik weet het niet
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group mt32">
+                <div class="col-lg-12 col-md-12 col-sm-12 ">
+                    <div class="form_lable mt16">
+                        <label class="montserrat-extrabold_24">
+                            What is the slope of the roof?
+                        </label>
+                    </div>
+                </div>
+                <div class="col-lg-8 col-md-10 col-sm-12 checkbox_div ">
+                    <div>
+                        <div class="checkbox mb8 mt16">
+                            <input type="radio" class="radio_design" name="xaa_aa_quote_slope_roof" t-att-checked="formulier_id.xaa_aa_quote_slope_roof == '0 - 10'" value="0 - 10"/>
+                            <label class="ng-binding col-form-label ml16" for="xaa_aa_quote_slope_roof">0 - 10˚
+                            </label>
+                        </div>
+                        <div class="checkbox mb8">
+                            <input type="radio" class="radio_design" name="xaa_aa_quote_slope_roof" t-att-checked="formulier_id.xaa_aa_quote_slope_roof == '10 - 45'" value="10 - 45"/>
+                            <label class="ng-binding col-form-label ml16" for="xaa_aa_quote_slope_roof">10˚ - 45˚
+                            </label>
+                        </div>
+                        <div class="checkbox mb8">
+                            <input type="radio" class="radio_design" name="xaa_aa_quote_slope_roof" t-att-checked="formulier_id.xaa_aa_quote_slope_roof == 'boven 45'" value="boven 45"/>
+                            <label class="ng-binding col-form-label ml16" for="xaa_aa_quote_slope_roof">boven 45˚
+                            </label>
+                        </div>
+                        <div class="checkbox mb8">
+                            <input type="radio" class="radio_design" name="xaa_aa_quote_slope_roof" t-att-checked="formulier_id.xaa_aa_quote_slope_roof == 'Ik weet het niet'" value="Ik weet het niet"/>
+                            <label class="ng-binding col-form-label ml16" for="xaa_aa_quote_slope_roof">Ik weet het niet
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group row mt64" id="next_privious">
+                <div class="col-md-4 col-lg-4 col-sm-5 col-6">
+                    <a class="btn-privoius mt16"
+                        data-id="quote_accessibility_id"
+                        type="Button" t-att-value="formulier_id.id">
+                        <i class="fa fa-chevron-left" aria-hidden="false"/>Previous step
+                    </a>
+                </div>
+                <div class="col-md-4 col-lg-4 col-sm-5 col-6 quotation_tab_next">
+                    <button class="btn btn-next mt16 mr16"
+                        data-id="quote_placement_id" type="Button"
+                        t-att-value="formulier_id.id" style="left:-10px;">
+                        Next step
+                    </button>
+                </div>
+            </div>
+        </div>
+    </template>
+</odoo>

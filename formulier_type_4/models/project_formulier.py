@@ -17,172 +17,172 @@ class ProjectFormulier(models.Model):
 
     # Ontwerpvragen -> Design questions
     xaa_aa_roof_type_one = fields.Selection([
-        ('Slanted roof', 'Slanted roof'),
-        ('Flat roof', 'Flat roof'),],
+        ('Schuin', 'Schuin'),
+        ('Plat', 'Plat'),],
         string='Roof type')
     xaa_aa_roof_type_two = fields.Selection([
-        ('Slanted roof', 'Slanted roof'),
-        ('Flat roof', 'Flat roof'),],
+        ('Schuin', 'Schuin'),
+        ('Plat', 'Plat'),],
         string='Roof type')
     xaa_aa_roof_type_three = fields.Selection([
-        ('Slanted roof', 'Slanted roof'),
-        ('Flat roof', 'Flat roof'),],
+        ('Schuin', 'Schuin'),
+        ('Plat', 'Plat'),],
         string='Roof type')
     xaa_aa_roof_type_four = fields.Selection([
-        ('Slanted roof', 'Slanted roof'),
-        ('Flat roof', 'Flat roof'),],
+        ('Schuin', 'Schuin'),
+        ('Plat', 'Plat'),],
         string='Roof type')
     xaa_aa_roof_type_five = fields.Selection([
-        ('Slanted roof', 'Slanted roof'),
-        ('Flat roof', 'Flat roof'),],
+        ('Schuin', 'Schuin'),
+        ('Plat', 'Plat'),],
         string='Roof type')
     xaa_aa_roof_type_six = fields.Selection([
-        ('Slanted roof', 'Slanted roof'),
-        ('Flat roof', 'Flat roof'),],
+        ('Schuin', 'Schuin'),
+        ('Plat', 'Plat'),],
         string='Roof type')
     xaa_aa_roof_type_seven = fields.Selection([
-        ('Slanted roof', 'Slanted roof'),
-        ('Flat roof', 'Flat roof'),],
+        ('Schuin', 'Schuin'),
+        ('Plat', 'Plat'),],
         string='Roof type')
     xaa_aa_roof_type_eight = fields.Selection([
-        ('Slanted roof', 'Slanted roof'),
-        ('Flat roof', 'Flat roof'),],
+        ('Schuin', 'Schuin'),
+        ('Plat', 'Plat'),],
         string='Roof type')
     xaa_aa_covering_type_one = fields.Selection([
-        ('Roof tiles', 'Roof tiles'),
-        ('Corrugated', 'Corrugated'),
-        ('Reed', 'Reed'),
+        ('Dakpannen', 'Dakpannen'),
+        ('Golfplaat', 'Golfplaat'),
+        ('Riet', 'Riet'),
         ('Bitumen', 'Bitumen'),
         ('EPDM', 'EPDM'),
-        ('Other', 'Other'),],
+        ('Anders,Zie op', 'Anders,Zie op'),],
         string='Covering type')
     xaa_aa_covering_type_two = fields.Selection([
-        ('Roof tiles', 'Roof tiles'),
-        ('Corrugated', 'Corrugated'),
-        ('Reed', 'Reed'),
+        ('Dakpannen', 'Dakpannen'),
+        ('Golfplaat', 'Golfplaat'),
+        ('Riet', 'Riet'),
         ('Bitumen', 'Bitumen'),
         ('EPDM', 'EPDM'),
-        ('Other', 'Other'),],
+        ('Anders,Zie op', 'Anders,Zie op'),],
         string='Covering type')
     xaa_aa_covering_type_three = fields.Selection([
-        ('Roof tiles', 'Roof tiles'),
-        ('Corrugated', 'Corrugated'),
-        ('Reed', 'Reed'),
+        ('Dakpannen', 'Dakpannen'),
+        ('Golfplaat', 'Golfplaat'),
+        ('Riet', 'Riet'),
         ('Bitumen', 'Bitumen'),
         ('EPDM', 'EPDM'),
-        ('Other', 'Other'),],
+        ('Anders,Zie op', 'Anders,Zie op'),],
         string='Covering type')
     xaa_aa_covering_type_four = fields.Selection([
-        ('Roof tiles', 'Roof tiles'),
-        ('Corrugated', 'Corrugated'),
-        ('Reed', 'Reed'),
+        ('Dakpannen', 'Dakpannen'),
+        ('Golfplaat', 'Golfplaat'),
+        ('Riet', 'Riet'),
         ('Bitumen', 'Bitumen'),
         ('EPDM', 'EPDM'),
-        ('Other', 'Other'),],
+        ('Anders,Zie op', 'Anders,Zie op'),],
         string='Covering type')
     xaa_aa_covering_type_five = fields.Selection([
-        ('Roof tiles', 'Roof tiles'),
-        ('Corrugated', 'Corrugated'),
-        ('Reed', 'Reed'),
+        ('Dakpannen', 'Dakpannen'),
+        ('Golfplaat', 'Golfplaat'),
+        ('Riet', 'Riet'),
         ('Bitumen', 'Bitumen'),
         ('EPDM', 'EPDM'),
-        ('Other', 'Other'),],
+        ('Anders,Zie op', 'Anders,Zie op'),],
         string='Covering type')
     xaa_aa_covering_type_six = fields.Selection([
-        ('Roof tiles', 'Roof tiles'),
-        ('Corrugated', 'Corrugated'),
-        ('Reed', 'Reed'),
+        ('Dakpannen', 'Dakpannen'),
+        ('Golfplaat', 'Golfplaat'),
+        ('Riet', 'Riet'),
         ('Bitumen', 'Bitumen'),
         ('EPDM', 'EPDM'),
-        ('Other', 'Other'),],
+        ('Anders,Zie op', 'Anders,Zie op'),],
         string='Covering type')
     xaa_aa_covering_type_seven = fields.Selection([
-        ('Roof tiles', 'Roof tiles'),
-        ('Corrugated', 'Corrugated'),
-        ('Reed', 'Reed'),
+        ('Dakpannen', 'Dakpannen'),
+        ('Golfplaat', 'Golfplaat'),
+        ('Riet', 'Riet'),
         ('Bitumen', 'Bitumen'),
         ('EPDM', 'EPDM'),
-        ('Other', 'Other'),],
+        ('Anders,Zie op', 'Anders,Zie op'),],
         string='Covering type')
     xaa_aa_covering_type_eight = fields.Selection([
-        ('Roof tiles', 'Roof tiles'),
-        ('Corrugated', 'Corrugated'),
-        ('Reed', 'Reed'),
+        ('Dakpannen', 'Dakpannen'),
+        ('Golfplaat', 'Golfplaat'),
+        ('Riet', 'Riet'),
         ('Bitumen', 'Bitumen'),
         ('EPDM', 'EPDM'),
-        ('Other', 'Other'),],
+        ('Anders,Zie op', 'Anders,Zie op'),],
         string='Covering type')
     xaa_aa_orientaion_type_one = fields.Selection([
-        ('South', 'South'),
-        ('Southeast', 'Southeast'),
-        ('Southwest', 'Southwest'),
-        ('East', 'East'),
+        ('Zuid', 'Zuid'),
+        ('Zuidoost', 'Zuidoost'),
+        ('Zuidwest', 'Zuidwest'),
+        ('Oost', 'Oost'),
         ('West', 'West'),
-        ('Northdwest', 'Northwest'),
-        ('North', 'North'),],
+        ('Noordwest', 'Noordwest'),
+        ('Noord', 'Noord'),],
         string='Orientaion type')
     xaa_aa_orientaion_type_two = fields.Selection([
-        ('South', 'South'),
-        ('Southeast', 'Southeast'),
-        ('Southwest', 'Southwest'),
-        ('East', 'East'),
+        ('Zuid', 'Zuid'),
+        ('Zuidoost', 'Zuidoost'),
+        ('Zuidwest', 'Zuidwest'),
+        ('Oost', 'Oost'),
         ('West', 'West'),
-        ('Northdwest', 'Northwest'),
-        ('North', 'North'),],
+        ('Noordwest', 'Noordwest'),
+        ('Noord', 'Noord'),],
         string='Orientaion type')
     xaa_aa_orientaion_type_three = fields.Selection([
-        ('South', 'South'),
-        ('Southeast', 'Southeast'),
-        ('Southwest', 'Southwest'),
-        ('East', 'East'),
+        ('Zuid', 'Zuid'),
+        ('Zuidoost', 'Zuidoost'),
+        ('Zuidwest', 'Zuidwest'),
+        ('Oost', 'Oost'),
         ('West', 'West'),
-        ('Northdwest', 'Northwest'),
-        ('North', 'North'),],
+        ('Noordwest', 'Noordwest'),
+        ('Noord', 'Noord'),],
         string='Orientaion type')
     xaa_aa_orientaion_type_four = fields.Selection([
-        ('South', 'South'),
-        ('Southeast', 'Southeast'),
-        ('Southwest', 'Southwest'),
-        ('East', 'East'),
+        ('Zuid', 'Zuid'),
+        ('Zuidoost', 'Zuidoost'),
+        ('Zuidwest', 'Zuidwest'),
+        ('Oost', 'Oost'),
         ('West', 'West'),
-        ('Northdwest', 'Northwest'),
-        ('North', 'North'),],
+        ('Noordwest', 'Noordwest'),
+        ('Noord', 'Noord'),],
         string='Orientaion type')
     xaa_aa_orientaion_type_five = fields.Selection([
-        ('South', 'South'),
-        ('Southeast', 'Southeast'),
-        ('Southwest', 'Southwest'),
-        ('East', 'East'),
+        ('Zuid', 'Zuid'),
+        ('Zuidoost', 'Zuidoost'),
+        ('Zuidwest', 'Zuidwest'),
+        ('Oost', 'Oost'),
         ('West', 'West'),
-        ('Northdwest', 'Northwest'),
-        ('North', 'North'),],
+        ('Noordwest', 'Noordwest'),
+        ('Noord', 'Noord'),],
         string='Orientaion type')
     xaa_aa_orientaion_type_six = fields.Selection([
-        ('South', 'South'),
-        ('Southeast', 'Southeast'),
-        ('Southwest', 'Southwest'),
-        ('East', 'East'),
+        ('Zuid', 'Zuid'),
+        ('Zuidoost', 'Zuidoost'),
+        ('Zuidwest', 'Zuidwest'),
+        ('Oost', 'Oost'),
         ('West', 'West'),
-        ('Northdwest', 'Northwest'),
-        ('North', 'North'),],
+        ('Noordwest', 'Noordwest'),
+        ('Noord', 'Noord'),],
         string='Orientaion type')
     xaa_aa_orientaion_type_seven = fields.Selection([
-        ('South', 'South'),
-        ('Southeast', 'Southeast'),
-        ('Southwest', 'Southwest'),
-        ('East', 'East'),
+        ('Zuid', 'Zuid'),
+        ('Zuidoost', 'Zuidoost'),
+        ('Zuidwest', 'Zuidwest'),
+        ('Oost', 'Oost'),
         ('West', 'West'),
-        ('Northdwest', 'Northwest'),
-        ('North', 'North'),],
+        ('Noordwest', 'Noordwest'),
+        ('Noord', 'Noord'),],
         string='Orientaion type')
     xaa_aa_orientaion_type_eight = fields.Selection([
-        ('South', 'South'),
-        ('Southeast', 'Southeast'),
-        ('Southwest', 'Southwest'),
-        ('East', 'East'),
+        ('Zuid', 'Zuid'),
+        ('Zuidoost', 'Zuidoost'),
+        ('Zuidwest', 'Zuidwest'),
+        ('Oost', 'Oost'),
         ('West', 'West'),
-        ('Northdwest', 'Northwest'),
-        ('North', 'North'),],
+        ('Noordwest', 'Noordwest'),
+        ('Noord', 'Noord'),],
         string='Orientaion type')
     xaa_aa_inclination_angle_one = fields.Float(
         'Inclination Angle(Degrees)')
@@ -201,44 +201,44 @@ class ProjectFormulier(models.Model):
     xaa_aa_inclination_angle_eight = fields.Float(
         'Inclination Angle(Degrees)')
     xaa_aa_roof_tiles_one = fields.Selection([
-        ('Crocheted', 'Crocheted'),
-        ('Screwed', 'Screwed'),
-        ('No idea', 'No idea'),],
+        ('Gehaakt', 'Gehaakt'),
+        ('Geschroefd', 'Geschroefd'),
+        ('Geen idee', 'Geen idee'),],
         string='Roof tiles type')
     xaa_aa_roof_tiles_two = fields.Selection([
-        ('Crocheted', 'Crocheted'),
-        ('Screwed', 'Screwed'),
-        ('No idea', 'No idea'),],
+        ('Gehaakt', 'Gehaakt'),
+        ('Geschroefd', 'Geschroefd'),
+        ('Geen idee', 'Geen idee'),],
         string='Roof tiles type')
     xaa_aa_roof_tiles_three = fields.Selection([
-        ('Crocheted', 'Crocheted'),
-        ('Screwed', 'Screwed'),
-        ('No idea', 'No idea'),],
+        ('Gehaakt', 'Gehaakt'),
+        ('Geschroefd', 'Geschroefd'),
+        ('Geen idee', 'Geen idee'),],
         string='Roof tiles type')
     xaa_aa_roof_tiles_four = fields.Selection([
-        ('Crocheted', 'Crocheted'),
-        ('Screwed', 'Screwed'),
-        ('No idea', 'No idea'),],
+        ('Gehaakt', 'Gehaakt'),
+        ('Geschroefd', 'Geschroefd'),
+        ('Geen idee', 'Geen idee'),],
         string='Roof tiles type')
     xaa_aa_roof_tiles_five = fields.Selection([
-        ('Crocheted', 'Crocheted'),
-        ('Screwed', 'Screwed'),
-        ('No idea', 'No idea'),],
+        ('Gehaakt', 'Gehaakt'),
+        ('Geschroefd', 'Geschroefd'),
+        ('Geen idee', 'Geen idee'),],
         string='Roof tiles type')
     xaa_aa_roof_tiles_six = fields.Selection([
-        ('Crocheted', 'Crocheted'),
-        ('Screwed', 'Screwed'),
-        ('No idea', 'No idea'),],
+        ('Gehaakt', 'Gehaakt'),
+        ('Geschroefd', 'Geschroefd'),
+        ('Geen idee', 'Geen idee'),],
         string='Roof tiles type')
     xaa_aa_roof_tiles_seven = fields.Selection([
-        ('Crocheted', 'Crocheted'),
-        ('Screwed', 'Screwed'),
-        ('No idea', 'No idea'),],
+        ('Gehaakt', 'Gehaakt'),
+        ('Geschroefd', 'Geschroefd'),
+        ('Geen idee', 'Geen idee'),],
         string='Roof tiles type')
     xaa_aa_roof_tiles_eight = fields.Selection([
-        ('Crocheted', 'Crocheted'),
-        ('Screwed', 'Screwed'),
-        ('No idea', 'No idea'),],
+        ('Gehaakt', 'Gehaakt'),
+        ('Geschroefd', 'Geschroefd'),
+        ('Geen idee', 'Geen idee'),],
         string='Roof tiles type')
     xaa_aa_visual_estimate_panels_one = fields.Integer(
         'Visual Estimate Maximum Panels 1100*1800m')
@@ -257,52 +257,52 @@ class ProjectFormulier(models.Model):
     xaa_aa_visual_estimate_panels_eight = fields.Integer(
         'Visual Estimate Maximum Panels 1100*1800m')
     xaa_aa_schadow_one = fields.Selection([
-        ('No,', 'No,'),
-        ('Yes, pole', 'Yes, pole'),
-        ('Yes, tree', 'Yes, tree'),
-        ('Yes, dormer', 'Yes, dormer'),],
+        ('Nee', 'Nee'),
+        ('Ja, paal', 'Ja, paal'),
+        ('Ja, boom', 'Ja, boom'),
+        ('Ja, dakkapel', 'Ja, dakkapel'),],
         string='Schadow')
     xaa_aa_schadow_two = fields.Selection([
-        ('No,', 'No,'),
-        ('Yes, pole', 'Yes, pole'),
-        ('Yes, tree', 'Yes, tree'),
-        ('Yes, dormer', 'Yes, dormer'),],
+        ('Nee', 'Nee'),
+        ('Ja, paal', 'Ja, paal'),
+        ('Ja, boom', 'Ja, boom'),
+        ('Ja, dakkapel', 'Ja, dakkapel'),],
         string='Schadow')
     xaa_aa_schadow_three = fields.Selection([
-        ('No,', 'No,'),
-        ('Yes, pole', 'Yes, pole'),
-        ('Yes, tree', 'Yes, tree'),
-        ('Yes, dormer', 'Yes, dormer'),],
+        ('Nee', 'Nee'),
+        ('Ja, paal', 'Ja, paal'),
+        ('Ja, boom', 'Ja, boom'),
+        ('Ja, dakkapel', 'Ja, dakkapel'),],
         string='Schadow')
     xaa_aa_schadow_four = fields.Selection([
-        ('No,', 'No,'),
-        ('Yes, pole', 'Yes, pole'),
-        ('Yes, tree', 'Yes, tree'),
-        ('Yes, dormer', 'Yes, dormer'),],
+        ('Nee', 'Nee'),
+        ('Ja, paal', 'Ja, paal'),
+        ('Ja, boom', 'Ja, boom'),
+        ('Ja, dakkapel', 'Ja, dakkapel'),],
         string='Schadow')
     xaa_aa_schadow_five = fields.Selection([
-        ('No,', 'No,'),
-        ('Yes, pole', 'Yes, pole'),
-        ('Yes, tree', 'Yes, tree'),
-        ('Yes, dormer', 'Yes, dormer'),],
+        ('Nee', 'Nee'),
+        ('Ja, paal', 'Ja, paal'),
+        ('Ja, boom', 'Ja, boom'),
+        ('Ja, dakkapel', 'Ja, dakkapel'),],
         string='Schadow')
     xaa_aa_schadow_six = fields.Selection([
-        ('No,', 'No,'),
-        ('Yes, pole', 'Yes, pole'),
-        ('Yes, tree', 'Yes, tree'),
-        ('Yes, dormer', 'Yes, dormer'),],
+        ('Nee', 'Nee'),
+        ('Ja, paal', 'Ja, paal'),
+        ('Ja, boom', 'Ja, boom'),
+        ('Ja, dakkapel', 'Ja, dakkapel'),],
         string='Schadow')
     xaa_aa_schadow_seven = fields.Selection([
-        ('No,', 'No,'),
-        ('Yes, pole', 'Yes, pole'),
-        ('Yes, tree', 'Yes, tree'),
-        ('Yes, dormer', 'Yes, dormer'),],
+        ('Nee', 'Nee'),
+        ('Ja, paal', 'Ja, paal'),
+        ('Ja, boom', 'Ja, boom'),
+        ('Ja, dakkapel', 'Ja, dakkapel'),],
         string='Schadow')
     xaa_aa_schadow_eight = fields.Selection([
-        ('No,', 'No,'),
-        ('Yes, pole', 'Yes, pole'),
-        ('Yes, tree', 'Yes, tree'),
-        ('Yes, dormer', 'Yes, dormer'),],
+        ('Nee', 'Nee'),
+        ('Ja, paal', 'Ja, paal'),
+        ('Ja, boom', 'Ja, boom'),
+        ('Ja, dakkapel', 'Ja, dakkapel'),],
         string='Schadow')
     xaa_aa_remark_one = fields.Char('Remarks')
     xaa_aa_remark_two = fields.Char('Remarks')
@@ -359,6 +359,55 @@ class ProjectFormulier(models.Model):
     xaa_aa_panel_inclination_seven = fields.Integer('Panel inclination')
     xaa_aa_no_of_panels_eight = fields.Integer('Choose the number of panels:')
     xaa_aa_panel_inclination_eight = fields.Integer('Panel inclination')
+
+    # INVERTER AND OTHER DETAILS
+    xaa_aa_inverter_type = fields.Selection([
+        ('Omvormer - string', 'Omvormer - string'),
+        ('Omvormer - optimizers', 'Omvormer - optimizers'),
+        ('Micro omvormer', 'Micro omvormer'),],
+        string='Choose inverter type:')
+    xaa_aa_gateway = fields.Selection([
+        ('Envoy-S Standard', 'Envoy-S Standard'),
+        ('Envoy-S Metered', 'Envoy-S Metered'),],
+        string='Choose gateway:')
+    xaa_aa_inverter_icw_optimizer = fields.Many2one(
+        'product.product', string='Choose inverter i.c.w optimizers:')
+    xaa_aa_optimizer = fields.Selection([
+        ('SolarEdge P401 (1 piece per panel)', 'SolarEdge P401 (1 piece per panel)'),
+        ('SolarEdge P850 (1 piece per 2 panel)', 'SolarEdge P850 (1 piece per 2 panel)'),],
+        string='Choose optimizers:')
+    xaa_aa_inverter = fields.Selection([
+        ('Goodwe', 'Goodwe'),
+        ('Growatt', 'Growatt'),
+        ('Fronius', 'Fronius'),],
+        string='Choose inverter:')
+    xaa_aa_model = fields.Selection([],string='Choose model:')
+    xaa_aa_standard_extraproduct = fields.Selection([
+        ('Niet van toepassing', 'Niet van toepassing'),
+        ('Dakdoorvoer', 'Dakdoorvoer'),
+        ('Ventilatiepan', 'Ventilatiepan'),],
+        string='Select, standard, extra product(s):')
+    xaa_aa_extra_onetime_product_needed = fields.Selection([
+        ('Niet van toepassing', 'Niet van toepassing'),
+        ('Ja', 'Ja'),],
+        string='Extra "one time" product(s) needed:')
+    xaa_aa_adjustment = fields.Selection([
+        ('Nee', 'Nee'),
+        ('Ja', 'Ja'),],
+        string='Adjustment:')
+    xaa_aa_adjustment_detail = fields.Char('Adjustment detail:')
+    xaa_aa_technical_recording_needed = fields.Selection([
+        ('Nee', 'Nee'),
+        ('Ja', 'Ja'),],
+        string='Technical recording needed:')
+    xaa_aa_installation_time = fields.Integer('Required installation time:')
+    xaa_aa_template = fields.Selection([
+        ('Layout op eigen naam', 'Layout op eigen naam'),
+        ('Layout op naam van installteur', 'Layout op naam van installteur'),],
+        string='Choose your template:')
+
+
+
 
     def online_pf_dictionary(self):
         """ online PF possible values"""

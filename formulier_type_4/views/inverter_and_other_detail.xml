@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="inverter_and_other_details">
+        <div class="mt24 mb24">
+            <div class="form-group row form-field">
+                <div class="col-lg-3 col-md-4 col-sm-4 custom-text">
+                    <label class="col-form-label" for="xaa_aa_inverter_type">
+                        Choose inverter type:
+                    </label>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6">
+                    <div class="div_product">
+                        <select class="form-control" name="xaa_aa_inverter_type">
+                            <option></option>
+                            <option value='Omvormer - string' t-att-selected="formulier_id.xaa_aa_inverter_type == 'Omvormer - string'">Omvormer - string</option>
+                            <option value='Omvormer - optimizers' t-att-selected="formulier_id.xaa_aa_inverter_type == 'Omvormer - optimizers'">Omvormer - optimizers</option>
+                            <option value='Micro omvormer' t-att-selected="formulier_id.xaa_aa_inverter_type == 'Micro omvormer'">Micro omvormer</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group row form-field">
+                <div class="col-lg-3 col-md-4 col-sm-4 custom-text">
+                    <label class="col-form-label" for="xaa_aa_gateway">
+                        Choose gateway:
+                    </label>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6">
+                    <div class="div_product">
+                        <select class="form-control" name="xaa_aa_gateway">
+                            <option></option>
+                            <option value='Envoy-S Standard' t-att-selected="formulier_id.xaa_aa_gateway == 'Envoy-S Standard'">Envoy-S Standard</option>
+                            <option value='Envoy-S Metered' t-att-selected="formulier_id.xaa_aa_gateway == 'Envoy-S Metered'">Envoy-S Metered</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group row form-field">
+                <div class="col-lg-3 col-md-4 col-sm-4 custom-text">
+                    <label class="col-form-label" for="xaa_aa_inverter_icw_optimizer">
+                        Choose inverter i.c.w optimizers:
+                    </label>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6">
+                    <div class="div_product">
+                        <input type="text" name="xaa_aa_inverter_icw_optimizer" class="form-control" 
+                        t-att-value="formulier_id.xaa_aa_inverter_icw_optimizer"/>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group row form-field">
+                <div class="col-lg-3 col-md-4 col-sm-4 custom-text">
+                    <label class="col-form-label" for="xaa_aa_optimizer">
+                        Choose optimizers:
+                    </label>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6">
+                    <div class="div_product">
+                        <select class="form-control" name="xaa_aa_optimizer">
+                            <option></option>
+                            <option value='SolarEdge P401 (1 piece per panel)' t-att-selected="formulier_id.xaa_aa_optimizer == 'SolarEdge P401 (1 piece per panel)'">
+                                SolarEdge P401 (1 piece per panel)
+                            </option>
+                            <option value='SolarEdge P850 (1 piece per 2 panel)' t-att-selected="formulier_id.xaa_aa_optimizer == 'SolarEdge P850 (1 piece per 2 panel)'">
+                                SolarEdge P850 (1 piece per 2 panel)
+                            </option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group row form-field">
+                <div class="col-lg-3 col-md-4 col-sm-4 custom-text">
+                    <label class="col-form-label" for="xaa_aa_inverter">
+                        Choose inverter:
+                    </label>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6">
+                    <div class="div_product">
+                        <select class="form-control" name="xaa_aa_inverter">
+                            <option></option>
+                            <option value='Goodwe' t-att-selected="formulier_id.xaa_aa_inverter == 'Goodwe'">
+                                Goodwe
+                            </option>
+                            <option value='Growatt' t-att-selected="formulier_id.xaa_aa_inverter == 'Growatt'">
+                                Growatt
+                            </option>
+                            <option value='Fronius' t-att-selected="formulier_id.xaa_aa_inverter == 'Fronius'">
+                                Fronius
+                            </option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group row form-field">
+                <div class="col-lg-3 col-md-4 col-sm-4 custom-text">
+                    <label class="col-form-label" for="xaa_aa_model">
+                        Choose optimizers:
+                    </label>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6">
+                    <div class="div_product">
+                        <select class="form-control" name="xaa_aa_model">
+                            <option></option>
+                            <option value='Choose' t-att-selected="formulier_id.xaa_aa_model == 'Choose'">
+                                Choose
+                            </option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group row form-field">
+                <div class="col-lg-3 col-md-4 col-sm-4 custom-text">
+                    <label class="col-form-label" for="xaa_aa_standard_extraproduct">
+                       Select, standard, extra product(s):
+                    </label>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6">
+                    <div class="div_product">
+                        <select class="form-control" name="xaa_aa_standard_extraproduct">
+                            <option></option>
+                            <option value='Niet van toepassing' t-att-selected="formulier_id.xaa_aa_standard_extraproduct == 'Niet van toepassing'">
+                                Niet van toepassing
+                            </option>
+                            <option value='Dakdoorvoer' t-att-selected="formulier_id.xaa_aa_standard_extraproduct == 'Dakdoorvoer'">
+                                Dakdoorvoer
+                            </option>
+                            <option value='Ventilatiepan' t-att-selected="formulier_id.xaa_aa_standard_extraproduct == 'Ventilatiepan'">
+                                Ventilatiepan
+                            </option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group row form-field">
+                <div class="col-lg-3 col-md-4 col-sm-4 custom-text">
+                    <label class="col-form-label" for="xaa_aa_extra_onetime_product_needed">
+                       Extra "one time" product(s) needed:
+                    </label>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6">
+                    <div class="div_product">
+                        <select class="form-control" name="xaa_aa_extra_onetime_product_needed">
+                            <option></option>
+                            <option value='Niet van toepassing' t-att-selected="formulier_id.xaa_aa_extra_onetime_product_needed == 'Niet van toepassing'">
+                                Niet van toepassing
+                            </option>
+                            <option value='Ja' 
+                                t-att-selected="formulier_id.xaa_aa_extra_onetime_product_needed == 'Ja'">
+                                Ja
+                            </option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group row form-field">
+                <div class="col-lg-3 col-md-4 col-sm-4 custom-text">
+                    <label class="col-form-label" for="xaa_aa_adjustment">
+                       Adjustment:
+                    </label>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6">
+                    <div class="div_product">
+                        <select class="form-control" name="xaa_aa_adjustment">
+                            <option></option>
+                            <option value='Nee' t-att-selected="formulier_id.xaa_aa_adjustment == 'Nee'">
+                                Nee
+                            </option>
+                            <option value='Ja' 
+                                t-att-selected="formulier_id.xaa_aa_adjustment == 'Ja'">
+                                Ja
+                            </option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group row form-field">
+                <div class="col-lg-3 col-md-4 col-sm-4 custom-text">
+                    <label class="col-form-label" for="xaa_aa_adjustment_detail">
+                        Adjustment detail:
+                    </label>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6">
+                    <div class="div_product">
+                        <input type="text" name="xaa_aa_adjustment_detail" class="form-control" 
+                        t-att-value="formulier_id.xaa_aa_adjustment_detail"/>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group row form-field">
+                <div class="col-lg-3 col-md-4 col-sm-4 custom-text">
+                    <label class="col-form-label" for="xaa_aa_technical_recording_needed">
+                       Technical recording needed:
+                    </label>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6">
+                    <div class="div_product">
+                        <select class="form-control" name="xaa_aa_technical_recording_needed">
+                            <option></option>
+                            <option value='Nee' t-att-selected="formulier_id.xaa_aa_technical_recording_needed == 'Nee'">
+                                Nee
+                            </option>
+                            <option value='Ja' 
+                                t-att-selected="formulier_id.xaa_aa_technical_recording_needed == 'Ja'">
+                                Ja
+                            </option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group row form-field">
+                <div class="col-lg-3 col-md-4 col-sm-4 custom-text">
+                    <label class="col-form-label" for="xaa_aa_installation_time">
+                        Required installation time:
+                    </label>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-2">
+                    <div class="div_product">
+                        <input type="text" name="xaa_aa_installation_time" class="form-control" 
+                        t-att-value="formulier_id.xaa_aa_installation_time"/>
+                    </div>
+                </div>
+                <div class="col-lg-1 col-md-1 col-sm-1">
+                    <div>
+                        <span>hours</span>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-3">
+                    <div class="div_product">
+                        <button class="btn btn-primary btn_reset_hours"
+                                type="Button">Reset hours
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group row form-field">
+                <div class="col-lg-3 col-md-4 col-sm-4 custom-text">
+                    <label class="col-form-label" for="xaa_aa_template">
+                       Choose your template:
+                    </label>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6">
+                    <div class="div_product">
+                        <select class="form-control" name="xaa_aa_template">
+                            <option></option>
+                            <option value='Layout op eigen naam' t-att-selected="formulier_id.xaa_aa_template == 'Layout op eigen naam'">
+                                Layout op eigen naam
+                            </option>
+                            <option value='Layout op naam van installteur' 
+                                t-att-selected="formulier_id.xaa_aa_template == 'Layout op naam van installteur'">
+                                Layout op naam van installteur
+                            </option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </template>
+</odoo>

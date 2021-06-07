@@ -30,6 +30,7 @@
             'views/roof_detail_six.xml',
             'views/roof_detail_seven.xml',
             'views/roof_detail_eight.xml',
+            'views/inverter_and_other_detail.xml',
             'views/online_formulier_panel_calculation.xml',
             'views/online_formulier_quote_template.xml',
             'views/tabs_template.xml',

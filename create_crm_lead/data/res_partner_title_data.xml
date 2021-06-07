@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<odoo>
+    <data noupdate="True">
+        <!-- Data: res.partner.title-->
+        <record id="res_partner_title_heer" model="res.partner.title">
+            <field name="name">Heer</field>
+            <field name="shortcut">Heer</field>
+        </record>
+
+        <record id="res_partner_title_mevrouw" model="res.partner.title">
+            <field name="name">Mevrouw</field>
+            <field name="shortcut">Mevrouw</field>
+        </record>
+
+        <record id="res_partner_title_familie" model="res.partner.title">
+            <field name="name">Familie</field>
+            <field name="shortcut">Familie</field>
+        </record>
+    </data>
+</odoo>

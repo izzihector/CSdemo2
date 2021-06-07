@@ -1,0 +1,675 @@
+# Translation of Odoo Server.   
+# This file contains the translation of the following modules:
+#   * quote_print
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 14.1alpha1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-09-23 07:46+0000\n"
+"PO-Revision-Date: 2020-09-23 07:46+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: quote_print
+#: model:mail.template,body_html:quote_print.confirmation_mail
+msgid "\n"
+"<div summary=\"o_mail_template\" style=\"padding:0px; width:600px; margin:0 auto; background: #FFFFFF repeat top /100%;color:#777777\">\n"
+"    <table cellspacing=\"0\" cellpadding=\"0\" style=\"width:600px; border-collapse:collapse; background:inherit; color:inherit\">\n"
+"        <tbody><tr>\n"
+"            <td valign=\"center\" width=\"200\" style=\"padding:0px 10px 5px 5px;font-size: 12px\">\n"
+"                <img src=\"/logo.png\" style=\"padding: 0px; margin: 0px; height: auto; width: 80px;\" alt=\"${user.company_id.name}\">\n"
+"            </td>\n"
+"        </tr></tbody>\n"
+"    </table>\n"
+"    <table cellspacing=\"0\" cellpadding=\"0\" style=\"width:600px; border-collapse:collapse; background:inherit; color:inherit\">\n"
+"        <tbody><tr>\n"
+"            <td valign=\"top\" style=\"width:600px; padding:0px 10px 5px 5px;\">\n"
+"                <div>\n"
+"                    <hr width=\"100%\" style=\"background-color:rgb(204,204,204);border:medium none;clear:both;display:block;font-size:0px;min-height:1px;line-height:0;margin:15px auto;padding:0\">\n"
+"                </div>\n"
+"            </td>\n"
+"        </tr></tbody>\n"
+"    </table>\n"
+"</div>\n"
+"<div style=\"padding:0px; width:600px; max-width:600px; margin:0 auto; background: #FFFFFF repeat top /100%;color:#777777\">\n"
+"    <table cellspacing=\"0\" cellpadding=\"0\" style=\"width:600px ;text-align:justify; margin:0 auto; border-collapse:collapse; background:inherit; color:inherit\">\n"
+"        <tbody><tr>\n"
+"            <td style=\"padding:0px 10px 5px 5px;font-size: 14px;\">\n"
+"                <p>Dear ${object.partner_id.name},</p><br/>\n"
+"                <p>Your order <a href=\"/quote/${object.id}/${object.access_token}\">${object.name}</a> has been validated!</p><br/>\n"
+"                \n"
+"                % if object.partner_id.user_ids\n"
+"                <p>You can view your quotes, sales orders and invoices online by going to our <a style=\"text-decoration:none; color: #875A7B;\" href=\"/my/home\">Online Portal</a>.</p><br/>\n"
+"                % endif\n"
+"\n"
+"                <p>If you have any question, do not hesitate to contact us.</p><br/>\n"
+"                <p>Thank you for choosing ${object.company_id.name or \"us\"}!</p>\n"
+"            </td>\n"
+"        </tr><tr>\n"
+"            <td style=\"padding:0px 10px 5px 5px;font-size: 14px;\">\n"
+"                % if user.signature\n"
+"                <p style=\"font-size: 14px;\">${user.signature | safe}\n"
+"                </p>\n"
+"                % endif\n"
+"                <p style=\"font-size: 11px;\"><strong>Sent by\n"
+"                <a href=\"${user.company_id.website}\" style=\"text-decoration:none; color: #875A7B;\">\n"
+"                    <strong>${user.company_id.name}</strong>\n"
+"                </a> using <a href=\"www.odoo.com\" style=\"text-decoration:none; color: #875A7B;\"><strong>Odoo</strong></a>\n"
+"                </strong></p>\n"
+"            </td>\n"
+"        </tr></tbody>\n"
+"    </table>\n"
+"</div>"
+msgstr "\n"
+"<div summary=\"o_mail_template\" style=\"padding:0px; width:600px; margin:0 auto; background: #FFFFFF repeat top /100%;color:#777777\">\n"
+"    <table cellspacing=\"0\" cellpadding=\"0\" style=\"width:600px; border-collapse:collapse; background:inherit; color:inherit\">\n"
+"        <tbody><tr>\n"
+"            <td valign=\"center\" width=\"200\" style=\"padding:0px 10px 5px 5px;font-size: 12px\">\n"
+"                <img src=\"/logo.png\" style=\"padding: 0px; margin: 0px; height: auto; width: 80px;\" alt=\"${user.company_id.name}\">\n"
+"            </td>\n"
+"        </tr></tbody>\n"
+"    </table>\n"
+"    <table cellspacing=\"0\" cellpadding=\"0\" style=\"width:600px; border-collapse:collapse; background:inherit; color:inherit\">\n"
+"        <tbody><tr>\n"
+"            <td valign=\"top\" style=\"width:600px; padding:0px 10px 5px 5px;\">\n"
+"                <div>\n"
+"                    <hr width=\"100%\" style=\"background-color:rgb(204,204,204);border:medium none;clear:both;display:block;font-size:0px;min-height:1px;line-height:0;margin:15px auto;padding:0\">\n"
+"                </div>\n"
+"            </td>\n"
+"        </tr></tbody>\n"
+"    </table>\n"
+"</div>\n"
+"<div style=\"padding:0px; width:600px; max-width:600px; margin:0 auto; background: #FFFFFF repeat top /100%;color:#777777\">\n"
+"    <table cellspacing=\"0\" cellpadding=\"0\" style=\"width:600px ;text-align:justify; margin:0 auto; border-collapse:collapse; background:inherit; color:inherit\">\n"
+"        <tbody><tr>\n"
+"            <td style=\"padding:0px 10px 5px 5px;font-size: 14px;\">\n"
+"                <p>Beste ${object.partner_id.name},</p><br/>\n"
+"                <p>Uw order <a href=\"/quote/${object.id}/${object.access_token}\">${object.name}</a> is bevestigd!</p><br/>\n"
+"                \n"
+"                % if object.partner_id.user_ids\n"
+"                <p>U kunt uw offertes, verkooporders en facturen online bekijken door te gaan naar onze <a style=\"text-decoration:none; color: #875A7B;\" href=\"/my/home\">Online portal</a>.</p><br/>\n"
+"                % endif\n"
+"\n"
+"                <p>Als u nog vragen heeft, aarzel dan niet om contact met ons op.</p><br/>\n"
+"                <p>Bedankt voor het kiezen van ${object.company_id.name or \"us\"}!</p>\n"
+"            </td>\n"
+"        </tr><tr>\n"
+"            <td style=\"padding:0px 10px 5px 5px;font-size: 14px;\">\n"
+"                % if user.signature\n"
+"                <p style=\"font-size: 14px;\">${user.signature | safe}\n"
+"                </p>\n"
+"                % endif\n"
+"                <p style=\"font-size: 11px;\"><strong>Sent by\n"
+"                <a href=\"${user.company_id.website}\" style=\"text-decoration:none; color: #875A7B;\">\n"
+"                    <strong>${user.company_id.name}</strong>\n"
+"                </a> using <a href=\"www.odoo.com\" style=\"text-decoration:none; color: #875A7B;\"><strong>Odoo</strong></a>\n"
+"                </strong></p>\n"
+"            </td>\n"
+"        </tr></tbody>\n"
+"    </table>\n"
+"</div>"
+
+#. module: quote_print
+#: model_terms:ir.ui.view,arch_db:quote_print.pricing
+#: model_terms:ir.ui.view,arch_db:quote_print.optional_products_for_web_quote_report
+msgid "% discount"
+msgstr "% korting"
+
+#. module: quote_print
+#: model_terms:ir.ui.view,arch_db:quote_print.pricing
+msgid "Description of Sale"
+msgstr "Beschrijving van de verkoop"
+
+#. module: quote_print
+#: model_terms:ir.ui.view,arch_db:quote_print.pricing
+msgid "Products"
+msgstr "Producten"
+
+#. module: quote_print
+#: model_terms:ir.ui.view,arch_db:quote_print.so_template
+msgid ":\n"
+"                                this content will appear on the quotation only if this\n"
+"                                product is put on the quote."
+msgstr ":\n"
+"Deze inhoud zal zichtbaar worden op de offerte alleen als dit\n"
+"product in de offerte wordt opgenomen."
+
+#. module: quote_print
+#: model:ir.ui.view,arch_db:quote_print.so_template
+msgid ":\n"
+"                                this content will appear on the quotation only if this\n"
+"                                product is used in the quote."
+msgstr ":\n"
+"                                deze inhoud wordt alleen getoond op de offerte wanneer dit\n"
+"                                product is gebruikt op deze offerte."
+
+#. module: quote_print
+#: model_terms:ir.ui.view,arch_db:quote_print.quotation_web_view
+#: model_terms:ir.ui.view,arch_db:quote_print.web_quotation_first_page
+msgid "<strong class=\"d-block mb-1\">Expiration Date:</strong>"
+msgstr "<strong class=\"d-block mb-1\">Vervaldatum:</strong>"
+
+#. module: quote_print
+#: model_terms:ir.ui.view,arch_db:quote_print.quotation_web_view
+#: model_terms:ir.ui.view,arch_db:quote_print.web_quotation_first_page
+msgid "Date:"
+msgstr "Datum:"
+
+#. module: quote_print
+#: model_terms:ir.ui.view,arch_db:quote_print.quotation_web_view
+msgid "Paid"
+msgstr "Betaald"
+
+#. module: quote_print
+#: model_terms:ir.ui.view,arch_db:quote_print.quotation_web_view
+msgid "Waiting Payment"
+msgstr "Wachten op betaling"
+
+#. module: quote_print
+#: model_terms:ir.ui.view,arch_db:quote_print.pricing
+msgid "<strong class=\"mr16\">Subtotal</strong>"
+msgstr "<strong class=\"mr16\">Subtotaal</strong>"
+
+#. module: quote_print
+#: model_terms:ir.ui.view,arch_db:quote_print.pricing
+msgid "<strong>Subtotal</strong>"
+msgstr "<strong>Subtotaal</strong>"
+
+#. module: quote_print
+#: model_terms:ir.ui.view,arch_db:quote_print.so_template
+msgid "<strong>Template Header:</strong> this content\n"
+"                                will appear on all quotations using this\n"
+"                                template."
+msgstr "<strong>Sjabloonkop:</strong> deze inhoud\n"
+"verschijnt op alle offertes die het sjabloon\n"
+"gebruiken."
+
+#. module: quote_print
+#: model_terms:ir.ui.view,arch_db:quote_print.custom_so_template
+msgid "<strong>Template footer after first Template Footer:</strong>The\n"
+"                        text of this footer is printed on printed quotations only."
+msgstr "<strong>Sjabloon voettekst na de eerste sjabloon voettekst:</strong> Deze \n"
+"                       tekst van deze footer wordt alleen op geprinte offertes afgedrukt."
+
+#. module: quote_print
+#: model_terms:ir.ui.view,arch_db:quote_print.custom_so_template
+msgid "<strong>Template footer:</strong> The text of\n"
+"                        this footer is displayed on all offers \n"
+"                        after the actual quotation text."
+msgstr "<strong>Sjabloon voettekst:</strong>De tekst van deze\n"
+"                       footer wordt op alle offertes afgebeeld\n"
+"                     na de eigenlijke offerte tekst."
+
+#. module: quote_print
+#: model_terms:ir.ui.view,arch_db:quote_print.pricing
+msgid "<strong>Total</strong>"
+msgstr "<strong>Totaal</strong>"
+
+#. module: quote_print
+#: model_terms:ir.ui.view,arch_db:quote_print.quotation_web_view
+msgid "<strong class=\"d-block mb-1\">Address: </strong>"
+msgstr "<strong class=\"d-block mb-1\">Adres: </strong>"
+
+#. module: quote_print
+#: model:ir.model.fields,field_description:quote_print.field_sale_order__xaa_aa_cover_image
+#: model:ir.model.fields,field_description:quote_print.field_sale_order_template__xaa_aa_cover_image
+msgid "Cover Image"
+msgstr "Omslagfoto"
+
+#. module: quote_print
+#: model:ir.model.fields,field_description:quote_print.field_sale_order_template__xaa_aa_cover_height
+msgid "Cover Image Height"
+msgstr "Hoogte omslagfoto"
+
+#. modules: quote_print
+#: model_terms:ir.ui.view,arch_db:quote_print.quotation_web_view
+#: model_terms:ir.ui.view,arch_db:quote_print.web_quotation_content_custom
+#: model_terms:ir.ui.view,arch_db:quote_print.web_quotation_first_page
+msgid "<strong class=\"d-block mb-1\">Customer:</strong>"
+msgstr "<strong class=\"d-block mb-1\">Klant:</strong>"
+
+#. module: quote_print
+#: model_terms:ir.ui.view,arch_db:quote_print.quotation_web_view
+#: model_terms:ir.ui.view,arch_db:quote_print.web_quotation_content_custom
+#: model_terms:ir.ui.view,arch_db:quote_print.web_quotation_first_page
+msgid "<strong class=\"d-block mb-1\">Your Contact:</strong>"
+msgstr "<strong class=\"d-block mb-1\">Uw contactpersoon:</strong>"
+
+#. module: quote_print
+#: model:ir.model.fields,field_description:quote_print.field_sale_order_option__name
+#: model:ir.model.fields,field_description:quote_print.field_sale_order__website_description
+#: model:ir.model.fields,field_description:quote_print.field_sale_quote_line__name
+#: model:ir.model.fields,field_description:quote_print.field_sale_quote_option__name
+#: model:ir.model.fields,field_description:quote_print.field_sale_order_template__website_description
+#: model_terms:ir.ui.view,arch_db:quote_print.view_sale_quote_template_form
+msgid "Description"
+msgstr "Omschrijving"
+
+#. module: quote_print
+#: model_terms:ir.ui.view,arch_db:quote_print.pricing
+msgid "Discount"
+msgstr "Korting"
+
+#. module: quote_print
+#: model:ir.model.fields,field_description:quote_print.field_sale_order_option__discount
+#: model:ir.model.fields,field_description:quote_print.field_sale_quote_line__discount
+#: model:ir.model.fields,field_description:quote_print.field_sale_quote_option__discount
+msgid "Discount (%)"
+msgstr "Krt. (%)"
+
+#. modules: custom_header_footer, quote_print
+#: model:ir.model.fields,field_description:quote_print.field_sale_order_template_xaa_aa_file_name_cover
+msgid "File Name"
+msgstr "Bestandsnaam"
+
+#. module: quote_print
+#: selection:sale.order.template,report_layout:0
+msgid "First Page Address Only"
+msgstr "Eerste pagina alleen een adres"
+
+#. module: quote_print
+#: model:ir.model.fields,field_description:quote_print.field_sale_order_template__xaa_aa_footer_image
+msgid "Footer Image"
+msgstr "Voettekst afbeelding"
+
+#. module: quote_print
+#: model:ir.model.fields,help:quote_print.field_sale_quote_line_sequence
+msgid "Gives the sequence order when displaying a list of sale quote lines."
+msgstr "Geeft de volgorde weer bij het weergeven van een lijst met verkoopofferteregels."
+
+#. module: quote_print
+#: model:ir.model.fields,help:quote_print.field_sale_order_option_sequence
+msgid "Gives the sequence order when displaying a list of suggested product."
+msgstr "Bepaald de volgorde van weergeven van een lijst van voorgestelde producten."
+
+#. module: quote_print
+#: model:ir.model.fields,field_description:quote_print.field_sale_order_template__xaa_aa_header_image
+msgid "Header Image"
+msgstr "header afbeelding"
+
+#. module: quote_print
+#: model:ir.model.fields,field_description:quote_print.field_sale_order_template__xaa_aa_pdf_attachment
+msgid "PDF Attachment"
+msgstr "PDF-bijlage"
+
+#. module: quote_print
+#: model:ir.model.fields,field_description:quote_print.field_sale_order_template__xaa_aa_hide_pricing_tab
+msgid "Hide Pricing Tab"
+msgstr "Verberg het tabblad Prijzen"
+
+#. module: quote_print
+#: model:ir.model.fields,field_description:quote_print.field_sale_order_line__website_description
+#: model:ir.model.fields,field_description:quote_print.field_sale_order_option__website_description
+#: model:ir.model.fields,field_description:quote_print.field_sale_quote_line__website_description
+msgid "Line Description"
+msgstr "Orderregel omschrijving"
+
+#. module: quote_print
+#: model_terms:ir.ui.view,arch_db:quote_print.view_sale_quote_template_form
+msgid "Lines"
+msgstr "Regels"
+
+#. module: quote_print
+#: selection:sale.order,require_payment:0
+#: selection:sale.order.template,require_payment:0
+msgid "Online Payment"
+msgstr "Online betaling"
+
+#. module: quote_print
+#: selection:sale.order,require_payment:0
+#: selection:sale.order.template,require_payment:0
+msgid "Online Signature"
+msgstr "Onine handtekening"
+
+#. module: quote_print
+#: model_terms:ir.ui.view,arch_db:quote_print.so_quotation
+msgid "Pay with"
+msgstr "Betaal met"
+
+#. module: quote_print
+#: model_terms:ir.ui.menu,name:quote_print.payment_acquirer_menu_sale
+msgid "Payment Acquirers"
+msgstr "Betaling verwervers"
+
+#. module: quote_print
+#: model_terms:ir.ui.view,arch_db:quote_print.quotation_web_view
+#: model_terms:ir.ui.view,arch_db:quote_print.web_quotation_content_custom
+msgid "<strong class=\"d-block mb-1\">Payment Terms:</strong>"
+msgstr "<strong class=\"d-block mb-1\">Betalingscondities:</strong>"
+
+#. module: quote_print
+#: model_terms:ir.ui.view,arch_db:quote_print.quotation_web_view
+#: model_terms:ir.ui.view,arch_db:quote_print.web_quotation_content_custom
+msgid "<strong class=\"d-block mb-1\">Invoices</strong>"
+msgstr "<strong class=\"d-block mb-1\">Facturen</strong>"
+
+#. module: quote_print
+#: model_terms:ir.ui.view,arch_db:quote_print.pricing
+#: model_terms:ir.ui.view,arch_db:quote_print.optional_products_for_web_quote_report
+msgid "Price"
+msgstr "Prijs"
+
+#. module: quote_print
+#: model_terms:ir.ui.view,arch_db:quote_print.pricing
+msgid "Pricing"
+msgstr "Prijzen"
+
+#. module: quote_print
+#: model_terms:ir.ui.view,arch_db:quote_print.pricing
+msgid "Products"
+msgstr "Producten"
+
+#. module: quote_print
+#: model:ir.model.fields,field_description:quote_print.field_sale_order__option_quantity
+#: model:ir.model.fields,field_description:quote_print.field_sale_quote_line__product_uom_qty
+#: model:ir.model.fields,field_description:quote_print.field_sale_quote_option__quantity
+#: model_terms:ir.ui.view,arch_db:quote_print.report_saleorder_document
+#: model_terms:ir.ui.view,arch_db:quote_print.report_invoice_document
+#: model_terms:ir.ui.view,arch_db:quote_print.pricing
+msgid "Quantity"
+msgstr "Hoeveelheid"
+
+#. modules: quote_print
+#: model:ir.model,name:quote_print.model_sale_order
+#: model:ir.model,name:quote_print.model_sale_order
+#: model_terms:ir.ui.view,arch_db:quote_print.web_quotation_content_custom
+#: model_terms:ir.ui.view,arch_db:quote_print.web_quotation_first_page
+msgid "Quotation"
+msgstr "Offerte"
+
+#. module: quote_print
+#: model:ir.model.fields,field_description:quote_print.field_sale_order_template__number_of_days
+msgid "Quotation Duration"
+msgstr "Offerte duur"
+
+#. module: quote_print
+#: model:ir.model,name:quote_print.model_sale_quote_option
+msgid "Quotation Option"
+msgstr "Offerte optie"
+
+#. module: quote_print
+#: model:ir.model.fields,field_description:quote_print.field_sale_order_template_id
+#: model:ir.model.fields,field_description:quote_print.field_sale_order_template__name
+#: model_terms:ir.ui.view,arch_db:quote_print.view_sale_quote_template_form
+msgid "Quotation Template"
+msgstr "Offertesjabloon"
+
+#. module: quote_print
+#: model:ir.model.fields,field_description:quote_print.field_sale_order_quote_viewed
+msgid "Quotation Viewed"
+msgstr "Offerte bekeken"
+
+#. module: quote_print
+#: model_terms:ir.ui.view,arch_db:quote_print.quotation_web_view
+#: model_terms:ir.ui.view,arch_db:quote_print.web_quotation_first_page
+msgid "<strong class=\"d-block mb-1\">Quote Date:</strong>"
+msgstr "<strong class=\"d-block mb-1\">Offertedatum:</strong>"
+
+#. module: quote_print
+#: model:ir.model.fields,field_description:quote_print.field_sale_order_template__xaa_aa_isfooteradrsimg_first_page
+msgid "Remove Footer"
+msgstr "Verwijder footer"
+
+#. module: quote_print
+#: model:ir.model.fields,field_description:quote_print.field_sale_order_template__xaa_aa_report_layout
+msgid "Report Layout"
+msgstr "Offerte lay-out"
+
+#. modules: quote_print
+#: model:ir.model,name:quote_print.model_sale_quote_template
+#: model:ir.model,name:quote_print.model_sale_quote_template
+#: model_terms:ir.ui.view,arch_db:quote_print.view_sale_quote_template_form
+#: model_terms:ir.ui.view,arch_db:quote_print.view_sale_quote_template_tree
+msgid "Sale Quotation Template"
+msgstr "Verkoop offertesjabloon"
+
+#. module: quote_print
+#: model:ir.model,name:quote_print.model_sale_order_line
+msgid "Sales Order Line"
+msgstr "Verkooporderregel"
+
+#. module: quote_print
+#: model:ir.model.fields,field_description:quote_print.field_sale_order_option__order_id
+msgid "Sales Order Reference"
+msgstr "Verkooporder referentie"
+
+
+#. module: quote_print
+#: model:ir.model.fields,field_description:quote_print.field_sale_order_option__layout_category_id
+#: model:ir.model.fields,field_description:quote_print.field_sale_quote_line__layout_category_id
+#: model:ir.model.fields,field_description:quote_print.field_sale_quote_option__layout_category_id
+msgid "Section"
+msgstr "Sectie"
+
+#. module: quote_print
+#: model:ir.model.fields,field_description:quote_print.field_sale_order_option__sequence
+#: model:ir.model.fields,field_description:quote_print.field_sale_quote_line__sequence
+msgid "Sequence"
+msgstr "Reeks"
+
+#. modules: quote_print
+#: model_terms:ir.ui.view,arch_db:quote_print.quotation_web_view
+#: model_terms:ir.ui.view,arch_db:quote_print.web_quotation_content_custom
+#: model_terms:ir.ui.view,arch_db:quote_print.web_quotation_first_page
+msgid "<strong class=\"d-block mb-1\">Ship To:</strong>"
+msgstr "<strong class=\"d-block mb-1\">Verzenden naar:</strong>"
+
+#. module: quote_print
+#: model:ir.model.fields,field_description:quote_print.field_sale_order__xaa_aa_show_only_total
+#: model:ir.model.fields,field_description:quote_print.field_account_move__xaa_aa_show_only_total
+msgid "Show Only Total"
+msgstr "Laat alleen totaal zien"
+
+#. module: quote_print
+#: selection:sale.order.template,report_layout:0
+msgid "Start Content From First Page"
+msgstr "Start offerte vanaf eerste pagina"
+
+#. module: quote_print
+#: model_terms:ir.ui.view,arch_db:quote_print.optional_products
+#: model_terms:ir.ui.view,arch_db:quote_print.sale_order_form_quote
+#: model_terms:ir.ui.view,arch_db:quote_print.view_sale_quote_template_form
+msgid "Suggested Products"
+msgstr "Voorgestelde producten"
+
+#. module: quote_print
+#: model_terms:ir.ui.view,arch_db:quote_print.pricing
+msgid "Taxes"
+msgstr "BTW"
+
+#. module: quote_print
+#: model_terms:ir.ui.view,arch_db:quote_print.pricing
+msgid "Taxes:"
+msgstr "BTW:"
+
+
+#. module: quote_print
+#: model_terms:ir.ui.view,arch_db:quote_print.so_quotation
+msgid "Tell us why you are refusing this quotation, this will help us improve our services."
+msgstr "Vertel ons waarom u deze offerte afwijst, dit helpt ons bij het verbeteren van onze dienstverlening."
+
+#. module: quote_print
+#: model_terms:ir.ui.view,arch_db:quote_print.pricing
+msgid "Terms &amp; Conditions"
+msgstr "Algemene Voorwaarden"
+
+#. module: quote_print
+#: model:ir.model.fields,field_description:quote_print.field_sale_quote_template__note
+msgid "Terms and conditions"
+msgstr "Voorwaarden"
+
+#. module: quote_print
+#: model_terms:ir.ui.view,arch_db:quote_print.view_sale_quote_template_form
+msgid "The Administrator can set default Terms & Conditions in Sales Settings. Terms set here will show up instead if you select this quotation template."
+msgstr "De administrator kan de standaard voorwaarden & condities instellen bij de de verkoop instellingen. Voorwaarden hier ingesteld worden weergegeven indien u dit sjabloon kiest."
+
+#. module: quote_print
+#: model:ir.model.fields,help:quote_print.field_sale_quote_template_mail_template_id
+msgid "This e-mail template will be sent on confirmation. Leave empty to send nothing."
+msgstr "Dit e-mailsjabloon wordt verstuurd bij bevestiging. Laat leeg om niets te versturen."
+
+#. module: quote_print
+#: model:ir.ui.view,arch_db:quote_print.so_template
+msgid "Titles with style <i>Heading 1</i> and\n"
+"                                <i>Heading 2</i> will be used to generate the\n"
+"                                table of content automatically."
+msgstr "Titels met stijl <i>Kop 1</i> en\n"
+"<i>Kop 2</i> worden gebruikt om de\n"
+"inhoudsopgave automatisch te genereren."
+
+#. module: quote_print
+#: model_terms:ir.ui.view,arch_db:quote_print.custom_so_template
+msgid "Titles with style <i>Heading 1</i> and\n"
+"                        <i>Heading 2</i> will be used to generate the\n"
+"                        table of content automatically."
+msgstr "Titels met de stijl <i>Heading 1 <i> en \n"
+"                           <i>Heading 2 <i> worden gebruikt\n"
+"                           om automatisch de index te creeren."
+
+#. module: quote_print
+#: model:ir.ui.view,arch_db:quote_print.pricing
+msgid "Total Price"
+msgstr "Bedrag Incl. BTW"
+
+#. module: quote_print
+#: model:ir.model.fields,field_description:quote_print.field_sale_order_option__price_unit
+#: model:ir.model.fields,field_description:quote_print.field_sale_quote_line__price_unit
+#: model:ir.model.fields,field_description:quote_print.field_sale_quote_option__price_unit
+#: model_terms:ir.ui.view,arch_db:quote_print.pricing
+#: model_terms:ir.ui.view,arch_db:quote_print.report_saleorder_validity_date
+msgid "Unit Price"
+msgstr "Prijs"
+
+#. module: quote_print
+#: model:ir.model.fields,field_description:quote_print.field_sale_order_option__uom_id
+#: model:ir.model.fields,field_description:quote_print.field_sale_quote_line__product_uom_id
+#: model:ir.model.fields,field_description:quote_print.field_sale_quote_option__uom_id
+msgid "Unit of Measure "
+msgstr "Maateenheid "
+
+#. module: quote_print
+#: model:ir.actions.act_window,help:quote_print.action_sale_quotation_template
+msgid "Use templates to create polished, professional quotes in minutes.\n"
+"                    Send these quotes by email and let your customers sign online.\n"
+"                    Use cross-selling and discounts to push and boost your sales."
+msgstr "Gebruik sjablonen om gepolijste, professionele offertes te maken in minuten.\n"
+"Verzend deze offertes via e-mail en laat uw klanten online tekenen.\n"
+"Gebruik kruisverkoop en kortingen om uw verkoop te boosten."
+
+#. module: quote_print
+#: model:ir.actions.report,name:quote_print.report_web_quotation_custom
+msgid "Web Quotation"
+msgstr "Web offerte"
+
+#. module: quote_print
+#: model:ir.actions.report,print_report_name:quote_print.report_web_quotation_custom
+msgid "('Web Quotation')"
+msgstr "('Web offerte')"
+
+#. module: quote_print
+#: model_terms:ir.ui.view,arch_db:quote_print.view_sale_quote_template_form
+msgid "Website Description"
+msgstr "Website omschrijving"
+
+#. module: quote_print
+#: model:ir.model.fields,field_description:quote_print.field_sale_order__xaa_aa_close_image
+#: model:ir.model.fields,field_description:quote_print.field_sale_order_template__xaa_aa_close_image
+msgid "Closing Image"
+msgstr "Het sluiten Afbeelding"
+
+#. module: quote_print
+#: model:ir.model.fields,field_description:quote_print.field_sale_order_template__xaa_aa_close_height
+msgid "Closing Image Height"
+msgstr "Het sluiten Afbeelding Hoogte"
+
+#. modules: quote_print
+#: model_terms:ir.ui.view,arch_db:quote_print.quotation_web_view
+#: model_terms:ir.ui.view,arch_db:quote_print.web_quotation_content_custom
+#: model_terms:ir.ui.view,arch_db:quote_print.web_quotation_first_page
+msgid "<strong class=\"d-block mb-1\">Your Contact: </strong>"
+msgstr "<strong class=\"d-block mb-1\">Uw contactpersoon: </strong>"
+
+#. module: quote_print
+#: model_terms:ir.ui.view,arch_db:quote_print.quotation_web_view
+msgid "Your Order"
+msgstr "Uw order"
+
+#. module: quote_print
+#: model_terms:ir.ui.view,arch_db:quote_print.quotation_web_view
+msgid "Your Quotation"
+msgstr "Uw offerte"
+
+#. modules: quote_print
+#: model_terms:ir.ui.view,arch_db:quote_print.quotation_web_view
+#: model_terms:ir.ui.view,arch_db:quote_print.web_quotation_content_custom
+#: model_terms:ir.ui.view,arch_db:quote_print.web_quotation_first_page
+msgid "Your Reference:"
+msgstr "Uw referentie:"
+
+#. module: quote_print
+#: model:mail.template,subject:quote_print.confirmation_mail
+msgid "Your order ${object.name} is confirmed"
+msgstr "Uw order ${object.name} is bevestigd"
+
+#. module: quote_print
+#: model_terms:ir.ui.view,arch_db:quote_print.payment_confirmation_status
+msgid "Your payment has been authorized."
+msgstr "Uw betaling is geauthoriseerd."
+
+#. module: quote_print
+#: model_terms:ir.ui.view,arch_db:quote_print.optional_products_for_web_quote_report
+msgid "Product"
+msgstr "Producten"
+
+#. module: quote_print
+#: model_terms:ir.ui.view,arch_db:quote_print.optional_products_for_web_quote_report
+msgid "Suggested Products"
+msgstr "Kies uw product"
+
+#. module: quote_print
+#: model:ir.model.fields,field_description:quote_print.field_sale_order__xaa_aa_website_desc_footer
+#: model:ir.model.fields,field_description:quote_print.field_sale_order_template__xaa_aa_website_desc_footer
+msgid "Template Footer"
+msgstr "Sjabloon voettekst"
+
+#. module: quote_print
+#: model:ir.model.fields,field_description:quote_print.field_sale_order__xaa_aa_website_desc_footer_bellow
+#: model:ir.model.fields,field_description:quote_print.field_sale_order_template__xaa_aa_website_desc_footer_bellow
+msgid "Template Footer Below"
+msgstr "Sjabloon voettekst hieronder"
+
+#. module: quote_print
+#: model:ir.model.fields,field_description:quote_print.field_sale_order_template__xaa_aa_cover_image_pdf
+msgid "Cover Image Pdf"
+msgstr "Omslagafbeelding Pdf"
+
+#. module: quote_print
+#: model:ir.model.fields,field_description:quote_print.field_sale_order_template__xaa_aa_cover_image_pdf
+msgid "Cover Image Pdf"
+msgstr "Omslagafbeelding Pdf"
+
+#. module: quote_print
+#: model:ir.model.fields,field_description:quote_print.field_sale_order_template__xaa_aa_file_name_cover_pdf
+#: model:ir.model.fields,field_description:quote_print.field_sale_order_template__xaa_aa_file_name_close_pdf
+msgid "Pdf File Name"
+msgstr "Pdf-bestandsnaam"
+
+#. module: quote_print
+#: model:ir.model.fields,field_description:quote_print.field_sale_order_template__xaa_aa_file_name_close
+msgid "Close File Name"
+msgstr "Sluit bestandsnaam"
+
+#. module: quote_print
+#: model:ir.model.fields,field_description:quote_print.field_sale_order_template__xaa_aa_close_image_pdf
+msgid "Close Image Pdf"
+msgstr "Afbeelding Pdf sluiten"
+
+#. module: quote_print
+#: model:ir.model.fields,field_description:quote_print.field_res_users__xaa_aa_sign
+msgid "Digital Sign"
+msgstr "Digitaal teken"

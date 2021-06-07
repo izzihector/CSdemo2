@@ -23,46 +23,46 @@
                         <td>
                             <select name="xaa_aa_roof_type_one" class="form-control roof_type roof_table_value">
                                 <option></option>
-                                <option value='Slanted roof' 
-                                    t-att-selected="formulier_id.xaa_aa_roof_type_one == 'Slanted roof'">Slanted roof</option>
-                                <option value='Flat roof' 
-                                    t-att-selected="formulier_id.xaa_aa_roof_type_one == 'Flat roof'">Flat roof</option>
+                                <option value='Schuin' 
+                                    t-att-selected="formulier_id.xaa_aa_roof_type_one == 'Schuin'">Schuin</option>
+                                <option value='Plat' 
+                                    t-att-selected="formulier_id.xaa_aa_roof_type_one == 'Plat'">Plat</option>
                             </select>
                         </td>
                         <td>
                             <select name="xaa_aa_covering_type_one" class="form-control roof_table_value">
                                 <option></option>
-                                <option value='Roof tiles' 
-                                    t-att-selected="formulier_id.xaa_aa_covering_type_one == 'Roof tiles'">Roof tiles</option>
-                                <option value='Corrugated' 
-                                    t-att-selected="formulier_id.xaa_aa_covering_type_one == 'Corrugated'">Corrugated</option>
-                                <option value='Reed' 
-                                    t-att-selected="formulier_id.xaa_aa_covering_type_one == 'Reed'">Reed</option>
+                                <option value='Dakpannen' 
+                                    t-att-selected="formulier_id.xaa_aa_covering_type_one == 'Dakpannen'">Dakpannen</option>
+                                <option value='Golfplaat' 
+                                    t-att-selected="formulier_id.xaa_aa_covering_type_one == 'Golfplaat'">Golfplaat</option>
+                                <option value='Riet' 
+                                    t-att-selected="formulier_id.xaa_aa_covering_type_one == 'Riet'">Riet</option>
                                 <option value='Bitumen' 
                                     t-att-selected="formulier_id.xaa_aa_covering_type_one == 'Bitumen'">Bitumen</option>
                                 <option value='EPDM' 
                                     t-att-selected="formulier_id.xaa_aa_covering_type_one == 'EPDM'">EPDM</option>
-                                <option value='Flat roof' 
-                                    t-att-selected="formulier_id.xaa_aa_covering_type_one == 'Flat roof'">EPDM</option>
+                                <option value='Anders,Zie op' 
+                                    t-att-selected="formulier_id.xaa_aa_covering_type_one == 'Anders,Zie op'">Anders,Zie op</option>
                             </select>
                         </td>
                         <td>
                             <select name="xaa_aa_orientaion_type_one" class="form-control roof_table_value">
                                 <option></option>
-                                <option value='South' 
-                                    t-att-selected="formulier_id.xaa_aa_orientaion_type_one == 'South'">South</option>
-                                <option value='Southeast' 
-                                    t-att-selected="formulier_id.xaa_aa_orientaion_type_one == 'Southeast'">Southeast</option>
-                                <option value='Southwest' 
-                                    t-att-selected="formulier_id.xaa_aa_orientaion_type_one == 'Southwest'">Southwest</option>
-                                <option value='East' 
-                                    t-att-selected="formulier_id.xaa_aa_orientaion_type_one == 'East'">East</option>
+                                <option value='Zuid' 
+                                    t-att-selected="formulier_id.xaa_aa_orientaion_type_one == 'Zuid'">Zuid</option>
+                                <option value='Zuidoost' 
+                                    t-att-selected="formulier_id.xaa_aa_orientaion_type_one == 'Zuidoost'">Zuidoost</option>
+                                <option value='Zuidwest' 
+                                    t-att-selected="formulier_id.xaa_aa_orientaion_type_one == 'Zuidwest'">Zuidwest</option>
+                                <option value='Oost' 
+                                    t-att-selected="formulier_id.xaa_aa_orientaion_type_one == 'Oost'">Oost</option>
                                 <option value='West' 
                                     t-att-selected="formulier_id.xaa_aa_orientaion_type_one == 'West'">West</option>
-                                <option value='Northdwest' 
-                                    t-att-selected="formulier_id.xaa_aa_orientaion_type_one == 'Northdwest'">Northdwest</option>
-                                <option value='North' 
-                                    t-att-selected="formulier_id.xaa_aa_orientaion_type_one == 'North'">North</option>
+                                <option value='Noordwest' 
+                                    t-att-selected="formulier_id.xaa_aa_orientaion_type_one == 'Noordwest'">Noordwest</option>
+                                <option value='Noord' 
+                                    t-att-selected="formulier_id.xaa_aa_orientaion_type_one == 'Noord'">Noord</option>
                             </select>
                         </td>
                         <td>
@@ -71,12 +71,12 @@
                         <td>
                             <select name="xaa_aa_roof_tiles_one" class="form-control roof_table_value">
                                 <option></option>
-                                <option value='Crocheted' 
-                                    t-att-selected="formulier_id.xaa_aa_roof_tiles_one == 'Crocheted'">Crocheted</option>
-                                <option value='Screwed' 
-                                    t-att-selected="formulier_id.xaa_aa_roof_tiles_one == 'Screwed'">Screwed</option>
-                                <option value='No idea' 
-                                    t-att-selected="formulier_id.xaa_aa_roof_tiles_one == 'No idea'">No idea</option>
+                                <option value='Gehaakt' 
+                                    t-att-selected="formulier_id.xaa_aa_roof_tiles_one == 'Gehaakt'">Gehaakt</option>
+                                <option value='Geschroefd' 
+                                    t-att-selected="formulier_id.xaa_aa_roof_tiles_one == 'Geschroefd'">Geschroefd</option>
+                                <option value='Geen idee' 
+                                    t-att-selected="formulier_id.xaa_aa_roof_tiles_one == 'Geen idee'">Geen idee</option>
                             </select>
                         </td>
                         <td>
@@ -85,14 +85,14 @@
                         <td>
                             <select name="xaa_aa_schadow_one" class="form-control roof_table_value">
                                 <option></option>
-                                <option value='No' 
-                                    t-att-selected="formulier_id.xaa_aa_schadow_one == 'No'">No</option>
-                                <option value='Yes, pole' 
-                                    t-att-selected="formulier_id.xaa_aa_schadow_one == 'Yes, pole'">Yes, pole</option>
-                                <option value='Yes, tree' 
-                                    t-att-selected="formulier_id.xaa_aa_schadow_one == 'Yes, tree'">Yes, tree</option>
-                                <option value='Yes, dormer' 
-                                    t-att-selected="formulier_id.xaa_aa_schadow_one == 'Yes, dormer'">Yes, dormer</option>
+                                <option value='Nee' 
+                                    t-att-selected="formulier_id.xaa_aa_schadow_one == 'Nee'">Nee</option>
+                                <option value='Ja, paal' 
+                                    t-att-selected="formulier_id.xaa_aa_schadow_one == 'Ja, paal'">Ja, paal</option>
+                                <option value='Ja, boom' 
+                                    t-att-selected="formulier_id.xaa_aa_schadow_one == 'Ja, boom'">Ja, boom</option>
+                                <option value='Ja, dakkapel' 
+                                    t-att-selected="formulier_id.xaa_aa_schadow_one == 'Ja, dakkapel'">Ja, dakkapel</option>
                             </select>
                         </td>
                         <td class="roof-remark-column">
@@ -104,46 +104,46 @@
                         <td>
                             <select name="xaa_aa_roof_type_two" class="form-control roof_type roof_table_value">
                                 <option></option>
-                                <option value='Slanted roof' 
-                                    t-att-selected="formulier_id.xaa_aa_roof_type_two == 'Slanted roof'">Slanted roof</option>
-                                <option value='Flat roof' 
-                                    t-att-selected="formulier_id.xaa_aa_roof_type_two == 'Flat roof'">Flat roof</option>
+                                <option value='Schuin' 
+                                    t-att-selected="formulier_id.xaa_aa_roof_type_two == 'Schuin'">Schuin</option>
+                                <option value='Plat' 
+                                    t-att-selected="formulier_id.xaa_aa_roof_type_two == 'Plat'">Plat</option>
                             </select>
                         </td>
                         <td>
                             <select name="xaa_aa_covering_type_two" class="form-control roof_table_value">
                                 <option></option>
-                                <option value='Roof tiles' 
-                                    t-att-selected="formulier_id.xaa_aa_covering_type_two == 'Roof tiles'">Roof tiles</option>
-                                <option value='Corrugated' 
-                                    t-att-selected="formulier_id.xaa_aa_covering_type_two == 'Corrugated'">Corrugated</option>
-                                <option value='Reed' 
-                                    t-att-selected="formulier_id.xaa_aa_covering_type_two == 'Reed'">Reed</option>
+                                <option value='Dakpannen' 
+                                    t-att-selected="formulier_id.xaa_aa_covering_type_two == 'Dakpannen'">Dakpannen</option>
+                                <option value='Golfplaat' 
+                                    t-att-selected="formulier_id.xaa_aa_covering_type_two == 'Golfplaat'">Golfplaat</option>
+                                <option value='Riet' 
+                                    t-att-selected="formulier_id.xaa_aa_covering_type_two == 'Riet'">Riet</option>
                                 <option value='Bitumen' 
                                     t-att-selected="formulier_id.xaa_aa_covering_type_two == 'Bitumen'">Bitumen</option>
                                 <option value='EPDM' 
                                     t-att-selected="formulier_id.xaa_aa_covering_type_two == 'EPDM'">EPDM</option>
-                                <option value='Flat roof' 
-                                    t-att-selected="formulier_id.xaa_aa_covering_type_two == 'Flat roof'">EPDM</option>
+                                <option value='Anders,Zie op' 
+                                    t-att-selected="formulier_id.xaa_aa_covering_type_two == 'Anders,Zie op'">Anders,Zie op</option>
                             </select>
                         </td>
                         <td>
                             <select name="xaa_aa_orientaion_type_two" class="form-control roof_table_value">
                                 <option></option>
-                                <option value='South' 
-                                    t-att-selected="formulier_id.xaa_aa_orientaion_type_two == 'South'">South</option>
-                                <option value='Southeast' 
-                                    t-att-selected="formulier_id.xaa_aa_orientaion_type_two == 'Southeast'">Southeast</option>
-                                <option value='Southwest' 
-                                    t-att-selected="formulier_id.xaa_aa_orientaion_type_two == 'Southwest'">Southwest</option>
-                                <option value='East' 
-                                    t-att-selected="formulier_id.xaa_aa_orientaion_type_two == 'East'">East</option>
+                                <option value='Zuid' 
+                                    t-att-selected="formulier_id.xaa_aa_orientaion_type_two == 'Zuid'">Zuid</option>
+                                <option value='Zuidoost' 
+                                    t-att-selected="formulier_id.xaa_aa_orientaion_type_two == 'Zuidoost'">Zuidoost</option>
+                                <option value='Zuidwest' 
+                                    t-att-selected="formulier_id.xaa_aa_orientaion_type_two == 'Zuidwest'">Zuidwest</option>
+                                <option value='Oost' 
+                                    t-att-selected="formulier_id.xaa_aa_orientaion_type_two == 'Oost'">Oost</option>
                                 <option value='West' 
                                     t-att-selected="formulier_id.xaa_aa_orientaion_type_two == 'West'">West</option>
-                                <option value='Northdwest' 
-                                    t-att-selected="formulier_id.xaa_aa_orientaion_type_two == 'Northdwest'">Northdwest</option>
-                                <option value='North' 
-                                    t-att-selected="formulier_id.xaa_aa_orientaion_type_two == 'North'">North</option>
+                                <option value='Noordwest' 
+                                    t-att-selected="formulier_id.xaa_aa_orientaion_type_two == 'Noordwest'">Noordwest</option>
+                                <option value='Noord' 
+                                    t-att-selected="formulier_id.xaa_aa_orientaion_type_two == 'Noord'">Noord</option>
                             </select>
                         </td>
                         <td>
@@ -152,12 +152,12 @@
                         <td>
                             <select name="xaa_aa_roof_tiles_two" class="form-control roof_table_value">
                                 <option></option>
-                                <option value='Crocheted' 
-                                    t-att-selected="formulier_id.xaa_aa_roof_tiles_two == 'Crocheted'">Crocheted</option>
-                                <option value='Screwed' 
-                                    t-att-selected="formulier_id.xaa_aa_roof_tiles_two == 'Screwed'">Screwed</option>
-                                <option value='No idea' 
-                                    t-att-selected="formulier_id.xaa_aa_roof_tiles_two == 'No idea'">No idea</option>
+                                <option value='Gehaakt' 
+                                    t-att-selected="formulier_id.xaa_aa_roof_tiles_two == 'Gehaakt'">Gehaakt</option>
+                                <option value='Geschroefd' 
+                                    t-att-selected="formulier_id.xaa_aa_roof_tiles_two == 'Geschroefd'">Geschroefd</option>
+                                <option value='Geen idee' 
+                                    t-att-selected="formulier_id.xaa_aa_roof_tiles_two == 'Geen idee'">Geen idee</option>
                             </select>
                         </td>
                         <td>
@@ -185,46 +185,46 @@
                         <td>
                             <select name="xaa_aa_roof_type_three" class="form-control roof_type roof_table_value">
                                 <option></option>
-                                <option value='Slanted roof' 
-                                    t-att-selected="formulier_id.xaa_aa_roof_type_three == 'Slanted roof'">Slanted roof</option>
-                                <option value='Flat roof' 
-                                    t-att-selected="formulier_id.xaa_aa_roof_type_three == 'Flat roof'">Flat roof</option>
+                                <option value='Schuin' 
+                                    t-att-selected="formulier_id.xaa_aa_roof_type_three == 'Schuin'">Schuin</option>
+                                <option value='Plat' 
+                                    t-att-selected="formulier_id.xaa_aa_roof_type_three == 'Plat'">Plat</option>
                             </select>
                         </td>
                         <td>
                             <select name="xaa_aa_covering_type_three" class="form-control roof_table_value">
                                 <option></option>
-                                <option value='Roof tiles' 
-                                    t-att-selected="formulier_id.xaa_aa_covering_type_three == 'Roof tiles'">Roof tiles</option>
-                                <option value='Corrugated' 
-                                    t-att-selected="formulier_id.xaa_aa_covering_type_three == 'Corrugated'">Corrugated</option>
-                                <option value='Reed' 
-                                    t-att-selected="formulier_id.xaa_aa_covering_type_three == 'Reed'">Reed</option>
+                                <option value='Dakpannen' 
+                                    t-att-selected="formulier_id.xaa_aa_covering_type_three == 'Dakpannen'">Dakpannen</option>
+                                <option value='Golfplaat' 
+                                    t-att-selected="formulier_id.xaa_aa_covering_type_three == 'Golfplaat'">Golfplaat</option>
+                                <option value='Riet' 
+                                    t-att-selected="formulier_id.xaa_aa_covering_type_three == 'Riet'">Riet</option>
                                 <option value='Bitumen' 
                                     t-att-selected="formulier_id.xaa_aa_covering_type_three == 'Bitumen'">Bitumen</option>
                                 <option value='EPDM' 
                                     t-att-selected="formulier_id.xaa_aa_covering_type_three == 'EPDM'">EPDM</option>
-                                <option value='Flat roof' 
-                                    t-att-selected="formulier_id.xaa_aa_covering_type_three == 'Flat roof'">EPDM</option>
+                                <option value='Anders,Zie op' 
+                                    t-att-selected="formulier_id.xaa_aa_covering_type_three == 'Anders,Zie op'">Anders,Zie op</option>
                             </select>
                         </td>
                         <td>
                             <select name="xaa_aa_orientaion_type_three" class="form-control roof_table_value">
                                 <option></option>
-                                <option value='South' 
-                                    t-att-selected="formulier_id.xaa_aa_orientaion_type_three == 'South'">South</option>
-                                <option value='Southeast' 
-                                    t-att-selected="formulier_id.xaa_aa_orientaion_type_three == 'Southeast'">Southeast</option>
-                                <option value='Southwest' 
-                                    t-att-selected="formulier_id.xaa_aa_orientaion_type_three == 'Southwest'">Southwest</option>
-                                <option value='East' 
-                                    t-att-selected="formulier_id.xaa_aa_orientaion_type_three == 'East'">East</option>
+                                <option value='Zuid' 
+                                    t-att-selected="formulier_id.xaa_aa_orientaion_type_three == 'Zuid'">Zuid</option>
+                                <option value='Zuidoost' 
+                                    t-att-selected="formulier_id.xaa_aa_orientaion_type_three == 'Zuidoost'">Zuidoost</option>
+                                <option value='Zuidwest' 
+                                    t-att-selected="formulier_id.xaa_aa_orientaion_type_three == 'Zuidwest'">Zuidwest</option>
+                                <option value='Oost' 
+                                    t-att-selected="formulier_id.xaa_aa_orientaion_type_three == 'Oost'">Oost</option>
                                 <option value='West' 
                                     t-att-selected="formulier_id.xaa_aa_orientaion_type_three == 'West'">West</option>
-                                <option value='Northdwest' 
-                                    t-att-selected="formulier_id.xaa_aa_orientaion_type_three == 'Northdwest'">Northdwest</option>
-                                <option value='North' 
-                                    t-att-selected="formulier_id.xaa_aa_orientaion_type_three == 'North'">North</option>
+                                <option value='Noordwest' 
+                                    t-att-selected="formulier_id.xaa_aa_orientaion_type_three == 'Noordwest'">Noordwest</option>
+                                <option value='Noord' 
+                                    t-att-selected="formulier_id.xaa_aa_orientaion_type_three == 'Noord'">Noord</option>
                             </select>
                         </td>
                         <td>
@@ -233,12 +233,12 @@
                         <td>
                             <select name="xaa_aa_roof_tiles_three" class="form-control roof_table_value">
                                 <option></option>
-                                <option value='Crocheted' 
-                                    t-att-selected="formulier_id.xaa_aa_roof_tiles_three == 'Crocheted'">Crocheted</option>
-                                <option value='Screwed' 
-                                    t-att-selected="formulier_id.xaa_aa_roof_tiles_three == 'Screwed'">Screwed</option>
-                                <option value='No idea' 
-                                    t-att-selected="formulier_id.xaa_aa_roof_tiles_three == 'No idea'">No idea</option>
+                                <option value='Gehaakt' 
+                                    t-att-selected="formulier_id.xaa_aa_roof_tiles_three == 'Gehaakt'">Gehaakt</option>
+                                <option value='Geschroefd' 
+                                    t-att-selected="formulier_id.xaa_aa_roof_tiles_three == 'Geschroefd'">Geschroefd</option>
+                                <option value='Geen idee' 
+                                    t-att-selected="formulier_id.xaa_aa_roof_tiles_three == 'Geen idee'">Geen idee</option>
                             </select>
                         </td>
                         <td>
@@ -266,46 +266,46 @@
                         <td>
                             <select name="xaa_aa_roof_type_four" class="form-control roof_type roof_table_value">
                                 <option></option>
-                                <option value='Slanted roof' 
-                                    t-att-selected="formulier_id.xaa_aa_roof_type_four == 'Slanted roof'">Slanted roof</option>
-                                <option value='Flat roof' 
-                                    t-att-selected="formulier_id.xaa_aa_roof_type_four == 'Flat roof'">Flat roof</option>
+                                <option value='Schuin' 
+                                    t-att-selected="formulier_id.xaa_aa_roof_type_four == 'Schuin'">Schuin</option>
+                                <option value='Plat' 
+                                    t-att-selected="formulier_id.xaa_aa_roof_type_four == 'Plat'">Plat</option>
                             </select>
                         </td>
                         <td>
                             <select name="xaa_aa_covering_type_four" class="form-control roof_table_value">
                                 <option></option>
-                                <option value='Roof tiles' 
-                                    t-att-selected="formulier_id.xaa_aa_covering_type_four == 'Roof tiles'">Roof tiles</option>
-                                <option value='Corrugated' 
-                                    t-att-selected="formulier_id.xaa_aa_covering_type_four == 'Corrugated'">Corrugated</option>
-                                <option value='Reed' 
-                                    t-att-selected="formulier_id.xaa_aa_covering_type_four == 'Reed'">Reed</option>
+                                <option value='Dakpannen' 
+                                    t-att-selected="formulier_id.xaa_aa_covering_type_four == 'Dakpannen'">Dakpannen</option>
+                                <option value='Golfplaat' 
+                                    t-att-selected="formulier_id.xaa_aa_covering_type_four == 'Golfplaat'">Golfplaat</option>
+                                <option value='Riet' 
+                                    t-att-selected="formulier_id.xaa_aa_covering_type_four == 'Riet'">Riet</option>
                                 <option value='Bitumen' 
                                     t-att-selected="formulier_id.xaa_aa_covering_type_four == 'Bitumen'">Bitumen</option>
                                 <option value='EPDM' 
                                     t-att-selected="formulier_id.xaa_aa_covering_type_four == 'EPDM'">EPDM</option>
-                                <option value='Flat roof' 
-                                    t-att-selected="formulier_id.xaa_aa_covering_type_four == 'Flat roof'">EPDM</option>
+                                <option value='Anders,Zie op' 
+                                    t-att-selected="formulier_id.xaa_aa_covering_type_four == 'Anders,Zie op'">Anders,Zie op</option>
                             </select>
                         </td>
                         <td>
                             <select name="xaa_aa_orientaion_type_four" class="form-control roof_table_value">
                                 <option></option>
-                                <option value='South' 
-                                    t-att-selected="formulier_id.xaa_aa_orientaion_type_four == 'South'">South</option>
-                                <option value='Southeast' 
-                                    t-att-selected="formulier_id.xaa_aa_orientaion_type_four == 'Southeast'">Southeast</option>
-                                <option value='Southwest' 
-                                    t-att-selected="formulier_id.xaa_aa_orientaion_type_four == 'Southwest'">Southwest</option>
-                                <option value='East' 
-                                    t-att-selected="formulier_id.xaa_aa_orientaion_type_four == 'East'">East</option>
+                                <option value='Zuid' 
+                                    t-att-selected="formulier_id.xaa_aa_orientaion_type_four == 'Zuid'">Zuid</option>
+                                <option value='Zuidoost' 
+                                    t-att-selected="formulier_id.xaa_aa_orientaion_type_four == 'Zuidoost'">Zuidoost</option>
+                                <option value='Zuidwest' 
+                                    t-att-selected="formulier_id.xaa_aa_orientaion_type_four == 'Zuidwest'">Zuidwest</option>
+                                <option value='Oost' 
+                                    t-att-selected="formulier_id.xaa_aa_orientaion_type_four == 'Oost'">Oost</option>
                                 <option value='West' 
                                     t-att-selected="formulier_id.xaa_aa_orientaion_type_four == 'West'">West</option>
-                                <option value='Northdwest' 
-                                    t-att-selected="formulier_id.xaa_aa_orientaion_type_four == 'Northdwest'">Northdwest</option>
-                                <option value='North' 
-                                    t-att-selected="formulier_id.xaa_aa_orientaion_type_four == 'North'">North</option>
+                                <option value='Noordwest' 
+                                    t-att-selected="formulier_id.xaa_aa_orientaion_type_four == 'Noordwest'">Noordwest</option>
+                                <option value='Noord' 
+                                    t-att-selected="formulier_id.xaa_aa_orientaion_type_four == 'Noord'">Noord</option>
                             </select>
                         </td>
                         <td>
@@ -314,12 +314,12 @@
                         <td>
                             <select name="xaa_aa_roof_tiles_four" class="form-control roof_table_value">
                                 <option></option>
-                                <option value='Crocheted' 
-                                    t-att-selected="formulier_id.xaa_aa_roof_tiles_four == 'Crocheted'">Crocheted</option>
-                                <option value='Screwed' 
-                                    t-att-selected="formulier_id.xaa_aa_roof_tiles_four == 'Screwed'">Screwed</option>
-                                <option value='No idea' 
-                                    t-att-selected="formulier_id.xaa_aa_roof_tiles_four == 'No idea'">No idea</option>
+                                <option value='Gehaakt' 
+                                    t-att-selected="formulier_id.xaa_aa_roof_tiles_four == 'Gehaakt'">Gehaakt</option>
+                                <option value='Geschroefd' 
+                                    t-att-selected="formulier_id.xaa_aa_roof_tiles_four == 'Geschroefd'">Geschroefd</option>
+                                <option value='Geen idee' 
+                                    t-att-selected="formulier_id.xaa_aa_roof_tiles_four == 'Geen idee'">Geen idee</option>
                             </select>
                         </td>
                         <td>
@@ -347,60 +347,60 @@
                         <td>
                             <select name="xaa_aa_roof_type_five" class="form-control roof_type roof_table_value">
                                 <option></option>
-                                <option value='Slanted roof' 
-                                    t-att-selected="formulier_id.xaa_aa_roof_type_five == 'Slanted roof'">Slanted roof</option>
-                                <option value='Flat roof' 
-                                    t-att-selected="formulier_id.xaa_aa_roof_type_five == 'Flat roof'">Flat roof</option>
+                                <option value='Schuin' 
+                                    t-att-selected="formulier_id.xaa_aa_roof_type_five == 'Schuin'">Schuin</option>
+                                <option value='Plat' 
+                                    t-att-selected="formulier_id.xaa_aa_roof_type_five == 'Plat'">Plat</option>
                             </select>
                         </td>
                         <td>
                             <select name="xaa_aa_covering_type_five" class="form-control roof_table_value">
                                 <option></option>
-                                <option value='Roof tiles' 
-                                    t-att-selected="formulier_id.xaa_aa_covering_type_five == 'Roof tiles'">Roof tiles</option>
-                                <option value='Corrugated' 
-                                    t-att-selected="formulier_id.xaa_aa_covering_type_five == 'Corrugated'">Corrugated</option>
-                                <option value='Reed' 
-                                    t-att-selected="formulier_id.xaa_aa_covering_type_five == 'Reed'">Reed</option>
+                                <option value='Dakpannen' 
+                                    t-att-selected="formulier_id.xaa_aa_covering_type_five == 'Dakpannen'">Dakpannen</option>
+                                <option value='Golfplaat' 
+                                    t-att-selected="formulier_id.xaa_aa_covering_type_five == 'Golfplaat'">Golfplaat</option>
+                                <option value='Riet' 
+                                    t-att-selected="formulier_id.xaa_aa_covering_type_five == 'Riet'">Riet</option>
                                 <option value='Bitumen' 
                                     t-att-selected="formulier_id.xaa_aa_covering_type_five == 'Bitumen'">Bitumen</option>
                                 <option value='EPDM' 
                                     t-att-selected="formulier_id.xaa_aa_covering_type_five == 'EPDM'">EPDM</option>
-                                <option value='Flat roof' 
-                                    t-att-selected="formulier_id.xaa_aa_covering_type_five == 'Flat roof'">EPDM</option>
+                                <option value='Anders,Zie op' 
+                                    t-att-selected="formulier_id.xaa_aa_covering_type_five == 'Anders,Zie op'">Anders,Zie op</option>
                             </select>
                         </td>
                         <td>
                             <select name="xaa_aa_orientaion_type_five" class="form-control roof_table_value">
                                 <option></option>
-                                <option value='South' 
-                                    t-att-selected="formulier_id.xaa_aa_orientaion_type_five == 'South'">South</option>
-                                <option value='Southeast' 
-                                    t-att-selected="formulier_id.xaa_aa_orientaion_type_five == 'Southeast'">Southeast</option>
-                                <option value='Southwest' 
-                                    t-att-selected="formulier_id.xaa_aa_orientaion_type_five == 'Southwest'">Southwest</option>
-                                <option value='East' 
-                                    t-att-selected="formulier_id.xaa_aa_orientaion_type_five == 'East'">East</option>
+                                <option value='Zuid' 
+                                    t-att-selected="formulier_id.xaa_aa_orientaion_type_five == 'Zuid'">Zuid</option>
+                                <option value='Zuidoost' 
+                                    t-att-selected="formulier_id.xaa_aa_orientaion_type_five == 'Zuidoost'">Zuidoost</option>
+                                <option value='Zuidwest' 
+                                    t-att-selected="formulier_id.xaa_aa_orientaion_type_five == 'Zuidwest'">Zuidwest</option>
+                                <option value='Oost' 
+                                    t-att-selected="formulier_id.xaa_aa_orientaion_type_five == 'Oost'">Oost</option>
                                 <option value='West' 
                                     t-att-selected="formulier_id.xaa_aa_orientaion_type_five == 'West'">West</option>
-                                <option value='Northdwest' 
-                                    t-att-selected="formulier_id.xaa_aa_orientaion_type_five == 'Northdwest'">Northdwest</option>
-                                <option value='North' 
-                                    t-att-selected="formulier_id.xaa_aa_orientaion_type_five == 'North'">North</option>
+                                <option value='Noordwest' 
+                                    t-att-selected="formulier_id.xaa_aa_orientaion_type_five == 'Noordwest'">Noordwest</option>
+                                <option value='Noord' 
+                                    t-att-selected="formulier_id.xaa_aa_orientaion_type_five == 'Noord'">Noord</option>
                             </select>
                         </td>
                         <td>
                             <input type="text" name="xaa_aa_inclination_angle_five" class="form-control roof_table_value" t-att-value="formulier_id.xaa_aa_inclination_angle_five"/>
                         </td>
                         <td>
-                            <select name="xaa_aa_roof_tiles_fiver" class="form-control roof_table_value">
+                            <select name="xaa_aa_roof_tiles_five" class="form-control roof_table_value">
                                 <option></option>
-                                <option value='Crocheted' 
-                                    t-att-selected="formulier_id.xaa_aa_roof_tiles_five == 'Crocheted'">Crocheted</option>
-                                <option value='Screwed' 
-                                    t-att-selected="formulier_id.xaa_aa_roof_tiles_five == 'Screwed'">Screwed</option>
-                                <option value='No idea' 
-                                    t-att-selected="formulier_id.xaa_aa_roof_tiles_five == 'No idea'">No idea</option>
+                                <option value='Gehaakt' 
+                                    t-att-selected="formulier_id.xaa_aa_roof_tiles_five == 'Gehaakt'">Gehaakt</option>
+                                <option value='Geschroefd' 
+                                    t-att-selected="formulier_id.xaa_aa_roof_tiles_five == 'Geschroefd'">Geschroefd</option>
+                                <option value='Geen idee' 
+                                    t-att-selected="formulier_id.xaa_aa_roof_tiles_five == 'Geen idee'">Geen idee</option>
                             </select>
                         </td>
                         <td>
@@ -428,46 +428,46 @@
                         <td>
                             <select name="xaa_aa_roof_type_six" class="form-control roof_type roof_table_value">
                                 <option></option>
-                                <option value='Slanted roof' 
-                                    t-att-selected="formulier_id.xaa_aa_roof_type_six == 'Slanted roof'">Slanted roof</option>
-                                <option value='Flat roof' 
-                                    t-att-selected="formulier_id.xaa_aa_roof_type_six == 'Flat roof'">Flat roof</option>
+                                <option value='Schuin' 
+                                    t-att-selected="formulier_id.xaa_aa_roof_type_six == 'Schuin'">Schuin</option>
+                                <option value='Plat' 
+                                    t-att-selected="formulier_id.xaa_aa_roof_type_six == 'Plat'">Plat</option>
                             </select>
                         </td>
                         <td>
                             <select name="xaa_aa_covering_type_six" class="form-control roof_table_value">
                                 <option></option>
-                                <option value='Roof tiles' 
-                                    t-att-selected="formulier_id.xaa_aa_covering_type_six == 'Roof tiles'">Roof tiles</option>
-                                <option value='Corrugated' 
-                                    t-att-selected="formulier_id.xaa_aa_covering_type_six == 'Corrugated'">Corrugated</option>
-                                <option value='Reed' 
-                                    t-att-selected="formulier_id.xaa_aa_covering_type_six == 'Reed'">Reed</option>
+                                <option value='Dakpannen' 
+                                    t-att-selected="formulier_id.xaa_aa_covering_type_six == 'Dakpannen'">Dakpannen</option>
+                                <option value='Golfplaat' 
+                                    t-att-selected="formulier_id.xaa_aa_covering_type_six == 'Golfplaat'">Golfplaat</option>
+                                <option value='Riet' 
+                                    t-att-selected="formulier_id.xaa_aa_covering_type_six == 'Riet'">Riet</option>
                                 <option value='Bitumen' 
                                     t-att-selected="formulier_id.xaa_aa_covering_type_six == 'Bitumen'">Bitumen</option>
                                 <option value='EPDM' 
                                     t-att-selected="formulier_id.xaa_aa_covering_type_six == 'EPDM'">EPDM</option>
-                                <option value='Flat roof' 
-                                    t-att-selected="formulier_id.xaa_aa_covering_type_six == 'Flat roof'">EPDM</option>
+                                <option value='Anders,Zie op' 
+                                    t-att-selected="formulier_id.xaa_aa_covering_type_six == 'Anders,Zie op'">Anders,Zie op</option>
                             </select>
                         </td>
                         <td>
                             <select name="xaa_aa_orientaion_type_six" class="form-control roof_table_value">
                                 <option></option>
-                                <option value='South' 
-                                    t-att-selected="formulier_id.xaa_aa_orientaion_type_six == 'South'">South</option>
-                                <option value='Southeast' 
-                                    t-att-selected="formulier_id.xaa_aa_orientaion_type_six == 'Southeast'">Southeast</option>
-                                <option value='Southwest' 
-                                    t-att-selected="formulier_id.xaa_aa_orientaion_type_six == 'Southwest'">Southwest</option>
-                                <option value='East' 
-                                    t-att-selected="formulier_id.xaa_aa_orientaion_type_six == 'East'">East</option>
+                                <option value='Zuid' 
+                                    t-att-selected="formulier_id.xaa_aa_orientaion_type_six == 'Zuid'">Zuid</option>
+                                <option value='Zuidoost' 
+                                    t-att-selected="formulier_id.xaa_aa_orientaion_type_six == 'Zuidoost'">Zuidoost</option>
+                                <option value='Zuidwest' 
+                                    t-att-selected="formulier_id.xaa_aa_orientaion_type_six == 'Zuidwest'">Zuidwest</option>
+                                <option value='Oost' 
+                                    t-att-selected="formulier_id.xaa_aa_orientaion_type_six == 'Oost'">Oost</option>
                                 <option value='West' 
                                     t-att-selected="formulier_id.xaa_aa_orientaion_type_six == 'West'">West</option>
-                                <option value='Northdwest' 
-                                    t-att-selected="formulier_id.xaa_aa_orientaion_type_six == 'Northdwest'">Northdwest</option>
-                                <option value='North' 
-                                    t-att-selected="formulier_id.xaa_aa_orientaion_type_six == 'North'">North</option>
+                                <option value='Noordwest' 
+                                    t-att-selected="formulier_id.xaa_aa_orientaion_type_six == 'Noordwest'">Noordwest</option>
+                                <option value='Noord' 
+                                    t-att-selected="formulier_id.xaa_aa_orientaion_type_six == 'Noord'">Noord</option>
                             </select>
                         </td>
                         <td>
@@ -476,12 +476,12 @@
                         <td>
                             <select name="xaa_aa_roof_tiles_six" class="form-control roof_table_value">
                                 <option></option>
-                                <option value='Crocheted' 
-                                    t-att-selected="formulier_id.xaa_aa_roof_tiles_six == 'Crocheted'">Crocheted</option>
-                                <option value='Screwed' 
-                                    t-att-selected="formulier_id.xaa_aa_roof_tiles_six == 'Screwed'">Screwed</option>
-                                <option value='No idea' 
-                                    t-att-selected="formulier_id.xaa_aa_roof_tiles_six == 'No idea'">No idea</option>
+                                <option value='Gehaakt' 
+                                    t-att-selected="formulier_id.xaa_aa_roof_tiles_six == 'Gehaakt'">Gehaakt</option>
+                                <option value='Geschroefd' 
+                                    t-att-selected="formulier_id.xaa_aa_roof_tiles_six == 'Geschroefd'">Geschroefd</option>
+                                <option value='Geen idee' 
+                                    t-att-selected="formulier_id.xaa_aa_roof_tiles_six == 'Geen idee'">Geen idee</option>
                             </select>
                         </td>
                         <td>
@@ -509,46 +509,46 @@
                         <td>
                             <select name="xaa_aa_roof_type_seven" class="form-control roof_type roof_table_value">
                                 <option></option>
-                                <option value='Slanted roof' 
-                                    t-att-selected="formulier_id.xaa_aa_roof_type_seven == 'Slanted roof'">Slanted roof</option>
-                                <option value='Flat roof' 
-                                    t-att-selected="formulier_id.xaa_aa_roof_type_seven == 'Flat roof'">Flat roof</option>
+                                <option value='Schuin' 
+                                    t-att-selected="formulier_id.xaa_aa_roof_type_seven == 'Schuin'">Schuin</option>
+                                <option value='Plat' 
+                                    t-att-selected="formulier_id.xaa_aa_roof_type_seven == 'Plat'">Plat</option>
                             </select>
                         </td>
                         <td>
                             <select name="xaa_aa_covering_type_seven" class="form-control roof_table_value">
                                 <option></option>
-                                <option value='Roof tiles' 
-                                    t-att-selected="formulier_id.xaa_aa_covering_type_seven == 'Roof tiles'">Roof tiles</option>
-                                <option value='Corrugated' 
-                                    t-att-selected="formulier_id.xaa_aa_covering_type_seven == 'Corrugated'">Corrugated</option>
-                                <option value='Reed' 
-                                    t-att-selected="formulier_id.xaa_aa_covering_type_seven == 'Reed'">Reed</option>
+                                <option value='Dakpannen' 
+                                    t-att-selected="formulier_id.xaa_aa_covering_type_seven == 'Dakpannen'">Dakpannen</option>
+                                <option value='Golfplaat' 
+                                    t-att-selected="formulier_id.xaa_aa_covering_type_seven == 'Golfplaat'">Golfplaat</option>
+                                <option value='Riet' 
+                                    t-att-selected="formulier_id.xaa_aa_covering_type_seven == 'Riet'">Riet</option>
                                 <option value='Bitumen' 
                                     t-att-selected="formulier_id.xaa_aa_covering_type_seven == 'Bitumen'">Bitumen</option>
                                 <option value='EPDM' 
                                     t-att-selected="formulier_id.xaa_aa_covering_type_seven == 'EPDM'">EPDM</option>
-                                <option value='Flat roof' 
-                                    t-att-selected="formulier_id.xaa_aa_covering_type_seven == 'Flat roof'">EPDM</option>
+                                <option value='Anders,Zie op' 
+                                    t-att-selected="formulier_id.xaa_aa_covering_type_seven == 'Anders,Zie op'">Anders,Zie op</option>
                             </select>
                         </td>
                         <td>
                             <select name="xaa_aa_orientaion_type_seven" class="form-control roof_table_value">
                                 <option></option>
-                                <option value='South' 
-                                    t-att-selected="formulier_id.xaa_aa_orientaion_type_seven == 'South'">South</option>
-                                <option value='Southeast' 
-                                    t-att-selected="formulier_id.xaa_aa_orientaion_type_seven == 'Southeast'">Southeast</option>
-                                <option value='Southwest' 
-                                    t-att-selected="formulier_id.xaa_aa_orientaion_type_seven == 'Southwest'">Southwest</option>
-                                <option value='East' 
-                                    t-att-selected="formulier_id.xaa_aa_orientaion_type_seven == 'East'">East</option>
+                                <option value='Zuid' 
+                                    t-att-selected="formulier_id.xaa_aa_orientaion_type_seven == 'Zuid'">Zuid</option>
+                                <option value='Zuidoost' 
+                                    t-att-selected="formulier_id.xaa_aa_orientaion_type_seven == 'Zuidoost'">Zuidoost</option>
+                                <option value='Zuidwest' 
+                                    t-att-selected="formulier_id.xaa_aa_orientaion_type_seven == 'Zuidwest'">Zuidwest</option>
+                                <option value='Oost' 
+                                    t-att-selected="formulier_id.xaa_aa_orientaion_type_seven == 'Oost'">Oost</option>
                                 <option value='West' 
                                     t-att-selected="formulier_id.xaa_aa_orientaion_type_seven == 'West'">West</option>
-                                <option value='Northdwest' 
-                                    t-att-selected="formulier_id.xaa_aa_orientaion_type_seven == 'Northdwest'">Northdwest</option>
-                                <option value='North' 
-                                    t-att-selected="formulier_id.xaa_aa_orientaion_type_seven == 'North'">North</option>
+                                <option value='Noordwest' 
+                                    t-att-selected="formulier_id.xaa_aa_orientaion_type_seven == 'Noordwest'">Noordwest</option>
+                                <option value='Noord' 
+                                    t-att-selected="formulier_id.xaa_aa_orientaion_type_seven == 'Noord'">Noord</option>
                             </select>
                         </td>
                         <td>
@@ -557,12 +557,12 @@
                         <td>
                             <select name="xaa_aa_roof_tiles_seven" class="form-control roof_table_value">
                                 <option></option>
-                                <option value='Crocheted' 
-                                    t-att-selected="formulier_id.xaa_aa_roof_tiles_seven == 'Crocheted'">Crocheted</option>
-                                <option value='Screwed' 
-                                    t-att-selected="formulier_id.xaa_aa_roof_tiles_seven == 'Screwed'">Screwed</option>
-                                <option value='No idea' 
-                                    t-att-selected="formulier_id.xaa_aa_roof_tiles_seven == 'No idea'">No idea</option>
+                                <option value='Gehaakt' 
+                                    t-att-selected="formulier_id.xaa_aa_roof_tiles_seven == 'Gehaakt'">Gehaakt</option>
+                                <option value='Geschroefd' 
+                                    t-att-selected="formulier_id.xaa_aa_roof_tiles_seven == 'Geschroefd'">Geschroefd</option>
+                                <option value='Geen idee' 
+                                    t-att-selected="formulier_id.xaa_aa_roof_tiles_seven == 'Geen idee'">Geen idee</option>
                             </select>
                         </td>
                         <td>
@@ -590,46 +590,46 @@
                         <td>
                             <select name="xaa_aa_roof_type_eight" class="form-control roof_type roof_table_value">
                                 <option></option>
-                                <option value='Slanted roof' 
-                                    t-att-selected="formulier_id.xaa_aa_roof_type_eight == 'Slanted roof'">Slanted roof</option>
-                                <option value='Flat roof' 
-                                    t-att-selected="formulier_id.xaa_aa_roof_type_eight == 'Flat roof'">Flat roof</option>
+                                <option value='Schuin' 
+                                    t-att-selected="formulier_id.xaa_aa_roof_type_eight == 'Schuin'">Schuin</option>
+                                <option value='Plat' 
+                                    t-att-selected="formulier_id.xaa_aa_roof_type_eight == 'Plat'">Plat</option>
                             </select>
                         </td>
                         <td>
                             <select name="xaa_aa_covering_type_eight" class="form-control roof_table_value">
                                 <option></option>
-                                <option value='Roof tiles' 
-                                    t-att-selected="formulier_id.xaa_aa_covering_type_eight == 'Roof tiles'">Roof tiles</option>
-                                <option value='Corrugated' 
-                                    t-att-selected="formulier_id.xaa_aa_covering_type_eight == 'Corrugated'">Corrugated</option>
-                                <option value='Reed' 
-                                    t-att-selected="formulier_id.xaa_aa_covering_type_eight == 'Reed'">Reed</option>
+                                <option value='Dakpannen' 
+                                    t-att-selected="formulier_id.xaa_aa_covering_type_eight == 'Dakpannen'">Dakpannen</option>
+                                <option value='Golfplaat' 
+                                    t-att-selected="formulier_id.xaa_aa_covering_type_eight == 'Golfplaat'">Golfplaat</option>
+                                <option value='Riet' 
+                                    t-att-selected="formulier_id.xaa_aa_covering_type_eight == 'Riet'">Riet</option>
                                 <option value='Bitumen' 
                                     t-att-selected="formulier_id.xaa_aa_covering_type_eight == 'Bitumen'">Bitumen</option>
                                 <option value='EPDM' 
                                     t-att-selected="formulier_id.xaa_aa_covering_type_eight == 'EPDM'">EPDM</option>
-                                <option value='Flat roof' 
-                                    t-att-selected="formulier_id.xaa_aa_covering_type_eight == 'Flat roof'">EPDM</option>
+                                <option value='Anders,Zie op' 
+                                    t-att-selected="formulier_id.xaa_aa_covering_type_eight == 'Anders,Zie op'">Anders,Zie op</option>
                             </select>
                         </td>
                         <td>
                             <select name="xaa_aa_orientaion_type_eight" class="form-control roof_table_value">
                                 <option></option>
-                                <option value='South' 
-                                    t-att-selected="formulier_id.xaa_aa_orientaion_type_eight == 'South'">South</option>
-                                <option value='Southeast' 
-                                    t-att-selected="formulier_id.xaa_aa_orientaion_type_eight == 'Southeast'">Southeast</option>
-                                <option value='Southwest' 
-                                    t-att-selected="formulier_id.xaa_aa_orientaion_type_eight == 'Southwest'">Southwest</option>
-                                <option value='East' 
-                                    t-att-selected="formulier_id.xaa_aa_orientaion_type_eight == 'East'">East</option>
+                                <option value='Zuid' 
+                                    t-att-selected="formulier_id.xaa_aa_orientaion_type_eight == 'Zuid'">Zuid</option>
+                                <option value='Zuidoost' 
+                                    t-att-selected="formulier_id.xaa_aa_orientaion_type_eight == 'Zuidoost'">Zuidoost</option>
+                                <option value='Zuidwest' 
+                                    t-att-selected="formulier_id.xaa_aa_orientaion_type_eight == 'Zuidwest'">Zuidwest</option>
+                                <option value='Oost' 
+                                    t-att-selected="formulier_id.xaa_aa_orientaion_type_eight == 'Oost'">Oost</option>
                                 <option value='West' 
                                     t-att-selected="formulier_id.xaa_aa_orientaion_type_eight == 'West'">West</option>
-                                <option value='Northdwest' 
-                                    t-att-selected="formulier_id.xaa_aa_orientaion_type_eight == 'Northdwest'">Northdwest</option>
-                                <option value='North' 
-                                    t-att-selected="formulier_id.xaa_aa_orientaion_type_eight == 'North'">North</option>
+                                <option value='Noordwest' 
+                                    t-att-selected="formulier_id.xaa_aa_orientaion_type_eight == 'Noordwest'">Noordwest</option>
+                                <option value='Noord' 
+                                    t-att-selected="formulier_id.xaa_aa_orientaion_type_eight == 'Noord'">Noord</option>
                             </select>
                         </td>
                         <td>
@@ -638,12 +638,12 @@
                         <td>
                             <select name="xaa_aa_roof_tiles_eight" class="form-control roof_table_value">
                                 <option></option>
-                                <option value='Crocheted' 
-                                    t-att-selected="formulier_id.xaa_aa_roof_tiles_eight == 'Crocheted'">Crocheted</option>
-                                <option value='Screwed' 
-                                    t-att-selected="formulier_id.xaa_aa_roof_tiles_eight == 'Screwed'">Screwed</option>
-                                <option value='No idea' 
-                                    t-att-selected="formulier_id.xaa_aa_roof_tiles_eight == 'No idea'">No idea</option>
+                                <option value='Gehaakt' 
+                                    t-att-selected="formulier_id.xaa_aa_roof_tiles_eight == 'Gehaakt'">Gehaakt</option>
+                                <option value='Geschroefd' 
+                                    t-att-selected="formulier_id.xaa_aa_roof_tiles_eight == 'Geschroefd'">Geschroefd</option>
+                                <option value='Geen idee' 
+                                    t-att-selected="formulier_id.xaa_aa_roof_tiles_eight == 'Geen idee'">Geen idee</option>
                             </select>
                         </td>
                         <td>

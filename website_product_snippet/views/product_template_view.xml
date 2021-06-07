@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <record model="ir.ui.view" id="product_template_form_view_inh">
+            <field name="name">product.template.product.website.form.inh</field>
+            <field name="model">product.template</field>
+            <field name="inherit_id" ref="product.product_template_form_view"/>
+            <field name="arch" type="xml">
+                <xpath expr="//page[@name='shop']" position="after">
+                    <page name="website" string="Website" attrs="{'invisible': [('sale_ok','=',False)]}">
+                        <!-- <group name="website" col="4">
+                            <field name="aa_wb_logo" widget="image"/>
+                            <field name="aa_wb_product_image" widget="image"/>
+                            <field name="aa_wb_title"/>
+                            <field name="aa_wb_text"/>
+                        </group> -->
+                        <group name="solar_panel_snippet" string="Solar Panel Snippet">
+                            <group>
+                                <field name="aa_sp_logo" widget="image"/>
+                                <field name="aa_point1_icon" widget="image" class="oe_avatar" style="float:left;"/>
+                                <field name="aa_point1_title"/>
+                                <field name="aa_point1_desc"/>
+                                <field name="aa_point2_icon" widget="image" class="oe_avatar" style="float:left;"/>
+                                <field name="aa_point2_title"/>
+                                <field name="aa_point2_desc"/>
+                                <field name="aa_point3_icon" widget="image" class="oe_avatar" style="float:left;"/>
+                                <field name="aa_point3_title"/>
+                                <field name="aa_point3_desc"/>
+                            </group>
+                            <group>
+                                <field name="aa_sp_product_image" widget="image"/>
+                                <field name="aa_point4_icon" widget="image" class="oe_avatar" style="float:left;"/>
+                                <field name="aa_point4_title"/>
+                                <field name="aa_point4_desc"/>
+                                <field name="aa_point5_icon" widget="image" class="oe_avatar" style="float:left;"/>
+                                <field name="aa_point5_title"/>
+                                <field name="aa_point5_desc"/>
+                            </group>
+                        </group>
+                    </page>
+                </xpath>
+            </field>
+        </record>
+
+    </data>
+</odoo>

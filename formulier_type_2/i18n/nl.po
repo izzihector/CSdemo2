@@ -1,0 +1,801 @@
+# Translation of Odoo Server.   
+# This file contains the translation of the following modules:
+#   * formulier_type_2
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 14.1alpha1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-09-23 07:46+0000\n"
+"PO-Revision-Date: 2020-09-23 07:46+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: formulier_type_2
+#: model:ir.model.fields,field_description:formulier_type_2.field_question_formulier__xaa_aa_wall_number_m2
+#: model_terms:ir.ui.view,arch_db:formulier_type_2.opportunity_formulier_template
+msgid "Wall Number of m2"
+msgstr "Gevel Aantal m2"
+
+#. module: formulier_type_2
+#: model:ir.model.fields,field_description:formulier_type_2.field_question_formulier__xaa_aa_wall_material
+#: model_terms:ir.ui.view,arch_db:formulier_type_2.opportunity_formulier_template
+msgid "Wall Material"
+msgstr "Gevel Materiaal"
+
+#. module: formulier_type_2
+#: model:ir.model.fields,field_description:formulier_type_2.field_question_formulier__xaa_aa_hole_diameter
+#: model_terms:ir.ui.view,arch_db:formulier_type_2.opportunity_formulier_template
+msgid "Hole Diameter"
+msgstr "Boordiameter"
+
+#. module: formulier_type_2
+#: model:ir.model.fields,field_description:formulier_type_2.field_question_formulier__xaa_aa_gutter_height
+#: model_terms:ir.ui.view,arch_db:formulier_type_2.opportunity_formulier_template
+msgid "Gutter height"
+msgstr "Goothoogte"
+
+#. module: formulier_type_2
+#: model:ir.model.fields,field_description:formulier_type_2.field_question_formulier__xaa_aa_cam_height
+#: model_terms:ir.ui.view,arch_db:formulier_type_2.opportunity_formulier_template
+msgid "Cam height"
+msgstr "Nokhoogte"
+
+#. module: formulier_type_2
+#: model:ir.model.fields,field_description:formulier_type_2.field_question_formulier__xaa_aa_platform
+#: model_terms:ir.ui.view,arch_db:formulier_type_2.opportunity_formulier_template
+msgid "Platform"
+msgstr "Hoogwerker"
+
+#. module: formulier_type_2
+#: model:ir.model.fields,field_description:formulier_type_2.field_question_formulier__xaa_aa_scaffolding
+#: model_terms:ir.ui.view,arch_db:formulier_type_2.opportunity_formulier_template
+msgid "Scaffolding"
+msgstr "Steiger"
+
+#. module: formulier_type_2
+#: model:ir.model.fields,field_description:formulier_type_2.field_question_formulier__xaa_aa_joint_color
+#: model_terms:ir.ui.view,arch_db:formulier_type_2.opportunity_formulier_template
+msgid "Joint Color"
+msgstr "Voegkleur"
+
+#. module: formulier_type_2
+#: model:ir.model.fields,field_description:formulier_type_2.field_question_formulier__xaa_aa_painted_facade
+#: model_terms:ir.ui.view,arch_db:formulier_type_2.opportunity_formulier_template
+msgid "Painted facade"
+msgstr "Geschilderde gevel"
+
+#. module: formulier_type_2
+#: model:ir.model.fields,field_description:formulier_type_2.field_question_formulier__xaa_aa_condition_add
+#: model_terms:ir.ui.view,arch_db:formulier_type_2.opportunity_formulier_template
+msgid "Condition Add"
+msgstr "Conditie Voeg"
+
+#. module: formulier_type_2
+#: model_terms:ir.ui.view,arch_db:formulier_type_2.online_formulier_iso_quote
+msgid "Price ventilation grid per piece"
+msgstr "Prijs ventilatierooster per stuk"
+
+#. module: formulier_type_2
+#: model_terms:ir.ui.view,arch_db:formulier_type_2.online_formulier_iso_quote
+msgid "Service Price"
+msgstr "Prijs aanbrengen m2"
+
+#. module: formulier_type_2
+#: model_terms:ir.ui.view,arch_db:formulier_type_2.online_formulier_iso_quote
+msgid "Material Price"
+msgstr "Prijs materiaal m2"
+
+#. module: formulier_type_2
+#: model:ir.model.fields,field_description:formulier_type_2.field_question_formulier__xaa_aa_cavity_width
+#: model_terms:ir.ui.view,arch_db:formulier_type_2.opportunity_formulier_template
+msgid "Cavity width"
+msgstr "Spouwbreedte"
+
+#. module: formulier_type_2
+#: model:ir.model.fields,field_description:formulier_type_2.field_question_formulier__xaa_aa_cavity_inspection
+#: model_terms:ir.ui.view,arch_db:formulier_type_2.opportunity_formulier_template
+msgid "Cavity inspection"
+msgstr "Spouwinspectie"
+
+#. module: formulier_type_2
+#: model:ir.model.fields,field_description:formulier_type_2.field_question_formulier__xaa_aa_plant_growth
+#: model_terms:ir.ui.view,arch_db:formulier_type_2.opportunity_formulier_template
+msgid "Plant growth"
+msgstr "Plantengroei"
+
+#. module: formulier_type_2
+#: model:ir.model.fields,field_description:formulier_type_2.field_question_formulier__xaa_aa_housing_separation
+#: model_terms:ir.ui.view,arch_db:formulier_type_2.opportunity_formulier_template
+msgid "Housing separation"
+msgstr "Woningsafscheiding"
+
+#. module: formulier_type_2
+#: model:ir.model.fields,field_description:formulier_type_2.field_question_formulier__xaa_aa_floor_number_m2
+#: model_terms:ir.ui.view,arch_db:formulier_type_2.opportunity_formulier_template
+msgid "Floor Number of m2"
+msgstr "vloer Aantal m2"
+
+#. module: formulier_type_2
+#: model:ir.model.fields,field_description:formulier_type_2.field_question_formulier__xaa_aa_floor_material
+#: model_terms:ir.ui.view,arch_db:formulier_type_2.opportunity_formulier_template
+msgid "Floor Material"
+msgstr "vloer Materiaal"
+
+#. module: formulier_type_2
+#: model:ir.model.fields,field_description:formulier_type_2.field_question_formulier__xaa_aa_floor_ventilation
+#: model_terms:ir.ui.view,arch_db:formulier_type_2.opportunity_formulier_template
+msgid "Floor Ventilation"
+msgstr "vloerventilatie"
+
+#. module: formulier_type_2
+#: model:ir.model.fields,field_description:formulier_type_2.field_question_formulier__xaa_aa_crawl_space_available
+#: model_terms:ir.ui.view,arch_db:formulier_type_2.opportunity_formulier_template
+msgid "Crawl space available"
+msgstr "kruipruimte aanwezig"
+
+#. module: formulier_type_2
+#: model:ir.model.fields,field_description:formulier_type_2.field_question_formulier__xaa_aa_crawl_space_accessible
+#: model_terms:ir.ui.view,arch_db:formulier_type_2.opportunity_formulier_template
+msgid "Crawl space accessible"
+msgstr "kruipruimte bereikbaar"
+
+#. module: formulier_type_2
+#: model:ir.model.fields,field_description:formulier_type_2.field_question_formulier__xaa_aa_crawl_space_isolated
+#: model_terms:ir.ui.view,arch_db:formulier_type_2.opportunity_formulier_template
+msgid "Crawl space isolated"
+msgstr "kruipruimte geisoleerd"
+
+#. module: formulier_type_2
+#: model:ir.model.fields,field_description:formulier_type_2.field_question_formulier__xaa_aa_roof_number_m2
+#: model_terms:ir.ui.view,arch_db:formulier_type_2.opportunity_formulier_template
+msgid "Roof Number of m2"
+msgstr "Dak Aantal m2"
+
+#. module: formulier_type_2
+#: model:ir.model.fields,field_description:formulier_type_2.field_question_formulier__xaa_aa_roof_material
+#: model_terms:ir.ui.view,arch_db:formulier_type_2.opportunity_formulier_template
+msgid "Roof Material"
+msgstr "Dak Materiaal"
+
+#. module: formulier_type_2
+#: model:ir.model.fields,field_description:formulier_type_2.field_question_formulier__xaa_aa_accessible
+#: model_terms:ir.ui.view,arch_db:formulier_type_2.opportunity_formulier_template
+msgid "Accessible"
+msgstr "bereikbaar"
+
+#. module: formulier_type_2
+#: model:ir.model.fields,field_description:formulier_type_2.field_question_formulier__xaa_aa_house
+#: model_terms:ir.ui.view,arch_db:formulier_type_2.project_formulier_image
+msgid "House / Property"
+msgstr "Woning / Pand "
+
+#. module: formulier_type_2
+#: model:ir.model.fields,field_description:formulier_type_2.field_question_formulier__xaa_aa_access
+#: model_terms:ir.ui.view,arch_db:formulier_type_2.project_formulier_image
+msgid "Access"
+msgstr "Toegang"
+
+#. module: formulier_type_2
+#: model_terms:ir.ui.view,arch_db:formulier_type_2.project_formulier_image
+#: model:ir.model.fields,field_description:formulier_type_2.field_question_formulier__xaa_aa_parking_spot
+msgid "Parking spot"
+msgstr "Parkeerplaats"
+
+#. module: formulier_type_2
+#: model:ir.model.fields,field_description:formulier_type_2.field_question_formulier__xaa_aa_obstacles
+#: model_terms:ir.ui.view,arch_db:formulier_type_2.project_formulier_image
+msgid "Obstacles"
+msgstr "Opstakels"
+
+#. module: formulier_type_2
+#: model:ir.model.fields,field_description:formulier_type_2.field_question_formulier__xaa_aa_wall1
+#: model_terms:ir.ui.view,arch_db:formulier_type_2.project_formulier_image
+msgid "Wall 1"
+msgstr "Muur 1"
+
+#. module: formulier_type_2
+#: model:ir.model.fields,field_description:formulier_type_2.field_question_formulier__xaa_aa_wall2
+#: model_terms:ir.ui.view,arch_db:formulier_type_2.project_formulier_image
+msgid "Wall 2"
+msgstr "Muur 2"
+
+#. module: formulier_type_2
+#: model:ir.model.fields,field_description:formulier_type_2.field_question_formulier__xaa_aa_floor1
+#: model_terms:ir.ui.view,arch_db:formulier_type_2.project_formulier_image
+msgid "Floor 1"
+msgstr "Vloer 1"
+
+#. module: formulier_type_2
+#: model:ir.model.fields,field_description:formulier_type_2.field_question_formulier__xaa_aa_roof1
+#: model_terms:ir.ui.view,arch_db:formulier_type_2.project_formulier_image
+msgid "Roof 1"
+msgstr "Dak 1"
+
+#. module: formulier_type_2
+#: model_terms:ir.ui.view,arch_db:formulier_type_2.view_project_formulier_form
+#: model_terms:ir.ui.view,arch_db:formulier_type_2.opportunity_formulier_template
+msgid "<u>Wall</u>"
+msgstr "<u>Gevel</u>"
+
+#. module: formulier_type_2
+#: model_terms:ir.ui.view,arch_db:formulier_type_2.view_project_formulier_form
+#: model_terms:ir.ui.view,arch_db:formulier_type_2.opportunity_formulier_template
+msgid "<u>Floor</u>"
+msgstr "<u>Vloer</u>"
+
+#. module: formulier_type_2
+#: model_terms:ir.ui.view,arch_db:formulier_type_2.view_project_formulier_form
+#: model_terms:ir.ui.view,arch_db:formulier_type_2.opportunity_formulier_template
+msgid "<u>Roof</u>"
+msgstr "<u>Dak</u>"
+
+#. module: formulier_type_2
+#: model_terms:ir.ui.view,arch_db:formulier_type_2.online_formulier_iso_quote
+#: model_terms:ir.ui.view,arch_db:formulier_type_2.view_project_formulier_form
+msgid "What kind of isolation is it about ?"
+msgstr "Welk soort isolatie gaat het om?"
+
+#. module: formulier_type_2
+#: model_terms:ir.ui.view,arch_db:formulier_type_2.online_formulier_iso_quote
+#: model_terms:ir.ui.view,arch_db:formulier_type_2.view_project_formulier_form
+msgid "Spacing"
+msgstr "Tussenruimte"
+
+#. module: formulier_type_2
+#: model_terms:ir.ui.view,arch_db:formulier_type_2.online_formulier_iso_quote
+#: model:ir.model.fields.selection,name:formulier_type_2.selection__question_formulier__xaa_aa_kind_of_isolate__Cavity
+msgid "Cavity"
+msgstr "Muur"
+
+#. module: formulier_type_2
+#: model_terms:ir.ui.view,arch_db:formulier_type_2.online_formulier_iso_quote
+#: model:ir.model.fields.selection,name:formulier_type_2.selection__question_formulier__xaa_aa_kind_of_isolate__Floor
+msgid "Floor"
+msgstr "Vloer"
+
+#. module: formulier_type_2
+#: model_terms:ir.ui.view,arch_db:formulier_type_2.online_formulier_iso_quote
+#: model_terms:ir.ui.view,arch_db:formulier_type_2.view_project_formulier_form
+msgid "Number of m2"
+msgstr "Aantal m2"
+
+#. module: formulier_type_2
+#: model_terms:ir.ui.view,arch_db:formulier_type_2.online_formulier_iso_quote
+#: model_terms:ir.ui.view,arch_db:formulier_type_2.view_project_formulier_form
+msgid "What kind of material ?"
+msgstr "Welk materiaal wordt er gebruikt ?"
+
+#. module: formulier_type_2
+#: model_terms:ir.ui.view,arch_db:formulier_type_2.online_formulier_iso_quote
+#: model_terms:ir.ui.view,arch_db:formulier_type_2.view_project_formulier_form
+msgid "Tickness of wall"
+msgstr "Dikte van de spouw"
+
+#. module: formulier_type_2
+#: model_terms:ir.ui.view,arch_db:formulier_type_2.online_formulier_iso_quote
+#: model_terms:ir.ui.view,arch_db:formulier_type_2.view_project_formulier_form
+msgid "Do you want ventilation grid ?"
+msgstr "Wilt u ventilatierooster?"
+
+#. module: formulier_type_2
+#: model_terms:ir.ui.view,arch_db:formulier_type_2.online_formulier_iso_quote
+#: model_terms:ir.ui.view,arch_db:formulier_type_2.view_project_formulier_form
+msgid "Ventilation grid"
+msgstr "Ventilatierooster"
+
+#. module: formulier_type_2
+#: model_terms:ir.ui.view,arch_db:formulier_type_2.online_formulier_iso_quote
+#: model_terms:ir.ui.view,arch_db:formulier_type_2.view_project_formulier_form
+msgid "Do you need Cavity boundary ?"
+msgstr "Spouwafbakening nodig?"
+
+#. module: formulier_type_2
+#: model_terms:ir.ui.view,arch_db:formulier_type_2.online_formulier_iso_quote
+#: model_terms:ir.ui.view,arch_db:formulier_type_2.view_project_formulier_form
+msgid "Cavity boundary"
+msgstr "Spouwafbakening"
+
+#. module: formulier_type_2
+#: model_terms:ir.ui.view,arch_db:formulier_type_2.online_formulier_iso_quote
+#: model_terms:ir.ui.view,arch_db:formulier_type_2.view_project_formulier_form
+msgid "Extra support"
+msgstr "Extra ondersteuning"
+
+#. module: formulier_type_2
+#: model_terms:ir.ui.view,arch_db:formulier_type_2.online_formulier_iso_quote
+#: model:ir.model.fields.selection,name:formulier_type_2.selection__question_formulier__xaa_aa_extra_support__Platform
+msgid "Platform"
+msgstr "Hoogwerker"
+
+#. module: formulier_type_2
+#: model_terms:ir.ui.view,arch_db:formulier_type_2.online_formulier_iso_quote
+#: model:ir.model.fields.selection,name:formulier_type_2.selection__question_formulier__xaa_aa_extra_support__Scaffolding
+msgid "Scaffolding"
+msgstr "Steiger"
+
+#. module: formulier_type_2
+#: model:ir.model.fields.selection,name:formulier_type_2.selection__product_template__xaa_aa_product_type__iso_wall_service
+msgid "ISO wall service"
+msgstr "ISO muur service"
+
+#. module: formulier_type_2
+#: model:ir.model.fields.selection,name:formulier_type_2.selection__product_template__xaa_aa_product_type__iso_wall_material
+msgid "ISO wall material"
+msgstr "ISO muur materiaal"
+
+#. module: formulier_type_2
+#: model:ir.model.fields.selection,name:formulier_type_2.selection__product_template__xaa_aa_product_type__iso_floor_service
+msgid "ISO floor service"
+msgstr "ISO bodem service"
+
+#. module: formulier_type_2
+#: model:ir.model.fields.selection,name:formulier_type_2.selection__product_template__xaa_aa_product_type__iso_floor_material_1
+msgid "ISO floor material 1"
+msgstr "ISO bodem materiaal 1"
+
+#. module: formulier_type_2
+#: model:ir.model.fields.selection,name:formulier_type_2.selection__product_template__xaa_aa_product_type__iso_floor_material_2
+msgid "ISO floor material 2"
+msgstr "ISO bodem materiaal 2"
+
+#. module: formulier_type_2
+#: model:ir.model.fields.selection,name:formulier_type_2.selection__product_template__xaa_aa_product_type__iso_roof_service
+msgid "ISO roof service"
+msgstr "ISO dak service"
+
+#. module: formulier_type_2
+#: model:ir.model.fields.selection,name:formulier_type_2.selection__product_template__xaa_aa_product_type__iso_roof_material
+msgid "ISO roof material"
+msgstr "ISO dak materiaal"
+
+#. module: formulier_type_2
+#: model:ir.model.fields.selection,name:formulier_type_2.selection__product_template__xaa_aa_product_type__skg_ikob_certification_payment
+msgid "SKG IKOB Certification payment"
+msgstr "SKG IKOB Certificeringsafdracht"
+
+#. module: formulier_type_2
+#: model:ir.model.fields.selection,name:formulier_type_2.selection__product_template__xaa_aa_product_type__ventilation_grid
+msgid "Ventilation grid"
+msgstr "Ventilatierooster"
+
+#. module: formulier_type_2
+#: model:ir.model.fields.selection,name:formulier_type_2.selection__product_template__xaa_aa_product_type__cavity_boundary
+msgid "Cavity boundary"
+msgstr "Spouwafbakening"
+
+#. module: formulier_type_2
+#: model:ir.model.fields.selection,name:formulier_type_2.selection__product_template__xaa_aa_product_type__extra_option_iso
+msgid "Extra option iso"
+msgstr "extra option iso"
+
+#. module: formulier_type_2
+#: model:ir.model.fields,field_description:formulier_type_2.field_question_formulier__xaa_aa_need_custm_extra_product
+#: model_terms:ir.ui.view,arch_db:formulier_type_2.online_formulier_iso_quote
+#: model_terms:ir.ui.view,arch_db:formulier_type_2.view_project_formulier_form
+msgid "Do you need extra product ?"
+msgstr "Heeft u een extra product nodig?"
+
+#. module: formulier_type_2
+#: model:ir.model.fields,field_description:formulier_type_2.field_question_formulier__xaa_aa_extra_product_description
+#: model_terms:ir.ui.view,arch_db:formulier_type_2.online_formulier_iso_quote
+#: model_terms:ir.ui.view,arch_db:formulier_type_2.view_project_formulier_form
+msgid "Extra product 1: give description"
+msgstr "Extra product 1: geef een beschrijving"
+
+#. module: formulier_type_2
+#: model:ir.model.fields,field_description:formulier_type_2.field_question_formulier__xaa_aa_extra_product_description_two
+#: model_terms:ir.ui.view,arch_db:formulier_type_2.online_formulier_iso_quote
+#: model_terms:ir.ui.view,arch_db:formulier_type_2.view_project_formulier_form
+msgid "Extra product 2: give description"
+msgstr "Extra product 2: geef een beschrijving"
+
+#. module: formulier_type_2
+#: model:ir.model.fields,field_description:formulier_type_2.field_question_formulier__xaa_aa_extra_product_description_three
+#: model_terms:ir.ui.view,arch_db:formulier_type_2.online_formulier_iso_quote
+#: model_terms:ir.ui.view,arch_db:formulier_type_2.view_project_formulier_form
+msgid "Extra product 3: give description"
+msgstr "Extra product 3: geef een beschrijving"
+
+#. module: formulier_type_2
+#: model:ir.model.fields,field_description:formulier_type_2.field_question_formulier__xaa_aa_extra_product_cost
+#: model:ir.model.fields,field_description:formulier_type_2.field_question_formulier__xaa_aa_extra_product_cost_two
+#: model:ir.model.fields,field_description:formulier_type_2.field_question_formulier__xaa_aa_extra_product_cost_three
+#: model_terms:ir.ui.view,arch_db:formulier_type_2.online_formulier_iso_quote
+#: model_terms:ir.ui.view,arch_db:formulier_type_2.view_project_formulier_form
+msgid "Cost price"
+msgstr "Kostprijs"
+
+#. module: formulier_type_2
+#: model:ir.model.fields,field_description:formulier_type_2.field_question_formulier__xaa_aa_extra_product_sale
+#: model:ir.model.fields,field_description:formulier_type_2.field_question_formulier__xaa_aa_extra_product_sale_two
+#: model:ir.model.fields,field_description:formulier_type_2.field_question_formulier__xaa_aa_extra_product_sale_three
+#: model_terms:ir.ui.view,arch_db:formulier_type_2.online_formulier_iso_quote
+#: model_terms:ir.ui.view,arch_db:formulier_type_2.view_project_formulier_form
+msgid "Sale price"
+msgstr "Verkoopprijs"
+
+#. module: formulier_type_2
+#: model_terms:ir.ui.view,arch_db:formulier_type_2.online_formulier_iso_quote
+msgid "Quote Evaluation"
+msgstr "Offerte beoordeling"
+
+#. module: formulier_type_2
+#: model_terms:ir.ui.view,arch_db:formulier_type_2.online_formulier_iso_quote
+msgid "Reset"
+msgstr "Opnieuw instellen"
+
+#. module: formulier_type_2
+#: model_terms:ir.ui.view,arch_db:formulier_type_2.online_formulier_iso_quote
+msgid "Create Quote"
+msgstr "Maak Offerte"
+
+#. module: formulier_type_2
+#: model_terms:ir.ui.view,arch_db:formulier_type_2.online_formulier_iso_quote
+#: model_terms:ir.ui.view,arch_db:formulier_type_2.view_project_formulier_form
+msgid "Choose your quote template"
+msgstr "Kies offerte template"
+
+#. module: formulier_type_2
+#: model_terms:ir.ui.view,arch_db:formulier_type_2.online_formulier_iso_quote
+#: model_terms:ir.ui.view,arch_db:formulier_type_2.view_project_formulier_form
+msgid "Total cost price"
+msgstr "Totale kostprijs"
+
+#. module: formulier_type_2
+#: model:ir.model.fields,field_description:formulier_type_2.field_question_formulier__xaa_aa_need_discount
+#: model_terms:ir.ui.view,arch_db:formulier_type_2.online_formulier_iso_quote
+#: model_terms:ir.ui.view,arch_db:formulier_type_2.view_project_formulier_form
+msgid "Do You need Discount ?"
+msgstr "Zijn er aanpassingen nodig?"
+
+#. module: formulier_type_2
+#: model:ir.model.fields,field_description:formulier_type_2.field_question_formulier__xaa_aa_need_schouw
+#: model_terms:ir.ui.view,arch_db:formulier_type_2.online_formulier_iso_quote
+#: model_terms:ir.ui.view,arch_db:formulier_type_2.view_project_formulier_form
+msgid "Do a look?"
+msgstr "Schouw toevoegen?"
+
+#. module: formulier_type_2
+#: model:ir.model.fields,field_description:formulier_type_2.field_question_formulier__xaa_aa_discount_qty
+#: model_terms:ir.ui.view,arch_db:formulier_type_2.online_formulier_iso_quote
+msgid "Discount Quantity"
+msgstr "Aanpassing hoeveelheid"
+
+#. module: formulier_type_2
+#: model_terms:ir.ui.view,arch_db:formulier_type_2.customer_quote_formulier
+msgid "<span class=\"montserrat-extrabold_32\">Make your quotation for cavity wall insulation</span>"
+msgstr "<span class=\"montserrat-extrabold_32\">Maak uw offerte voor spouwmuurisolatie</span>"
+
+#. module: formulier_type_2
+#: model_terms:ir.ui.view,arch_db:formulier_type_2.customer_quotation_question_template
+msgid "<span class=\"montserrat-extrabold_32 quote_template_header\">The final step to your solar panel installation!</span>"
+msgstr "<span class=\"montserrat-extrabold_32 quote_template_header\">De laatste stap tot uw zonnepanelen installatie!</span>"
+
+#. module: formulier_type_2
+#: model_terms:ir.ui.view,arch_db:formulier_type_2.customer_quote_formulier
+msgid "<span>1 </span><span class=\"menu_span\">Construction year</span>"
+msgstr "<span>1 </span><span class=\"menu_span\">Bouwjaar</span>"
+
+#. module: formulier_type_2
+#: model_terms:ir.ui.view,arch_db:formulier_type_2.customer_quote_formulier
+msgid "<span>2 </span><span class=\"menu_span\">Cavity thickness</span>"
+msgstr "<span>2 </span><span class=\"menu_span\">Spouwdikte</span>"
+
+#. module: formulier_type_2
+#: model_terms:ir.ui.view,arch_db:formulier_type_2.customer_quote_formulier
+msgid "<span>3 </span><span class=\"menu_span\">Home</span>"
+msgstr "<span>3 </span><span class=\"menu_span\">Woning</span>"
+
+#. module: formulier_type_2
+#: model_terms:ir.ui.view,arch_db:formulier_type_2.customer_quote_formulier
+msgid "<span>4 </span><span class=\"menu_span\">Extension</span>"
+msgstr "<span>4 </span><span class=\"menu_span\">Aanbouw</span>"
+
+#. module: formulier_type_2
+#: model_terms:ir.ui.view,arch_db:formulier_type_2.customer_quote_formulier_construction_year
+#: model_terms:ir.ui.view,arch_db:formulier_type_2.customer_quote_formulier_home
+#: model_terms:ir.ui.view,arch_db:formulier_type_2.customer_quote_formulier_cavity_thickness
+#: model_terms:ir.ui.view,arch_db:formulier_type_2.iso_question_closing
+#: model_terms:ir.ui.view,arch_db:formulier_type_2.iso_question_property_details
+#: model_terms:ir.ui.view,arch_db:formulier_type_2.iso_question_accessibility
+msgid "Next step"
+msgstr "Volgende stap"
+
+#. module: formulier_type_2
+#: model_terms:ir.ui.view,arch_db:formulier_type_2.customer_quote_formulier_extension
+#: model_terms:ir.ui.view,arch_db:formulier_type_2.customer_quote_formulier_home
+#: model_terms:ir.ui.view,arch_db:formulier_type_2.customer_quote_formulier_cavity_thickness
+#: model_terms:ir.ui.view,arch_db:formulier_type_2.iso_question_closing
+#: model_terms:ir.ui.view,arch_db:formulier_type_2.iso_question_property_details
+#: model_terms:ir.ui.view,arch_db:formulier_type_2.iso_question_photos
+msgid "<i class=\"fa fa-chevron-left\" aria-hidden=\"false\"/>Previous step"
+msgstr "<i class=\"fa fa-chevron-left\" aria-hidden=\"false\"/>Vorige stap"
+
+#. module: formulier_type_2
+#: model:ir.model.fields,field_description:formulier_type_2.field_question_formulier__xaa_aa_quote_construction_year
+#: model_terms:ir.ui.view,arch_db:formulier_type_2.customer_quote_formulier_construction_year
+msgid "What is the year of construction of your home?"
+msgstr "Wat is het bouwjaar van uw woning?"
+
+#. module: formulier_type_2
+#: model:ir.model.fields,field_description:formulier_type_2.field_question_formulier__xaa_aa_quote_house_insulated
+#: model_terms:ir.ui.view,arch_db:formulier_type_2.customer_quote_formulier_construction_year
+msgid "How do you want your house to be insulated?"
+msgstr "Waarmee wilt u uw huis later isoleren?"
+
+#. module: formulier_type_2
+#: model:ir.model.fields,field_description:formulier_type_2.field_question_formulier__xaa_aa_quote_type_of_house_id
+#: model_terms:ir.ui.view,arch_db:formulier_type_2.customer_quote_formulier_home
+msgid "What type of property do you have?"
+msgstr "Wat voor type woning heeft u?"
+
+#. module: formulier_type_2
+#: model_terms:ir.ui.view,arch_db:formulier_type_2.customer_quote_formulier_cavity_thickness
+#: model_terms:ir.ui.view,arch_db:formulier_type_2.customer_quote_formulier_extension
+#: model_terms:ir.ui.view,arch_db:formulier_type_2.customer_quote_formulier_home
+msgid "<span>Warning: the choice you made may cause problems.</span>"
+msgstr "<span>Waarschuwing: de keuze die u heeft gemaakt kan mogelijk problemen opleveren.</span>"
+
+#. module: formulier_type_2
+#: model:ir.model.fields,field_description:formulier_type_2.field_question_formulier__xaa_aa_quote_cavity_thickness_home
+#: model_terms:ir.ui.view,arch_db:formulier_type_2.customer_quote_formulier_cavity_thickness
+msgid "What is the cavity thickness of your home?"
+msgstr "Wat is de spouwdikte van uw woning?"
+
+#. module: formulier_type_2
+#: model:ir.model.fields,field_description:formulier_type_2.field_question_formulier__xaa_aa_quote_need_insulated
+#: model_terms:ir.ui.view,arch_db:formulier_type_2.customer_quote_formulier_home
+msgid "Does your home have an extension that needs to be insulated?"
+msgstr "Heeft uw woning een aanbouw die meegeïsoleerd moet worden?"
+
+#. module: formulier_type_2
+#: model:ir.model.fields,field_description:formulier_type_2.field_question_formulier__xaa_aa_qupte_do_crawl_space
+#: model_terms:ir.ui.view,arch_db:formulier_type_2.customer_quote_formulier_extension
+msgid "Do you have crawl space?"
+msgstr "Heeft u woning kruipruimte?"
+
+#. module: formulier_type_2
+#: model:ir.model.fields,field_description:formulier_type_2.field_question_formulier__xaa_aa_quote_many_extension
+#: model_terms:ir.ui.view,arch_db:formulier_type_2.customer_quote_formulier_extension
+msgid "Number of M2 to be insulated"
+msgstr "Aantal te isoleren M2"
+
+#. module: formulier_type_2
+#: model_terms:ir.ui.view,arch_db:formulier_type_2.customer_quote_formulier_extension
+msgid "<span>The value shown is an average based on your previous choices. You can adjust the value.</span>"
+msgstr "<span>De getoonde waarde is een gemiddelde op basis van uw voorgaande keuzes. U kunt de waarde aanpassen.</span>"
+
+#. module: formulier_type_2
+#: model:ir.model.fields,field_description:formulier_type_2.field_product_cavity_thickness__xaa_aa_name
+msgid "Description"
+msgstr "Omschrijving"
+
+#. module: formulier_type_2
+#: model:ir.model.fields,field_description:formulier_type_2.field_product_cavity_thickness__xaa_aa_tickness_of_wall
+msgid "Cavity thickness"
+msgstr "Spouwdikte"
+
+#. module: formulier_type_2
+#: model:ir.model.fields,field_description:formulier_type_2.field_product_cavity_thickness__xaa_aa_cost_price
+msgid "Cost price"
+msgstr "Kostprijs"
+
+#. module: formulier_type_2
+#: model:ir.model.fields,field_description:formulier_type_2.field_product_cavity_thickness__xaa_aa_selling_price
+msgid "Selling price"
+msgstr "Verkoopprijs"
+
+#. module: formulier_type_2
+#: model_terms:ir.ui.view,arch_db:formulier_type_2.customer_quote_formulier_extension
+msgid "Make an offer"
+msgstr "Maak offerte"
+
+#. module: formulier_type_2
+#: model_terms:ir.ui.view,arch_db:formulier_type_2.customer_quotation_question_template
+msgid "<span class=\"montserrat-extrabold_32 quote_template_header\">The final step to your cavity wall</span>"
+msgstr "<span class=\"montserrat-extrabold_32 quote_template_header\">De laatste stap tot uw spouwmuur isolatie</span>"
+
+#. module: formulier_type_2
+#: model_terms:ir.ui.view,arch_db:formulier_type_2.customer_quotation_question_template
+msgid "<span>1 </span><span class=\"menu_span\">Accessibility</span>"
+msgstr "<span>1 </span><span class=\"menu_span\">Bereikbaarheid</span>"
+
+#. module: formulier_type_2
+#: model_terms:ir.ui.view,arch_db:formulier_type_2.customer_quotation_question_template
+msgid "<span>2 </span><span class=\"menu_span\">Property details</span>"
+msgstr "<span>2 </span><span class=\"menu_span\">Gegevens woning</span>"
+
+#. module: formulier_type_2
+#: model_terms:ir.ui.view,arch_db:formulier_type_2.customer_quotation_question_template
+msgid "<span>3 </span><span class=\"menu_span\">Closing</span>"
+msgstr "<span>3 </span><span class=\"menu_span\">Afsluiting</span>"
+
+#. module: formulier_type_2
+#: model_terms:ir.ui.view,arch_db:formulier_type_2.customer_quotation_question_template
+msgid "<span>4 </span><span class=\"menu_span\">Photos house</span>"
+msgstr "<span>4 </span><span class=\"menu_span\">Foto’s woning</span>"
+
+#. module: formulier_type_2
+#: model_terms:ir.ui.view,arch_db:formulier_type_2.iso_question_accessibility
+#: model_terms:ir.ui.view,arch_db:formulier_type_2.view_question_formulier_quote_form
+msgid "<span>Thank you for your interest in Energy Control cavity wall insulation. When you answer the questions below, we will get a better picture of the required material and your specific wishes. To clarify the situation for us, we also ask you to upload some photos, if possible.</span>"
+msgstr "<span>Dank voor uw interesse in spouwmuurisolatie van Energiecontrol. Wanneer u antwoord geeft op onderstaande vragen krijgen we een beter beeld van het benodigde materiaal en uw specifieke wensen. Om de situatie voor ons inzichtelijk te maken vragen we u tevens -indien mogelijk- enkele foto’s te uploaden.</span>"
+
+#. module: formulier_type_2
+#: model_terms:ir.ui.view,arch_db:formulier_type_2.iso_question_accessibility
+#: model_terms:ir.ui.view,arch_db:formulier_type_2.view_question_formulier_quote_form
+msgid "Is each side of your home free to install a ladder?"
+msgstr "Is iedere zijde van uw woning vrij voor opstelling van een ladder?"
+
+#. module: formulier_type_2
+#: model_terms:ir.ui.view,arch_db:formulier_type_2.iso_question_accessibility
+#: model_terms:ir.ui.view,arch_db:formulier_type_2.view_question_formulier_quote_form
+msgid "How accessible is your home?"
+msgstr "Hoe bereikbaar is uw woning?"
+
+#. module: formulier_type_2
+#: model_terms:ir.ui.view,arch_db:formulier_type_2.iso_question_accessibility
+#: model_terms:ir.ui.view,arch_db:formulier_type_2.view_question_formulier_quote_form
+msgid "How is the parking at your home?"
+msgstr "Hoe is de parkeergelegenheid bij uw woning?"
+
+#. module: formulier_type_2
+#: model_terms:ir.ui.view,arch_db:formulier_type_2.iso_question_property_details
+#: model_terms:ir.ui.view,arch_db:formulier_type_2.view_question_formulier_quote_form
+msgid "How high do you estimate the height from the ground to the gutter?"
+msgstr "Hoe hoog schat u de hoogte vanaf de grond tot de goot?"
+
+#. module: formulier_type_2
+#: model_terms:ir.ui.view,arch_db:formulier_type_2.iso_question_property_details
+#: model_terms:ir.ui.view,arch_db:formulier_type_2.view_question_formulier_quote_form
+msgid "How high do you estimate the height from the ground to the ridge of your home?"
+msgstr "Hoe hoog schat u de hoogte vanaf de grond tot de nok van uw woning?"
+
+#. module: formulier_type_2
+#: model_terms:ir.ui.view,arch_db:formulier_type_2.iso_question_property_details
+#: model_terms:ir.ui.view,arch_db:formulier_type_2.view_question_formulier_quote_form
+msgid "Is the number of square meters on the quotation correct?"
+msgstr "Klopt het aantal vierkante meters die op de offerte staan?"
+
+#. module: formulier_type_2
+#: model_terms:ir.ui.view,arch_db:formulier_type_2.iso_question_property_details
+#: model_terms:ir.ui.view,arch_db:formulier_type_2.view_question_formulier_quote_form
+msgid "Is your facade covered with vegetation or similar obstacles?"
+msgstr "Is er bij uw gevel sprake van begroeiing of soortgelijke obstakels?"
+
+#. module: formulier_type_2
+#: model_terms:ir.ui.view,arch_db:formulier_type_2.iso_question_property_details
+#: model_terms:ir.ui.view,arch_db:formulier_type_2.view_question_formulier_quote_form
+msgid "What is the width / thickness of the cavity?"
+msgstr "Wat is de breedte/dikte van de spouw?"
+
+#. module: formulier_type_2
+#: model_terms:ir.ui.view,arch_db:formulier_type_2.iso_question_property_details
+#: model_terms:ir.ui.view,arch_db:formulier_type_2.view_question_formulier_quote_form
+msgid "Has your house already been checked for suitability for cavity wall insulation?"
+msgstr "Is uw woning reeds gecontroleerd op geschiktheid voor spouwmuurisolatie?"
+
+#. module: formulier_type_2
+#: model_terms:ir.ui.view,arch_db:formulier_type_2.iso_question_property_details
+#: model_terms:ir.ui.view,arch_db:formulier_type_2.view_question_formulier_quote_form
+msgid "Is there internal cavity contamination?"
+msgstr "Is sprake van inwendige spouwvervuiling?"
+
+#. module: formulier_type_2
+#: model_terms:ir.ui.view,arch_db:formulier_type_2.iso_question_property_details
+#: model_terms:ir.ui.view,arch_db:formulier_type_2.view_question_formulier_quote_form
+msgid "Does the house have a painted facade?"
+msgstr "Heeft de woning een geschilderde gevel?"
+
+#. module: formulier_type_2
+#: model_terms:ir.ui.view,arch_db:formulier_type_2.iso_question_property_details
+#: model_terms:ir.ui.view,arch_db:formulier_type_2.view_question_formulier_quote_form
+msgid "Does your home have a cutting joint?"
+msgstr "Heeft uw woning een knipvoeg?"
+
+#. module: formulier_type_2
+#: model_terms:ir.ui.view,arch_db:formulier_type_2.iso_question_property_details
+#: model_terms:ir.ui.view,arch_db:formulier_type_2.view_question_formulier_quote_form
+msgid "Does your home have a crawl space and is it good to use?"
+msgstr "Heeft uw woning een kruipruimte en is deze goed te gebruiken?"
+
+#. module: formulier_type_2
+#: model_terms:ir.ui.view,arch_db:formulier_type_2.iso_question_closing
+#: model_terms:ir.ui.view,arch_db:formulier_type_2.view_question_formulier_quote_form
+msgid "Do you have a monumental building, or a building where a permit is required to carry out these activities?"
+msgstr "Heeft u een monumentaal pand, of een pand waarbij een vergunning nodig is om deze werkzaamheden uit te voeren?"
+
+#. module: formulier_type_2
+#: model_terms:ir.ui.view,arch_db:formulier_type_2.iso_question_closing
+#: model_terms:ir.ui.view,arch_db:formulier_type_2.view_question_formulier_quote_form
+msgid "Do you have a rental or owner-occupied home?"
+msgstr "Heeft u een huur- of koopwoning?"
+
+#. module: formulier_type_2
+#: model_terms:ir.ui.view,arch_db:formulier_type_2.iso_question_closing
+#: model_terms:ir.ui.view,arch_db:formulier_type_2.view_question_formulier_quote_form
+msgid "Perhaps there are other things you think are important that we need to know to properly perform insulation. You can indicate these matters in the field below."
+msgstr "Misschien zijn er nog dingen die u belangrijk vindt en die we moeten weten om de isolatie goed te kunnen uitvoeren. Deze opmerkingen kunt u aangeven in het onderstaand veld."
+
+#. module: formulier_type_2
+#: model_terms:ir.ui.view,arch_db:formulier_type_2.iso_question_closing
+#: model_terms:ir.ui.view,arch_db:formulier_type_2.view_question_formulier_quote_form
+msgid "<span class=\"montserrat_regular mt4 ml8\">(not required)</span>"
+msgstr "<span class=\"montserrat_regular mt4 ml8\">(invullen niet verplicht)</span>"
+
+#. module: formulier_type_2
+#: model_terms:ir.ui.view,arch_db:formulier_type_2.iso_question_photos
+#: model_terms:ir.ui.view,arch_db:formulier_type_2.view_question_formulier_quote_form
+msgid "<span>We kindly request you to provide us with some photos: this will give us a good idea of your home and the work to be carried out.</span>"
+msgstr "<span>Wij willen u vriendelijk verzoeken ons te voorzien van enkele foto’s: zo krijgen wij een goed beeld van uw woning en de uit te voeren werkzaamheden.</span>"
+
+#. module: formulier_type_2
+#: model_terms:ir.ui.view,arch_db:formulier_type_2.iso_question_photos
+#: model_terms:ir.ui.view,arch_db:formulier_type_2.view_question_formulier_quote_form
+msgid "Overview photo (important)"
+msgstr "Overzichtsfoto (belangrijk)"
+
+#. module: formulier_type_2
+#: model_terms:ir.ui.view,arch_db:formulier_type_2.iso_question_photos
+#: model_terms:ir.ui.view,arch_db:formulier_type_2.view_question_formulier_quote_form
+msgid "Photo facade"
+msgstr "Foto voorgevel"
+
+#. module: formulier_type_2
+#: model_terms:ir.ui.view,arch_db:formulier_type_2.iso_question_photos
+#: model_terms:ir.ui.view,arch_db:formulier_type_2.view_question_formulier_quote_form
+msgid "Rear facade"
+msgstr "Achtergevel"
+
+#. module: formulier_type_2
+#: model_terms:ir.ui.view,arch_db:formulier_type_2.iso_question_photos
+#: model_terms:ir.ui.view,arch_db:formulier_type_2.view_question_formulier_quote_form
+msgid "Side wall 1"
+msgstr "Zijgevel 1"
+
+#. module: formulier_type_2
+#: model_terms:ir.ui.view,arch_db:formulier_type_2.iso_question_photos
+#: model_terms:ir.ui.view,arch_db:formulier_type_2.view_question_formulier_quote_form
+msgid "Side wall 2"
+msgstr "Zijgevel 2"
+
+#. module: formulier_type_2
+#: model_terms:ir.ui.view,arch_db:formulier_type_2.iso_question_photos
+#: model_terms:ir.ui.view,arch_db:formulier_type_2.view_question_formulier_quote_form
+msgid "Attachment"
+msgstr "Aanbouw"
+
+#. module: formulier_type_2
+#: model_terms:ir.ui.view,arch_db:formulier_type_2.iso_question_photos
+#: model_terms:ir.ui.view,arch_db:formulier_type_2.view_question_formulier_quote_form
+msgid "Additional photo"
+msgstr "Extra foto"
+
+#. module: formulier_type_2
+#: model_terms:ir.ui.view,arch_db:formulier_type_2.iso_question_photos
+#: model_terms:ir.ui.view,arch_db:formulier_type_2.view_question_formulier_quote_form
+msgid "<span>Thank you for answering these questions. If you are interested in giving us - after we have given our final agreement - approval on the offer,</span>"
+msgstr "<span>Vriendelijk bedankt voor het invullen van deze vragen. Bent u geïnteresseerd om ons -nadat wij ons definitieve akkoord hebben gegeven- akkoord te geven op de offerte,</span>"
+
+#. module: formulier_type_2
+#: model_terms:ir.ui.view,arch_db:formulier_type_2.iso_question_photos
+#: model_terms:ir.ui.view,arch_db:formulier_type_2.view_question_formulier_quote_form
+msgid "so that you have your solar panels on the roof within five working days?"
+msgstr "zodat u binnen vijf werkdagen uw zonnepanelen op het dak heeft?"
+
+#. module: formulier_type_2
+#: model_terms:ir.ui.view,arch_db:formulier_type_2.iso_question_photos
+msgid "Send"
+msgstr "sturen"
+
+#. module: formulier_type_2
+#: model:ir.model.fields,field_description:formulier_type_2.field_question_formulier__xaa_aa_iso_installation_time
+#: model_terms:ir.ui.view,arch_db:formulier_type_2.online_formulier_iso_quote
+#: model_terms:ir.ui.view,arch_db:formulier_type_2.view_project_formulier_form
+msgid "How many time needed for installation ?"
+msgstr "Benodigde installatietijd"

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="customer_quote_formulier_summery" name="Customer Quote Formulier Summary">
+       <div id="Quote_summery_sec">
+            <div class="div_padding_left" >
+                <div class="row">
+                    <div class="form_lable mt16 ">
+                        <label class="montserrat-extrabold_24 ml16">
+                            All data has been entered! Below you will find an overview.
+                        </label>
+                    </div>
+                    <div class="summary_head_desc custom-form-group ml16">
+                        <span>Go over everything and then click on "Make offer!" To make your offer immediately.<br/>The quotation opens in the window and is also sent to your email.</span>
+                    </div>
+                </div>
+                <div class="form-group row mt64">
+                    <div class="form_lable ml16">
+                        <label class="montserrat-extrabold_24">
+                            Energy consumption
+                        </label>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="mt16 ml16 mr8">
+                        <div class="row">
+                            <div class="summary_head_desc col-lg-7 col-md-8 col-sm-7 col-8">
+                                Energy consumption:
+                            </div>
+                            <div class="summary_head_desc energy_consumtion_summary col-lg-5 col-md-4 col-sm-5 col-4">-</div>
+                        </div>
+                        <div class="row">
+                            <div class="summary_head_desc col-lg-7 col-md-8 col-sm-7 col-8">
+                                Location correction:
+                            </div>
+                            <div class="summary_head_desc percentage_correction col-lg-5 col-md-4 col-sm-5 col-4">-</div>
+                        </div>
+                        <div class="row">
+                            <div class="summary_head_desc col-lg-7 col-md-8 col-sm-7 col-8">
+                                Calculated power:
+                            </div>
+                            <div class="summary_head_desc calculated_energy col-lg-5 col-md-4 col-sm-7 col-4">-</div>
+                        </div>
+                        <div class="row">
+                            <div class="summary_head_desc col-lg-7 col-md-8 col-sm-7 col-8">
+                                Solar panel name:
+                            </div>
+                            <div class="summary_head_desc panel_name col-lg-5 col-md-4 col-sm-5 col-4">-</div>
+                        </div>
+                        <div class="row">
+                            <div class="summary_head_desc col-lg-7 col-md-8 col-sm-7 col-8">
+                                Power panel:
+                            </div>
+                            <div class="summary_head_desc panel_watt col-lg-5 col-md-4 col-sm-5 col-4">-</div>
+                        </div>
+                        <div class="row">
+                            <div class="summary_head_desc col-lg-7 col-md-8 col-sm-7 col-8">
+                                Number of solar panels counted:
+                            </div>
+                            <div class="summary_head_desc calculated_panel_qty col-lg-5 col-md-4 col-sm-5 col-4">-</div>
+                        </div>
+                        <div class="row">
+                            <div class="summary_head_desc col-lg-7 col-md-8 col-sm-7 col-8">
+                                Number of panels selected:
+                            </div>
+                            <div class="summary_head_desc choosen_panel_qty col-lg-5 col-md-4 col-sm-5 col-4">-</div>
+                        </div>
+                        <div class="row">
+                            <div class="summary_head_desc col-lg-7 col-md-8 col-sm-7 col-8">
+                                Expected power:
+                            </div>
+                            <div class="summary_head_desc energy_production col-lg-5 col-md-4 col-sm-5 col-4">-</div>
+                        </div>
+                    </div>
+                </div>
+                <div id="loading">
+                    <img id="loading-image" src="/formulier_type_3/static/src/images/5.gif" alt="Loading..." />
+                </div>
+                <div class="form-group row mt64" id="next_privious">
+                    <div class="col-md-5 col-lg-4 col-sm-5 col-6">
+                        <a class="btn-privoius mt16" type="Button"
+                            data-id="quoteation_tab"
+                            t-att-value="formulier_id.id">
+                            <i class="fa fa-chevron-left" aria-hidden="false"/>Previous step
+                        </a>
+                    </div>
+                    <div class="col-md-4 col-lg-4 col-sm-5 col-6">
+                        <button class="btn btn-make-quote mt16 mr8"
+                            type="Button" t-att-value="formulier_id.id">
+                            Make an offer
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </template>
+</odoo>

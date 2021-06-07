@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+
+        <record id="lead_category_tree_inh" model="ir.ui.view">
+            <field name="name">lead.category.tree.inh</field>
+            <field name="model">lead.category</field>
+            <field name="inherit_id" ref="lead_category.lead_category_tree"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='xaa_aa_tag_ids']" position="after">
+                    <field name="xaa_aa_marker_color"/>
+                </xpath>
+            </field>
+        </record>
+
+        <record id="lead_category_form_inh" model="ir.ui.view">
+            <field name="name">lead.category.form.inh</field>
+            <field name="model">lead.category</field>
+            <field name="inherit_id" ref="lead_category.lead_category_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='xaa_aa_tag_ids']" position="after">
+                    <field name="xaa_aa_marker_color"/>
+                </xpath>
+            </field>
+        </record>
+
+    </data>
+</odoo>

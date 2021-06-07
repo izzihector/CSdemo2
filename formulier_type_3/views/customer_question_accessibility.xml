@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="quote_question_accessibility" name="Accessibility Questions">
+        <div class="div_padding_left">
+            <div class="mt16 mr16 montserrat_regular">
+                <span>Thank you for your interest in an Energy Control solar panel installation. When you answer the questions below, we get a better picture of the required material and your specific wishes. To make the situation clear to us, we also ask you - if possible - to upload some photos.</span>
+            </div>
+           <div class="form-group mt32">
+                <div class="col-lg-12 col-md-12 col-sm-12 ">
+                    <div class="form_lable mt16">
+                        <label class="montserrat-extrabold_24">
+                            Is there a free space for scaffolding?
+                        </label>
+                    </div>
+                </div>
+                <div class="col-lg-10 col-md-10 col-sm-12 checkbox_div ">
+                    <div>
+                        <div class="checkbox mb8 mt16">
+                            <input type="radio" class="radio_design" name="xaa_aa_quote_scaffolding" t-att-checked="formulier_id.xaa_aa_quote_scaffolding == 'ja'" value="ja"/>
+                            <label class="ng-binding col-form-label ml16" for="xaa_aa_quote_scaffolding">ja
+                            </label>
+                        </div>
+                        <div class="checkbox">
+                            <input type="radio" class="radio_design" name="xaa_aa_quote_scaffolding" t-att-checked="formulier_id.xaa_aa_quote_scaffolding == 'nee'" value="nee"/>
+                            <label class="ng-binding col-form-label ml16" for="xaa_aa_quote_scaffolding">nee
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group mt32">
+                <div class="col-lg-12 col-md-12 col-sm-12 ">
+                    <div class="form_lable mt16">
+                        <label class="montserrat-extrabold_24">
+                            What is at the place where we place the scaffolding?
+                        </label>
+                    </div>
+                </div>
+                <div class="col-lg-10 col-md-10 col-sm-12 checkbox_div ">
+                    <div>
+                        <div class="checkbox mb8 mt16">
+                            <input type="radio" class="radio_design" name="xaa_aa_quote_place_scaffolding" t-att-checked="formulier_id.xaa_aa_quote_place_scaffolding == 'tuin'" value="tuin"/>
+                            <label class="ng-binding col-form-label ml16" for="xaa_aa_quote_place_scaffolding">tuin
+                            </label>
+                        </div>
+                        <div class="checkbox mb8">
+                            <input type="radio" class="radio_design" name="xaa_aa_quote_place_scaffolding" t-att-checked="formulier_id.xaa_aa_quote_place_scaffolding == 'grind'" value="grind"/>
+                            <label class="ng-binding col-form-label ml16" for="xaa_aa_quote_place_scaffolding">grind
+                            </label>
+                        </div>
+                        <div class="checkbox mb8">
+                            <input type="radio" class="radio_design" name="xaa_aa_quote_place_scaffolding" t-att-checked="formulier_id.xaa_aa_quote_place_scaffolding == 'tegels'" value="tegels"/>
+                            <label class="ng-binding col-form-label ml16" for="xaa_aa_quote_place_scaffolding">tegels
+                            </label>
+                        </div>
+                        <div class="checkbox mb8">
+                            <input type="radio" class="radio_design" name="xaa_aa_quote_place_scaffolding" t-att-checked="formulier_id.xaa_aa_quote_place_scaffolding == 'anders, namelijk'" value="anders, namelijk"/>
+                            <label class="ng-binding col-form-label ml16 mr4 pull-left" for="xaa_aa_quote_place_scaffolding">anders, namelijk:
+                            </label>
+                            <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+                                <input  type="text" name="xaa_aa_quote_place_scaffolding_text" class="form-control" t-att-value="formulier_id.xaa_aa_quote_place_scaffolding_text"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group mt32">
+                <div class="col-lg-12 col-md-12 col-sm-12 ">
+                    <div class="form_lable mt16">
+                        <label class="montserrat-extrabold_24">
+                            Is your home easily accessible?
+                        </label>
+                        <a href="#" class="info_img_2" data-toggle="tooltip"
+                        data-placement="rights"
+                        title=""><img class="img img-fluid" src="/project_formulier_quote/static/src/images/Info-icon.png"/></a>
+                    </div>
+                </div>
+                <div class="col-lg-10 col-md-10 col-sm-12 checkbox_div ">
+                    <div>
+                        <div class="checkbox mb8 mt16">
+                            <input type="radio" class="radio_design" name="xaa_aa_quote_home_accessible" t-att-checked="formulier_id.xaa_aa_quote_home_accessible == 'goed'" value="goed"/>
+                            <label class="ng-binding col-form-label ml16" for="xaa_aa_quote_home_accessible">goed
+                            </label>
+                        </div>
+                        <div class="checkbox mb8">
+                            <input type="radio" class="radio_design" name="xaa_aa_quote_home_accessible" t-att-checked="formulier_id.xaa_aa_quote_home_accessible == 'redelijk'" value="redelijk"/>
+                            <label class="ng-binding col-form-label ml16" for="xaa_aa_quote_home_accessible">redelijk
+                            </label>
+                        </div>
+                        <div class="checkbox mb8">
+                            <input type="radio" class="radio_design" name="xaa_aa_quote_home_accessible" t-att-checked="formulier_id.xaa_aa_quote_home_accessible == 'slecht'" value="slecht"/>
+                            <label class="ng-binding col-form-label ml16" for="xaa_aa_quote_home_accessible">slecht
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group mt32">
+                <div class="col-lg-12 col-md-12 col-sm-12 ">
+                    <div class="form_lable mt16">
+                        <label class="montserrat-extrabold_24">
+                            How is the parking at your home?
+                        </label>
+                        <a href="#" class="info_img_2" data-toggle="tooltip"
+                        data-placement="rights"
+                        title=""><img class="img img-fluid" src="/project_formulier_quote/static/src/images/Info-icon.png"/></a>
+                    </div>
+                </div>
+                <div class="col-lg-10 col-md-10 col-sm-12 checkbox_div ">
+                    <div>
+                        <div class="checkbox mb8 mt16">
+                            <input type="radio" class="radio_design" name="xaa_aa_quote_home_parking" t-att-checked="formulier_id.xaa_aa_quote_home_parking == 'goed'" value="goed"/>
+                            <label class="ng-binding col-form-label ml16" for="xaa_aa_quote_home_parking">goed
+                            </label>
+                        </div>
+                        <div class="checkbox mb8">
+                            <input type="radio" class="radio_design" name="xaa_aa_quote_home_parking" t-att-checked="formulier_id.xaa_aa_quote_home_parking == 'redelijk'" value="redelijk"/>
+                            <label class="ng-binding col-form-label ml16" for="xaa_aa_quote_home_parking">redelijk
+                            </label>
+                        </div>
+                        <div class="checkbox mb8">
+                            <input type="radio" class="radio_design" name="xaa_aa_quote_home_parking" t-att-checked="formulier_id.xaa_aa_quote_home_parking == 'slecht'" value="slecht"/>
+                            <label class="ng-binding col-form-label ml16" for="xaa_aa_quote_home_parking">slecht
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="form-group row mt64" id="next_privious">
+            <div class="col-md-12 col-lg-12 col-sm-12 text-center">
+                <button class="btn btn-next mt16"
+                    data-id="quote_roof_id" type="Button"
+                    t-att-value="formulier_id.id">
+                    Next step
+                </button>
+            </div>
+        </div>
+    </template>
+</odoo>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="in_crm_lead_form" model="ir.ui.view">
+            <field name="name">crm.lead.form.inherit</field>
+            <field name="model">crm.lead</field>
+            <field name="inherit_id" ref="crm.crm_lead_view_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//page[1]" position="before">
+                    <page name="meetings" string="Meeting Note" 
+                        attrs="{'invisible': [('type', '=', 'lead')]}">
+                        <group>
+                            <group>
+                                <field name="xaa_aa_streetview_link"/>
+                            </group>
+                        </group>
+                        <field name="xaa_aa_note" placeholder="Notes..."/>
+                    </page>
+                </xpath>
+                <xpath expr="//header/button[2]" position="after">
+                   <button string="Create Meeting"
+                        name="create_meeting"
+                        type="object"
+                        class="btn btn-primary"
+                        attrs="{'invisible': ['|', ('type', '=', 'lead'), 
+                        ('xaa_aa_meeting_date', '=', False)]}"/>
+                </xpath>
+                <xpath expr="//field[@name='date_deadline']" position="after">
+                    <field name="xaa_aa_meeting_date"/>
+                    <field name="xaa_aa_meeting_dur"/>
+                </xpath>
+                <xpath expr="//header/button[@name='action_set_won_rainbowman']" position="attributes">
+                    <attribute name="class">oe_highlight btn btn-light btn-secondary</attribute>
+                </xpath>
+                <xpath expr="//header/button[@name='%(crm.crm_lead_lost_action)d']" position="attributes">
+                    <attribute name="class">oe_highlight btn btn-light btn-secondary</attribute>
+                </xpath>
+                <xpath expr="//header/button[@name='toggle_active']" position="attributes">
+                    <attribute name="class">btn btn-light btn-secondary</attribute>
+                </xpath>
+                <xpath expr="//header/button[@name='action_set_lost']" position="attributes">
+                    <attribute name="class">btn btn-light btn-secondary</attribute>
+                </xpath>
+            </field>
+        </record>
+
+        <record id="calendar_event_form_view" model="ir.ui.view">
+            <field name="name">calendar.event</field>
+            <field name="model">calendar.event</field>
+            <field name="inherit_id" ref="calendar.view_calendar_event_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//sheet" position="inside">
+                    <field name="xaa_aa_formulier_id" invisible="1"/>
+                    <field name="opportunity_id" invisible="1"/>
+                </xpath>
+                <xpath expr="//page[@name='page_misc']" position="attributes">
+                    <attribute name="groups">base.group_user</attribute>
+                </xpath>
+                <xpath expr="//field[@name='user_id']" position="after">
+                    <field name="xaa_aa_lead_category"/>
+                    <field name="xaa_aa_phone" class="call_button_value" readonly="1"/>
+                </xpath>
+                <xpath expr="//sheet" position="before">
+                    <header>
+                        <button string="Project Formulier"
+                            name="project_formulier_view"
+                            type="object"
+                            class="btn btn-primary"
+                            attrs="{'invisible':[('xaa_aa_formulier_id','=',False)]}"/>
+                        <button string="Online Project Formulier"
+                            name="project_formulier_online"
+                            type="object"
+                            class="btn btn-primary"
+                            attrs="{'invisible':[('xaa_aa_formulier_id','=',False)]}"/>
+                        <button string="Opportunity"
+                            name="opportunity_form"
+                            type="object"
+                            class="btn btn-primary"
+                            attrs="{'invisible':[('opportunity_id','=',False)]}"/>
+                        <button string="Call"
+                            onclick="
+                            var value = $('.call_button_value').text();
+                            window.open('tel:'+value);"
+                            class="btn btn-primary"
+                            attrs="{'invisible':[('xaa_aa_phone','=',False)]}"/>
+                        <button string="Save"
+                            name="save_calendar_data"
+                            type="object"
+                            class="btn btn-primary save_data"/>
+                    </header>
+                </xpath>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="view_calendar_event_pivot">
+            <field name="name">calendar.event.pivot</field>
+            <field name="model">calendar.event</field>
+            <field name="arch" type="xml">
+                <pivot string="Calendar event">
+                    <field name="xaa_aa_lead_category" type='row'/>
+                </pivot>
+            </field>
+        </record>
+        <record id="calendar.action_calendar_event" model="ir.actions.act_window">
+            <field name="view_mode">calendar,tree,form,pivot</field>
+        </record>
+    </data>
+</odoo>

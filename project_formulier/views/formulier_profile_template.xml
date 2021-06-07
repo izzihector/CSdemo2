@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="project_formulier_profile" name="Formulier Profile">
+        <div class="form-group row">
+            <div class="col-lg-3 col-md-3 col-sm-3 custom-text">
+                <label class="col-form-label" for="xaa_aa_name">Form Name</label>
+            </div>
+            <div class="col-lg-7 col-md-7 col-sm-7">
+                <input type="text" class="form-control o_website_form_input" name="xaa_aa_name" t-att-value="formulier_id.xaa_aa_name" readonly=""/>
+            </div>
+        </div>
+        <div class="form-group row">
+            <div class="col-lg-3 col-md-3 col-sm-3 custom-text">
+                <label class="col-form-label" for="xaa_aa_partner_id">Customer Name</label>
+            </div>
+            <div class="col-lg-7 col-md-7 col-sm-7">
+                <input type="text" class="form-control o_website_form_input" t-att-value="formulier_id.xaa_aa_partner_id.name" readonly=""/>
+            </div>
+        </div>
+        <div class="form-group row">
+            <div class="col-lg-3 col-md-3 col-sm-3 custom-text">
+                <label class="col-form-label" for="address">Address</label>
+            </div>
+            <div class="col-lg-7 col-md-7 col-sm-7">
+                <input type="text" class="form-control o_website_form_input mb16" name="xaa_aa_street" placeholder="street" t-att-value="formulier_id.xaa_aa_street" readonly=""/>
+                <input type="text" class="form-control o_website_form_input" name="xaa_aa_street2" placeholder="street2" t-att-value="formulier_id.xaa_aa_street2" readonly=""/>
+            </div>
+        </div>
+        <div class="form-group row">
+            <div class="col-lg-3 col-md-3 col-sm-3 custom-text">
+                <label class="col-form-label" for="xaa_aa_city">City</label>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-3">
+                <input type="text" class="form-control o_website_form_input" name="xaa_aa_city" t-att-value="formulier_id.xaa_aa_city" readonly=""/>
+            </div>
+            <div class="col-lg-1 col-md-1 col-sm-1 custom-text">
+                <label class="col-form-label" for="xaa_aa_zip">Zip</label>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-3">
+                <input type="text" class="form-control o_website_form_input" name="xaa_aa_zip" t-att-value="formulier_id.xaa_aa_zip" readonly=""/>
+            </div>
+        </div>
+        <div class="form-group row">
+            <div class="col-lg-3 col-md-3 col-sm-3 custom-text">
+                <label class="col-form-label" for="xaa_aa_country_id">Country</label>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-3">
+                <div t-attf-class="form-group div_country">
+                    <select id="country_id" name="xaa_aa_country_id" t-attf-class="form-control" readonly="">
+                        <t t-if="formulier_id.xaa_aa_country_id">
+                            <option t-att-value="formulier_id.xaa_aa_country_id.id">
+                                <t t-esc="formulier_id.xaa_aa_country_id.name"/>
+                            </option>
+                        </t>
+                        <t t-else="">
+                            <option></option>
+                        </t>
+                    </select>
+                </div>
+            </div>
+            <div class="col-lg-1 col-md-1 col-sm-1 custom-text">
+                <label class="col-form-label" for="xaa_aa_state_id">State</label>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-3">
+                <div t-attf-class="form-group div_state">
+                    <select id="state_id" name="xaa_aa_state_id" t-attf-class="form-control" readonly="">
+                        <t t-if="formulier_id.xaa_aa_state_id">
+                            <option t-att-value="formulier_id.xaa_aa_state_id.id">
+                                <t t-esc="formulier_id.xaa_aa_state_id.name"/>
+                            </option>
+                        </t>
+                        <t t-else="">
+                            <option></option>
+                        </t>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="form-group row">
+            <div class="col-lg-3 col-md-3 col-sm-3 custom-text">
+                <label class="col-form-label" for="xaa_aa_phone">Phone</label>
+            </div>
+            <div class="col-lg-7 col-md-7 col-sm-7">
+                <input type="text" class="form-control o_website_form_input" name="xaa_aa_phone" t-att-value="formulier_id.xaa_aa_phone" readonly=""/>
+            </div>
+        </div>
+        <div class="form-group row">
+            <div class="col-lg-3 col-md-3 col-sm-3 custom-text">
+                <label class="col-form-label" for="xaa_aa_mobile">Mobile</label>
+            </div>
+            <div class="col-lg-7 col-md-7 col-sm-7">
+                <input type="text" class="form-control o_website_form_input" name="xaa_aa_mobile" t-att-value="formulier_id.xaa_aa_mobile" readonly=""/>
+            </div>
+        </div>
+        <div class="form-group row" id="overview_image">
+            <div class="col-lg-3 col-md-3 col-sm-3 custom-text">
+                <label class="col-form-label" for="xaa_aa_image">Overview photo</label>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-3 div_image">
+                <button aria-label="Edit" class="fa fa-pencil pull-right fa-lg edit_button" title="Edit" ></button>
+                <img class="img img-fluid" id="xaa_aa_image" t-attf-src="/web/image/question.formulier/{{formulier_id.id}}/xaa_aa_image" alt=""/>
+                <input type="file" name="xaa_aa_image" class="hide_input_image form-control o_website_form_input"/>
+            </div>
+        </div>
+    </template>
+</odoo>

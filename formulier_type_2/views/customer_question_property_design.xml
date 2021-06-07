@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="iso_question_property_details" name="Property Details Questions">
+        <div class="div_padding_left">
+           <div class="row form-group mt32">
+                <div class="col-lg-12 col-md-12 col-sm-12 ">
+                    <div class="form_lable mt16">
+                        <label class="montserrat-extrabold_24">
+                            How high do you estimate the height from the ground to the gutter?
+                        </label>
+                    </div>
+                </div>
+                <div class="col-lg-8 col-md-10 col-sm-12 checkbox_div ">
+                    <div>
+                        <div class="checkbox mb8 mt16">
+                            <input type="radio" class="radio_design" name="xaa_aa_quote_iso_estimate_height_gutter" t-att-checked="formulier_id.xaa_aa_quote_iso_estimate_height_gutter == '1 tot 3 meter'" value="1 tot 3 meter"/>
+                            <label class="ng-binding col-form-label ml16" for="xaa_aa_quote_iso_estimate_height_gutter">1 tot 3 meter
+                            </label>
+                        </div>
+                        <div class="checkbox mb8">
+                            <input type="radio" class="radio_design" name="xaa_aa_quote_iso_estimate_height_gutter" t-att-checked="formulier_id.xaa_aa_quote_iso_estimate_height_gutter == '3 tot 6 meter'" value="3 tot 6 meter"/>
+                            <label class="ng-binding col-form-label ml16" for="xaa_aa_quote_iso_estimate_height_gutter">3 tot 6 meter
+                            </label>
+                        </div>
+                        <div class="checkbox mb8">
+                            <input type="radio" class="radio_design" name="xaa_aa_quote_iso_estimate_height_gutter" t-att-checked="formulier_id.xaa_aa_quote_iso_estimate_height_gutter == 'hoger dan 7 meter'" value="hoger dan 7 meter"/>
+                            <label class="ng-binding col-form-label ml16" for="xaa_aa_quote_iso_estimate_height_gutter">hoger dan 7 meter
+                            </label>
+                        </div>
+                        <div class="checkbox mb8">
+                            <input type="radio" class="radio_design" name="xaa_aa_quote_iso_estimate_height_gutter" t-att-checked="formulier_id.xaa_aa_quote_iso_estimate_height_gutter == 'Ik weet het niet'" value="Ik weet het niet"/>
+                            <label class="ng-binding col-form-label ml16 mr4 pull-left" for="xaa_aa_quote_iso_estimate_height_gutter">Ik weet het niet
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row form-group mt32">
+                <div class="col-lg-12 col-md-12 col-sm-12">
+                    <div class="form_lable mt16">
+                        <label class="montserrat-extrabold_24">
+                            How high do you estimate the height from the ground to the ridge of your home?
+                        </label>
+                    </div>
+                </div>
+                <div class="col-lg-8 col-md-10 col-sm-12 checkbox_div">
+                    <div>
+                        <div class="checkbox mb8 mt16">
+                            <input type="radio" class="radio_design" name="xaa_aa_quote_iso_estimate_height_ridge" t-att-checked="formulier_id.xaa_aa_quote_iso_estimate_height_ridge == 'lager dan 5 meter'" value="lager dan 5 meter"/>
+                            <label class="ng-binding col-form-label ml16" for="xaa_aa_quote_iso_estimate_height_ridge">lager dan 5 meter
+                            </label>
+                        </div>
+                        <div class="checkbox mb8">
+                            <input type="radio" class="radio_design" name="xaa_aa_quote_iso_estimate_height_ridge" t-att-checked="formulier_id.xaa_aa_quote_iso_estimate_height_ridge == '5 tot 9 meter'" value="5 tot 9 meter"/>
+                            <label class="ng-binding col-form-label ml16" for="xaa_aa_quote_iso_estimate_height_ridge">5 tot 9 meter
+                            </label>
+                        </div>
+                        <div class="checkbox mb8">
+                            <input type="radio" class="radio_design" name="xaa_aa_quote_iso_estimate_height_ridge" t-att-checked="formulier_id.xaa_aa_quote_iso_estimate_height_ridge == 'hoger dan 9 meter'" value="hoger dan 9 meter"/>
+                            <label class="ng-binding col-form-label ml16" for="xaa_aa_quote_iso_estimate_height_ridge">hoger dan 9 meter
+                            </label>
+                        </div>
+                        <div class="checkbox mb8">
+                            <input type="radio" class="radio_design" name="xaa_aa_quote_iso_estimate_height_ridge" t-att-checked="formulier_id.xaa_aa_quote_iso_estimate_height_ridge == 'Ik weet het niet'" value="Ik weet het niet"/>
+                            <label class="ng-binding col-form-label ml16" for="xaa_aa_quote_iso_estimate_height_ridge">Ik weet het niet
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row form-group mt32">
+                <div class="col-lg-12 col-md-12 col-sm-12 ">
+                    <div class="form_lable mt16">
+                        <label class="montserrat-extrabold_24">
+                            Is the number of square meters on the quotation correct?
+                        </label>
+                    </div>
+                </div>
+                <div class="col-lg-8 col-md-10 col-sm-12 checkbox_div ">
+                    <div>
+                        <div class="checkbox mb8 mt16">
+                            <input type="radio" class="radio_design" name="xaa_aa_quote_iso_square_meter_quotation" t-att-checked="formulier_id.xaa_aa_quote_iso_square_meter_quotation == 'Ja, ik weet dat dit klopt.'" value="Ja, ik weet dat dit klopt."/>
+                            <label class="ng-binding col-form-label ml16" for="xaa_aa_quote_iso_square_meter_quotation">Ja, ik weet dat dit klopt.
+                            </label>
+                        </div>
+                        <div class="checkbox mb8">
+                            <input type="radio" class="radio_design" name="xaa_aa_quote_iso_square_meter_quotation" t-att-checked="formulier_id.xaa_aa_quote_iso_square_meter_quotation == 'Nee, dit klopt niet; ik heb een schatting gegeven.'" value="Nee, dit klopt niet; ik heb een schatting gegeven."/>
+                            <label class="ng-binding col-form-label ml16" for="xaa_aa_quote_iso_square_meter_quotation">Nee, dit klopt niet; ik heb een schatting gegeven.
+                            </label>
+                        </div>
+                        <div class="checkbox mb8">
+                            <input type="radio" class="radio_design" name="xaa_aa_quote_iso_square_meter_quotation" t-att-checked="formulier_id.xaa_aa_quote_iso_square_meter_quotation == 'Ik weet niet of dit klopt, neem contact met me op.'" value="Ik weet niet of dit klopt, neem contact met me op."/>
+                            <label class="ng-binding col-form-label ml16" for="xaa_aa_quote_iso_square_meter_quotation">Ik weet niet of dit klopt, neem contact met me op.
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row form-group mt32">
+                <div class="col-lg-12 col-md-12 col-sm-12 ">
+                    <div class="form_lable mt16">
+                        <label class="montserrat-extrabold_24">
+                            Is your facade covered with vegetation or similar obstacles?
+                        </label>
+                    </div>
+                </div>
+                <div class="col-lg-8 col-md-10 col-sm-12 checkbox_div ">
+                    <div>
+                        <div class="checkbox mb8 mt16">
+                            <input type="radio" class="radio_design" name="xaa_aa_quote_iso_faced_covered_obstacles" t-att-checked="formulier_id.xaa_aa_quote_iso_faced_covered_obstacles == 'nee'" value="nee"/>
+                            <label class="ng-binding col-form-label ml16" for="xaa_aa_quote_iso_faced_covered_obstacles">nee
+                            </label>
+                        </div>
+                        <div class="checkbox mb8">
+                            <input type="radio" class="radio_design" name="xaa_aa_quote_iso_faced_covered_obstacles" t-att-checked="formulier_id.xaa_aa_quote_iso_faced_covered_obstacles == 'ja'" value="ja"/>
+                            <label class="ng-binding col-form-label ml16" for="xaa_aa_quote_iso_faced_covered_obstacles">ja
+                            </label>
+                        </div>
+                        <div class="checkbox mb8">
+                            <input type="radio" class="radio_design" name="xaa_aa_quote_iso_faced_covered_obstacles" t-att-checked="formulier_id.xaa_aa_quote_iso_faced_covered_obstacles == 'Ja, maar ik ben bereid deze voor de tijd te verwijderen.'" value="Ja, maar ik ben bereid deze voor de tijd te verwijderen."/>
+                            <label class="ng-binding col-form-label ml16" for="xaa_aa_quote_iso_faced_covered_obstacles">Ja, maar ik ben bereid deze voor de tijd te verwijderen.
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row form-group mt32">
+                <div class="col-lg-12 col-md-12 col-sm-12 ">
+                    <div class="form_lable mt16">
+                        <label class="montserrat-extrabold_24">
+                            What is the width / thickness of the cavity?
+                        </label>
+                    </div>
+                </div>
+                <div class="col-lg-8 col-md-10 col-sm-12 checkbox_div ">
+                    <div>
+                        <div class="checkbox mb8 mt16">
+                            <input type="radio" class="radio_design" name="xaa_aa_quote_iso_thickness_cavity" t-att-checked="formulier_id.xaa_aa_quote_iso_thickness_cavity == 'minder dan 5 cm'" value="minder dan 5 cm"/>
+                            <label class="ng-binding col-form-label ml16" for="xaa_aa_quote_iso_thickness_cavity">minder dan 5 cm
+                            </label>
+                        </div>
+                        <div class="checkbox mb8">
+                            <input type="radio" class="radio_design" name="xaa_aa_quote_iso_thickness_cavity" t-att-checked="formulier_id.xaa_aa_quote_iso_thickness_cavity == '5 tot 6 cm'" value="5 tot 6 cm"/>
+                            <label class="ng-binding col-form-label ml16" for="xaa_aa_quote_iso_thickness_cavity">5 tot 6 cm
+                            </label>
+                        </div>
+                        <div class="checkbox mb8">
+                            <input type="radio" class="radio_design" name="xaa_aa_quote_iso_thickness_cavity" t-att-checked="formulier_id.xaa_aa_quote_iso_thickness_cavity == '6 tot 9 cm'" value="6 tot 9 cm"/>
+                            <label class="ng-binding col-form-label ml16" for="xaa_aa_quote_iso_thickness_cavity">6 tot 9 cm
+                            </label>
+                        </div>
+                        <div class="checkbox mb8">
+                            <input type="radio" class="radio_design" name="xaa_aa_quote_iso_thickness_cavity" t-att-checked="formulier_id.xaa_aa_quote_iso_thickness_cavity == '9+'" value="9+"/>
+                            <label class="ng-binding col-form-label ml16" for="xaa_aa_quote_iso_thickness_cavity">9+
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row form-group mt32">
+                <div class="col-lg-12 col-md-12 col-sm-12 ">
+                    <div class="form_lable mt16">
+                        <label class="montserrat-extrabold_24">
+                            Has your house already been checked for suitability for cavity wall insulation?
+                        </label>
+                    </div>
+                </div>
+                <div class="col-lg-8 col-md-10 col-sm-12 checkbox_div ">
+                    <div>
+                        <div class="checkbox mb8 mt16">
+                            <input type="radio" class="radio_design" name="xaa_aa_quote_iso_cavity_wall_insulation" t-att-checked="formulier_id.xaa_aa_quote_iso_cavity_wall_insulation == 'ja'" value="ja"/>
+                            <label class="ng-binding col-form-label ml16" for="xaa_aa_quote_iso_cavity_wall_insulation">ja
+                            </label>
+                        </div>
+                        <div class="checkbox mb8">
+                            <input type="radio" class="radio_design" name="xaa_aa_quote_iso_cavity_wall_insulation" t-att-checked="formulier_id.xaa_aa_quote_iso_cavity_wall_insulation == 'nee'" value="nee"/>
+                            <label class="ng-binding col-form-label ml16" for="xaa_aa_quote_iso_cavity_wall_insulation">nee
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row form-group mt32">
+                <div class="col-lg-12 col-md-12 col-sm-12 ">
+                    <div class="form_lable mt16">
+                        <label class="montserrat-extrabold_24">
+                            Is there internal cavity contamination?
+                        </label>
+                    </div>
+                </div>
+                <div class="col-lg-8 col-md-10 col-sm-12 checkbox_div ">
+                    <div>
+                        <div class="checkbox mb8">
+                            <input type="radio" class="radio_design" name="xaa_aa_quote_iso_cavity_contamination" t-att-checked="formulier_id.xaa_aa_quote_iso_cavity_contamination == 'nee'" value="nee"/>
+                            <label class="ng-binding col-form-label ml16" for="xaa_aa_quote_iso_cavity_contamination">nee
+                            </label>
+                        </div>
+                        <div class="checkbox mb8 mt16">
+                            <input type="radio" class="radio_design" name="xaa_aa_quote_iso_cavity_contamination" t-att-checked="formulier_id.xaa_aa_quote_iso_cavity_contamination == 'ja'" value="ja"/>
+                            <label class="ng-binding col-form-label ml16" for="xaa_aa_quote_iso_cavity_contamination">ja
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row form-group mt32">
+                <div class="col-lg-12 col-md-12 col-sm-12 ">
+                    <div class="form_lable mt16">
+                        <label class="montserrat-extrabold_24">
+                            Does the house have a painted facade?
+                        </label>
+                    </div>
+                </div>
+                <div class="col-lg-8 col-md-10 col-sm-12 checkbox_div ">
+                    <div>
+                        <div class="checkbox mb8">
+                            <input type="radio" class="radio_design" name="xaa_aa_quote_iso_house_painted_faced" t-att-checked="formulier_id.xaa_aa_quote_iso_house_painted_faced == 'nee'" value="nee"/>
+                            <label class="ng-binding col-form-label ml16" for="xaa_aa_quote_iso_house_painted_faced">nee
+                            </label>
+                        </div>
+                        <div class="checkbox mb8 mt16">
+                            <input type="radio" class="radio_design" name="xaa_aa_quote_iso_house_painted_faced" t-att-checked="formulier_id.xaa_aa_quote_iso_house_painted_faced == 'ja'" value="ja"/>
+                            <label class="ng-binding col-form-label ml16" for="xaa_aa_quote_iso_house_painted_faced">ja
+                            </label>
+                        </div>
+                        <div class="checkbox mb8 mt16">
+                            <input type="radio" class="radio_design" name="xaa_aa_quote_iso_house_painted_faced" t-att-checked="formulier_id.xaa_aa_quote_iso_house_painted_faced == 'Ja, maar ik weet zeker dat deze dampdoorlatend is.'" value="Ja, maar ik weet zeker dat deze dampdoorlatend is."/>
+                            <label class="ng-binding col-form-label ml16" for="xaa_aa_quote_iso_house_painted_faced">Ja, maar ik weet zeker dat deze dampdoorlatend is.
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row form-group mt32">
+                <div class="col-lg-12 col-md-12 col-sm-12 ">
+                    <div class="form_lable mt16">
+                        <label class="montserrat-extrabold_24">
+                            Does your home have a cutting joint?
+                        </label>
+                    </div>
+                </div>
+                <div class="col-lg-8 col-md-10 col-sm-12 checkbox_div ">
+                    <div>
+                        <div class="checkbox mb8 mt16">
+                            <input type="radio" class="radio_design" name="xaa_aa_quote_iso_home_cutting_joint" t-att-checked="formulier_id.xaa_aa_quote_iso_home_cutting_joint == 'ja'" value="ja"/>
+                            <label class="ng-binding col-form-label ml16" for="xaa_aa_quote_iso_home_cutting_joint">ja
+                            </label>
+                        </div>
+                        <div class="checkbox mb8">
+                            <input type="radio" class="radio_design" name="xaa_aa_quote_iso_home_cutting_joint" t-att-checked="formulier_id.xaa_aa_quote_iso_home_cutting_joint == 'nee'" value="nee"/>
+                            <label class="ng-binding col-form-label ml16" for="xaa_aa_quote_iso_home_cutting_joint">nee
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row form-group mt32">
+                <div class="col-lg-12 col-md-12 col-sm-12 ">
+                    <div class="form_lable mt16">
+                        <label class="montserrat-extrabold_24">
+                            Does your home have a crawl space and is it good to use?
+                        </label>
+                    </div>
+                </div>
+                <div class="col-lg-8 col-md-10 col-sm-12 checkbox_div ">
+                    <div>
+                        <div class="checkbox mb8 mt16">
+                            <input type="radio" class="radio_design" name="xaa_aa_quote_iso_crawl_space_use" t-att-checked="formulier_id.xaa_aa_quote_iso_crawl_space_use == 'Ja, en deze is goed te gebruiken'" value="Ja, en deze is goed te gebruiken"/>
+                            <label class="ng-binding col-form-label ml16" for="xaa_aa_quote_iso_crawl_space_use">Ja, en deze is goed te gebruiken
+                            </label>
+                        </div>
+                        <div class="checkbox mb8">
+                            <input type="radio" class="radio_design" name="xaa_aa_quote_iso_crawl_space_use" t-att-checked="formulier_id.xaa_aa_quote_iso_crawl_space_use == 'Nee, de woning heeft geen kruipruimte'" value="Nee, de woning heeft geen kruipruimte"/>
+                            <label class="ng-binding col-form-label ml16" for="xaa_aa_quote_iso_crawl_space_use">Nee, de woning heeft geen kruipruimte
+                            </label>
+                        </div>
+                        <div class="checkbox mb8">
+                            <input type="radio" class="radio_design" name="xaa_aa_quote_iso_crawl_space_use" t-att-checked="formulier_id.xaa_aa_quote_iso_crawl_space_use == 'Ja, maar deze niet goed/eenvoudig te gebruiken'" value="Ja, maar deze niet goed/eenvoudig te gebruiken"/>
+                            <label class="ng-binding col-form-label ml16" for="xaa_aa_quote_iso_crawl_space_use">Ja, maar deze niet goed/eenvoudig te gebruiken
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group row mt64" id="next_privious">
+                <div class="col-md-5 col-lg-4 col-sm-5 col-6">
+                    <a class="btn-privoius mt16"
+                        data-id="iso_accessibility_id"
+                        type="Button" t-att-value="formulier_id.id">
+                        <i class="fa fa-chevron-left" aria-hidden="false"/>Previous step
+                    </a>
+                </div>
+                <div class="col-md-4 col-lg-4 col-sm-5 col-6 quotation_tab_next">
+                    <button class="btn btn-next mt16 mr16"
+                        data-id="iso_closing_id" type="Button"
+                        t-att-value="formulier_id.id" style="left:-10px;">
+                        Next step
+                    </button>
+                </div>
+            </div>
+        </div>
+    </template>
+</odoo>

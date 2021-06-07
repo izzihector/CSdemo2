@@ -42,7 +42,7 @@
                 </div>
                 <div class="col-lg-6 col-md-6 col-sm-6">
                     <div class="div_product">
-                        <select class="form-control" name="xaa_aa_solar_color_two">
+                        <select class="form-control select_solar_color" name="xaa_aa_solar_color_two">
                             <option></option>
                             <t t-foreach="solar_type_ids" t-as="st">
                                 <option t-att-value="st.id" t-att-selected="st.id in formulier_id.xaa_aa_solar_color_two.ids">
@@ -61,7 +61,7 @@
                 </div>
                 <div class="col-lg-6 col-md-6 col-sm-6">
                     <div class="div_product">
-                        <select class="form-control" name="xaa_aa_solar_product_two">
+                        <select class="form-control select_solar_product" name="xaa_aa_solar_product_two">
                             <t t-foreach="solar_product_two_ids" t-as="st">
                                 <option t-att-value="st.id" t-att-selected="st.id in formulier_id.xaa_aa_solar_product_two.ids">
                                     <t t-esc="st.xaa_aa_name"/>
@@ -73,13 +73,13 @@
             </div>
             <div class="form-group row form-field">
                 <div class="col-lg-3 col-md-4 col-sm-4 custom-text">
-                    <label class="col-form-label" for="xaa_aa_mounting_system_two">
+                    <label class="col-form-label" for="xaa_aa_mounting_sys_two">
                         Mounting System:
                     </label>
                 </div>
                 <div class="col-lg-6 col-md-6 col-sm-6">
                     <div class="div_product">
-                        <select class="form-control" name="xaa_aa_mounting_system_two">
+                        <select class="form-control" name="xaa_aa_mounting_sys_two">
                             <option></option>
                         </select>
                     </div>
@@ -91,11 +91,17 @@
                         Choose the number of panels:
                     </label>
                 </div>
-                <div class="col-lg-3 col-md-3 col-sm-3">
-                    <input type="text" name="xaa_aa_no_of_panels_two" class="form-control" t-att-value="formulier_id.xaa_aa_no_of_panels_two"/>
+                <div class="col-lg-2 col-md-3 col-sm-3">
+                    <div class="snipper_Add_Minus">
+                        <button type="button" class="pf_sub update_panel_qty">-</button>
+                        <input class="solar_pannel_qty" name="xaa_aa_no_of_panels_two" type="text" value="1" min="1" max="100" />
+                        <button type="button" class="pf_add update_panel_qty">+</button>
+                    </div>
                 </div>
-                <span> = </span>
-                <div class="col-lg-3 col-md-3 col-sm-3">
+                <div class="mt8 mr4">
+                    <span> = </span>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-3 mt4">
                     <input type="text" name="xaa_aa_panel_inclination_two" class="form-control" 
                     t-att-value="formulier_id.xaa_aa_panel_inclination_two"/>
                     The position and angle of inclination of the panels have been taken into account in the calculation

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <!-- Mail K - online quote confirmation - version 1.0-->
+        <record id="online_quote_conformation_mail_template" model="mail.template">
+            <field name="name">Mail K - online quote confirmation - version 1.0</field>
+            <field name="email_from">${(object.company_id.email or '')|safe}</field>
+            <field name="subject">Quotation Energy control NL</field>
+            <field name="email_to">${object.email_from|safe}</field>
+            <field name="model_id" ref="crm.model_crm_lead"/>
+            <field name="lang">${object.partner_id.lang}</field>
+            <field name="body_html"><![CDATA[
+                <p style="margin:0px 0px 9px 0px;">Dear sir/madam,</p>
+                <p style="margin:0px 0px 9px 0px;"> 
+                    You have just compiled your own quote via your personal portal of Energie Control NL: this quote is attached as an attachment. This offer contains all required products with a specified price. The products and activities are further explained in the offer.
+                </p>
+                <p style="margin:0px 0px 9px 0px;">
+                    This offer is valid subject to corrections. The next step is to provide us with insight into your home details. You can do this again via our portal and it takes about 10 minutes of your time. This step is most convenient with a device (smartphone - tablet) that contains a camera because we ask you to add some photos if possible and desired.
+                </p>
+                <p style="margin:0px 0px 9px 0px;">
+                    The button below will redirect you to your personal portal. When you have completed this step, we will immediately start working for you: our technical specialists will assess the application and prepare a laying plan for you free of charge *. We will then contact you as soon as possible about your request!
+                </p>
+                <p style="margin:0px 0px 9px 0px;"><br/><br/><a href="/crm/stage/${object.id}/pf_question_complated" style="background-color: #1abc9c; padding: 15px; text-decoration: none; color: #fff; border-radius: 5px; font-size: 13px;" class="o_default_snippet_text">Fill in house details</a></p>
+                <br/>
+                <p style="margin:0px 0px 9px 0px;">
+                    * A laying plan is a drawing of the roof of your home, which provides insight into the placement of the solar panels. You will not receive anything from us with an application for other energy-saving measures.
+                </p>
+                <p style="margin:0px 0px 9px 0px;">
+                    If you have a question about this mail or our offer, you can contact our customer service on every working day from 8:30 to 17:00 by phone 0546 - 57 4472 or send an e-mail to customerservice@energy-control.nl; we are happy to help you.
+                </p>
+                <br/><br/>
+                <p style="margin:0px 0px 9px 0px;">
+                    With best regards,<br/>
+                    <img src="/crm_mail_template/static/src/img/company_logo.png" style="width:100px;height:100px;"/><br/>
+                    Team Energiecontrol NL<br/>
+                    Phone: 0546- 57 44 72<br/>
+                     <a href="https://www.facebook.com/energiecontrolnl/" target="_blank">
+                        <img src="/crm_mail_template/static/src/img/facebook.jpeg" style="width:30px;height:30px;"/>
+                    </a>
+                    <a href="https://www.instagram.com/energiecontrolnl/" target="_blank">
+                        <img src="/crm_mail_template/static/src/img/instagram.jpeg" style="width:30px;height:30px;"/>
+                    </a>
+                </p>
+]]>
+            </field>
+        </record>
+    </data>
+</odoo>

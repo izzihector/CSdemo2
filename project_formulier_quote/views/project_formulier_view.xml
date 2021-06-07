@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="view_project_formulier_form_inh" model="ir.ui.view">
+        <field name="name">question.formulier.form.inh</field>
+        <field name="model">question.formulier</field>
+        <field name="inherit_id" ref="project_formulier.view_project_formulier_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//button[@name='goto_website_form']" position="after">
+                <button string="Website offerte" class="oe_highlight" type="object" name="formulier_website_quote" icon="fa-globe"/>
+            </xpath>
+            <xpath expr="//page[@name='formulier_video']" position="after">
+                <page string="Formulier Quote" name="website_formulier_quote">
+                </page>
+            </xpath>
+        </field>
+    </record>
+</odoo>

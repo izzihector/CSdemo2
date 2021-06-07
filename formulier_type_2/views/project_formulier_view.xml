@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="view_project_formulier_form" model="ir.ui.view">
+        <field name="name">question.formulier.form.inh</field>
+        <field name="model">question.formulier</field>
+        <field name="inherit_id" ref="project_formulier.view_project_formulier_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//page[@name='opportunity_question']" position="inside">
+                <div attrs="{'invisible': [('xaa_aa_formulier_type', '!=', 'formulier_two')]}">
+                    <div class="text-center text-primary">
+                        <h2><u>Wall</u></h2>
+                    </div>
+                    <div class="row mt16">
+                        <div class="col-lg-3 col-md-3 col-sm-4 custom-text">
+                            <label class="col-form-label" for="xaa_aa_wall_number_m2"/>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6 custom-border">
+                            <field name="xaa_aa_wall_number_m2"/>
+                        </div>
+                    </div>
+                    <div class="row mt16">
+                        <div class="col-lg-3 col-md-3 col-sm-4 custom-text">
+                            <label class="col-form-label" for="xaa_aa_wall_material"/>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6 custom-border">
+                            <field name="xaa_aa_wall_material"/>
+                        </div>
+                    </div>
+                    <div class="row mt16">
+                        <div class="col-lg-3 col-md-3 col-sm-4 custom-text">
+                            <label class="col-form-label" for="xaa_aa_hole_diameter"/>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6 custom-border">
+                            <field name="xaa_aa_hole_diameter"/>
+                        </div>
+                    </div>
+                    <div class="row mt16">
+                        <div class="col-lg-3 col-md-3 col-sm-4 custom-text">
+                            <label class="col-form-label" for="xaa_aa_gutter_height"/>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6 custom-border">
+                            <field name="xaa_aa_gutter_height"/>
+                        </div>
+                    </div>
+                    <div class="row mt16">
+                        <div class="col-lg-3 col-md-3 col-sm-4 custom-text">
+                            <label class="col-form-label" for="xaa_aa_cam_height"/>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6 custom-border">
+                            <field name="xaa_aa_cam_height"/>
+                        </div>
+                    </div>
+                    <div class="row mt16">
+                        <div class="col-lg-3 col-md-3 col-sm-4 custom-text">
+                            <label class="col-form-label" for="xaa_aa_platform"/>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6 custom-border">
+                            <field name="xaa_aa_platform"/>
+                        </div>
+                    </div>
+                    <div class="row mt16">
+                        <div class="col-lg-3 col-md-3 col-sm-4 custom-text">
+                            <label class="col-form-label" for="xaa_aa_scaffolding"/>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6 custom-border">
+                            <field name="xaa_aa_scaffolding"/>
+                        </div>
+                    </div>
+                    <div class="row mt16">
+                        <div class="col-lg-3 col-md-3 col-sm-4 custom-text">
+                            <label class="col-form-label" for="xaa_aa_joint_color"/>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6 custom-border">
+                            <field name="xaa_aa_joint_color"/>
+                        </div>
+                    </div>
+                    <div class="row mt16">
+                        <div class="col-lg-3 col-md-3 col-sm-4 custom-text">
+                            <label class="col-form-label" for="xaa_aa_painted_facade"/>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6 custom-border">
+                            <field name="xaa_aa_painted_facade"/>
+                        </div>
+                    </div>
+                    <div class="row mt16">
+                        <div class="col-lg-3 col-md-3 col-sm-4 custom-text">
+                            <label class="col-form-label" for="xaa_aa_condition_add"/>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6 custom-border">
+                            <field name="xaa_aa_condition_add"/>
+                        </div>
+                    </div>
+                    <div class="row mt16">
+                        <div class="col-lg-3 col-md-3 col-sm-4 custom-text">
+                            <label class="col-form-label" for="xaa_aa_cavity_width"/>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6 custom-border">
+                            <field name="xaa_aa_cavity_width"/>
+                        </div>
+                    </div>
+                    <div class="row mt16">
+                        <div class="col-lg-3 col-md-3 col-sm-4 custom-text">
+                            <label class="col-form-label" for="xaa_aa_cavity_inspection"/>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6 custom-border">
+                            <field name="xaa_aa_cavity_inspection"/>
+                        </div>
+                    </div>
+                    <div class="row mt16">
+                        <div class="col-lg-3 col-md-3 col-sm-4 custom-text">
+                            <label class="col-form-label" for="xaa_aa_plant_growth"/>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6 custom-border">
+                            <field name="xaa_aa_plant_growth"/>
+                        </div>
+                    </div>
+                    <div class="row mt16">
+                        <div class="col-lg-3 col-md-3 col-sm-4 custom-text">
+                            <label class="col-form-label" for="xaa_aa_housing_separation"/>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6 custom-border">
+                            <field name="xaa_aa_housing_separation"/>
+                        </div>
+                    </div>
+                    <div class="text-center text-primary" style="width:100% !important">
+                        <h2><u>Floor</u></h2>
+                    </div>
+                    <div class="row mt16">
+                        <div class="col-lg-3 col-md-3 col-sm-4 custom-text">
+                            <label class="col-form-label" for="xaa_aa_floor_number_m2"/>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6 custom-border">
+                            <field name="xaa_aa_floor_number_m2"/>
+                        </div>
+                    </div>
+                    <div class="row mt16">
+                        <div class="col-lg-3 col-md-3 col-sm-4 custom-text">
+                            <label class="col-form-label" for="xaa_aa_floor_material"/>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6 custom-border">
+                            <field name="xaa_aa_floor_material"/>
+                        </div>
+                    </div>
+                    <div class="row mt16">
+                        <div class="col-lg-3 col-md-3 col-sm-4 custom-text">
+                            <label class="col-form-label" for="xaa_aa_floor_ventilation"/>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6 custom-border">
+                            <field name="xaa_aa_floor_ventilation"/>
+                        </div>
+                    </div>
+                    <div class="row mt16">
+                        <div class="col-lg-3 col-md-3 col-sm-4 custom-text">
+                            <label class="col-form-label" for="xaa_aa_crawl_space_available"/>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6 custom-border">
+                            <field name="xaa_aa_crawl_space_available"/>
+                        </div>
+                    </div>
+                    <div class="row mt16">
+                        <div class="col-lg-3 col-md-3 col-sm-4 custom-text">
+                            <label class="col-form-label" for="xaa_aa_crawl_space_accessible"/>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6 custom-border">
+                            <field name="xaa_aa_crawl_space_accessible"/>
+                        </div>
+                    </div>
+                    <div class="row mt16">
+                        <div class="col-lg-3 col-md-3 col-sm-4 custom-text">
+                            <label class="col-form-label" for="xaa_aa_crawl_space_isolated"/>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6 custom-border">
+                            <field name="xaa_aa_crawl_space_isolated"/>
+                        </div>
+                    </div>
+                    <div class="text-center text-primary" style="width:100% !important">
+                        <h2><u>Roof</u></h2>
+                    </div>
+                    <div class="row mt16">
+                        <div class="col-lg-3 col-md-3 col-sm-4 custom-text">
+                            <label class="col-form-label" for="xaa_aa_roof_number_m2"/>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6 custom-border">
+                            <field name="xaa_aa_roof_number_m2"/>
+                        </div>
+                    </div>
+                    <div class="row mt16">
+                        <div class="col-lg-3 col-md-3 col-sm-4 custom-text">
+                            <label class="col-form-label" for="xaa_aa_roof_material"/>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6 custom-border">
+                            <field name="xaa_aa_roof_material"/>
+                        </div>
+                    </div>
+                    <div class="row mt16">
+                        <div class="col-lg-3 col-md-3 col-sm-4 custom-text">
+                            <label class="col-form-label" for="xaa_aa_accessible"/>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6 custom-border">
+                            <field name="xaa_aa_accessible"/>
+                        </div>
+                    </div>
+                </div>
+            </xpath>
+            <xpath expr="//page[@name='opportunity_image']" position="inside">
+                <group attrs="{'invisible': [('xaa_aa_formulier_type', '!=', 'formulier_two')]}">
+                    <group>
+                        <field name="xaa_aa_house" widget="image" class="custom-image-size"/>
+                        <field name="xaa_aa_access" widget="image" class="custom-image-size"/>
+                        <field name="xaa_aa_parking_spot" widget="image" class="custom-image-size"/>
+                        <field name="xaa_aa_obstacles" widget="image" class="custom-image-size"/>
+                    </group>
+                    <group>
+                        <field name="xaa_aa_wall1" widget="image" class="custom-image-size"/>
+                        <field name="xaa_aa_wall2" widget="image" class="custom-image-size"/>
+                        <field name="xaa_aa_floor1" widget="image" class="custom-image-size"/>
+                        <field name="xaa_aa_roof1" widget="image" class="custom-image-size"/>
+                    </group>
+                </group>
+            </xpath>
+
+            <xpath expr="//page[@name='opportunity_question']" position="after">
+                <page string="PF Quote" name="iso_quote" attrs="{'invisible': [('xaa_aa_formulier_type', '!=', 'formulier_two')]}">
+                    <group attrs="{'invisible': [('xaa_aa_formulier_type', '!=', 'formulier_two')]}">
+                        <group name="xaa_aa_kind_of_isolate" string="What kind of isolation is it about ?">
+                            <field name="xaa_aa_kind_of_isolate" nolabel="1"/>
+                        </group>
+                        <group name="xaa_aa_iso_type" string="Type">
+                            <field name="xaa_aa_iso_type" nolabel="1"/>
+                        </group>
+                        <group name="xaa_aa_m2_count" string="Number of m2">
+                            <field name="xaa_aa_m2_count" nolabel="1"/>
+                        </group>
+                        <group name="xaa_aa_tickness_of_wall" string="Tickness of wall">
+                            <field name="xaa_aa_tickness_of_wall" nolabel="1"/>
+                        </group>
+                        <group name="xaa_aa_spacing" string="Spacing">
+                            <field name="xaa_aa_spacing" nolabel="1"/>
+                        </group>
+                        <group name="xaa_aa_isolation_product" string="What kind of material ?">
+                            <field name="xaa_aa_isolation_product" nolabel="1" domain="[('xaa_aa_product_type', '=', 'I am Isolation')]"/>
+                        </group>
+                        <group name="xaa_aa_need_ventilation_grid" string="Do you want ventilation grid ?">
+                            <field name="xaa_aa_need_ventilation_grid" nolabel="1"/>
+                        </group>
+                        <group name="xaa_aa_ventilation_product" string="Ventilation grid" attrs="{'invisible': [('xaa_aa_need_ventilation_grid', '!=', 'ja')]}">
+                            <field name="xaa_aa_ventilation_product" nolabel="1" domain="[('xaa_aa_product_type', '=', 'Ventilation grid')]"/>
+                        </group>
+                        <group name="xaa_aa_need_cavity_boundary" string="Do you need Cavity boundary ?">
+                            <field name="xaa_aa_need_cavity_boundary" nolabel="1"/>
+                        </group>
+                        <group name="xaa_aa_cavity_boundary_product" string="Ventilation grid" attrs="{'invisible': [('xaa_aa_need_cavity_boundary', '!=', 'ja')]}">
+                            <field name="xaa_aa_cavity_boundary_product" nolabel="1" domain="[('xaa_aa_product_type', '=', 'Cavity boundary')]"/>
+                        </group>
+                        <group name="xaa_aa_extra_support" string="Extra support">
+                            <field name="xaa_aa_extra_support" nolabel="1"/>
+                        </group>
+                        <group name="xaa_aa_need_custm_extra_product" string="Do you need extra product ?">
+                            <field name="xaa_aa_need_custm_extra_product" nolabel="1"/>
+                        </group>
+                        <group name="xaa_aa_extra_product_description" string="Extra product 1: give description">
+                            <field name="xaa_aa_extra_product_description" nolabel="1"/>
+                        </group>
+                        <group name="xaa_aa_extra_product_cost" string="Cost price">
+                            <field name="xaa_aa_extra_product_cost" nolabel="1"/>
+                        </group>
+                        <group name="xaa_aa_extra_product_sale" string="Sale price">
+                            <field name="xaa_aa_extra_product_sale" nolabel="1"/>
+                        </group>
+                        <group name="xaa_aa_extra_product_description_two" string="Extra product 2: give description">
+                            <field name="xaa_aa_extra_product_description_two" nolabel="1"/>
+                        </group>
+                        <group name="xaa_aa_extra_product_cost_two" string="Cost price">
+                            <field name="xaa_aa_extra_product_cost_two" nolabel="1"/>
+                        </group>
+                        <group name="xaa_aa_extra_product_sale_two" string="Sale price">
+                            <field name="xaa_aa_extra_product_sale_two" nolabel="1"/>
+                        </group>
+                        <group name="xaa_aa_extra_product_description_three" string="Extra product 3: give description">
+                            <field name="xaa_aa_extra_product_description_three" nolabel="1"/>
+                        </group>
+                        <group name="xaa_aa_extra_product_cost_three" string="Cost price">
+                            <field name="xaa_aa_extra_product_cost_three" nolabel="1"/>
+                        </group>
+                        <group name="xaa_aa_extra_product_sale_three" string="Sale price">
+                            <field name="xaa_aa_extra_product_sale_three" nolabel="1"/>
+                        </group>
+                        <group name="xaa_aa_iso_installation_time" string="How many time needed for installation ?">
+                            <field name="xaa_aa_iso_installation_time" nolabel="1"/>
+                        </group>
+                        <group name="xaa_aa_need_discount" string="Do You need Discount ?">
+                            <field name="xaa_aa_need_discount" nolabel="1"/>
+                        </group>
+                        <group name="xaa_aa_discount_qty" attrs="{'invisible': [('xaa_aa_need_discount', '!=', 'ja')]}">
+                            <field name="xaa_aa_discount_qty"/>
+                        </group>
+                        <group name="xaa_aa_need_schouw" string="Do a look?">
+                            <field name="xaa_aa_need_schouw" nolabel="1"/>
+                        </group>
+                        <group name="xaa_aa_quote_template_id" string="Choose your quote template">
+                            <field name="xaa_aa_quote_template_id" nolabel="1"/>
+                        </group>
+                        <group name="xaa_aa_cost_price_total" string="Total cost price">
+                            <field name="xaa_aa_cost_price_total" nolabel="1"/>
+                        </group>
+                    </group>
+                </page>
+            </xpath>
+         </field>
+    </record>
+
+ </odoo>

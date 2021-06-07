@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <template id="report_saleorder_document_inherit_sale_section" inherit_id="sale.report_saleorder_document">
+            <xpath expr="//tbody[hasclass('sale_tbody')]/t[@t-foreach='doc.order_line']" position="attributes">
+                <attribute name="t-foreach">doc.order_line.filtered(lambda line: not line.xaa_aa_invisible)</attribute>
+            </xpath>
+        </template>
+        <template id="web_quotation_content_custom_inhr" inherit_id="quote_print.pricing">
+            <xpath expr="//t[@t-foreach='sale_order.order_line']" position="attributes">
+                <attribute name="t-foreach">sale_order.order_line.filtered(lambda line: not line.xaa_aa_invisible)</attribute>
+            </xpath>
+        </template>
+    </data>
+</odoo>

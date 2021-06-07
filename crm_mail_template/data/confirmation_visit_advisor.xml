@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <!-- Mail L confirmation of desired day reminder-->
+        <record id="confirmation_visit_advisor_mail_template" model="mail.template">
+            <field name="name">Mail L - confirmation visit advisor - version 1.0</field>
+            <field name="email_from">${(object.company_id.email or '')|safe}</field>
+            <field name="subject">Confirmation visit advisor of Energie control NL</field>
+            <field name="email_to">${object.email_from|safe}</field>
+            <field name="model_id" ref="crm.model_crm_lead"/>
+            <field name="lang">${object.partner_id.lang}</field>
+            <field name="body_html"><![CDATA[
+                <p style="margin:0px 0px 9px 0px;">Dear sir/madam,</p>
+                <p style="margin:0px 0px 9px 0px;">
+                   We have just made an appointment together with one of our advisers at your home. This appointment is scheduled for 
+                   % if object.xaa_aa_meeting_date:
+                        ${object.convert_date_based_on_lang()}
+                    % endif
+                </p>
+                <p style="margin:0px 0px 9px 0px;">
+                    Our advisor will visit you on this day to review and discuss the application and the options for energy-saving measures. We kindly ask you to take a relevant energy bill in advance so that it can be discussed in the consultation.
+                </p>
+                <p style="margin:0px 0px 9px 0px;">
+                    If you are unexpectedly unable to attend, or perhaps you have not provided your address and house number correctly? No problem, please let us know as soon as possible by emailing customer service@energie-control.nl or you can contact us by phone every day from 8:30 am to 5:00 pm on 0546 - 57 44 72 We will be happy to help you further.
+                </p>
+                <br/><br/>
+                <p style="margin:0px 0px 9px 0px;">
+                    With best regards,<br/>
+                    <img src="/crm_mail_template/static/src/img/company_logo.png" style="width:100px;height:100px;"/><br/>
+                    Team Energiecontrol NL<br/>
+                     <a href="https://www.facebook.com/energiecontrolnl/" target="_blank">
+                        <img src="/crm_mail_template/static/src/img/facebook.jpeg" style="width:30px;height:30px;"/>
+                    </a>
+                    <a href="https://www.instagram.com/energiecontrolnl/" target="_blank">
+                        <img src="/crm_mail_template/static/src/img/instagram.jpeg" style="width:30px;height:30px;"/>
+                    </a>
+                </p>
+                ]]>
+            </field>
+        </record>
+    </data>
+</odoo>

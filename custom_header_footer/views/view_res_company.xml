@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="view_company_form_custom" model="ir.ui.view">
+            <field name="name">res.company.form.inherit</field>
+            <field name="model">res.company</field>
+            <field name="inherit_id" ref="base.view_company_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//page[1]" position="after">
+                    <page string="Trademarks">
+                        <group>
+                            <field name="xaa_aa_for_all_report"/>
+                        </group>
+                        <group>
+                            <field name="xaa_aa_trademark_id" widget="one2many"/>
+                        </group>
+                    </page>
+                </xpath>
+            </field>
+        </record>
+
+        <!-- View -->
+        <record id="company_trademark_form" model="ir.ui.view">
+            <field name="name">company.trademark.form</field>
+            <field name="model">company.trademark</field>
+            <field name="arch" type="xml">
+                <form>
+                    <group>
+                        <group>
+                            <field name="xaa_aa_name"/>
+                            <field name="xaa_aa_company_id" invisible="1"/>
+                            <field name="xaa_aa_analytic_account_group_id" groups="account.group_account_readonly"/>
+                            <field name="xaa_aa_pricelist_id"/>
+                            <field name="xaa_aa_email_sent" widget="email"/>
+                        </group>
+                        <group>
+                            <field name="xaa_aa_report_header"/>
+                            <field name="xaa_aa_report_footer"/>
+                            <field name="xaa_aa_short_code"/>
+                            <field name="xaa_aa_email_reply" widget="email"/>
+                        </group>
+                    </group>
+                </form>
+            </field>
+        </record>
+
+        <record id="company_trademark_tree" model="ir.ui.view">
+            <field name="name">company.trademark.tree</field>
+            <field name="model">company.trademark</field>
+            <field name="arch" type="xml">
+                <tree string="Company Trademarks">
+                    <field name="xaa_aa_name"/>
+                    <field name="xaa_aa_short_code"/>
+                    <field name="xaa_aa_email_sent" widget="email"/>
+                    <field name="xaa_aa_email_reply" widget="email"/>
+                    <field name="xaa_aa_report_header"/>
+                    <field name="xaa_aa_report_footer"/>
+                    <field name="xaa_aa_analytic_account_group_id" />
+                </tree>
+            </field>
+        </record>
+
+        <!-- Action -->
+        <record id="company_trademark_action" model="ir.actions.act_window">
+            <field name="name">Company Trademarks</field>
+            <field name="res_model">company.trademark</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <!-- Menuitem -->
+        <menuitem
+            id="company_trademark_menu"
+            name="Trademark"
+            action="company_trademark_action"
+            parent="sale.sale_menu_root"
+            groups="sales_team.group_sale_manager"
+            sequence="10"/>
+
+    </data>
+</odoo>

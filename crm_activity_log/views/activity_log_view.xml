@@ -1,0 +1,79 @@
+<?xml version="1.0"?>
+<odoo>
+    <record id="activity_log_form" model="ir.ui.view">
+        <field name="name">activity.log.form</field>
+        <field name="model">activity.log</field>
+        <field name="arch" type="xml">
+            <form string="Activity Log">
+                <sheet>
+                    <group>
+                        <field name="xaa_aa_opportunity_id"/>
+                        <field name="xaa_aa_activity_ids" widget="many2many_tags"/>
+                        <field name="xaa_aa_stage"/>
+                        <field name="xaa_aa_privious_stage"/>
+                        <field name="xaa_aa_login_user"/>
+                        <field name="xaa_aa_date"/>
+                        <field name="xaa_aa_notes"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="view_activity_log_kanban" model="ir.ui.view">
+        <field name="name">activity.log.kanban</field>
+        <field name="model">activity.log</field>
+        <field name="arch" type="xml">
+            <kanban class="o_kanban_mobile" archivable="false">
+                <field name="xaa_aa_opportunity_id"/>
+                <field name="xaa_aa_stage"/>
+                <templates>
+                    <t t-name="kanban-box">
+                        <div t-attf-class="oe_kanban_content oe_kanban_global_click">
+                            <div>
+                                <strong class="o_kanban_record_title"><span><field name="xaa_aa_opportunity_id"/></span></strong>
+                            </div>
+                            <div><field name="xaa_aa_activity_ids"/></div>
+                            <div><field name="xaa_aa_stage"/></div>
+                            <div><field name="xaa_aa_privious_stage"/></div>
+                            <div><field name="xaa_aa_login_user"/></div>
+                            <div><field name="xaa_aa_date"/></div>
+                            <div><field name="xaa_aa_notes"/></div>
+                        </div>
+                    </t>
+                </templates>
+            </kanban>
+        </field>
+    </record>
+
+    <record id="activity_log_view_tree" model="ir.ui.view">
+            <field name="name">activity.log.tree</field>
+            <field name="model">activity.log</field>
+            <field name="arch" type="xml">
+                <tree string="Activity Log" >
+                    <field name="xaa_aa_name"/>
+                    <field name="xaa_aa_opportunity_id"/>
+                    <field name="xaa_aa_activity_ids" widget="many2many_tags"/>
+                    <field name="xaa_aa_stage"/>
+                    <field name="xaa_aa_privious_stage"/>
+                    <field name="xaa_aa_login_user" widget="many2one_avatar_user"/>
+                    <field name="xaa_aa_date"/>
+                    <field name="xaa_aa_notes"/>
+                </tree>
+            </field>
+        </record>
+
+    <record id="activity_log_action" model="ir.actions.act_window">
+        <field name="name">Activity Log</field>
+        <field name="res_model">activity.log</field>
+        <field name="view_mode">tree,kanban,form</field>
+        <field name="view_id" ref="activity_log_view_tree"/>
+    </record>
+
+    <menuitem
+            id="crm_menu_activity_log"
+            name="Activity Log"
+            parent="crm.crm_menu_root"
+            sequence="30"
+            action="activity_log_action"/>
+</odoo>

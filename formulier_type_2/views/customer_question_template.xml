@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="customer_quotation_question_template" inherit_id="project_formulier_quote.customer_quotation_question_template">
+        <xpath expr="." position="inside">
+            <t t-if="formulier_id.xaa_aa_formulier_type == 'formulier_two'">
+                <t t-call="website.layout">
+                    <div class="custom_banner">
+                        <div class="container">
+                            <!-- solar_pannel.jpeg -->
+                            <div class="row">
+                                <form t-attf-action="/customer/iso/question/submit/#{formulier_id.id}/" method="POST" data-success_page="/iso_questions_thanks" data-model_name="question.formulier" class=" s_website_form form-horizontal form_style"  enctype="multipart/form-data">
+                                    <span class="montserrat-extrabold_32 quote_template_header">The final step to your cavity wall</span>
+                                    <input name="formulier_id" id="formulier_id" t-att-value="formulier_id.id" type="hidden"/>
+                                    <div id="exTab1" class="container quote_tabs">
+                                        <ul class="nav nav-pills mt32">
+                                            <li class="active quote_tabs_li" id="iso_accessibility_id">
+                                                <a  href="#tab_iso_accessibility_form" class="a_after" data-toggle="tab">
+                                                    <span>1 </span><span class="menu_span">Accessibility</span>
+                                                </a>
+                                            </li>
+                                            <li class="quote_tabs_li" id="iso_property_details_id">
+                                                <a href="#tab_iso_property_details_form" class="a_after" data-toggle="tab">
+                                                    <span>2 </span><span class="menu_span">Property details</span>
+                                                </a>
+                                            </li>
+                                            <li class="quote_tabs_li" id="iso_closing_id">
+                                                <a href="#tab_iso_closing_form" class="a_after" data-toggle="tab">
+                                                    <span>3 </span><span class="menu_span">Closing</span>
+                                                </a>
+                                            </li>
+                                            <li class="quote_tabs_li" id="iso_photos_house_id">
+                                                <a href="#tab_iso_photos_house_form" class="a_after" data-toggle="tab">
+                                                    <span>4 </span><span class="menu_span">Photos house</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                        <div class="tab-content clearfix web_tab_1">
+                                            <div class="tab-pane active" id="tab_iso_accessibility_form">
+                                                <t t-call="formulier_type_2.iso_question_accessibility"/>
+                                            </div>
+                                            <div class="tab-pane" id="tab_iso_property_details_form">
+                                                <t t-call="formulier_type_2.iso_question_property_details"/>
+                                            </div>
+                                            <div class="tab-pane" id="tab_iso_closing_form">
+                                                <t t-call="formulier_type_2.iso_question_closing"/>
+                                            </div>
+                                            <div class="tab-pane" id="tab_iso_photos_house_form">
+                                                <t t-call="formulier_type_2.iso_question_photos"/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </t>
+            </t>
+        </xpath>
+    </template>
+
+    <template id="iso_questions_thanks" name="Submit Answers">
+        <t t-call="website.layout">
+          <div id="wrap">
+            <div class="oe_structure"/>
+            <div class="container">
+                <h1>Thanks!</h1>
+                <div class="row">
+                    <div class="col-md-8">
+                        <div class="alert alert-success">
+                            Your message has been sent successfully.
+                            <button type="button" class="close" data-dismiss="alert">&amp;times;</button>
+                        </div>
+                        <p>
+                            We will get back to you shortly.
+                        </p><p class="mt64">
+                            If you have an emergency, do not hesitate to contact us by phone:
+                        </p>
+                        <ul class="list-unstyled">
+                            <li><i class="fa fa-phone"></i> : <span t-field="res_company.phone"/></li>
+                            <li><i class="fa fa-envelope"></i> : <span t-field="res_company.email"/></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4">
+                        <t t-call="website.company_description"/>
+                    </div>
+                </div>
+            </div>
+            <div class="oe_structure"/>
+          </div>
+        </t>
+    </template>
+
+</odoo>

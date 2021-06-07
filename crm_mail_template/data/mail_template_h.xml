@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <data>
+        <record id="remote_customer_reminder_mail_template" model="mail.template">
+            <field name="name">Mail H - remote customer - reminder mail 1 - version 1.0</field>
+            <field name="email_from">${(object.user_id.email)|safe}</field>
+            <field name="subject">Reminder quote energy saving measure</field>
+            <field name="partner_to">${object.partner_id.id}</field>
+            <field name="model_id" ref="crm.model_crm_lead"/>
+            <field name="auto_delete" eval="True"/>
+            <field name="lang">${object.partner_id.lang}</field>
+            <field name="body_html"><![CDATA[
+                <p style="margin:0px 0px 9px 0px;">Dear sir/madam,</p>
+                <p style="margin:0px 0px 9px 0px;">
+                   You have recently expressed interest in an energy-saving measure, unfortunately we have not yet received a response.
+                </p>
+                <p style="margin:0px 0px 9px 0px;">
+                    That is why we would like to remind you that our quotation portal is still ready for you, and that you can immediately create a quotation within three minutes! Extensive and complete with price specification per product.
+                </p>
+                <p style="margin:0px 0px 9px 0px;">
+                    The button below will take you to the quotation portal, where you will automatically receive the quotation after a few simple questions. If you prefer to call one of our employees, you can press the "Call appointment" button.
+                </p>
+                <p style="margin:0px 0px 9px 0px;">
+                    Do you prefer to contact one of our advisors by telephone or video call? That is possible: they are happy to help you! In this conversation, one of our advisers explains the possibilities for you. You can schedule this call yourself using the “I would like a telephone / video advice” button below so that you know exactly when and how you will be called!
+                </p>
+                <p style="margin:0px 0px 9px 0px;"><br/><a href="/crm/stage/${object.id}/pf_website_quote_sent" style="background-color: #1abc9c; padding: 15px; text-decoration: none; color: #fff; border-radius: 5px; font-size: 13px;" class="o_default_snippet_text">Make your quote</a></p>
+                <p style="margin:0px 0px 9px 0px;"><br/><br/><a href="/book/calendar/3/${object.id}" style="background-color: #1abc9c; padding: 15px; text-decoration: none; color: #fff; border-radius: 5px; font-size: 13px;" class="o_default_snippet_text">I would like a telephone / video consultation</a><br/><br/></p>
+                <p style="margin:0px 0px 9px 0px;">
+                    Is this e-mail not intended for you, or are you canceling the application? Then click below to get out of our system.
+                </p>
+                <p style="margin:0px 0px 9px 0px;"><br/><a href="/crm/stage/${object.id}/complaints" style="background-color: #1abc9c; padding: 15px; text-decoration: none; color: #fff; border-radius: 5px; font-size: 13px;" class="o_default_snippet_text">No interest anymore</a></p>
+                <br/><br/>
+                <p style="margin:0px 0px 9px 0px;">
+                    With best regards,<br/>
+                    <img src="/crm_mail_template/static/src/img/company_logo.png" style="width:100px;height:100px;"/><br/>
+                    Team Energiecontrol NL<br/>
+                     <a href="https://www.facebook.com/energiecontrolnl/" target="_blank">
+                        <img src="/crm_mail_template/static/src/img/facebook.jpeg" style="width:30px;height:30px;"/>
+                    </a>
+                    <a href="https://www.instagram.com/energiecontrolnl/" target="_blank">
+                        <img src="/crm_mail_template/static/src/img/instagram.jpeg" style="width:30px;height:30px;"/>
+                    </a>
+                </p>
+]]></field>
+        </record>
+    </data>
+</odoo>

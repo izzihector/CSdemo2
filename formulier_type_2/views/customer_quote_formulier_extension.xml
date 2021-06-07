@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="customer_quote_formulier_extension" name="Formulier Quote Extension">
+        <div class="div_padding_left">
+            <div class="row form-group mt32">
+                <div class="col-lg-12 col-md-12 col-sm-12 ">
+                    <div class="form_lable mt16">
+                        <label class="montserrat-extrabold_24">
+                            Number of M2 to be insulated
+                        </label>
+                    </div>
+                </div>
+                <div class="col-lg-5 col-md-5 col-sm-8">
+                    <input type="number" class="form-control" name="xaa_aa_quote_many_extension" t-att-value="formulier_id.xaa_aa_quote_many_extension"/>
+                    <span>The value shown is an average based on your previous choices. You can adjust the value.</span>
+                </div>
+            </div>
+            <div class="row form-group mt32">
+                <div class="col-lg-12 col-md-12 col-sm-12 ">
+                    <div class="form_lable mt16">
+                        <label class="montserrat-extrabold_24">
+                            Do you have crawl space?
+                        </label>
+                    </div>
+                </div>
+                <div class="col-lg-10 col-md-10 col-sm-12 checkbox_div">
+                    <div>
+                        <div class="checkbox mb8 mt16">
+                            <input type="radio" class="radio_design" name="xaa_aa_qupte_do_crawl_space" t-att-checked="formulier_id.xaa_aa_qupte_do_crawl_space == 'ja'" value="ja"/>
+                            <label class="ng-binding col-form-label ml16" for="xaa_aa_qupte_do_crawl_space">ja
+                            </label>
+                        </div>
+                        <div class="checkbox">
+                            <input type="radio" class="radio_design" name="xaa_aa_qupte_do_crawl_space" t-att-checked="formulier_id.xaa_aa_qupte_do_crawl_space == 'nee'" value="nee"/>
+                            <label class="ng-binding col-form-label ml16" for="xaa_aa_qupte_do_crawl_space">nee
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="loading">
+                <img id="loading-image" src="/formulier_type_3/static/src/images/5.gif" alt="Loading..." />
+            </div>
+            <div class="form-group row mt64" id="next_privious">
+                <div class="col-md-5 col-lg-5 col-sm-5 col-6">
+                    <a class="btn-privoius mt16"
+                        data-id="home_tab"
+                        type="Button" t-att-value="formulier_id.id">
+                        <i class="fa fa-chevron-left" aria-hidden="false"/>Previous step
+                    </a>
+                </div>
+                <div class="col-md-4 col-lg-4 col-sm-5 col-6">
+                    <button class="btn btn_iso_quote mt16 mr8"
+                        type="Button" t-att-value="formulier_id.id">
+                        Make an offer
+                    </button>
+                </div>
+            </div>
+        </div>
+    </template>
+</odoo>

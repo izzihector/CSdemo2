@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <data>
+        <!-- Mail J -confirm call appointment office staff version 1.0 -->
+        <record id="confirm_call_appointment_office_staff_mail_template" model="mail.template">
+            <field name="name">Mail J -confirm call appointment office staff version 1.0</field>
+            <field name="email_from">${(object.user_id.email)|safe}</field>
+            <field name="subject">Confirmation call appointment with Energie control NL</field>
+            <field name="partner_to">${object.partner_id.id}</field>
+            <field name="model_id" ref="crm.model_crm_lead"/>
+            <field name="auto_delete" eval="True"/>
+            <field name="lang">${object.partner_id.lang}</field>
+            <field name="body_html"><![CDATA[
+                <p style="margin:0px 0px 9px 0px;">Dear sir/madam,</p>
+                <p style="margin:0px 0px 9px 0px;">
+                   We have received your call appointment request. Our employee will contact you around the chosen time via the telephone number indicated by you.
+                </p>
+                <p style="margin:0px 0px 9px 0px;">
+                    We kindly ask you to keep your agenda at hand and then make an appointment with one of our advisers at your home.
+                </p>
+                <p style="margin:0px 0px 9px 0px;">
+                    If you have a question about this email, you can contact us by phone every day from 8:30 am to 5:00 pm on 0546 - 57 44 72 or by emailing customer service@energie-control.nl. We are happy to help you.
+                </p>
+                <br/><br/>
+                <p style="margin:0px 0px 9px 0px;">
+                    With best regards,<br/>
+                    <img src="/crm_mail_template/static/src/img/company_logo.png" style="width:100px;height:100px;"/><br/>
+                    Team Energiecontrol NL<br/>
+                     <a href="https://www.facebook.com/energiecontrolnl/" target="_blank">
+                        <img src="/crm_mail_template/static/src/img/facebook.jpeg" style="width:30px;height:30px;"/>
+                    </a>
+                    <a href="https://www.instagram.com/energiecontrolnl/" target="_blank">
+                        <img src="/crm_mail_template/static/src/img/instagram.jpeg" style="width:30px;height:30px;"/>
+                    </a>
+                </p>
+]]></field>
+        </record>
+    </data>
+</odoo>

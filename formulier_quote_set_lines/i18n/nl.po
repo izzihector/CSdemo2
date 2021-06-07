@@ -1,0 +1,386 @@
+# Translation of Odoo Server.   
+# This file contains the translation of the following modules:
+#   * formulier_quote_set_lines
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 14.1alpha1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-09-23 07:46+0000\n"
+"PO-Revision-Date: 2020-09-23 07:46+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: formulier_quote_set_lines
+#: model:ir.model.fields,field_description:formulier_quote_set_lines.field_sale_line_config__xaa_aa_qty
+msgid "Number of products"
+msgstr "Aantal producten"
+
+#. module: formulier_quote_set_lines
+#: model:ir.model.fields,field_description:formulier_quote_set_lines.field_sale_line_config__xaa_aa_qty_hours
+msgid "Qnty hours"
+msgstr "Aantal uren"
+
+#. module: formulier_quote_set_lines
+#: model:ir.model.fields,field_description:formulier_quote_set_lines.field_sale_line_config__xaa_aa_team_time
+msgid "Expensive Team"
+msgstr "Duur Team"
+
+#. module: formulier_quote_set_lines
+#: model:ir.model.fields,field_description:formulier_quote_set_lines.field_sale_line_config__xaa_aa_team_cost
+msgid "Cost team"
+msgstr "Kosten team"
+
+#. module: formulier_quote_set_lines
+#: model:ir.model.fields,field_description:formulier_quote_set_lines.field_sale_line_config__xaa_aa_team_sale
+msgid "Sales Team"
+msgstr "Verkoop Team"
+
+#. module: formulier_quote_set_lines
+#: model:ir.model.fields,field_description:formulier_quote_set_lines.field_sale_line_config__xaa_aa_overhead_one
+msgid "Costs Overhead"
+msgstr "Kosten Overhead"
+
+#. module: formulier_quote_set_lines
+#: model:ir.model.fields,field_description:formulier_quote_set_lines.field_sale_line_config__xaa_aa_sales_overhead_one
+msgid "Sales Overhead"
+msgstr "Verkoop Overhead"
+
+#. module: formulier_quote_set_lines
+#: model:ir.model.fields,field_description:formulier_quote_set_lines.field_sale_line_config__xaa_aa_overhead_two
+msgid "Costs Sales"
+msgstr "Kosten Sales"
+
+#. module: formulier_quote_set_lines
+#: model:ir.model.fields,field_description:formulier_quote_set_lines.field_sale_line_config__xaa_aa_sales_overhead_two
+msgid "Sell Sales"
+msgstr "Verkopen Sales"
+
+#. module: formulier_quote_set_lines
+#: model:ir.model.fields,field_description:formulier_quote_set_lines.field_sale_line_config__xaa_aa_commission
+msgid "Commission"
+msgstr "Commissie"
+
+#. module: formulier_quote_set_lines
+#: model:ir.model.fields,field_description:formulier_quote_set_lines.field_sale_line_config__xaa_aa_sales_option_one
+msgid "Sell Extra 1"
+msgstr "Verkopen Extra 1"
+
+#. module: formulier_quote_set_lines
+#: model:ir.model.fields,field_description:formulier_quote_set_lines.field_sale_line_config__xaa_aa_sales_option_two
+msgid "Sell Extra 2"
+msgstr "Verkopen Extra 2"
+
+#. module: formulier_quote_set_lines
+#: model:ir.model.fields,field_description:formulier_quote_set_lines.field_sale_line_config__xaa_aa_cost_option_one
+msgid "Cost Extra 1"
+msgstr "Kosten Extra 1"
+
+#. module: formulier_quote_set_lines
+#: model:ir.model.fields,field_description:formulier_quote_set_lines.field_sale_line_config__xaa_aa_cost_option_two
+msgid "Cost Extra 2"
+msgstr "Kosten Extra 2"
+
+#. module: formulier_quote_set_lines
+#: model:ir.model.fields,field_description:formulier_quote_set_lines.field_sale_line_config__xaa_aa_overhead_total
+msgid "Cost overhead total"
+msgstr "Totale kosten overhead"
+
+#. module: formulier_quote_set_lines
+#: model:ir.model.fields,field_description:formulier_quote_set_lines.field_sale_line_config__xaa_aa_sales_overhead_total
+msgid "Sales overhead total"
+msgstr "Totale verkopen overhead"
+
+#. module: formulier_quote_set_lines
+#: model:ir.model.fields,field_description:formulier_quote_set_lines.field_sale_line_config__xaa_aa_total
+msgid "Cost total"
+msgstr "Totaal kosten"
+
+#. module: formulier_quote_set_lines
+#: model:ir.model.fields,field_description:formulier_quote_set_lines.field_sale_line_config__xaa_aa_sales_total
+msgid "Sales total"
+msgstr "Totaal verkopen"
+
+#. module: formulier_quote_set_lines
+#: model:ir.ui.menu,name:formulier_quote_set_lines.menu_sale_line_configure
+msgid "Sales table"
+msgstr "Verkooptabel"
+
+#. module: formulier_quote_set_lines
+#: model:ir.ui.menu,name:formulier_quote_set_lines.menu_sale_line_configure_sales
+msgid "Sales table"
+msgstr "Verkooptabel"
+
+#. module: formulier_quote_set_lines
+#: model:ir.model.fields,field_description:formulier_quote_set_lines.field_sale_line_config__xaa_aa_formulier_type
+msgid "Type product"
+msgstr "Type product"
+
+#. module: formulier_quote_set_lines
+#: model:ir.model.fields,field_description:formulier_quote_set_lines.field_sale_line_config_wizard__xaa_aa_qty_hours
+msgid "Qnty hours"
+msgstr "Aantal uren"
+
+#. module: formulier_quote_set_lines
+#: model_terms:ir.ui.view,arch_db:formulier_quote_set_lines.view_order_form_inh
+msgid "Add lines"
+msgstr "Toevoegen regels"
+
+#. module: formulier_quote_set_lines
+#: model_terms:ir.ui.view,arch_db:formulier_quote_set_lines.view_sale_line_form
+msgid "Add"
+msgstr "Toevoegen"
+
+#. module: formulier_quote_set_lines
+#: model_terms:ir.ui.view,arch_db:formulier_quote_set_lines.view_sale_line_form
+msgid "Cancel"
+msgstr "Annuleren"
+
+#. module: formulier_quote_set_lines
+#: model:ir.model.fields.selection,name:formulier_quote_set_lines.selection__sale_line_config__xaa_aa_qty_hours__1
+msgid "1 Hours"
+msgstr "1 Uren"
+
+#. module: formulier_quote_set_lines
+#: model:ir.model.fields.selection,name:formulier_quote_set_lines.selection__sale_line_config__xaa_aa_qty_hours__2
+msgid "2 Hours"
+msgstr "2 Uren"
+
+#. module: formulier_quote_set_lines
+#: model:ir.model.fields.selection,name:formulier_quote_set_lines.selection__sale_line_config__xaa_aa_qty_hours__3
+msgid "3 Hours"
+msgstr "3 Uren"
+
+#. module: formulier_quote_set_lines
+#: model:ir.model.fields.selection,name:formulier_quote_set_lines.selection__sale_line_config__xaa_aa_qty_hours__4
+msgid "4 Hours"
+msgstr "4 Uren"
+
+#. module: formulier_quote_set_lines
+#: model:ir.model.fields.selection,name:formulier_quote_set_lines.selection__sale_line_config__xaa_aa_qty_hours__5
+msgid "5 Hours"
+msgstr "5 Uren"
+
+#. module: formulier_quote_set_lines
+#: model:ir.model.fields.selection,name:formulier_quote_set_lines.selection__sale_line_config__xaa_aa_qty_hours__6
+msgid "6 Hours"
+msgstr "6 Uren"
+
+#. module: formulier_quote_set_lines
+#: model:ir.model.fields.selection,name:formulier_quote_set_lines.selection__sale_line_config__xaa_aa_qty_hours__7
+msgid "7 Hours"
+msgstr "7 Uren"
+
+#. module: formulier_quote_set_lines
+#: model:ir.model.fields.selection,name:formulier_quote_set_lines.selection__sale_line_config__xaa_aa_qty_hours__8
+msgid "8 Hours"
+msgstr "8 Uren"
+
+#. module: formulier_quote_set_lines
+#: model:ir.model.fields.selection,name:formulier_quote_set_lines.selection__sale_line_config__xaa_aa_qty_hours__9
+msgid "9 Hours"
+msgstr "9 Uren"
+
+#. module: formulier_quote_set_lines
+#: model:ir.model.fields.selection,name:formulier_quote_set_lines.selection__sale_line_config__xaa_aa_qty_hours__10
+msgid "10 Hours"
+msgstr "10 Uren"
+
+#. module: formulier_quote_set_lines
+#: model:ir.model.fields.selection,name:formulier_quote_set_lines.selection__sale_line_config__xaa_aa_qty_hours__11
+msgid "11 Hours"
+msgstr "11 Uren"
+
+#. module: formulier_quote_set_lines
+#: model:ir.model.fields.selection,name:formulier_quote_set_lines.selection__sale_line_config__xaa_aa_qty_hours__12
+msgid "12 Hours"
+msgstr "12 Uren"
+
+#. module: formulier_quote_set_lines
+#: model:ir.model.fields.selection,name:formulier_quote_set_lines.selection__sale_line_config__xaa_aa_qty_hours__13
+msgid "13 Hours"
+msgstr "13 Uren"
+
+#. module: formulier_quote_set_lines
+#: model:ir.model.fields.selection,name:formulier_quote_set_lines.selection__sale_line_config__xaa_aa_qty_hours__14
+msgid "14 Hours"
+msgstr "14 Uren"
+
+#. module: formulier_quote_set_lines
+#: model:ir.model.fields.selection,name:formulier_quote_set_lines.selection__sale_line_config__xaa_aa_qty_hours__15
+msgid "15 Hours"
+msgstr "15 Uren"
+
+#. module: formulier_quote_set_lines
+#: model:ir.model.fields.selection,name:formulier_quote_set_lines.selection__sale_line_config__xaa_aa_qty_hours__16
+msgid "16 Hours"
+msgstr "16 Uren"
+
+#. module: formulier_quote_set_lines
+#: model:ir.model.fields.selection,name:formulier_quote_set_lines.selection__sale_line_config__xaa_aa_qty_hours__17
+msgid "17 Hours"
+msgstr "17 Uren"
+
+#. module: formulier_quote_set_lines
+#: model:ir.model.fields.selection,name:formulier_quote_set_lines.selection__sale_line_config__xaa_aa_qty_hours__18
+msgid "18 Hours"
+msgstr "18 Uren"
+
+#. module: formulier_quote_set_lines
+#: model:ir.model.fields.selection,name:formulier_quote_set_lines.selection__sale_line_config__xaa_aa_qty_hours__19
+msgid "19 Hours"
+msgstr "19 Uren"
+
+#. module: formulier_quote_set_lines
+#: model:ir.model.fields.selection,name:formulier_quote_set_lines.selection__sale_line_config__xaa_aa_qty_hours__20
+msgid "20 Hours"
+msgstr "20 Uren"
+
+#. module: formulier_quote_set_lines
+#: model:ir.model.fields.selection,name:formulier_quote_set_lines.selection__sale_line_config__xaa_aa_qty_hours__21
+msgid "21 Hours"
+msgstr "21 Uren"
+
+#. module: formulier_quote_set_lines
+#: model:ir.model.fields.selection,name:formulier_quote_set_lines.selection__sale_line_config__xaa_aa_qty_hours__22
+msgid "22 Hours"
+msgstr "22 Uren"
+
+#. module: formulier_quote_set_lines
+#: model:ir.model.fields.selection,name:formulier_quote_set_lines.selection__sale_line_config__xaa_aa_qty_hours__23
+msgid "23 Hours"
+msgstr "23 Uren"
+
+#. module: formulier_quote_set_lines
+#: model:ir.model.fields.selection,name:formulier_quote_set_lines.selection__sale_line_config__xaa_aa_qty_hours__24
+msgid "24 Hours"
+msgstr "24 Uren"
+
+#. module: formulier_quote_set_lines
+#: model:ir.model.fields.selection,name:formulier_quote_set_lines.selection__sale_line_config__xaa_aa_qty_hours__25
+msgid "25 Hours"
+msgstr "25 Uren"
+
+#. module: formulier_quote_set_lines
+#: model:ir.model.fields.selection,name:formulier_quote_set_lines.selection__sale_line_config__xaa_aa_qty_hours__26
+msgid "26 Hours"
+msgstr "26 Uren"
+
+#. module: formulier_quote_set_lines
+#: model:ir.model.fields.selection,name:formulier_quote_set_lines.selection__sale_line_config__xaa_aa_qty_hours__27
+msgid "27 Hours"
+msgstr "27 Uren"
+
+#. module: formulier_quote_set_lines
+#: model:ir.model.fields.selection,name:formulier_quote_set_lines.selection__sale_line_config__xaa_aa_qty_hours__28
+msgid "28 Hours"
+msgstr "28 Uren"
+
+#. module: formulier_quote_set_lines
+#: model:ir.model.fields.selection,name:formulier_quote_set_lines.selection__sale_line_config__xaa_aa_qty_hours__29
+msgid "29 Hours"
+msgstr "29 Uren"
+
+#. module: formulier_quote_set_lines
+#: model:ir.model.fields.selection,name:formulier_quote_set_lines.selection__sale_line_config__xaa_aa_qty_hours__30
+msgid "30 Hours"
+msgstr "30 Uren"
+
+#. module: formulier_quote_set_lines
+#: model:ir.model.fields.selection,name:formulier_quote_set_lines.selection__sale_line_config__xaa_aa_qty_hours__31
+msgid "31 Hours"
+msgstr "31 Uren"
+
+#. module: formulier_quote_set_lines
+#: model:ir.model.fields.selection,name:formulier_quote_set_lines.selection__sale_line_config__xaa_aa_qty_hours__32
+msgid "32 Hours"
+msgstr "32 Uren"
+
+#. module: formulier_quote_set_lines
+#: model:ir.model.fields.selection,name:formulier_quote_set_lines.selection__sale_line_config__xaa_aa_qty_hours__33
+msgid "33 Hours"
+msgstr "33 Uren"
+
+#. module: formulier_quote_set_lines
+#: model:ir.model.fields.selection,name:formulier_quote_set_lines.selection__sale_line_config__xaa_aa_qty_hours__34
+msgid "34 Hours"
+msgstr "34 Uren"
+
+#. module: formulier_quote_set_lines
+#: model:ir.model.fields.selection,name:formulier_quote_set_lines.selection__sale_line_config__xaa_aa_qty_hours__35
+msgid "35 Hours"
+msgstr "35 Uren"
+
+#. module: formulier_quote_set_lines
+#: model:ir.model.fields.selection,name:formulier_quote_set_lines.selection__sale_line_config__xaa_aa_qty_hours__36
+msgid "36 Hours"
+msgstr "36 Uren"
+
+#. module: formulier_quote_set_lines
+#: model:ir.model.fields.selection,name:formulier_quote_set_lines.selection__sale_line_config__xaa_aa_qty_hours__37
+msgid "37 Hours"
+msgstr "37 Uren"
+
+#. module: formulier_quote_set_lines
+#: model:ir.model.fields.selection,name:formulier_quote_set_lines.selection__sale_line_config__xaa_aa_qty_hours__38
+msgid "38 Hours"
+msgstr "38 Uren"
+
+#. module: formulier_quote_set_lines
+#: model:ir.model.fields.selection,name:formulier_quote_set_lines.selection__sale_line_config__xaa_aa_qty_hours__39
+msgid "39 Hours"
+msgstr "39 Uren"
+
+#. module: formulier_quote_set_lines
+#: model:ir.model.fields.selection,name:formulier_quote_set_lines.selection__sale_line_config__xaa_aa_qty_hours__41
+msgid "41 Hours"
+msgstr "41 Uren"
+
+#. module: formulier_quote_set_lines
+#: model:ir.model.fields.selection,name:formulier_quote_set_lines.selection__sale_line_config__xaa_aa_qty_hours__42
+msgid "42 Hours"
+msgstr "42 Uren"
+
+#. module: formulier_quote_set_lines
+#: model:ir.model.fields.selection,name:formulier_quote_set_lines.selection__sale_line_config__xaa_aa_qty_hours__43
+msgid "43 Hours"
+msgstr "43 Uren"
+
+#. module: formulier_quote_set_lines
+#: model:ir.model.fields.selection,name:formulier_quote_set_lines.selection__sale_line_config__xaa_aa_qty_hours__44
+msgid "44 Hours"
+msgstr "44 Uren"
+
+#. module: formulier_quote_set_lines
+#: model:ir.model.fields.selection,name:formulier_quote_set_lines.selection__sale_line_config__xaa_aa_qty_hours__45
+msgid "45 Hours"
+msgstr "45 Uren"
+
+#. module: formulier_quote_set_lines
+#: model:ir.model.fields.selection,name:formulier_quote_set_lines.selection__sale_line_config__xaa_aa_qty_hours__46
+msgid "46 Hours"
+msgstr "46 Uren"
+
+#. module: formulier_quote_set_lines
+#: model:ir.model.fields.selection,name:formulier_quote_set_lines.selection__sale_line_config__xaa_aa_qty_hours__47
+msgid "47 Hours"
+msgstr "47 Uren"
+
+#. module: formulier_quote_set_lines
+#: model:ir.model.fields.selection,name:formulier_quote_set_lines.selection__sale_line_config__xaa_aa_qty_hours__48
+msgid "48 Hours"
+msgstr "48 Uren"
+
+#. module: formulier_quote_set_lines
+#: model:ir.model.fields.selection,name:formulier_quote_set_lines.selection__sale_line_config__xaa_aa_qty_hours__49
+msgid "49 Hours"
+msgstr "49 Uren"
+
+#. module: formulier_quote_set_lines
+#: model:ir.model.fields.selection,name:formulier_quote_set_lines.selection__sale_line_config__xaa_aa_qty_hours__50
+msgid "50 Hours"
+msgstr "50 Uren"

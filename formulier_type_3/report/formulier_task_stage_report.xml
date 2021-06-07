@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="formulier_task_stage_report_inherit" 
+        inherit_id="project_formulier.formulier_task_stage_report">
+        <xpath expr="//div[hasclass('report_body')]" position="inside">
+            <style>
+                .o_display{
+                    display: inline-block !important;
+                }
+                .o_table_style{
+                    border-collapse: separate; 
+                    border-spacing: 0 15px;
+                }
+                .o_tr_lable{
+                    width: 200px;
+                    font-weight: bold;
+                }
+                .o_blank_tr{
+                    width:20px;
+                }
+                .o_tr_ans_text{
+                    border: 1px solid #1A8786 !important; 
+                    width:380px; 
+                    height: 24px; 
+                    margin-left: 30px; 
+                    padding: 3px;
+                }
+            </style>
+
+            <div t-if="o.xaa_aa_formulier_type=='formulier_three'">
+                <h2><center> <u>General</u></center></h2><br/>
+                <table class="o_table_style">
+                    <tbody>
+                        <tr>
+                            <td class="o_tr_lable text-right"><b>E-mail address</b></td>
+                            <td class="o_blank_tr">  </td>
+                            <td class="o_tr_ans_text"><span t-field="o.xaa_aa_email_address"/></td>
+                        </tr>
+                        <tr>
+                            <td class="o_tr_lable text-right">Vendor name of the system</td>
+                            <td class="o_blank_tr">  </td>
+                            <td class="o_tr_ans_text"><span t-field="o.xaa_aa_system_vendor_name"/></td>
+                        </tr>
+                        <tr>
+                            <td class="o_tr_lable text-right">Date of commencement of work</td>
+                            <td class="o_blank_tr">  </td>
+                            <td class="o_tr_ans_text"><span t-field="o.xaa_aa_commencement_work_date"/></td>
+                        </tr>
+                        <tr>
+                            <td class="o_tr_lable text-right">Delivery date</td>
+                            <td class="o_blank_tr">  </td>
+                            <td class="o_tr_ans_text"><span t-field="o.xaa_aa_delivery_date"/></td>
+                        </tr>
+                        <tr>
+                            <td class="o_tr_lable text-right">Mechanic Name 1</td>
+                            <td class="o_blank_tr">  </td>
+                            <td class="o_tr_ans_text"><span t-field="o.xaa_aa_mechanic_name_1"/></td>
+                        </tr>
+                        <tr>
+                            <td class="o_tr_lable text-right">Mechanic Name 2</td>
+                            <td class="o_blank_tr">  </td>
+                            <td class="o_tr_ans_text"><span t-field="o.xaa_aa_mechanic_name_2"/></td>
+                        </tr>
+                        <tr>
+                            <td class="o_tr_lable text-right">Mechanic Name 3</td>
+                            <td class="o_blank_tr">  </td>
+                            <td class="o_tr_ans_text"><span t-field="o.xaa_aa_mechanic_name_3"/></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <br/>
+                <br/>
+
+                <h2><center><u>Roofing</u></center></h2><br/><br/>
+
+                <table class="o_table_style">
+                    <tbody>
+                        <tr>
+                            <td class="o_tr_lable text-right">Have any damage already been detected at the start of the work?</td>
+                            <td class="o_blank_tr">  </td>
+                            <td class="o_tr_ans_text"><span t-field="o.xaa_aa_any_damage_detected_start"/></td>
+                        </tr>
+                        <tr>
+                            <td class="o_tr_lable text-right">Have the solar panels been installed in accordance with the roof plan?</td>
+                            <td class="o_blank_tr">  </td>
+                            <td class="o_tr_ans_text"><span t-field="o.xaa_aa_solar_panels_installed"/></td>
+                        </tr>
+                        <tr>
+                            <td class="o_tr_lable text-right">Have additional solar panels been installed?</td>
+                            <td class="o_blank_tr">  </td>
+                            <td class="o_tr_ans_text"><span t-field="o.xaa_aa_extra_solar_panels_installed"/></td>
+                        </tr>
+                        <tr>
+                            <td class="o_tr_lable text-right">Have all plugs from the waterline been installed?</td>
+                            <td class="o_blank_tr">  </td>
+                            <td class="o_tr_ans_text"><span t-field="o.xaa_aa_waterline_installed"/></td>
+                        </tr>
+                        <tr>
+                            <td class="o_tr_lable text-right">Are the plus and minus cables separated?</td>
+                            <td class="o_blank_tr">  </td>
+                            <td class="o_tr_ans_text"><span t-field="o.xaa_aa_cables_separated"/></td>
+                        </tr>
+                        <tr>
+                            <td class="o_tr_lable text-right">Have all pans been pushed back?</td>
+                            <td class="o_blank_tr">  </td>
+                            <td class="o_tr_ans_text"><span t-field="o.xaa_aa_pans_pushed"/></td>
+                        </tr>
+                        <tr>
+                            <td class="o_tr_lable text-right">Is the inspection by the representatives correct?</td>
+                            <td class="o_blank_tr">  </td>
+                            <td class="o_tr_ans_text"><span t-field="o.xaa_aa_is_representatives_inspection"/></td>
+                        </tr>
+                        <tr>
+                            <td class="o_tr_lable text-right">Does the roof plan fit?</td>
+                            <td class="o_blank_tr">  </td>
+                            <td class="o_tr_ans_text"><span t-field="o.xaa_aa_is_roof_plan_fit"/></td>
+                        </tr>
+                        <tr>
+                            <td class="o_tr_lable text-right">What panels have been installed?</td>
+                            <td class="o_blank_tr">  </td>
+                            <td class="o_tr_ans_text"><span t-field="o.xaa_aa_what_panel_installed"/></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <br/>
+                <br/>
+
+                <h2><center><u>Electric</u></center></h2><br/><br/>
+                <table class="o_table_style">
+                    <tbody>
+                        <tr>
+                            <td class="o_tr_lable text-right">Applied cable thickness of string cabling?</td>
+                            <td class="o_blank_tr">  </td>
+                            <td class="o_tr_ans_text"><span t-field="o.xaa_aa_cabling_length"/></td>
+                        </tr>
+                        <tr>
+                            <td class="o_tr_lable text-right">Length of the used string cabling?</td>
+                            <td class="o_blank_tr">  </td>
+                            <td class="o_tr_ans_text"><span t-field="o.xaa_aa_cable_thickness"/></td>
+                        </tr>
+                        <tr>
+                            <td class="o_tr_lable text-right">Length of the inverter wiring used -> meter box?</td>
+                            <td class="o_blank_tr">  </td>
+                            <td class="o_tr_ans_text"><span t-field="o.xaa_aa_inverter_length"/></td>
+                        </tr>
+                        <tr>
+                            <td class="o_tr_lable text-right">Applied cable thickness of the inverter -> meter box?</td>
+                            <td class="o_blank_tr">  </td>
+                            <td class="o_tr_ans_text"><span t-field="o.xaa_aa_inverter_cable_thickness"/></td>
+                        </tr>
+                        <tr>
+                            <td class="o_tr_lable text-right">What is the earth cable length?</td>
+                            <td class="o_blank_tr">  </td>
+                            <td class="o_tr_ans_text"><span t-field="o.xaa_aa_earthing_total_length"/></td>
+                        </tr>
+                        <tr>
+                            <td class="o_tr_lable text-right">Is the UTP cable connected correctly?</td>
+                            <td class="o_blank_tr">  </td>
+                            <td class="o_tr_ans_text"><span t-field="o.xaa_aa_is_utp_total_length"/></td>
+                        </tr>
+                        <tr>
+                            <td class="o_tr_lable text-right">What is the length of the UTP cable used?</td>
+                            <td class="o_blank_tr">  </td>
+                            <td class="o_tr_ans_text"><span t-field="o.xaa_aa_utp_total_length"/></td>
+                        </tr>
+                        <tr>
+                            <td class="o_tr_lable text-right">Measured string voltage - Value</td>
+                            <td class="o_blank_tr">  </td>
+                            <td class="o_tr_ans_text"><span t-field="o.xaa_aa_measured_voltage"/></td>
+                        </tr>
+                        <tr>
+                            <td class="o_tr_lable text-right">Measured String Voltage - Panels</td>
+                            <td class="o_blank_tr">  </td>
+                            <td class="o_tr_ans_text"><span t-field="o.xaa_aa_measured_panels_voltage"/></td>
+                        </tr>
+                        <tr>
+                            <td class="o_tr_lable text-right">Measured string voltage - Number of optimizers</td>
+                            <td class="o_blank_tr">  </td>
+                            <td class="o_tr_ans_text"><span t-field="o.xaa_aa_measured_optimizers_voltage"/></td>
+                        </tr>
+                        <tr>
+                            <td class="o_tr_lable text-right">Internet connection established via?</td>
+                            <td class="o_blank_tr">  </td>
+                            <td class="o_tr_ans_text"><span t-field="o.xaa_aa_internet_via"/></td>
+                        </tr>
+                        <tr>
+                            <td class="o_tr_lable text-right">Is the home installation still OK after installing the earth leakage circuit breaker?</td>
+                            <td class="o_blank_tr">  </td>
+                            <td class="o_tr_ans_text"><span t-field="o.xaa_aa_is_home_installation_ok"/></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <br/>
+                <br/>
+
+                <h2><center> Others </center></h2><br/><br/>
+
+                <table class="o_table_style">
+                    <tbody>
+                        <tr>
+                            <td class="o_tr_lable text-right">How many panels have been installed extra?</td>
+                            <td class="o_blank_tr">  </td>
+                            <td class="o_tr_ans_text"><span t-field="o.xaa_aa_extra_panels"/></td>
+                        </tr>
+                        <tr>
+                            <td class="o_tr_lable text-right">What damages have been detected or made during the installation process?</td>
+                            <td class="o_blank_tr">  </td>
+                            <td class="o_tr_ans_text"><span t-field="o.xaa_aa_installation_damages"/></td>
+                        </tr>
+                        <tr>
+                            <td class="o_tr_lable text-right">Other remarks</td>
+                            <td class="o_blank_tr">  </td>
+                            <td class="o_tr_ans_text"><span t-field="o.xaa_aa_other_remarks"/></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <br/>
+                <br/>
+
+                <h2><center><u>Closure to be completed by the customer </u></center></h2><br/><br/>
+
+                <table class="o_table_style">
+                    <tbody>
+                        <tr>
+                            <td class="o_tr_lable text-right">Did our engineers work safely with scaffolding or fall protection?</td>
+                            <td class="o_blank_tr">  </td>
+                            <td class="o_tr_ans_text"><span t-field="o.xaa_aa_is_engineers_work_safely"/></td>
+                        </tr>
+                        <tr>
+                            <td class="o_tr_lable text-right">Has the workplace been left clean?</td>
+                            <td class="o_blank_tr">  </td>
+                            <td class="o_tr_ans_text"><span t-field="o.xaa_aa_is_workplace_clean"/></td>
+                        </tr>
+                        <tr>
+                            <td class="o_tr_lable text-right">Have you received sufficient explanation during installation?</td>
+                            <td class="o_blank_tr">  </td>
+                            <td class="o_tr_ans_text"><span t-field="o.xaa_aa_is_sufficient_explanation"/></td>
+                        </tr>
+                        <tr>
+                            <td class="o_tr_lable text-right">Did you have an explanation when setting up the monitoring app?</td>
+                            <td class="o_blank_tr">  </td>
+                            <td class="o_tr_ans_text"><span t-field="o.xaa_aa_setting_explanation"/></td>
+                        </tr>
+                        <tr>
+                            <td class="o_tr_lable text-right">Do you have any comments for us?</td>
+                            <td class="o_blank_tr">  </td>
+                            <td class="o_tr_ans_text"><span t-field="o.xaa_aa_any_comments"/></td>
+                        </tr>
+                        <tr>
+                            <td class="o_tr_lable text-right">Can we use photos of your home as a reference on the internet?</td>
+                            <td class="o_blank_tr">  </td>
+                            <td class="o_tr_ans_text"><span t-field="o.xaa_aa_use_home_photos"/></td>
+                        </tr>
+                        <tr>
+                            <td class="o_tr_lable text-right">Do you have other customers who are also interested in our services?</td>
+                            <td class="o_blank_tr">  </td>
+                            <td class="o_tr_ans_text"><span t-field="o.xaa_aa_other_interested_customers"/></td>
+                        </tr>
+                        <tr>
+                            <td class="o_tr_lable text-right">order you receive a whopping € 100 application premium.</td>
+                            <td class="o_blank_tr">  </td>
+                            <td class="o_tr_ans_text"><span t-field="o.xaa_aa_receive_order"/></td>
+                        </tr>
+                        <tr>
+                            <td class="o_tr_lable text-right">Other discussed matters</td>
+                            <td class="o_blank_tr">  </td>
+                            <td class="o_tr_ans_text"><span t-field="o.xaa_aa_other_discussed"/></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <br/>
+                <br/>
+
+                <h2><center> Task Images</center></h2><br/><br/>
+                <div class="row o_display">
+                    <div class="row col-6 o_display" t-if="o.xaa_aa_cables_together_1">
+                        <strong class="col-6">Are the plus and minus cables together 1</strong>
+                        <img t-att-src="image_data_uri(o.xaa_aa_cables_together_1)" style="width: 300px;height: 150px;" alt="image"/>
+                    </div>
+                    <div class="col-6 o_display" t-if="o.xaa_aa_cables_together_3">
+                        <strong class="col-6">Are the plus and minus cables together 3</strong>
+                        <img t-att-src="image_data_uri(o.xaa_aa_cables_together_3)" style="width: 300px;height: 150px;" alt="image"/>
+                    </div>
+                </div>
+                <br/>
+                <br/>
+                <div class="row o_display">
+                    <div class="row col-6 o_display" t-if="o.xaa_aa_cables_together_2">
+                        <strong class="col-6">Are the plus and minus cables together 2</strong>
+                        <img t-att-src="image_data_uri(o.xaa_aa_cables_together_2)" style="width: 300px;height: 150px;" alt="image"/>
+                    </div>
+                    <div class="col-6 o_display" t-if="o.xaa_aa_photo_roof_2">
+                        <strong class="col-6">Overview photo roof 2</strong>
+                        <img t-att-src="image_data_uri(o.xaa_aa_photo_roof_2)" style="width: 300px;height: 150px;" alt="image"/>
+                    </div>
+                </div>
+                <br/>
+                <br/>
+                <div class="row o_display">
+                    <div class="row col-6 o_display" t-if="o.xaa_aa_photo_roof_1">
+                        <strong class="col-6">Overview photo roof 1</strong>
+                        <img t-att-src="image_data_uri(o.xaa_aa_photo_roof_1)" style="width: 300px;height: 150px;" alt="image"/>
+                    </div>
+                    <div class="col-6 o_display" t-if="o.xaa_aa_outlet_inverter_roof">
+                        <strong class="col-6">Photo roof outlet inverter -> roof</strong>
+                        <img t-att-src="image_data_uri(o.xaa_aa_outlet_inverter_roof)" style="width: 300px;height: 150px;" alt="image"/>
+                    </div>
+                </div>
+                <br/>
+                <br/>
+                <div class="row o_display">
+                    <div class="row col-6 o_display" t-if="o.xaa_aa_photo_roof_3">
+                        <strong class="col-6">Overview photo roof 3</strong>
+                        <img t-att-src="image_data_uri(o.xaa_aa_photo_roof_3)" style="width: 300px;height: 150px;" alt="image"/>
+                    </div>
+                    <div class="col-6 o_display" t-if="o.xaa_aa_photo_placement_inverter">
+                        <strong class="col-6">Overview photo placement inverter + work switch</strong>
+                        <img t-att-src="image_data_uri(o.xaa_aa_photo_placement_inverter)" style="width: 300px;height: 150px;" alt="image"/>
+                    </div>
+                </div>
+                <br/>
+                <br/>
+                <div class="row o_display">
+                    <div class="row col-6 o_display" t-if="o.xaa_aa_work_switch">
+                        <strong class="col-6">Photo opened work switch</strong>
+                        <img t-att-src="image_data_uri(o.xaa_aa_work_switch)" style="width: 300px;height: 150px;" alt="image"/>
+                    </div>
+                    <div class="col-6 o_display" t-if="o.xaa_aa_inverter_internet">
+                        <strong class="col-6">Photo display inverter internet</strong>
+                        <img t-att-src="image_data_uri(o.xaa_aa_inverter_internet)" style="width: 300px;height: 150px;" alt="image"/>
+                    </div>
+                </div>
+                <br/>
+                <br/>
+                <div class="row o_display" t-if="o.xaa_aa_inverter_in_operation">
+                    <div class="row col-6 o_display">
+                        <strong class="col-6">Photo display inverter in operation</strong>
+                        <img t-att-src="image_data_uri(o.xaa_aa_inverter_in_operation)" style="width: 300px;height: 150px;" alt="image"/>
+                    </div>
+                    <div class="col-6 o_display" t-if="o.xaa_aa_cupboard_closed">
+                        <strong class="col-6">Meter cupboard closed</strong>
+                        <img t-att-src="image_data_uri(o.xaa_aa_cupboard_closed)" style="width: 300px;height: 150px;" alt="image"/>
+                    </div>
+                </div>
+                <br/>
+                <br/>
+                <div class="row o_display" t-if="o.xaa_aa_cupboard_opened">
+                    <div class="row col-6 o_display">
+                        <strong class="col-6">Photo meter cupboard opened with automatic</strong>
+                        <img t-att-src="image_data_uri(o.xaa_aa_cupboard_opened)" style="width: 300px;height: 150px;" alt="image"/>
+                    </div>
+                    <div class="col-6 o_display" t-if="o.xaa_aa_optimizers_serial_number">
+                        <strong class="col-6">Photo serial numbers optimizers (Readable!)</strong>
+                        <img t-att-src="image_data_uri(o.xaa_aa_optimizers_serial_number)" style="width: 300px;height: 150px;" alt="image"/>
+                    </div>
+                </div>
+                <br/>
+                <br/>
+                <div class="row o_display" t-if="o.xaa_aa_inverter_serial_number">
+                    <strong class="col-6">Photo serial number inverter</strong>
+                    <img t-att-src="image_data_uri(o.xaa_aa_inverter_serial_number)" style="width: 300px;height: 150px;" alt="image"/>
+                </div>
+            </div>
+        </xpath>
+    </template>
+</odoo>

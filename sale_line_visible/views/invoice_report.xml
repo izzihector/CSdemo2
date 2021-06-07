@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <template id="report_invoice_document_inherit" inherit_id="account.report_invoice_document">
+            <xpath expr="//tbody[hasclass('invoice_tbody')]/t[@t-foreach='lines']" position="attributes">
+                <attribute name="t-foreach">lines.filtered(lambda line: not line.xaa_aa_invisible)</attribute>
+            </xpath>
+        </template>
+    </data>
+</odoo>

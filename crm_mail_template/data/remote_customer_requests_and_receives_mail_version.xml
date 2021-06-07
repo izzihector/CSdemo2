@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <!-- mail template Mail 1 - A - Remote customer requests and receives mail - version 1.0 for crm -->
+        <record id="mail_a_remote_customer_requests_and_receives_mail_template" model="mail.template">
+            <field name="name">Mail A - Remote customer requests and receives mail - version 1.0</field>
+            <field name="email_from">${(object.company_id.email or '')|safe}</field>
+            <field name="subject">Application for energy-saving measure Energie control NL</field>
+            <field name="email_to">${object.email_from|safe}</field>
+            <field name="model_id" ref="crm.model_crm_lead"/>
+            <field name="lang">${object.partner_id.lang}</field>
+            <field name="body_html"><![CDATA[
+                <p style="margin:0px 0px 9px 0px;">Dear sir/madam,</p>
+                <br/>
+                <p style="margin:0px 0px 9px 0px;"> 
+                    You have just made an offer for an energy-saving measure.
+                </p>
+                <p style="margin:0px 0px 9px 0px;">
+                    At Energie control NL we have been working on making the Netherlands more sustainable for more than 10 years. We are a company with 70 employees and multiple branches. We are proud to be able to complete thousands of projects every year.
+                </p>
+                <p style="margin:0px 0px 9px 0px;">
+                    We understand that every application is unique and therefore requires a unique approach;</br>U kunt bij ons kiezen hoe u het liefst uw offerte ontvangt!
+                </p>
+                <p style="margin:0px 0px 9px 0px;">
+                    With the button below you can compose your own quotation; if you answer a few simple questions in 3 minutes, we can immediately provide you with a suitable offer with an extensive price specification per product.
+                </p>
+                <p style="margin:0px 0px 9px 0px;">
+                    Do you prefer to contact one of our advisors by phone or video call? That is possible: they are happy to help you! In this conversation, one of our advisers explains the possibilities for you. You can schedule this call yourself using the “I would like a telephone / video advice” button below so that you know exactly when and how you will be called!
+                </p><br/>
+                <p style="margin:0px 0px 9px 0px;"><a href="/crm/stage/${object.id}/pf_website_quote_sent" style="background-color: #1abc9c; padding: 15px; text-decoration: none; color: #fff; border-radius: 5px; font-size: 13px;" class="o_default_snippet_text">Make your quote</a></p><br/><br/>
+                <p style="margin:0px 0px 9px 0px;"><a href="/book/calendar/3/${object.id}" style="background-color: #1abc9c; padding: 15px; text-decoration: none; color: #fff; border-radius: 5px; font-size: 13px;" class="o_default_snippet_text">I would like a telephone / video consultation</a></p>
+                <br/>
+                <p style="margin:0px 0px 9px 0px;">
+                    Customers rate us with an average of 8.5!<br/>
+                    <a href="https://www.klantenvertellen.nl/reviews/1038837/energie_control" style="padding: 20px; font-size: 14px;" class="o_default_snippet_text" target="_blank">Tell customers image + tell customers link</a>
+                </p>
+                <p style="margin:0px 0px 9px 0px;">
+                    Energie control NL is the specialist in energy-saving measures:<br/>
+                            = Solar panels  &nbsp;&nbsp;&nbsp;&nbsp;= Asbestos remediation<br/>
+                            = Cavity wall insulation &nbsp;&nbsp;&nbsp;&nbsp;= Roof renovation<br/>
+                            = Floor insulation &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;= Charging stations<br/>
+                            = Roof insulation &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;= Heat pumps<br/>
+                </p>
+                <p style="margin:0px 0px 9px 0px;">
+                    We sincerely hope to get in touch with you and look forward to a cooperation!
+                </p>
+                <br/>
+                <p style="margin:0px 0px 9px 0px;">
+                    With best regards,<br/>
+                    <img src="/crm_mail_template/static/src/img/company_logo.png" style="width:100px;height:100px;"/><br/>
+                    Team Energiecontrol NL<br/>
+                     <a href="https://www.facebook.com/energiecontrolnl/" target="_blank">
+                        <img src="/crm_mail_template/static/src/img/facebook.jpeg" style="width:30px;height:30px;"/>
+                    </a>
+                    <a href="https://www.instagram.com/energiecontrolnl/" target="_blank">
+                        <img src="/crm_mail_template/static/src/img/instagram.jpeg" style="width:30px;height:30px;"/>
+                    </a>
+                    <br/>
+                    <br/>
+                    <img src="/crm_mail_template/static/src/img/image_1.jpeg" style="width:200px;height:200px;"/>
+                    <img src="/crm_mail_template/static/src/img/image_2.JPG" style="width:200px;height:200px;"/>
+                    <img src="/crm_mail_template/static/src/img/image_3.jpg" style="width:200px;height:200px;"/>
+                </p>
+                ]]>
+            </field>
+        </record>
+    </data>
+</odoo>

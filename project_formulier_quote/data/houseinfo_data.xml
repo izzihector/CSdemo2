@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+        <!-- Sequences for sale.order -->
+        <record id="house_info_1" model="house.info">
+            <field name="xaa_aa_house_type">vrijstaand</field>
+            <field name="xaa_aa_house_image" type="base64" file="project_formulier_quote/static/src/images/Vrijstaand.png"/>
+        </record>
+        <record id="house_info_2" model="house.info">
+            <field name="xaa_aa_house_type">twee-onder-een-kap</field>
+            <field name="xaa_aa_house_image" type="base64" file="project_formulier_quote/static/src/images/Twee-onder-een-kap.png"/>
+        </record>
+        <record id="house_info_3" model="house.info">
+            <field name="xaa_aa_house_type">rijtjeshuis</field>
+            <field name="xaa_aa_house_image" type="base64" file="project_formulier_quote/static/src/images/Rijtjeshuis.png"/>
+        </record>
+    </data>
+</odoo>

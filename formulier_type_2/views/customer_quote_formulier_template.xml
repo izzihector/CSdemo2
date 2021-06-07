@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="customer_quote_formulier" inherit_id="project_formulier_quote.customer_quote_formulier">
+        <xpath expr="." position="inside">
+            <t t-if="formulier_id.xaa_aa_formulier_type == 'formulier_two'">
+                <t t-call="website.layout">
+                    <div class="custom_banner">
+                        <div class="container">
+                            <!-- solar_pannel.jpeg -->
+                            <div class="row">
+                                <form t-attf-action="/customer/iso/quote/create" method="POST" data-model_name="question.formulier" class=" s_website_form form-horizontal form_style"  enctype="multipart/form-data">
+                                    <span class="montserrat-extrabold_32">Make your quotation for cavity wall insulation</span>
+                                    <div id="exTab1" class="container quote_tabs">
+                                        <ul class="nav nav-pills mt32">
+                                            <li class="active quote_tabs_li" id="construction_year_tab">
+                                                <a  href="#tab_construction_form" class="a_after" data-toggle="tab">
+                                                    <span>1 </span><span class="menu_span">Construction year</span>
+                                                </a>
+                                            </li>
+                                            <li class="quote_tabs_li" id="cavity_thickness_tab">
+                                                <a href="#tab_cavity_thickness_form" class="a_after" data-toggle="tab">
+                                                    <span>2 </span><span class="menu_span">Cavity thickness</span>
+                                                </a>
+                                            </li>
+                                            <li class="quote_tabs_li" id="home_tab">
+                                                <a href="#tab_home_form" class="a_after" data-toggle="tab">
+                                                    <span>3 </span><span class="menu_span">Home</span>
+                                                </a>
+                                            </li>
+                                            <li class="quote_tabs_li" id="extension_tab">
+                                                <a href="#tab_extension_form" class="a_after" data-toggle="tab">
+                                                    <span>4 </span><span class="menu_span">Extension</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                        <div class="tab-content clearfix web_tab_1">
+                                            <div class="tab-pane active" id="tab_construction_form">
+                                                <t t-call="formulier_type_2.customer_quote_formulier_construction_year"/>
+                                            </div>
+                                            <div class="tab-pane" id="tab_cavity_thickness_form">
+                                                <t t-call="formulier_type_2.customer_quote_formulier_cavity_thickness"/>
+                                            </div>
+                                            <div class="tab-pane" id="tab_home_form">
+                                                <t t-call="formulier_type_2.customer_quote_formulier_home"/>
+                                            </div>
+                                            <div class="tab-pane" id="tab_extension_form">
+                                                <t t-call="formulier_type_2.customer_quote_formulier_extension"/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </t>
+            </t>
+        </xpath>
+    </template>
+</odoo>

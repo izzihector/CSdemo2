@@ -1,0 +1,23 @@
+<template>
+    <t t-extend="Calendar.attendee.status.popover">
+        <t t-jquery=".card-footer" t-operation="replace">
+        </t>
+        <t t-jquery=".o_cw_body" t-operation="prepend">
+            <div class="card-footer border-top">
+                <a t-if="widget.isEventEditable()" href="#" class="btn btn-primary o_cw_popover_edit">Edit</a>
+                <a t-if="widget.isEventDeletable()" href="#" class="btn btn-secondary o_cw_popover_delete ml-2">Delete</a>
+                <a t-if="widget.xaa_aa_phone" t-att-href="'tel:'+widget.xaa_aa_phone" class="btn btn-primary">Call</a>
+                <div t-if="widget.isCurrentPartnerAttendee()" class="btn-group o-calendar-attendee-status ml-2">
+                    <a href="#" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i t-attf-class="fa fa-circle o-calendar-attendee-status-icon #{widget.selectedStatusInfo.color}"/> <span class="o-calendar-attendee-status-text" t-esc="widget.selectedStatusInfo.text"></span>
+                    </a>
+                    <div class="dropdown-menu overflow-hidden">
+                        <a class="dropdown-item" href="#" data-action="accepted"><i class="fa fa-circle text-success"/> Accept</a>
+                        <a class="dropdown-item" href="#" data-action="declined"><i class="fa fa-circle text-danger"/> Decline</a>
+                        <a class="dropdown-item" href="#" data-action="tentative"><i class="fa fa-circle text-muted"/> Uncertain</a>
+                    </div>
+                </div>
+            </div>
+        </t>
+    </t>
+</template>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+
+        <record id="view_opportunity_map" model="ir.ui.view">
+            <field name="name">view.opportunity.map</field>
+            <field name="model">crm.lead</field>
+            <field name="arch" type="xml">
+                <map res_partner="partner_id" routing="true">
+                    <field name="xaa_aa_lead_category" string="Aanvraag soort"/>
+                    <field name="partner_id" string="Klant"/>
+                    <field name="xaa_aa_lead_marker_color" string="Color"/>
+                </map>
+            </field>
+        </record>
+
+        <record id="action_crm_lead_map_for_opportunity" model="ir.actions.act_window">
+            <field name="name">Opportunity Map</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="view_mode">map,form</field>
+            <field name="res_model">crm.lead</field>
+            <field name="domain">[('xaa_aa_in_valid_stage', '=', True)]</field>
+            <field name="context">{'is_hide_pager': True}</field>
+            <field name="view_id" ref="opportunity_google_map.view_opportunity_map"/>
+	    <field name="limit">0</field>
+        </record>
+
+        <menuitem id="crm_lead_menu_opportunity" parent="crm.crm_menu_sales" sequence="10" action="action_crm_lead_map_for_opportunity"/>
+
+        <record id="crm.crm_lead_action_pipeline" model="ir.actions.act_window">
+            <field name="view_mode">kanban,tree,graph,pivot,form,calendar,activity,map</field>
+        </record>
+
+    </data>
+</odoo>

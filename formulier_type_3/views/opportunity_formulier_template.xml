@@ -1,0 +1,1004 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="project_formulier_image" inherit_id="project_formulier.project_formulier_image">
+        <xpath expr="." position="inside">
+            <t t-if="formulier_id.xaa_aa_formulier_type == 'formulier_three'">
+                <div class="form-group row form-field" id="formulier_3_form">
+                    <input type="file" name="xaa_aa_house_three" class="hide_input_image form-control o_website_form_input"/>
+                    <input type="file" name="xaa_aa_access_three" class="hide_input_image form-control o_website_form_input"/>
+                    <input type="file" name="xaa_aa_parking_spot_three" class="hide_input_image form-control o_website_form_input"/>
+                    <input type="file" name="xaa_aa_obstacles_three" class="hide_input_image form-control o_website_form_input"/>
+                    <input type="file" name="xaa_aa_scaffolding_site" class="hide_input_image form-control o_website_form_input"/>
+                    <input type="file" name="xaa_aa_roof1_three" class="hide_input_image form-control o_website_form_input"/>
+                    <input type="file" name="xaa_aa_roof_2" class="hide_input_image form-control o_website_form_input"/>
+                    <input type="file" name="xaa_aa_roof_3" class="hide_input_image form-control o_website_form_input"/>
+                    <input type="file" name="xaa_aa_meter_cupboard_1" class="hide_input_image form-control o_website_form_input"/>
+                    <input type="file" name="xaa_aa_meter_cupboard_2" class="hide_input_image form-control o_website_form_input"/>
+                    <input type="file" name="xaa_aa_place_inverter_comes" class="hide_input_image form-control o_website_form_input"/>
+                    <input type="file" name="xaa_aa_cable_gradient_panels_inverter" class="hide_input_image form-control o_website_form_input"/>
+                    <input type="file" name="xaa_aa_cable_converter_converter_meter" class="hide_input_image form-control o_website_form_input"/>
+                    <input type="file" name="xaa_aa_roof_plan" class="hide_input_image form-control o_website_form_input"/>
+                    <input type="file" name="xaa_aa_drawing_field_hand" class="hide_input_image form-control o_website_form_input"/>
+                    <div class="col-lg-3 col-md-3 col-sm-3 custom-text">
+                        <h5>House / Property</h5>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-3">
+                        <button aria-label="Edit" class="fa fa-pencil pull-right fa-lg edit_button" title="Edit" ></button>
+                        <img class="img img-fluid" id="xaa_aa_house_three" t-attf-src="/web/image/question.formulier/{{formulier_id.id}}/xaa_aa_house_three"/>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-3 custom-text">
+                        <h5>Access</h5>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-3">
+                        <button aria-label="Edit" class="fa fa-pencil pull-right fa-lg edit_button" title="Edit" ></button>
+                        <img class="img img-fluid" id='xaa_aa_access_three' t-attf-src="/web/image/question.formulier/{{formulier_id.id}}/xaa_aa_access_three"/>
+                    </div>
+                </div>
+                <div class="form-group row form-field">
+                    <div class="col-lg-3 col-md-3 col-sm-3 custom-text">
+                        <h5>Parking spot</h5>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-3">
+                        <button aria-label="Edit" class="fa fa-pencil pull-right fa-lg edit_button" title="Edit" ></button>
+                        <img class="img img-fluid" id="xaa_aa_parking_spot_three" t-attf-src="/web/image/question.formulier/{{formulier_id.id}}/xaa_aa_parking_spot_three"/>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-3 custom-text">
+                        <h5>Obstacles</h5>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-3">
+                        <button aria-label="Edit" class="fa fa-pencil pull-right fa-lg edit_button" title="Edit" ></button>
+                        <img class="img img-fluid" id="xaa_aa_obstacles_three" t-attf-src="/web/image/question.formulier/{{formulier_id.id}}/xaa_aa_obstacles_three"/>
+                    </div>
+                </div>
+                <div class="form-group row form-field">
+                    <div class="col-lg-3 col-md-3 col-sm-3 custom-text">
+                        <h5>Roof 1</h5>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-3">
+                        <button aria-label="Edit" class="fa fa-pencil pull-right fa-lg edit_button" title="Edit" ></button>
+                        <img class="img img-fluid" id="xaa_aa_roof1_three" t-attf-src="/web/image/question.formulier/{{formulier_id.id}}/xaa_aa_roof1_three"/>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-3 custom-text">
+                        <h5>Roof 2</h5>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-3">
+                        <button aria-label="Edit" class="fa fa-pencil pull-right fa-lg edit_button" title="Edit" ></button>
+                        <img class="img img-fluid" id="xaa_aa_roof_2" t-attf-src="/web/image/question.formulier/{{formulier_id.id}}/xaa_aa_roof_2"/>
+                    </div>
+                </div>
+                <div class="form-group row form-field">
+                    <div class="col-lg-3 col-md-3 col-sm-3 custom-text">
+                        <h5>Roof 3</h5>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-3">
+                        <button aria-label="Edit" class="fa fa-pencil pull-right fa-lg edit_button" title="Edit" ></button>
+                        <img class="img img-fluid" id="xaa_aa_roof_3" t-attf-src="/web/image/question.formulier/{{formulier_id.id}}/xaa_aa_roof_3"/>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-3 custom-text">
+                        <h5>Scaffolding site</h5>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-3">
+                        <button aria-label="Edit" class="fa fa-pencil pull-right fa-lg edit_button" title="Edit" ></button>
+                        <img class="img img-fluid" id="xaa_aa_scaffolding_site" t-attf-src="/web/image/question.formulier/{{formulier_id.id}}/xaa_aa_scaffolding_site"/>
+                    </div>
+                </div>
+                <div class="form-group row form-field">
+                    <div class="col-lg-3 col-md-3 col-sm-3 custom-text">
+                        <h5>Meter cupboard 1</h5>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-3">
+                        <button aria-label="Edit" class="fa fa-pencil pull-right fa-lg edit_button" title="Edit" ></button>
+                        <img class="img img-fluid" id="xaa_aa_meter_cupboard_1" t-attf-src="/web/image/question.formulier/{{formulier_id.id}}/xaa_aa_meter_cupboard_1"/>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-3 custom-text">
+                        <h5>Meter cupboard 2</h5>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-3">
+                        <button aria-label="Edit" class="fa fa-pencil pull-right fa-lg edit_button" title="Edit" ></button>
+                        <img class="img img-fluid" id="xaa_aa_meter_cupboard_2" t-attf-src="/web/image/question.formulier/{{formulier_id.id}}/xaa_aa_meter_cupboard_2"/>
+                    </div>
+                </div>
+                <div class="form-group row form-field">
+                    <div class="col-lg-3 col-md-3 col-sm-3 custom-text">
+                        <h5>Place where the inverter comes</h5>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-3">
+                        <button aria-label="Edit" class="fa fa-pencil pull-right fa-lg edit_button" title="Edit" ></button>
+                        <img class="img img-fluid" id="xaa_aa_place_inverter_comes" t-attf-src="/web/image/question.formulier/{{formulier_id.id}}/xaa_aa_place_inverter_comes"/>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-3 custom-text">
+                        <h5>Cable gradient panels -> inverter</h5>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-3">
+                        <button aria-label="Edit" class="fa fa-pencil pull-right fa-lg edit_button" title="Edit" ></button>
+                        <img class="img img-fluid" id="xaa_aa_cable_gradient_panels_inverter" t-attf-src="/web/image/question.formulier/{{formulier_id.id}}/xaa_aa_cable_gradient_panels_inverter"/>
+                    </div>
+                </div>
+                <div class="form-group row form-field">
+                    <div class="col-lg-3 col-md-3 col-sm-3 custom-text">
+                        <h5>Cable converter converter -> meter box</h5>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-3">
+                        <button aria-label="Edit" class="fa fa-pencil pull-right fa-lg edit_button" title="Edit" ></button>
+                        <img class="img img-fluid" id="xaa_aa_cable_converter_converter_meter" t-attf-src="/web/image/question.formulier/{{formulier_id.id}}/xaa_aa_cable_converter_converter_meter"/>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-3 custom-text">
+                        <h5>Something special: Roof plan</h5>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-3">
+                        <button aria-label="Edit" class="fa fa-pencil pull-right fa-lg edit_button" title="Edit" ></button>
+                        <img class="img img-fluid" id="xaa_aa_roof_plan" t-attf-src="/web/image/question.formulier/{{formulier_id.id}}/xaa_aa_roof_plan"/>
+                    </div>
+                </div>
+                <div class="form-group row form-field">
+                    <div class="col-lg-3 col-md-3 col-sm-3 custom-text">
+                        <h5>A drawing field where you with your hand</h5>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-3">
+                        <button aria-label="Edit" class="fa fa-pencil pull-right fa-lg edit_button" title="Edit" ></button>
+                        <img class="img img-fluid" id="xaa_aa_drawing_field_hand" t-attf-src="/web/image/question.formulier/{{formulier_id.id}}/xaa_aa_drawing_field_hand"/>
+                    </div>
+                </div>
+            </t>
+        </xpath>
+    </template>
+    <template id="opportunity_formulier_template" inherit_id="project_formulier.opportunity_formulier_template">
+        <xpath expr="." position="inside">
+            <t t-if="formulier_id.xaa_aa_formulier_type == 'formulier_three'">
+                <div class="text-center text-primary">
+                    <h3><u>Design questions</u></h3>
+                </div>
+                <div class="form-group row form-field">
+                    <div class="col-lg-3 col-md-4 col-sm-4 custom-text">
+                        <label class="col-form-label" for="xaa_aa_roof_surface">How many roof surfaces</label>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6">
+                        <div>
+                            <select name="xaa_aa_roof_surface" class="form-control">
+                                <option></option>
+                                <option value='1' t-att-selected="formulier_id.xaa_aa_roof_surface == '1'">
+                                    1
+                                </option>
+                                <option value='2' t-att-selected="formulier_id.xaa_aa_roof_surface == '2'">
+                                    2
+                                </option>
+                                <option value='3' t-att-selected="formulier_id.xaa_aa_roof_surface == '3'">
+                                    3
+                                </option>
+                                <option value='4' t-att-selected="formulier_id.xaa_aa_roof_surface == '4'">
+                                    4
+                                </option>
+                                <option value='meer dan 4' t-att-selected="formulier_id.xaa_aa_roof_surface == 'meer dan 4'">
+                                    meer dan 4
+                                </option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="text-center text-primary">
+                    <h3><u>Home</u></h3>
+                </div>
+                <div class="form-group row form-field">
+                    <div class="col-lg-3 col-md-4 col-sm-4 custom-text">
+                        <label class="col-form-label" for="xaa_aa_is_permit_required">Is a permit required</label>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6">
+                        <div>
+                            <select name="xaa_aa_is_permit_required" class="form-control">
+                                <option></option>
+                                <option value='ja' t-att-selected="formulier_id.xaa_aa_is_permit_required == 'ja'">
+                                    ja
+                                </option>
+                                <option value='nee' t-att-selected="formulier_id.xaa_aa_is_permit_required == 'nee'">
+                                    nee
+                                </option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group row form-field">
+                    <div class="col-lg-3 col-md-4 col-sm-4 custom-text">
+                        <label class="col-form-label" for="xaa_aa_construction_year">Year of construction of the house</label>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6">
+                        <input type="number" name="xaa_aa_construction_year" class="form-control" t-att-value="formulier_id.xaa_aa_construction_year"/>
+                    </div>
+                </div>
+                <div class="form-group row form-field">
+                    <div class="col-lg-3 col-md-4 col-sm-4 custom-text">
+                        <label class="col-form-label" for="xaa_aa_any_roof_problem">Have you ever had any leaks or other problems with your roof?</label>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6">
+                        <div>
+                            <select name="xaa_aa_any_roof_problem" class="form-control">
+                                <option></option>
+                                <option value='ja' t-att-selected="formulier_id.xaa_aa_any_roof_problem == 'ja'">
+                                    ja
+                                </option>
+                                <option value='nee' t-att-selected="formulier_id.xaa_aa_any_roof_problem == 'nee'">
+                                    nee
+                                </option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group row form-field">
+                    <div class="col-lg-3 col-md-4 col-sm-4 custom-text">
+                        <label class="col-form-label" for="xaa_aa_is_buy_rent_property">Is it a rent or buy property?</label>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6">
+                        <div>
+                            <select name="xaa_aa_is_buy_rent_property" class="form-control">
+                                <option></option>
+                                <option value='koop' t-att-selected="formulier_id.xaa_aa_is_buy_rent_property == 'koop'">
+                                    koop
+                                </option>
+                                <option value='huur' t-att-selected="formulier_id.xaa_aa_is_buy_rent_property == 'huur'">
+                                    huur
+                                </option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="text-center text-primary">
+                    <h3><u>Connecting the inverter</u></h3>
+                </div>
+                <div class="form-group row form-field">
+                    <div class="col-lg-3 col-md-4 col-sm-4 custom-text">
+                        <label class="col-form-label" for="xaa_aa_string_1">String 1 (Note: always 6 panels or more in 1 string)</label>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6">
+                        <input type="number" name="xaa_aa_string_1" class="form-control" t-att-value="formulier_id.xaa_aa_string_1"/>
+                    </div>
+                </div>
+                <div class="form-group row form-field">
+                    <div class="col-lg-3 col-md-4 col-sm-4 custom-text">
+                        <label class="col-form-label" for="xaa_aa_string_2">String 2 (Note: always 6 panels or more in 1 string)</label>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6">
+                        <input type="number" name="xaa_aa_string_2" class="form-control" t-att-value="formulier_id.xaa_aa_string_2"/>
+                    </div>
+                </div>
+
+                <div class="text-center text-primary">
+                    <h3><u>Accessibility of the home and the roof</u></h3>
+                </div>
+                <div class="form-group row form-field">
+                    <div class="col-lg-3 col-md-4 col-sm-4 custom-text">
+                        <label class="col-form-label" for="xaa_aa_is_free_space_scaffolding">Is there a free space for scaffolding?</label>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6">
+                        <div>
+                            <select name="xaa_aa_is_free_space_scaffolding" class="form-control">
+                                <option></option>
+                                <option value='ja' t-att-selected="formulier_id.xaa_aa_is_free_space_scaffolding == 'ja'">
+                                    ja
+                                </option>
+                                <option value='nee' t-att-selected="formulier_id.xaa_aa_is_free_space_scaffolding == 'nee'">
+                                    nee
+                                </option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group row form-field">
+                    <div class="col-lg-3 col-md-4 col-sm-4 custom-text">
+                        <label class="col-form-label" for="xaa_aa_is_provision_required">Is a special provision required (telehandler / lift / aerial platform)</label>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6">
+                        <div>
+                            <select name="xaa_aa_is_provision_required" class="form-control">
+                                <option></option>
+                                <option value='ja' t-att-selected="formulier_id.xaa_aa_is_provision_required == 'ja'">
+                                    ja
+                                </option>
+                                <option value='nee' t-att-selected="formulier_id.xaa_aa_is_provision_required == 'nee'">
+                                    nee
+                                </option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group row form-field">
+                    <div class="col-lg-3 col-md-4 col-sm-4 custom-text">
+                        <label class="col-form-label" for="xaa_aa_condition_scaffolding_place">What is the condition of the surface on which the scaffolding is placed?</label>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6">
+                        <div>
+                            <select name="xaa_aa_condition_scaffolding_place" class="form-control">
+                                <option></option>
+                                <option value='Gras' t-att-selected="formulier_id.xaa_aa_condition_scaffolding_place == 'Gras'">
+                                    Gras
+                                </option>
+                                <option value='Tuin' t-att-selected="formulier_id.xaa_aa_condition_scaffolding_place == 'Tuin'">
+                                    Tuin
+                                </option>
+                                <option value='Zand' t-att-selected="formulier_id.xaa_aa_condition_scaffolding_place == 'Zand'">
+                                    Zand
+                                </option>
+                                <option value='Straat' t-att-selected="formulier_id.xaa_aa_condition_scaffolding_place == 'nee'">
+                                    Straat
+                                </option>
+                                <option value='Geen steiger te plaatsen' t-att-selected="formulier_id.xaa_aa_condition_scaffolding_place == 'Geen steiger te plaatsen'">
+                                    Geen steiger te plaatsen
+                                </option>
+                                <option value='Geen steiger nodig' t-att-selected="formulier_id.xaa_aa_condition_scaffolding_place == 'Geen steiger nodig'">
+                                    Geen steiger nodig
+                                </option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group row form-field">
+                    <div class="col-lg-3 col-md-4 col-sm-4 custom-text">
+                        <label class="col-form-label" for="xaa_aa_accessibility_rear">What is the accessibility of the rear</label>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6">
+                        <div>
+                            <select name="xaa_aa_accessibility_rear" class="form-control">
+                                <option></option>
+                                <option value='Brandgang' t-att-selected="formulier_id.xaa_aa_accessibility_rear == 'Brandgang'">
+                                    Brandgang
+                                </option>
+                                <option value='Door de garage' t-att-selected="formulier_id.xaa_aa_accessibility_rear == 'Door de garage'">
+                                    Door de garage
+                                </option>
+                                <option value='Vrije rondgang' t-att-selected="formulier_id.xaa_aa_accessibility_rear == 'Vrije rondgang'">
+                                    Vrije rondgang
+                                </option>
+                                <option value='Door de woning' t-att-selected="formulier_id.xaa_aa_accessibility_rear == 'Door de woning'">
+                                    Door de woning
+                                </option>
+                                <option value='N.V.T.' t-att-selected="formulier_id.xaa_aa_accessibility_rear == 'N.V.T.'">
+                                    N.V.T.
+                                </option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group row form-field">
+                    <div class="col-lg-3 col-md-4 col-sm-4 custom-text">
+                        <label class="col-form-label" for="xaa_aa_use_public_road">Use must be made of the public road for the erection of scaffolding or facilities</label>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6">
+                        <div>
+                            <select name="xaa_aa_use_public_road" class="form-control">
+                                <option></option>
+                                <option value='ja' t-att-selected="formulier_id.xaa_aa_use_public_road == 'ja'">
+                                    ja
+                                </option>
+                                <option value='nee' t-att-selected="formulier_id.xaa_aa_use_public_road == 'nee'">
+                                    nee
+                                </option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group row form-field">
+                    <div class="col-lg-3 col-md-4 col-sm-4 custom-text">
+                        <label class="col-form-label" for="xaa_aa_access_roof_neighbors">Access to the roof / territory of the neighbors is required</label>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6">
+                        <div>
+                            <select name="xaa_aa_access_roof_neighbors" class="form-control">
+                                <option></option>
+                                <option value='Nee' t-att-selected="formulier_id.xaa_aa_access_roof_neighbors == 'Nee'">
+                                    Nee
+                                </option>
+                                <option value='Ja er is toestemming' t-att-selected="formulier_id.xaa_aa_access_roof_neighbors == 'Ja er is toestemming'">
+                                    Ja er is toestemming
+                                </option>
+                                <option value='Ja maar er is nog geen toestemming' t-att-selected="formulier_id.xaa_aa_access_roof_neighbors == 'Ja maar er is nog geen toestemming'">
+                                    Ja maar er is nog geen toestemming
+                                </option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group row form-field">
+                    <div class="col-lg-3 col-md-4 col-sm-4 custom-text">
+                        <label class="col-form-label" for="xaa_aa_distance_bus_to_roof">Walking distance from bus to roof access</label>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6">
+                        <div>
+                            <select name="xaa_aa_distance_bus_to_roof" class="form-control">
+                                <option></option>
+                                <option value='0-10' t-att-selected="formulier_id.xaa_aa_distance_bus_to_roof == '0-10'">
+                                    0-10
+                                </option>
+                                <option value='10-25' t-att-selected="formulier_id.xaa_aa_distance_bus_to_roof == '10-25'">
+                                    10-25
+                                </option>
+                                <option value='25-50' t-att-selected="formulier_id.xaa_aa_distance_bus_to_roof == '25-50'">
+                                    25-50
+                                </option>
+                                <option value='50-100' t-att-selected="formulier_id.xaa_aa_distance_bus_to_roof == '50-100'">
+                                    50-100
+                                </option>
+                                <option value='100-250' t-att-selected="formulier_id.xaa_aa_distance_bus_to_roof == '100-250'">
+                                    100-250
+                                </option>
+                                <option value='250-500' t-att-selected="formulier_id.xaa_aa_distance_bus_to_roof == '250-500'">
+                                    250-500
+                                </option>
+                                <option value='500+' t-att-selected="formulier_id.xaa_aa_distance_bus_to_roof == '500+'">
+                                    500+
+                                </option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group row form-field">
+                    <div class="col-lg-3 col-md-4 col-sm-4 custom-text">
+                        <label class="col-form-label" for="xaa_aa_direct_installation_scaffolding">Is there an extension / obstacle present that hinders the direct installation of scaffolding or roof lift?</label>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6">
+                        <div>
+                            <select name="xaa_aa_direct_installation_scaffolding" class="form-control">
+                                <option></option>
+                                <option value='ja' t-att-selected="formulier_id.xaa_aa_direct_installation_scaffolding == 'ja'">
+                                    ja
+                                </option>
+                                <option value='nee' t-att-selected="formulier_id.xaa_aa_direct_installation_scaffolding == 'nee'">
+                                    nee
+                                </option>
+                                <option value='Ja, zie foto/video' t-att-selected="formulier_id.xaa_aa_direct_installation_scaffolding == 'Ja, zie foto/video'">
+                                    Ja, zie foto/video
+                                </option>
+                                <option value='Ja, klant zorgt voor oplossing' t-att-selected="formulier_id.xaa_aa_direct_installation_scaffolding == 'Ja, klant zorgt voor oplossing'">
+                                    Ja, klant zorgt voor oplossing
+                                </option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="text-center text-primary">
+                    <h3><u>Roof</u></h3>
+                </div>
+                <div class="form-group row form-field">
+                    <div class="col-lg-3 col-md-4 col-sm-4 custom-text">
+                        <label class="col-form-label" for="xaa_aa_dak_type_of_roof">What type (s) of roof is it?</label>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6">
+                        <div>
+                            <select name="xaa_aa_dak_type_of_roof" class="form-control">
+                                <option></option>
+                                <option value='Schuin' t-att-selected="formulier_id.xaa_aa_dak_type_of_roof == 'Schuin'">
+                                    Schuin
+                                </option>
+                                <option value='Plat' t-att-selected="formulier_id.xaa_aa_dak_type_of_roof == 'Plat'">
+                                    Plat
+                                </option>
+                                <option value='Schuin / Dak' t-att-selected="formulier_id.xaa_aa_dak_type_of_roof == 'Schuin / Dak'">
+                                    Schuin / Dak
+                                </option>
+                                <option value='Zadeldak' t-att-selected="formulier_id.xaa_aa_dak_type_of_roof == 'Zadeldak'">
+                                    Zadeldak
+                                </option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group row form-field">
+                    <div class="col-lg-3 col-md-4 col-sm-4 custom-text">
+                        <label class="col-form-label" for="xaa_aa_condition_of_roof">What is the condition of the roof?</label>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6">
+                        <div>
+                            <select name="xaa_aa_condition_of_roof" class="form-control">
+                                <option></option>
+                                <option value='goed' t-att-selected="formulier_id.xaa_aa_condition_of_roof == 'goed'">
+                                    goed
+                                </option>
+                                <option value='matig' t-att-selected="formulier_id.xaa_aa_condition_of_roof == 'matig'">
+                                    matig
+                                </option>
+                                <option value='slecht' t-att-selected="formulier_id.xaa_aa_condition_of_roof == 'slecht'">
+                                    slecht
+                                </option>
+                                <option value='onbekend' t-att-selected="formulier_id.xaa_aa_condition_of_roof == 'onbekend'">
+                                    onbekend
+                                </option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group row form-field">
+                    <div class="col-lg-3 col-md-4 col-sm-4 custom-text">
+                        <label class="col-form-label" for="xaa_aa_asbestos_incorporated_roof">Is asbestos incorporated in the roof? And is the customer aware of the consequences?</label>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6">
+                        <div>
+                            <select name="xaa_aa_asbestos_incorporated_roof" class="form-control">
+                                <option></option>
+                                <option value='ja' t-att-selected="formulier_id.xaa_aa_asbestos_incorporated_roof == 'ja'">
+                                    ja
+                                </option>
+                                <option value='nee' t-att-selected="formulier_id.xaa_aa_asbestos_incorporated_roof == 'nee'">
+                                    nee
+                                </option>
+                                <option value='ja klant op de hoogte van de gevogen' t-att-selected="formulier_id.xaa_aa_asbestos_incorporated_roof == 'ja klant op de hoogte van de gevogen'">
+                                    ja klant op de hoogte van de gevogen
+                                </option>
+                                <option value='ja klant niet op de hoogte van de gevogen' t-att-selected="formulier_id.xaa_aa_asbestos_incorporated_roof == 'ja klant niet op de hoogte van de gevogen'">
+                                    ja klant niet op de hoogte van de gevogen
+                                </option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group row form-field">
+                    <div class="col-lg-3 col-md-4 col-sm-4 custom-textcustom-text">
+                        <label class="col-form-label" for="xaa_aa_height_of_gutter">What is the height of the gutter?</label>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6">
+                        <div>
+                            <select name="xaa_aa_height_of_gutter" class="form-control">
+                                <option></option>
+                                <option value='0-2.5 m1' t-att-selected="formulier_id.xaa_aa_height_of_gutter == '0-2.5 m1'">
+                                    0-2.5 m1
+                                </option>
+                                <option value='2.5-4 m1' t-att-selected="formulier_id.xaa_aa_height_of_gutter == '2.5-4 m1'">
+                                    2.5-4 m1
+                                </option>
+                                <option value='4-6 m1' t-att-selected="formulier_id.xaa_aa_height_of_gutter == '4-6 m1'">
+                                    4-6 m1
+                                </option>
+                                <option value='6-8 m1' t-att-selected="formulier_id.xaa_aa_height_of_gutter == '6-8 m1'">
+                                    6-8 m1
+                                </option>
+                                <option value='8-10 m1' t-att-selected="formulier_id.xaa_aa_height_of_gutter == '8-10 m1'">
+                                    8-10 m1
+                                </option>
+                                <option value='10+' t-att-selected="formulier_id.xaa_aa_height_of_gutter == '10+'">
+                                    10+
+                                </option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="text-center text-primary">
+                    <h3><u>Slanted roof</u></h3>
+                </div>
+                <div class="form-group row form-field">
+                    <div class="col-lg-3 col-md-4 col-sm-4 custom-text">
+                        <label class="col-form-label" for="xaa_aa_slope">What is the slope?</label>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6">
+                        <div>
+                            <select name="xaa_aa_slope" class="form-control">
+                                <option></option>
+                                <option value='0-20 graden' t-att-selected="formulier_id.xaa_aa_slope == '0-20 graden'">
+                                    0-20 graden
+                                </option>
+                                <option value='20-30 graden' t-att-selected="formulier_id.xaa_aa_slope == '20-30 graden'">
+                                    20-30 graden
+                                </option>
+                                <option value='30-40 graden' t-att-selected="formulier_id.xaa_aa_slope == '30-40 graden'">
+                                    30-40 graden
+                                </option>
+                                <option value='40-50 graden' t-att-selected="formulier_id.xaa_aa_slope == '40-50 graden'">
+                                    40-50 graden
+                                </option>
+                                <option value='50-60 graden' t-att-selected="formulier_id.xaa_aa_slope == '50-60 graden'">
+                                    50-60 graden
+                                </option>
+                                <option value='60-70 graden' t-att-selected="formulier_id.xaa_aa_slope == '60-70 graden'">
+                                    60-70 graden
+                                </option>
+                                <option value='70+ graden' t-att-selected="formulier_id.xaa_aa_slope == '70+ graden'">
+                                    70+ graden
+                                </option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group row form-field">
+                    <div class="col-lg-3 col-md-4 col-sm-4 custom-text">
+                        <label class="col-form-label" for="xaa_aa_schuin_type_of_roof">What type (s) of roofing is it?</label>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6">
+                        <div>
+                            <select name="xaa_aa_schuin_type_of_roof" class="form-control">
+                                <option></option>
+                                <option value='Pannen' t-att-selected="formulier_id.xaa_aa_schuin_type_of_roof == 'Pannen'">
+                                    Pannen
+                                </option>
+                                <option value='Bitumen' t-att-selected="formulier_id.xaa_aa_schuin_type_of_roof == 'Bitumen'">
+                                    Bitumen
+                                </option>
+                                <option value='Golfplaten' t-att-selected="formulier_id.xaa_aa_schuin_type_of_roof == 'Golfplaten'">
+                                    Golfplaten
+                                </option>
+                                <option value='Staal' t-att-selected="formulier_id.xaa_aa_schuin_type_of_roof == 'Staal'">
+                                    Staal
+                                </option>
+                                <option value='Leien' t-att-selected="formulier_id.xaa_aa_schuin_type_of_roof == 'Leien'">
+                                    Leien
+                                </option>
+                                <option value='Zink' t-att-selected="formulier_id.xaa_aa_schuin_type_of_roof == 'Zink'">
+                                    Zink
+                                </option>
+                                <option value='ASBEST' t-att-selected="formulier_id.xaa_aa_schuin_type_of_roof == 'ASBEST'">
+                                    ASBEST
+                                </option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group row form-field">
+                    <div class="col-lg-3 col-md-4 col-sm-4 custom-text">
+                        <label class="col-form-label" for="xaa_aa_are_pans_screwed_or_hooked">Are the pans screwed or hooked?</label>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6">
+                        <div>
+                            <select name="xaa_aa_are_pans_screwed_or_hooked" class="form-control">
+                                <option></option>
+                                <option value='geschroefd' t-att-selected="formulier_id.xaa_aa_are_pans_screwed_or_hooked == 'geschroefd'">
+                                    geschroefd
+                                </option>
+                                <option value='gehaakt' t-att-selected="formulier_id.xaa_aa_are_pans_screwed_or_hooked == 'gehaakt'">
+                                    gehaakt
+                                </option>
+                                <option value='beide' t-att-selected="formulier_id.xaa_aa_are_pans_screwed_or_hooked == 'beide'">
+                                    beide
+                                </option>
+                                <option value='anders' t-att-selected="formulier_id.xaa_aa_are_pans_screwed_or_hooked == 'anders'">
+                                    anders
+                                </option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center text-primary">
+                    <h3><u>Flat roof</u></h3>
+                </div>
+                <div class="form-group row form-field">
+                    <div class="col-lg-3 col-md-4 col-sm-4 custom-text">
+                        <label class="col-form-label" for="xaa_aa_gravel_on_roof">Is there gravel on the roof?</label>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6">
+                        <div>
+                            <select name="xaa_aa_gravel_on_roof" class="form-control">
+                                <option></option>
+                                <option value='ja' t-att-selected="formulier_id.xaa_aa_gravel_on_roof == 'ja'">
+                                    ja
+                                </option>
+                                <option value='nee' t-att-selected="formulier_id.xaa_aa_gravel_on_roof == 'nee'">
+                                    nee
+                                </option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group row form-field">
+                    <div class="col-lg-3 col-md-4 col-sm-4 custom-text">
+                        <label class="col-form-label" for="xaa_aa_plat_type_roof">What type (s) of roofing is it?</label>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6">
+                        <div>
+                            <select name="xaa_aa_plat_type_roof" class="form-control">
+                                <option></option>
+                                <option value='Bitumen' t-att-selected="formulier_id.xaa_aa_plat_type_roof == 'Bitumen'">
+                                    Bitumen
+                                </option>
+                                <option value='EPDM' t-att-selected="formulier_id.xaa_aa_plat_type_roof == 'EPDM'">
+                                    EPDM
+                                </option>
+                                <option value='PVC' t-att-selected="formulier_id.xaa_aa_plat_type_roof == 'PVC'">
+                                    PVC
+                                </option>
+                                <option value='Overige' t-att-selected="formulier_id.xaa_aa_plat_type_roof == 'Overige'">
+                                    Overige
+                                </option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group row form-field">
+                    <div class="col-lg-3 col-md-4 col-sm-4 custom-text">
+                        <label class="col-form-label" for="xaa_aa_roof_terminal_cabling">Is there a roof terminal for the string cabling</label>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6">
+                        <div>
+                            <select name="xaa_aa_roof_terminal_cabling" class="form-control">
+                                <option></option>
+                                <option value='ja' t-att-selected="formulier_id.xaa_aa_roof_terminal_cabling == 'ja'">
+                                    ja
+                                </option>
+                                <option value='Nee aanleggen ECNL' t-att-selected="formulier_id.xaa_aa_roof_terminal_cabling == 'Nee aanleggen ECNL'">
+                                    Nee aanleggen ECNL
+                                </option>
+                                <option value='nee' t-att-selected="formulier_id.xaa_aa_roof_terminal_cabling == 'nee'">
+                                    nee
+                                </option>
+                                <option value='Nee klant draagt hier zorg voor' t-att-selected="formulier_id.xaa_aa_roof_terminal_cabling == 'Nee klant draagt hier zorg voor'">
+                                    Nee klant draagt hier zorg voor
+                                </option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center text-primary">
+                    <h3><u>Inverter</u></h3>
+                </div>
+                <div class="form-group row form-field">
+                    <div class="col-lg-3 col-md-4 col-sm-4 custom-text">
+                        <label class="col-form-label" for="xaa_aa_location_of_inverter">Location of the inverter</label>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6">
+                        <textarea rows="3" name="xaa_aa_location_of_inverter" class="form-control"><t t-esc="formulier_id.xaa_aa_location_of_inverter"/></textarea>
+                    </div>
+                </div>
+                <div class="form-group row form-field">
+                    <div class="col-lg-3 col-md-4 col-sm-4 custom-text">
+                        <label class="col-form-label" for="xaa_aa_is_space_inverter_cooling">Is there sufficient free space around the inverter for cooling / ventilation purposes?</label>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6">
+                        <div>
+                            <select name="xaa_aa_is_space_inverter_cooling" class="form-control">
+                                <option></option>
+                                <option value='ja' t-att-selected="formulier_id.xaa_aa_is_space_inverter_cooling == 'ja'">
+                                    ja
+                                </option>
+                                <option value='nee' t-att-selected="formulier_id.xaa_aa_is_space_inverter_cooling == 'nee'">
+                                    nee
+                                </option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group row form-field">
+                    <div class="col-lg-3 col-md-4 col-sm-4 custom-text">
+                        <label class="col-form-label" for="xaa_aa_is_sturdy_rear_wall">Is a sturdy rear wall available?</label>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6">
+                        <div>
+                            <select name="xaa_aa_is_sturdy_rear_wall" class="form-control">
+                                <option></option>
+                                <option value='ja' t-att-selected="formulier_id.xaa_aa_is_sturdy_rear_wall == 'ja'">
+                                    ja
+                                </option>
+                                <option value='nee' t-att-selected="formulier_id.xaa_aa_is_sturdy_rear_wall == 'nee'">
+                                    nee
+                                </option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group row form-field">
+                    <div class="col-lg-3 col-md-4 col-sm-4 custom-text">
+                        <label class="col-form-label" for="xaa_aa_washing_machine_use">Can a washing machine connection be used?</label>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6">
+                        <div>
+                            <select name="xaa_aa_washing_machine_use" class="form-control">
+                                <option></option>
+                                <option value='ja' t-att-selected="formulier_id.xaa_aa_washing_machine_use == 'ja'">
+                                    ja
+                                </option>
+                                <option value='nee' t-att-selected="formulier_id.xaa_aa_washing_machine_use == 'nee'">
+                                    nee
+                                </option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="text-center text-primary">
+                    <h3><u>Cabling</u></h3>
+                </div>
+                <div class="form-group row form-field">
+                    <div class="col-lg-3 col-md-4 col-sm-4 custom-text">
+                        <label class="col-form-label" for="xaa_aa_empty_pipe_use">Can an empty pipe be used?</label>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6">
+                        <div>
+                            <select name="xaa_aa_empty_pipe_use" class="form-control" >
+                                <option></option>
+                                <option value='ja' t-att-selected="formulier_id.xaa_aa_empty_pipe_use == 'ja'">
+                                    ja
+                                </option>
+                                <option value='nee' t-att-selected="formulier_id.xaa_aa_empty_pipe_use == 'nee'">
+                                    nee
+                                </option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group row form-field">
+                    <div class="col-lg-3 col-md-4 col-sm-4 custom-text">
+                        <label class="col-form-label" for="xaa_aa_description_inverter">Description cable route panels -> inverter</label>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6">
+                        <textarea rows="3" name="xaa_aa_description_inverter" class="form-control"><t t-esc="formulier_id.xaa_aa_description_inverter"/></textarea>
+                    </div>
+                </div>
+                <div class="form-group row form-field">
+                    <div class="col-lg-3 col-md-4 col-sm-4 custom-text">
+                        <label class="col-form-label" for="xaa_aa_description_cable_inverter">Description cable inverter -> meter box</label>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6">
+                        <textarea rows="3" name="xaa_aa_description_cable_inverter" class="form-control"><t t-esc="formulier_id.xaa_aa_description_cable_inverter"/></textarea>
+                    </div>
+                </div>
+                <div class="form-group row form-field">
+                    <div class="col-lg-3 col-md-4 col-sm-4 custom-text">
+                        <label class="col-form-label" for="xaa_aa_description_utp_cable">Description UTP cable converter -> meter box</label>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6">
+                        <textarea rows="3" name="xaa_aa_description_utp_cable" class="form-control"><t t-esc="formulier_id.xaa_aa_description_utp_cable"/></textarea>
+                    </div>
+                </div>
+                <div class="form-group row form-field">
+                    <div class="col-lg-3 col-md-4 col-sm-4 custom-text">
+                        <label class="col-form-label" for="xaa_aa_want_mount_cable_himself">Does the customer want to mount a cable himself?</label>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6">
+                        <div>
+                            <select name="xaa_aa_want_mount_cable_himself" class="form-control">
+                                <option></option>
+                                <option value='ja' t-att-selected="formulier_id.xaa_aa_want_mount_cable_himself == 'ja'">
+                                    ja
+                                </option>
+                                <option value='nee' t-att-selected="formulier_id.xaa_aa_want_mount_cable_himself == 'nee'">
+                                    nee
+                                </option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group row form-field">
+                    <div class="col-lg-3 col-md-4 col-sm-4 custom-text">
+                        <label class="col-form-label" for="xaa_aa_diameter_of_cable">When using an existing cable what is the diameter of the cable?</label>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6">
+                        <div>
+                            <select name="xaa_aa_diameter_of_cable" class="form-control">
+                                <option></option>
+                                <option value='3*2.5mm2' t-att-selected="formulier_id.xaa_aa_diameter_of_cable == '3*2.5mm2'">
+                                    3*2.5mm2
+                                </option>
+                                <option value='5*2.5mm2' t-att-selected="formulier_id.xaa_aa_diameter_of_cable == '5*2.5mm2'">
+                                    5*2.5mm2
+                                </option>
+                                <option value='3*4mm2' t-att-selected="formulier_id.xaa_aa_diameter_of_cable == '3*4mm2'">
+                                    3*4mm2
+                                </option>
+                                <option value='5*4mm2' t-att-selected="formulier_id.xaa_aa_diameter_of_cable == '5*4mm2'">
+                                    5*4mm2
+                                </option>
+                                <option value='5*6mm2' t-att-selected="formulier_id.xaa_aa_diameter_of_cable == '5*6mm2'">
+                                    5*6mm2
+                                </option>
+                                <option value='5*10mm2' t-att-selected="formulier_id.xaa_aa_diameter_of_cable == '5*10mm2'">
+                                    5*10mm2
+                                </option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group row form-field">
+                    <div class="col-lg-3 col-md-4 col-sm-4 custom-text">
+                        <label class="col-form-label" for="xaa_aa_internet_connection_wired">The internet connection can be wired</label>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6">
+                        <div>
+                            <select name="xaa_aa_internet_connection_wired" class="form-control">
+                                <option></option>
+                                <option value='ja' t-att-selected="formulier_id.xaa_aa_internet_connection_wired == 'ja'">
+                                    ja
+                                </option>
+                                <option value='nee' t-att-selected="formulier_id.xaa_aa_internet_connection_wired == 'nee'">
+                                    nee
+                                </option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="text-center text-primary">
+                    <h3><u>Others</u></h3>
+                </div>
+                <div class="form-group row form-field">
+                    <div class="col-lg-3 col-md-4 col-sm-4 custom-text">
+                        <label class="col-form-label" for="xaa_aa_is_entrepreneurship">Is there any entrepreneurship?</label>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6">
+                        <div>
+                            <select name="xaa_aa_is_entrepreneurship" class="form-control">
+                                <option></option>
+                                <option value='ja' t-att-selected="formulier_id.xaa_aa_is_entrepreneurship == 'ja'">
+                                    ja
+                                </option>
+                                <option value='nee' t-att-selected="formulier_id.xaa_aa_is_entrepreneurship == 'nee'">
+                                    nee
+                                </option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group row form-field">
+                    <div class="col-lg-3 col-md-4 col-sm-4 custom-text">
+                        <label class="col-form-label" for="xaa_aa_name_on_bill">Does the name (incl. Initials) on the energy bill / contract match the name on the quote?</label>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6">
+                        <div>
+                            <select name="xaa_aa_name_on_bill" class="form-control">
+                                <option></option>
+                                <option value='ja' t-att-selected="formulier_id.xaa_aa_name_on_bill == 'ja'">
+                                    ja
+                                </option>
+                                <option value='nee' t-att-selected="formulier_id.xaa_aa_name_on_bill == 'nee'">
+                                    nee
+                                </option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group row form-field">
+                    <div class="col-lg-3 col-md-4 col-sm-4 custom-text">
+                        <label class="col-form-label" for="xaa_aa_vat_exemption_rules">Do you fall under VAT exemption rules?</label>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6">
+                        <div>
+                            <select name="xaa_aa_vat_exemption_rules" class="form-control">
+                                <option></option>
+                                <option value='ja' t-att-selected="formulier_id.xaa_aa_vat_exemption_rules == 'ja'">
+                                    ja
+                                </option>
+                                <option value='nee' t-att-selected="formulier_id.xaa_aa_vat_exemption_rules == 'nee'">
+                                    nee
+                                </option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group row form-field">
+                    <div class="col-lg-3 col-md-4 col-sm-4 custom-text">
+                        <label class="col-form-label" for="xaa_aa_preservation_product">Do you need other preservation products?</label>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6">
+                        <div>
+                            <select name="xaa_aa_preservation_product" class="form-control">
+                                <option></option>
+                                <option value='Nee' t-att-selected="formulier_id.xaa_aa_preservation_product == 'Nee'">
+                                    Nee
+                                </option>
+                                <option value='Ja niet geinteresseerd' t-att-selected="formulier_id.xaa_aa_preservation_product == 'Ja niet geinteresseerd'">
+                                    Ja niet geinteresseerd
+                                </option>
+                                <option value='Ja geinteresseerd' t-att-selected="formulier_id.xaa_aa_preservation_product == 'Ja geinteresseerd'">
+                                    Ja geinteresseerd
+                                </option>
+                                <option value='Ja offerte' t-att-selected="formulier_id.xaa_aa_preservation_product == 'Ja offerte'">
+                                    Ja offerte
+                                </option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group row form-field">
+                    <div class="col-lg-3 col-md-4 col-sm-4 custom-text">
+                        <label class="col-form-label" for="xaa_aa_agreements_with_client">Other special agreements with client</label>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6">
+                        <textarea rows="3" name="xaa_aa_agreements_with_client" class="form-control"><t t-esc="formulier_id.xaa_aa_agreements_with_client"/></textarea>
+                    </div>
+                </div>
+                <div class="form-group row form-field">
+                    <div class="col-lg-3 col-md-4 col-sm-4 custom-text">
+                        <label class="col-form-label" for="xaa_aa_note">Note</label>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6">
+                        <textarea rows="3" name="xaa_aa_note" class="form-control"><t t-esc="formulier_id.xaa_aa_note"/></textarea>
+                    </div>
+                </div>
+            </t>
+        </xpath>
+    </template>
+</odoo>

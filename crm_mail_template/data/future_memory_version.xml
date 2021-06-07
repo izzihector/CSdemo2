@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <!-- Mail X - future memory - version 1.0-->
+        <record id="future_memory_mail_template" model="mail.template">
+            <field name="name">Mail X - future memory - version 1.0</field>
+            <field name="email_from">${(object.company_id.email or '')|safe}</field>
+            <field name="subject">Quotation Energy control NL</field>
+            <field name="email_to">${object.email_from|safe}</field>
+            <field name="model_id" ref="crm.model_crm_lead"/>
+            <field name="lang">${object.partner_id.lang}</field>
+            <field name="body_html"><![CDATA[
+                <p style="margin:0px 0px 9px 0px;">Dear sir/madam,</p>
+                <p style="margin:0px 0px 9px 0px;">
+                   A long time ago you received an offer from us for an energy-saving measure. You once indicated that we would be able to contact you again in the future and we are happy to do so.
+                </p>
+                <p style="margin:0px 0px 9px 0px;">
+                    We would now like to know if we can do anything for you? If this is the case, click on the “I would like to receive more information first” button and we will contact you.
+                </p>
+                <p style="margin:0px 0px 9px 0px;"><br/><a href="/crm/stage/${object.id}/review" style="background-color: #1abc9c; padding: 15px; text-decoration: none; color: #fff; border-radius: 5px; font-size: 13px;" class="o_default_snippet_text">I would like to receive more information first</a><br/><br/></p>
+                <p style="margin:0px 0px 9px 0px;">
+                    Perhaps you still have enough information and you cannot have the work carried out yet, but in a few months' time you may click on the “Contact us in a few months” button and you will receive this email again in 4 months.
+                </p>
+                <p style="margin:0px 0px 9px 0px;"><br/><a href="/crm/stage/${object.id}/future" style="background-color: #1abc9c; padding: 15px; text-decoration: none; color: #fff; border-radius: 5px; font-size: 13px;" class="o_default_snippet_text">Contact me in a few months</a><br/><br/></p>
+                <p style="margin:0px 0px 9px 0px;">
+                    If you are no longer interested in our services, click the button below. We will extract all your data from our system and thank you for the interest shown.
+                </p>
+                <p style="margin:0px 0px 9px 0px;"><br/><a href="/crm/stage/${object.id}/complaints" style="background-color: #1abc9c; padding: 15px; text-decoration: none; color: #fff; border-radius: 5px; font-size: 13px;" class="o_default_snippet_text">No interest anymore</a><br/><br/></p>
+                <p style="margin:0px 0px 9px 0px;">
+                    If you have a question about this mail or our offer, you can contact our customer service every working day from 8:30 am to 5:00 pm 0546 - 57 4472 or send an e-mail to customerservice@energy-control.nl we will help you please continue.
+                </p>
+                <br/><br/>
+                <p style="margin:0px 0px 9px 0px;">
+                    With best regards,<br/>
+                    <img src="/crm_mail_template/static/src/img/company_logo.png" style="width:100px;height:100px;"/><br/>
+                    Team Energiecontrol NL<br/>
+                    Phone: 0546- 57 44 72<br/>
+                     <a href="https://www.facebook.com/energiecontrolnl/" target="_blank">
+                        <img src="/crm_mail_template/static/src/img/facebook.jpeg" style="width:30px;height:30px;"/>
+                    </a>
+                    <a href="https://www.instagram.com/energiecontrolnl/" target="_blank">
+                        <img src="/crm_mail_template/static/src/img/instagram.jpeg" style="width:30px;height:30px;"/>
+                    </a>
+                </p>
+]]>
+            </field>
+        </record>
+    </data>
+</odoo>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="quote_imag_snippets_inherit" inherit_id="project_formulier.snippets_inherit">
+        <xpath expr="//div[hasclass('o_panel_header')]" position="inside">
+            <script>
+                formulier_type_three();
+            </script>
+        </xpath>
+        <xpath expr="//div[@id='formulier_snippet_panel_body']" position="inside">
+            <t t-snippet="formulier_type_3.photo_roof_1_img_snippet" t-thumbnail="/website/static/src/img/blocks/block_column.png"/>
+            <t t-snippet="formulier_type_3.photo_roof_2_img_snippet" t-thumbnail="/website/static/src/img/blocks/block_column.png"/>
+            <t t-snippet="formulier_type_3.invertner_in_snippet" t-thumbnail="/website/static/src/img/blocks/block_column.png"/>
+            <t t-snippet="formulier_type_3.cupboard_opened_snippet" t-thumbnail="/website/static/src/img/blocks/block_column.png"/>
+            <t t-snippet="formulier_type_3.inverter_serial_number_snippet" t-thumbnail="/website/static/src/img/blocks/block_column.png"/>
+            <t t-snippet="formulier_type_3.optimizers_serial_number_snippet" t-thumbnail="/website/static/src/img/blocks/block_column.png"/>
+        </xpath>
+    </template>
+    <template id="photo_roof_1_img_snippet" name="Overview photo roof 1">
+        <section class="s_picture bg-200 pt48 pb24">
+            <div class="container">
+                <div class="row s_nb_column_fixed">
+                    <div class="col-lg-12 s_title pt16 pb16">
+                        <h1 class="s_title_thin text-center">Overview photo roof 1</h1>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-8 offset-lg-2 pb24 text-center">
+                        <img class="img img-fluid" src="/formulier_type_3/static/src/images/blank_image.jpg" alt="Overview Photo Roof 1 Image" id="photo_roof_1_img_id"/>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+    <template id="photo_roof_2_img_snippet" name="Overview photo roof 2">
+        <section class="s_picture bg-200 pt48 pb24">
+            <div class="container">
+                <div class="row s_nb_column_fixed">
+                    <div class="col-lg-12 s_title pt16 pb16">
+                        <h1 class="s_title_thin text-center">Overview photo roof 2</h1>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-8 offset-lg-2 pb24 text-center">
+                        <img class="img img-fluid" src="/formulier_type_3/static/src/images/blank_image.jpg" alt="Overview Photo Roof 2 Image" id="photo_roof_2_img_id"/>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+    <template id="invertner_in_snippet" name="Inverter in Operation">
+        <section class="s_picture bg-200 pt48 pb24">
+            <div class="container">
+                <div class="row s_nb_column_fixed">
+                    <div class="col-lg-12 s_title pt16 pb16">
+                        <h1 class="s_title_thin text-center">Photo display inverter in operation</h1>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-8 offset-lg-2 pb24 text-center">
+                        <img class="img img-fluid" src="/formulier_type_3/static/src/images/blank_image.jpg" alt="Inverter In Operation Image" id="Inverter_in_operation_id"/>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+    <template id="cupboard_opened_snippet" name="Cupboard Opened">
+        <section class="s_picture bg-200 pt48 pb24">
+            <div class="container">
+                <div class="row s_nb_column_fixed">
+                    <div class="col-lg-12 s_title pt16 pb16">
+                        <h1 class="s_title_thin text-center">Photo meter cupboard opened with automatic</h1>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-8 offset-lg-2 pb24 text-center">
+                        <img class="img img-fluid" src="/formulier_type_3/static/src/images/blank_image.jpg" alt="Cupboard Opened Image" id="cupboard_opened_id"/>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+    <template id="inverter_serial_number_snippet" name="Photo serial number inverter">
+        <section class="s_picture bg-200 pt48 pb24">
+            <div class="container">
+                <div class="row s_nb_column_fixed">
+                    <div class="col-lg-12 s_title pt16 pb16">
+                        <h1 class="s_title_thin text-center">Photo serial number inverter</h1>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-8 offset-lg-2 pb24 text-center">
+                        <img class="img img-fluid" src="/formulier_type_3/static/src/images/blank_image.jpg" alt="Inverter Serial No Image" id="inverter_serial_number_id"/>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+    <template id="optimizers_serial_number_snippet" name="Photo serial numbers optimizers">
+        <section class="s_picture bg-200 pt48 pb24">
+            <div class="container">
+                <div class="row s_nb_column_fixed">
+                    <div class="col-lg-12 s_title pt16 pb16">
+                        <h1 class="s_title_thin text-center">Photo serial numbers optimizers (Readable!)</h1>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-8 offset-lg-2 pb24 text-center">
+                        <img class="img img-fluid" src="/formulier_type_3/static/src/images/blank_image.jpg" alt="Photo serial numbers optimizers Image" id="optimizers_serial_number_id"/>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+</odoo>

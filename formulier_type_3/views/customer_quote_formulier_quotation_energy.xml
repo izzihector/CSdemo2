@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="customer_quote_formulier_quotation_energy" name="Quote Formulier Energy consumption">
+        <div id="quotation_sec">
+            <div class="tab inner_tabs div_padding_left" role="tabpanel">
+                <!-- Nav tabs -->
+                <ul class="nav nav-tabs energy_inner_tab" role="tablist">
+                    <li class="active inner_li" id="quote_tab_1" style="margin-left:3%;">
+                        <a href="#quote_section1" aria-controls="home"
+                            role="tab" data-toggle="tab"> Type of roof
+                        </a>
+                    </li>
+                    <li class="inner_li" id="quote_tab_2">
+                        <a href="#quote_section2" aria-controls="profile"
+                            role="tab" data-toggle="tab"> Obstacles
+                        </a>
+                    </li>
+                    <li class="inner_li" id="quote_tab_3">
+                        <a href="#quote_section3" aria-controls="profile"
+                            role="tab" data-toggle="tab"> Solar panels
+                        </a>
+                    </li>
+                </ul>
+                <div class="tab-content tabs">
+                    <div role="tabpanel" class="tab-pane fade in active show"
+                        id="quote_section1">
+                        <div>
+                            <div class="form_lable mt24">
+                                <label class="montserrat-extrabold_24">
+                                    What kind of roof does your home have?
+                                </label>
+                            </div>
+                            <div class="form-group row mt24">
+                                <div class="col-lg-12 col-md-12"
+                                    style="display:inherit; list-style-type:none;">
+                                    <t t-foreach="formulier_id.get_roof_info()" t-as="roof_info">
+                                        <div t-att-class="'col-lg-3 col-md-3 col-sm-4 col-5 padding_14_10  house_roof_li selected text-center' if formulier_id.xaa_aa_type_of_roof_ids and formulier_id.xaa_aa_type_of_roof_ids.id == roof_info.id else 'col-lg-3 col-md-3 col-sm-4 col-5 padding_14_10 house_roof_li text-center'"
+                                            t-att-data-id="roof_info.id" t-att-data-name="roof_info.xaa_aa_roof_type">
+                                            <div class="img_house_info">
+                                               <img class="img img-fluid" 
+                                                    t-attf-src="/web/image/roof.info/{{roof_info.id}}/xaa_aa_roof_image" style="padding-top:15px;"/>
+                                            </div>
+                                            <div class="text-center">
+                                                <t t-esc="roof_info.xaa_aa_roof_type"/>
+                                            </div>
+                                        </div>
+                                    </t>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group mt32 row roof_covered_label" t-att-style="'display:block;'if formulier_id.xaa_aa_type_of_roof_ids else 'display:none;'">
+                            <div class="col-lg-12 col-md-12 col-sm-12 ">
+                                <div class="form_lable mt16">
+                                    <label class="montserrat-extrabold_24">
+                                        How is your roof covered?
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-sm-8 mr24 roof_covered" t-att-style="'display:block;'if formulier_id.xaa_aa_type_of_roof_ids and formulier_id.xaa_aa_type_of_roof_ids.id == 1 else 'display:none;'">
+                                <select class="custom-select mt8 form-control" name="xaa_aa_how_roof_covered">
+                                    <option></option>
+                                    <option value='Dakpannen' t-att-selected="formulier_id.xaa_aa_how_roof_covered == 'Dakpannen'">
+                                        Dakpannen
+                                    </option>
+                                    <option value='Golfplaat' t-att-selected="formulier_id.xaa_aa_how_roof_covered == 'Golfplaat'">
+                                        Golfplaat
+                                    </option>
+                                    <option value='Riet' t-att-selected="formulier_id.xaa_aa_how_roof_covered == 'Riet'">
+                                        Riet
+                                    </option>
+                                </select>
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-sm-8 mr24 flat_roof_covered" t-att-style="'display:block;'if formulier_id.xaa_aa_type_of_roof_ids and formulier_id.xaa_aa_type_of_roof_ids.id == 2 else 'display:none;'">
+                                <select class="custom-select mt8 form-control" name="xaa_aa_how_flat_roof_covered">
+                                    <option></option>
+                                    <option value='bitumen (dakleer) EDPM' t-att-selected="formulier_id.xaa_aa_how_flat_roof_covered == 'bitumen (dakleer) EDPM'">
+                                        bitumen (dakleer) EDPM
+                                    </option>
+                                    <option value='PVC' t-att-selected="formulier_id.xaa_aa_how_flat_roof_covered == 'PVC'">
+                                        PVC
+                                    </option>
+                                    <option value='Groen dak' t-att-selected="formulier_id.xaa_aa_how_flat_roof_covered == 'Groen dak'">
+                                        Groen dak
+                                    </option>
+                                </select>
+                            </div>
+                            <div class="col-lg-7 col-md-10 col-sm-12 warning-image-display-flex mt8" t-att-style="'display:flex;'if formulier_id.xaa_aa_how_flat_roof_covered == 'Groen dak' or formulier_id.xaa_aa_how_roof_covered == 'Riet' else 'display:none;'">
+                                <img class="img img-fluid warning_image"
+                                    src="/project_formulier_quote/static/src/images/Warning icon.png">
+                                    <span class="montserrat_regular ml8">Warning: the choice you have made is possible possible problems.</span>
+                                </img>
+                            </div>
+                        </div>
+                        <div class="form-group row mt32" >
+                            <div class="col-lg-12 col-md-12 col-sm-12 ">
+                                <div class="form_lable mt16">
+                                    <label class="montserrat-extrabold_24">
+                                        What is the location of your roof?
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-sm-8 mr24">
+                                <select class="custom-select mt8 form-control" name="xaa_aa_location_of_roof">
+                                    <option></option>
+                                    <option value='Zuid' t-att-selected="formulier_id.xaa_aa_location_of_roof == 'Zuid'">
+                                        Zuid
+                                    </option>
+                                    <option value='Zuidoost' t-att-selected="formulier_id.xaa_aa_location_of_roof == 'Zuidoost'">
+                                        Zuidoost
+                                    </option>
+                                    <option value='Zuidwest' t-att-selected="formulier_id.xaa_aa_location_of_roof == 'Zuidwest'">
+                                        Zuidwest
+                                    </option>
+                                    <option value='Oost' t-att-selected="formulier_id.xaa_aa_location_of_roof == 'Oost'">
+                                        Oost
+                                    </option>
+                                    <option value='West' t-att-selected="formulier_id.xaa_aa_location_of_roof == 'West'">
+                                        West
+                                    </option>
+                                    <option value='Noordoost' t-att-selected="formulier_id.xaa_aa_location_of_roof == 'Noordoost'">
+                                        Noordoost
+                                    </option>
+                                    <option value='Noordwest' t-att-selected="formulier_id.xaa_aa_location_of_roof == 'Noordwest'">
+                                        Noordwest
+                                    </option>
+                                    <option value='Noord' t-att-selected="formulier_id.xaa_aa_location_of_roof == 'Noord'">
+                                        Noord
+                                    </option>
+                                    <option value='Meerdere dakdelen' t-att-selected="formulier_id.xaa_aa_location_of_roof == 'Meerdere dakdelen'">
+                                        Meerdere dakdelen
+                                    </option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group row mt64" id="next_privious">
+                            <div class="col-md-5 col-lg-4 col-sm-5 col-6">
+                                <a class="btn-privoius mt16"
+                                    data-id="anergy_consumpation_id" type="Button"
+                                    t-att-value="formulier_id.id">
+                                    <i class="fa fa-chevron-left" aria-hidden="false"/>Previous step
+                                </a>
+                            </div>
+                            <div class="col-md-4 col-lg-4 col-sm-5 col-6">
+                                <button class="btn btn-next mt16 mr8"
+                                    data-id="quote_tab_2" type="Button"
+                                    t-att-value="formulier_id.id">Next step
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div role="tabpanel" class="tab-pane fade" id="quote_section2">
+                        <div class="div_padding_left" >
+                            <div class="form-group row mt24" >
+                                <div class="col-lg-12 col-md-12 col-sm-12 ">
+                                    <div class="form_lable mt16">
+                                        <label class="montserrat-extrabold_24">
+                                            Are there any obstacles on your roof?
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-4 col-sm-8 mr24">
+                                    <select class="custom-select mt8 form-control" name="xaa_aa_obstacles_on_roof">
+                                        <option></option>
+                                        <option value='ja' t-att-selected="formulier_id.xaa_aa_obstacles_on_roof == 'ja'">
+                                            ja
+                                        </option>
+                                        <option value='nee' t-att-selected="formulier_id.xaa_aa_obstacles_on_roof == 'nee'">
+                                            nee
+                                        </option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group row mt32 shadow_cast_solar_panels" t-att-style="'display:block;'if formulier_id.xaa_aa_obstacles_on_roof == 'ja' else 'display:none;'">
+                                <div class="col-lg-12 col-md-12 col-sm-12 ">
+                                    <div class="form_lable mt16">
+                                        <label class="montserrat-extrabold_24">
+                                            Do this shadow cast on your future solar panels?
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-4 col-sm-8 mr24">
+                                    <select class="custom-select mt8 form-control" name="xaa_aa_shadow_cast_solar_panels">
+                                        <option></option>
+                                        <option value='ja' t-att-selected="formulier_id.xaa_aa_shadow_cast_solar_panels == 'ja'">
+                                            ja
+                                        </option>
+                                        <option value='nee' t-att-selected="formulier_id.xaa_aa_shadow_cast_solar_panels == 'nee'">
+                                            nee
+                                        </option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group row mt32 quotation_options" t-att-style="'display:block;'if formulier_id.xaa_aa_obstacles_on_roof == 'ja' else 'display:none;'">
+                                <div class="col-lg-12 col-md-12 col-sm-12 ">
+                                    <div class="form_lable mt16">
+                                        <label class="montserrat-extrabold_24">
+                                            Which obstacles are involved?
+                                        </label>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="col-sm-12 checkbox_div ">
+                                        <div ng-repeat="friend in friends" class="ng-scope">
+                                            <div class="checkbox">
+                                                <input type="checkbox" ng-model="friend.checked" ng-click="selectFriends(friend.name)" id="0" class="ng-valid ng-dirty ng-valid-parse ng-touched" name="xaa_aa_tree" t-att-checked="formulier_id.xaa_aa_tree"/>
+                                                <label class="ng-binding col-form-label ml16" for="xaa_aa_tree">Tree
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-12 checkbox_div ">
+                                        <div ng-repeat="friend in friends" class="ng-scope">
+                                            <div class="checkbox">
+                                                <input type="checkbox" ng-model="friend.checked" ng-click="selectFriends(friend.name)" id="0" class="ng-valid ng-dirty ng-valid-parse ng-touched" name="xaa_aa_obstacle_chimney_or_air_inlet" t-att-checked="formulier_id.xaa_aa_obstacle_chimney_or_air_inlet"/>
+                                                <label class="ng-binding col-form-label ml16" for="xaa_aa_obstacle_chimney_or_air_inlet">Chimney / air inlet</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-12 checkbox_div ">
+                                        <div ng-repeat="friend in friends" class="ng-scope">
+                                            <div class="checkbox">
+                                                <input type="checkbox" ng-model="friend.checked" ng-click="selectFriends(friend.name)" id="0" class="ng-valid ng-dirty ng-valid-parse ng-touched" name="xaa_aa_obstacle_dormer" t-att-checked="formulier_id.xaa_aa_obstacle_dormer"/>
+                                                <label class="ng-binding col-form-label ml16" for="xaa_aa_obstacle_dormer">Dormer
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-12 checkbox_div ">
+                                        <div ng-repeat="friend in friends" class="ng-scope">
+                                            <div class="checkbox">
+                                                <input type="checkbox" ng-model="friend.checked" ng-click="selectFriends(friend.name)" id="0" class="ng-valid ng-dirty ng-valid-parse ng-touched" name="xaa_aa_another_building" t-att-checked="formulier_id.xaa_aa_another_building"/>
+                                                <label class="ng-binding col-form-label ml16" for="xaa_aa_another_building">Another building
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-12 checkbox_div">
+                                        <div ng-repeat="friend in friends" class="ng-scope">
+                                            <div class="checkbox">
+                                                <input type="checkbox" ng-model="friend.checked" ng-click="selectFriends(friend.name)" id="0" class="ng-valid ng-dirty ng-valid-parse ng-touched" name="xaa_aa_obstacle_otherwise_namely" t-att-checked="formulier_id.xaa_aa_obstacle_otherwise_namely"/>
+                                                <label class="ng-binding col-form-label ml16" for="xaa_aa_obstacle_otherwise_namely">Otherwise, namely</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12 col-md-12 col-sm-12 explain_otherwise_namely" t-att-style="'display:block;'if formulier_id.xaa_aa_obstacle_otherwise_namely else 'display:none;'">
+                                        <span class="montserrat_regular">Note</span>
+                                        <input type="textarea"
+                                            name="xaa_aa_explain_otherwise_namely"
+                                            class="form-control"
+                                            t-att-value="formulier_id.xaa_aa_explain_otherwise_namely"/>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group row mt64" id="next_privious">
+                            <div class="col-md-5 col-lg-4 col-sm-5 col-6">
+                                <a class="btn-privoius mt16" data-id="quote_tab_1" 
+                                    type="Button" t-att-value="formulier_id.id">
+                                    <i class="fa fa-chevron-left" aria-hidden="false"/>Previous step
+                                </a>
+                            </div>
+                            <div class="col-md-4 col-lg-4 col-sm-5 col-6">
+                                <button class="btn btn-next mt16 mr8"
+                                    data-id="quote_tab_3" type="Button"
+                                    t-att-value="formulier_id.id">
+                                    Next step
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div role="tabpanel" class="tab-pane fade" id="quote_section3">
+                        <div class="div_padding_left" >
+                            <div class="">
+                                <div class="form_lable mt16">
+                                    <label class="montserrat-extrabold_24">
+                                        Which solar panels do you want?
+                                    </label>
+                                </div>
+                                <div class="form-group row mt16">
+                                    <div class="col-lg-12 col-md-12"
+                                        style="display:block; list-style-type:none;">
+                                        <t t-foreach="formulier_id.get_solar_products()" t-as="solar_prod">
+                                            <div t-att-class="'col-lg-3 col-md-3 col-sm-4 col-4 padding_14_10  house_solar_panal_li selected text-center mt8' if formulier_id.xaa_aa_solar_pannel_product_id and formulier_id.xaa_aa_solar_pannel_product_id.id == solar_prod.id else 'col-lg-3 col-md-3 col-sm-4 col-4 padding_14_10 house_solar_panal_li text-center mt8'" t-att-data-id="solar_prod.id">
+                                                <div class="text-center mt4">
+                                                    <span t-if="solar_prod.xaa_aa_wq_header_1" style="font-size:16px;" t-esc="solar_prod.xaa_aa_wq_header_1"/>
+                                                    <span t-if="not solar_prod.xaa_aa_wq_header_1" style="font-size:16px;" t-esc="solar_prod.name"/><br/>
+                                                    <span t-if="solar_prod.xaa_aa_wq_header_2" style="font-size:14px;" t-esc="solar_prod.xaa_aa_wq_header_2"/>
+                                                </div>
+                                                <div class="img_house_info">
+                                                    <img class="img img-fluid" t-attf-src="/web/image/product.product/{{solar_prod.id}}/xaa_aa_wq_image"/>
+                                                </div>
+                                                <div class="text-left">
+                                                    <t t-if="solar_prod.xaa_aa_wq_line1">
+                                                        <b><span style="font-size:12px;" t-esc="solar_prod.xaa_aa_wq_line1"/></b><br/>
+                                                    </t>
+                                                    <t t-if="solar_prod.xaa_aa_wq_line2">
+                                                        <b><span style="font-size:12px;" t-esc="solar_prod.xaa_aa_wq_line2"/></b><br/>
+                                                    </t>
+                                                    <t t-if="solar_prod.xaa_aa_wq_line3">
+                                                        <b><span style="font-size:12px;" t-esc="solar_prod.xaa_aa_wq_line3"/></b><br/>
+                                                    </t>
+                                                    <t t-if="solar_prod.xaa_aa_wq_line4">
+                                                        <b><span style="font-size:12px;" t-esc="solar_prod.xaa_aa_wq_line4"/></b>
+                                                    </t>
+                                                </div>
+                                            </div>
+                                        </t>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="solar_qty_show" t-att-style="'display:block;'if formulier_id.xaa_aa_solar_pannel_product_id else 'display:none;'">
+                                <div class="form_lable mt32">
+                                    <label class="montserrat-extrabold_24">
+                                        How many solar panels do you want?
+                                    </label>
+                                </div>
+                                <div class="solar-panel-desc">
+                                    <span>Based on our calculation, we recommend the number of solar panels below.</span>
+                                </div>
+                                <div class="snipper_Add_Minus mt24">
+                                    <button type="button" id="sub" class="sub">-</button>
+                                    <input class="count solar_pannel_qty" name="xaa_aa_choosen_panel_qty" type="text" id="1" value="1" min="1" max="100" />
+                                    <button type="button" id="add" class="add">+</button>
+                                    <span class="montserrat_regular ml8">Solar panels</span>
+                                    <input name="xaa_aa_calculated_panel_qty" type="hidden"/>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group row mt64" id="next_privious">
+                            <div class="col-md-5 col-lg-4 col-sm-5 col-6">
+                                <a class="btn-privoius mt16" data-id="quote_tab_2"
+                                type="Button" t-att-value="formulier_id.id">
+                                    <i class="fa fa-chevron-left" aria-hidden="false"/>Previous step
+                                </a>
+                            </div>
+                            <div class="col-md-4 col-lg-4 col-sm-5 col-6">
+                                <button class="btn btn-next mt16 mr8"
+                                    data-id="summery_tab" type="Button"
+                                    t-att-value="formulier_id.id">Next step
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </template>
+</odoo>

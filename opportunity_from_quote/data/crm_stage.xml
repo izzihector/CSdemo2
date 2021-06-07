@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo noupdate="1">
+    <record model="crm.stage" id="stage_lead5">
+        <field name="name">Send Quote</field>
+        <field name="sequence">1</field>
+    </record>
+    <record model="crm.stage" id="stage_lead6">
+        <field name="name">Looked</field>
+        <field name="sequence">2</field>
+    </record>
+    <record model="crm.lost.reason" id="lost_reason1">
+        <field name="name">Order Cancelled</field>
+    </record>
+</odoo>

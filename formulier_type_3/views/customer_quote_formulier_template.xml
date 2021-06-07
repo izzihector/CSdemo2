@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <template id="customer_quote_formulier" inherit_id="project_formulier_quote.customer_quote_formulier">
+        <xpath expr="." position="inside">
+            <t t-if="formulier_id.xaa_aa_formulier_type == 'formulier_three'">
+                <t t-call="website.layout">
+                    <div class="custom_banner">
+                        <div class="container">
+                            <!-- solar_pannel.jpeg -->
+                            <div class="row">
+                                <form t-attf-action="/customer/pv/quote/submit/#{formulier_id.id}/" method="POST" data-model_name="question.formulier" class=" s_website_form form-horizontal form_style"  enctype="multipart/form-data">
+                                    <span class="montserrat-extrabold_32">Make a quote for solar panels</span><br/><span class="shadow_box_16">Within a few minutes you have the price for solar panel installation including plaatsing</span>
+                                    <div id="exTab1" class="container quote_tabs">
+                                        <ul class="nav nav-pills mt32">
+                                            <li class="active quote_tabs_li" id="data_id">
+                                                <a  href="#tab_data_form" class="a_after" data-toggle="tab">
+                                                    <span>1 </span><span class="menu_span">Data</span>
+                                                </a>
+                                            </li>
+                                            <li class="quote_tabs_li" id="anergy_consumpation_id">
+                                                <a href="#tab_energy_consumtion_form" class="a_after" data-toggle="tab">
+                                                    <span>2 </span><span class="menu_span">Energy consumption</span>
+                                                </a>
+                                            </li>
+                                            <li class="quote_tabs_li" id="quoteation_tab">
+                                                <a href="#tab_quotation_form" class="a_after" data-toggle="tab">
+                                                    <span>3 </span><span class="menu_span">Quotation</span>
+                                                </a>
+                                            </li>
+                                            <li class="quote_tabs_li" id="summery_tab">
+                                                <a href="#tab_summary_form" class="a_after" data-toggle="tab">
+                                                    <span>4 </span><span class="menu_span">Summary</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                        <div class="tab-content clearfix web_tab_1">
+                                            <div class="tab-pane active" id="tab_data_form">
+                                                <t t-call="formulier_type_3.customer_quote_formulier_data"/>
+                                            </div>
+                                            <div class="tab-pane" id="tab_energy_consumtion_form">
+                                                <t t-call="formulier_type_3.customer_quote_formulier_energy"/>
+                                            </div>
+                                            <div class="tab-pane" id="tab_quotation_form">
+                                                <t t-call="formulier_type_3.customer_quote_formulier_quotation_energy"/>
+                                            </div>
+                                            <div class="tab-pane" id="tab_summary_form">
+                                                <t t-call="formulier_type_3.customer_quote_formulier_summery"/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </t>
+            </t>
+        </xpath>
+    </template>
+</odoo>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="report_formulier_task_stage_action" model="ir.actions.report">
+        <field name="name">Formulier Task Stage Report</field>
+        <field name="model">question.formulier</field>
+        <field name="report_type">qweb-pdf</field>
+        <field name="report_name">project_formulier.formulier_task_stage_report</field>
+        <field name="report_file">project_formulier.formulier_task_stage_report</field>
+        <field name="print_report_name">'Formulier Task Stage Report -Order - %s' % (object.xaa_aa_name)</field>
+        <field name="binding_model_id" ref="model_question_formulier"/>
+        <field name="binding_type">report</field>
+    </record>
+    <template id="formulier_task_stage_report">
+        <t t-call="web.html_container">
+            <t t-foreach="docs" t-as="o">
+                <t t-call="web.external_layout">
+                    <div class="page">
+                        <div class="row">
+                            <div class="col-xs-12">
+                              <center> <h2><span t-esc="o.xaa_aa_name"/></h2></center>
+                              <div class="report_body">
+                              </div> 
+                            </div>
+                        </div>
+                    </div>
+                </t>
+            </t>
+        </t>
+    </template>
+</odoo>

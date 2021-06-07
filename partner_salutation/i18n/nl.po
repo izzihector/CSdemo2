@@ -1,0 +1,166 @@
+# Translation of Odoo Server.   
+# This file contains the translation of the following modules:
+#   * partner_salutation
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 14.1alpha1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-09-23 07:46+0000\n"
+"PO-Revision-Date: 2020-09-23 07:46+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: partner_salutation
+#: model:ir.model.fields.selection,name:partner_salutation.selection__crm_lead__xaa_aa_informal_salutation__best
+#: model:ir.model.fields.selection,name:partner_salutation.selection__res_partner__xaa_aa_informal_salutation__best
+msgid "Best"
+msgstr "Beste"
+
+#. module: partner_salutation
+#: model:ir.model.fields.selection,name:partner_salutation.selection__crm_lead__xaa_aa_formal_salutation__dear
+#: model:ir.model.fields.selection,name:partner_salutation.selection__res_partner__xaa_aa_formal_salutation__dear
+msgid "Dear"
+msgstr "Geachte"
+
+#. module: partner_salutation
+#: model:ir.model.fields,field_description:partner_salutation.field_crm_lead__display_name
+#: model:ir.model.fields,field_description:partner_salutation.field_res_partner__display_name
+#: model:ir.model.fields,field_description:partner_salutation.field_sale_order__display_name
+msgid "Display Name"
+msgstr "Schermnaam"
+
+#. module: partner_salutation
+#: model:ir.model.fields,field_description:partner_salutation.field_crm_lead__xaa_aa_firstname
+#: model:ir.model.fields,field_description:partner_salutation.field_res_partner__xaa_aa_firstname
+#: model:ir.model.fields,field_description:partner_salutation.field_res_users__xaa_aa_firstname
+msgid "First name"
+msgstr "Voornaam"
+
+#. module: partner_salutation
+#: model:ir.model.fields.selection,name:partner_salutation.selection__sale_order__xaa_aa_salutation_type__formal
+msgid "Formal"
+msgstr "Formele"
+
+#. module: partner_salutation
+#: model:ir.model.fields,field_description:partner_salutation.field_crm_lead__xaa_aa_formal_salutation_result
+#: model:ir.model.fields,field_description:partner_salutation.field_res_partner__xaa_aa_formal_partner_salutation
+#: model:ir.model.fields,field_description:partner_salutation.field_res_users__xaa_aa_formal_partner_salutation
+msgid "Formal Partner Salutation"
+msgstr "Formele Begroeting"
+
+#. module: partner_salutation
+#: model:ir.model.fields,field_description:partner_salutation.field_crm_lead__xaa_aa_formal_salutation
+#: model:ir.model.fields,field_description:partner_salutation.field_res_partner__xaa_aa_formal_salutation
+#: model:ir.model.fields,field_description:partner_salutation.field_res_users__xaa_aa_formal_salutation
+msgid "Formal Salutation"
+msgstr "Formele Aanhef"
+
+#. module: partner_salutation
+#: model:ir.model.fields.selection,name:partner_salutation.selection__crm_lead__xaa_aa_informal_salutation__hello
+#: model:ir.model.fields.selection,name:partner_salutation.selection__res_partner__xaa_aa_informal_salutation__hello
+msgid "Hello"
+msgstr "Hallo"
+
+#. module: partner_salutation
+#: model:ir.model.fields.selection,name:partner_salutation.selection__sale_order__xaa_aa_salutation_type__informal
+msgid "Informal"
+msgstr "Informele"
+
+#. module: partner_salutation
+#: model:ir.model.fields,field_description:partner_salutation.field_crm_lead__xaa_aa_informal_salutation_result
+#: model:ir.model.fields,field_description:partner_salutation.field_res_partner__xaa_aa_informal_partner_salutation
+#: model:ir.model.fields,field_description:partner_salutation.field_res_users__xaa_aa_informal_partner_salutation
+msgid "Informal Partner Salutation"
+msgstr "Informele Begroeting"
+
+#. module: partner_salutation
+#: model:ir.model.fields,field_description:partner_salutation.field_crm_lead__xaa_aa_informal_salutation
+#: model:ir.model.fields,field_description:partner_salutation.field_res_partner__xaa_aa_informal_salutation
+#: model:ir.model.fields,field_description:partner_salutation.field_res_users__xaa_aa_informal_salutation
+msgid "Informal Salutation"
+msgstr "Informele Aanhef"
+
+#. module: partner_salutation
+#: model:ir.model.fields,field_description:partner_salutation.field_crm_lead____last_update
+#: model:ir.model.fields,field_description:partner_salutation.field_res_partner____last_update
+#: model:ir.model.fields,field_description:partner_salutation.field_sale_order____last_update
+msgid "Last Modified on"
+msgstr "Laatst gewijzigd op"
+
+#. module: partner_salutation
+#: model:ir.model.fields,field_description:partner_salutation.field_crm_lead__xaa_aa_lastname
+#: model:ir.model.fields,field_description:partner_salutation.field_res_partner__xaa_aa_lastname
+#: model:ir.model.fields,field_description:partner_salutation.field_res_users__xaa_aa_lastname
+msgid "Last name"
+msgstr "Achternaam"
+
+#. module: partner_salutation
+#: model:ir.model,name:partner_salutation.model_crm_lead
+msgid "Lead/Opportunity"
+msgstr "Lead/Prospect"
+
+#. module: partner_salutation
+#: model:ir.model.fields,field_description:partner_salutation.field_sale_order__xaa_aa_sale_order_partner_result
+msgid "Partner Salutation"
+msgstr "Begroeting"
+
+#. module: partner_salutation
+#: model:ir.model,name:partner_salutation.model_sale_order
+msgid "Sales Order"
+msgstr "Verkooporder"
+
+#. module: partner_salutation
+#: model:ir.model.fields,field_description:partner_salutation.field_sale_order__xaa_aa_salutation_type
+msgid "Salutation Type"
+msgstr "Aanhef Type"
+
+#. module: partner_salutation
+#: code:addons/partner_salutation/models/models.py:29 
+#: code:addons/partner_salutation/models/models.py:64
+#: code:addons/partner_salutation/models/models.py:103
+#, python-format
+msgid "Best"
+msgstr "Beste"
+
+#. module: partner_salutation
+#: code:addons/partner_salutation/models/models.py:29
+#: code:addons/partner_salutation/models/models.py:64
+#: code:addons/partner_salutation/models/models.py:103
+#, python-format
+msgid "Hello"
+msgstr "Hallo"
+
+#. module: partner_salutation
+#: code:addons/partner_salutation/models/models.py:38
+#: code:addons/partner_salutation/models/models.py:78
+#: code:addons/partner_salutation/models/models.py:105
+#, python-format
+msgid "Dear"
+msgstr "Geachte"
+
+#. module: partner_salutation
+#: code:addons/partner_salutation/models/models.py:114
+#, python-format
+msgid "Mister"
+msgstr "heer"
+
+#. module: base
+#: model:res.partner.title,name:base.res_partner_title_mister
+msgid "Mister"
+msgstr "heer"
+
+#. module: partner_salutation
+#: code:addons/partner_salutation/models/models.py:114
+#, python-format
+msgid "Madam"
+msgstr "Mevrouw"
+
+#. module: partner_salutation
+#: model_terms:ir.ui.view,arch_db:partner_salutation.view_partner_salutation_in_lead_form
+msgid "Customer"
+msgstr "Klant"

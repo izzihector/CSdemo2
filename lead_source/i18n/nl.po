@@ -1,0 +1,42 @@
+# Translation of Odoo Server. 
+# This file contains the translation of the following modules:
+#   * lead_source
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 14.1alpha1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-09-22 07:30+0000\n"
+"PO-Revision-Date: 2020-09-22 07:30+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: lead_source
+#: model:ir.actions.act_window,name:lead_source.lead_source
+#: model:ir.model,name:lead_source.model_lead_source
+#: model:ir.model.fields,field_description:lead_source.field_crm_lead__xaa_aa_lead_lead_source
+#: model:ir.model.fields,field_description:lead_source.field_lead_source__xaa_aa_name
+#: model:ir.model.fields,field_description:lead_source.field_sale_order__xaa_aa_lead_lead_source
+#: model:ir.ui.menu,name:lead_source.menu_lead_source
+msgid "Lead Source"
+msgstr "Aanvraag bron "
+
+#. module: lead_source
+#: model_terms:ir.ui.view,arch_db:lead_source.lead_source_form
+#: model_terms:ir.ui.view,arch_db:lead_source.lead_source_tree
+msgid "Lead source"
+msgstr "Aanvraag bron"
+
+#. module: lead_source
+#: model:ir.model,name:lead_source.model_crm_lead
+msgid "Lead/Opportunity"
+msgstr "Lead/Prospect"
+
+#. module: lead_source
+#: model_terms:ir.ui.view,arch_db:lead_source.crm_case_form_view_oppor_inherit
+msgid "New Quotation"
+msgstr "Nieuwe offerte"

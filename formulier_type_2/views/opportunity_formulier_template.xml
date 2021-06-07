@@ -1,0 +1,777 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="project_formulier_image" inherit_id="project_formulier.project_formulier_image">
+        <xpath expr="." position="inside">
+            <t t-if="formulier_id.xaa_aa_formulier_type == 'formulier_two'">
+                <div class="form-group row form-field" id="formulier_2_form">
+                    <input type="file" name="xaa_aa_house" class="hide_input_image form-control o_website_form_input"/>
+                    <input type="file" name="xaa_aa_access" class="hide_input_image form-control o_website_form_input"/>
+                    <input type="file" name="xaa_aa_parking_spot" class="hide_input_image form-control o_website_form_input"/>
+                    <input type="file" name="xaa_aa_obstacles" class="hide_input_image form-control o_website_form_input"/>
+                    <input type="file" name="xaa_aa_wall1" class="hide_input_image form-control o_website_form_input"/>
+                    <input type="file" name="xaa_aa_wall2" class="hide_input_image form-control o_website_form_input"/>
+                    <input type="file" name="xaa_aa_floor1" class="hide_input_image form-control o_website_form_input"/>
+                    <input type="file" name="xaa_aa_roof1" class="hide_input_image form-control o_website_form_input"/>
+                    <div class="col-lg-3 col-md-3 col-sm-3 custom-text">
+                        <h5>House / Property</h5>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-3">
+                        <button aria-label="Edit" class="fa fa-pencil pull-right fa-lg edit_button" title="Edit" ></button>
+                        <img class="img img-fluid" id="xaa_aa_house" t-attf-src="/web/image/question.formulier/{{formulier_id.id}}/xaa_aa_house"/>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-3 custom-text">
+                        <h5>Access</h5>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-3">
+                        <button aria-label="Edit" class="fa fa-pencil pull-right fa-lg edit_button" title="Edit" ></button>
+                        <img class="img img-fluid" id='xaa_aa_access' t-attf-src="/web/image/question.formulier/{{formulier_id.id}}/xaa_aa_access"/>
+                    </div>
+                </div>
+                <div class="form-group row form-field">
+                    <div class="col-lg-3 col-md-3 col-sm-3 custom-text">
+                        <h5>Parking spot</h5>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-3">
+                        <button aria-label="Edit" class="fa fa-pencil pull-right fa-lg edit_button" title="Edit" ></button>
+                        <img class="img img-fluid" id="xaa_aa_parking_spot" t-attf-src="/web/image/question.formulier/{{formulier_id.id}}/xaa_aa_parking_spot"/>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-3 custom-text">
+                        <h5>Obstacles</h5>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-3">
+                        <button aria-label="Edit" class="fa fa-pencil pull-right fa-lg edit_button" title="Edit" ></button>
+                        <img class="img img-fluid" id="xaa_aa_obstacles" t-attf-src="/web/image/question.formulier/{{formulier_id.id}}/xaa_aa_obstacles"/>
+                    </div>
+                </div>
+                <div class="form-group row form-field">
+                    <div class="col-lg-3 col-md-3 col-sm-3 custom-text">
+                        <h5>Wall 1</h5>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-3">
+                        <button aria-label="Edit" class="fa fa-pencil pull-right fa-lg edit_button" title="Edit" ></button>
+                        <img class="img img-fluid" id="xaa_aa_wall1" t-attf-src="/web/image/question.formulier/{{formulier_id.id}}/xaa_aa_wall1"/>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-3 custom-text">
+                        <h5>Wall 2</h5>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-3">
+                        <button aria-label="Edit" class="fa fa-pencil pull-right fa-lg edit_button" title="Edit" ></button>
+                        <img class="img img-fluid" id="xaa_aa_wall2" t-attf-src="/web/image/question.formulier/{{formulier_id.id}}/xaa_aa_wall2"/>
+                    </div>
+                </div>
+                <div class="form-group row form-field">
+                    <div class="col-lg-3 col-md-3 col-sm-3 custom-text">
+                        <h5>Floor 1</h5>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-3">
+                        <button aria-label="Edit" class="fa fa-pencil pull-right fa-lg edit_button" title="Edit" ></button>
+                        <img class="img img-fluid" id="xaa_aa_floor1" t-attf-src="/web/image/question.formulier/{{formulier_id.id}}/xaa_aa_floor1"/>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-3 custom-text">
+                        <h5>Roof 1</h5>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-3">
+                        <button aria-label="Edit" class="fa fa-pencil pull-right fa-lg edit_button" title="Edit" ></button>
+                        <img class="img img-fluid" id="xaa_aa_roof1" t-attf-src="/web/image/question.formulier/{{formulier_id.id}}/xaa_aa_roof1"/>
+                    </div>
+                </div>
+            </t>
+        </xpath>
+    </template>
+    <template id="opportunity_formulier_template" inherit_id="project_formulier.opportunity_formulier_template">
+        <xpath expr="." position="inside">
+            <t t-if="formulier_id.xaa_aa_formulier_type == 'formulier_two'">
+                <div class="text-center text-primary">
+                    <h3><u>Wall</u></h3>
+                </div>
+                <div class="form-group row form-field">
+                    <div class="col-lg-3 col-md-4 col-sm-4 custom-text">
+                        <label class="col-form-label" for="xaa_aa_wall_number_m2">Wall Number of m2</label>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6">
+                        <input type="number" name="xaa_aa_wall_number_m2" class="form-control" t-att-value="formulier_id.xaa_aa_wall_number_m2"/>
+                    </div>
+                </div>
+                <div class="form-group row form-field">
+                    <div class="col-lg-3 col-md-4 col-sm-4 custom-text">
+                        <label class="col-form-label" for="xaa_aa_wall_material">Wall Material</label>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6">
+                        <div>
+                            <select name="xaa_aa_wall_material" class="form-control">
+                                <option></option>
+                                <option value='PUR' t-att-selected="formulier_id.xaa_aa_wall_material == 'PUR'">
+                                    PUR
+                                </option>
+                                <option value='Foam' t-att-selected="formulier_id.xaa_aa_wall_material == 'Foam'">
+                                    Foam
+                                </option>
+                                <option value='Parels' t-att-selected="formulier_id.xaa_aa_wall_material == 'Parels'">
+                                    Parels
+                                </option>
+                                <option value='Wol' t-att-selected="formulier_id.xaa_aa_wall_material == 'Wol'">
+                                    Wol
+                                </option>
+                                <option value='anders' t-att-selected="formulier_id.xaa_aa_wall_material == 'anders'">
+                                    anders
+                                </option>
+                                <option value='nvt' t-att-selected="formulier_id.xaa_aa_wall_material == 'nvt'">
+                                    nvt
+                                </option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group row form-field">
+                    <div class="col-lg-3 col-md-4 col-sm-4 custom-text">
+                        <label class="col-form-label" for="xaa_aa_hole_diameter">Hole Diameter</label>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6">
+                        <div>
+                            <select name="xaa_aa_hole_diameter" class="form-control">
+                                <option></option>
+                                <option value='18 CM' t-att-selected="formulier_id.xaa_aa_hole_diameter == '18 CM'">
+                                    18 CM
+                                </option>
+                                <option value='16 CM' t-att-selected="formulier_id.xaa_aa_hole_diameter == '16 CM'">
+                                    16 CM
+                                </option>
+                                <option value='14 CM' t-att-selected="formulier_id.xaa_aa_hole_diameter == '14 CM'">
+                                    14 CM
+                                </option>
+                                <option value='12 CM' t-att-selected="formulier_id.xaa_aa_hole_diameter == '12 CM'">
+                                    12 CM
+                                </option>
+                                <option value='22 CM' t-att-selected="formulier_id.xaa_aa_hole_diameter == '22 CM'">
+                                    22 CM
+                                </option>
+                                <option value='nvt' t-att-selected="formulier_id.xaa_aa_hole_diameter == 'nvt'">
+                                    nvt
+                                </option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group row form-field">
+                    <div class="col-lg-3 col-md-4 col-sm-4 custom-text">
+                        <label class="col-form-label" for="xaa_aa_gutter_height">Gutter height</label>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6">
+                        <div>
+                            <select name="xaa_aa_gutter_height" class="form-control">
+                                <option></option>
+                                <option value='0-2.5 m1' t-att-selected="formulier_id.xaa_aa_gutter_height == '0-2.5 m1'">
+                                    0-2.5 m1
+                                </option>
+                                <option value='2.5-4 m1' t-att-selected="formulier_id.xaa_aa_gutter_height == '2.5-4 m1'">
+                                    2.5-4 m1
+                                </option>
+                                <option value='4-6 m1' t-att-selected="formulier_id.xaa_aa_gutter_height == '4-6 m1'">
+                                    4-6 m1
+                                </option>
+                                <option value='6-8 m1' t-att-selected="formulier_id.xaa_aa_gutter_height == '6-8 m1'">
+                                    6-8 m1
+                                </option>
+                                <option value='8-10 m1' t-att-selected="formulier_id.xaa_aa_gutter_height == '8-10 m1'">
+                                    8-10 m1
+                                </option>
+                                <option value='10+' t-att-selected="formulier_id.xaa_aa_gutter_height == '10+'">
+                                    10+
+                                </option>
+                                <option value='nvt' t-att-selected="formulier_id.xaa_aa_gutter_height == 'nvt'">
+                                    nvt
+                                </option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group row form-field">
+                    <div class="col-lg-3 col-md-4 col-sm-4 custom-text">
+                        <label class="col-form-label" for="xaa_aa_cam_height">Cam height</label>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6">
+                        <div>
+                            <select name="xaa_aa_cam_height" class="form-control">
+                                <option></option>
+                                <option value='0-4 m1' t-att-selected="formulier_id.xaa_aa_cam_height == '0-4 m1'">
+                                    0-4 m1
+                                </option>
+                                <option value='4-6 m1' t-att-selected="formulier_id.xaa_aa_cam_height == '4-6 m1'">
+                                    4-6 m1
+                                </option>
+                                <option value='6-7 m1' t-att-selected="formulier_id.xaa_aa_cam_height == '6-7 m1'">
+                                    6-7 m1
+                                </option>
+                                <option value='7-8 m1' t-att-selected="formulier_id.xaa_aa_cam_height == '7-8 m1'">
+                                    7-8 m1
+                                </option>
+                                <option value='8-9 m1' t-att-selected="formulier_id.xaa_aa_cam_height == '8-9 m1'">
+                                    8-9 m1
+                                </option>
+                                <option value='10-12 m1' t-att-selected="formulier_id.xaa_aa_cam_height == '10-12 m1'">
+                                    10-12 m1
+                                </option>
+                                <option value='12+' t-att-selected="formulier_id.xaa_aa_cam_height == '12+'">
+                                    12+
+                                </option>
+                                <option value='nvt' t-att-selected="formulier_id.xaa_aa_cam_height == 'nvt'">
+                                    nvt
+                                </option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group row form-field">
+                    <div class="col-lg-3 col-md-4 col-sm-4 custom-text">
+                        <label class="col-form-label" for="xaa_aa_platform">Platform</label>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6">
+                        <div>
+                            <select name="xaa_aa_platform" class="form-control">
+                                <option></option>
+                                <option value='ja' t-att-selected="formulier_id.xaa_aa_platform == 'ja'">
+                                    ja
+                                </option>
+                                <option value='nee' t-att-selected="formulier_id.xaa_aa_platform == 'nee'">
+                                    nee
+                                </option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group row form-field">
+                    <div class="col-lg-3 col-md-4 col-sm-4 custom-text">
+                        <label class="col-form-label" for="xaa_aa_scaffolding">Scaffolding</label>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6">
+                        <div>
+                            <select name="xaa_aa_scaffolding" class="form-control">
+                                <option></option>
+                                <option value='ja' t-att-selected="formulier_id.xaa_aa_scaffolding == 'ja'">
+                                    ja
+                                </option>
+                                <option value='nee' t-att-selected="formulier_id.xaa_aa_scaffolding == 'nee'">
+                                    nee
+                                </option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group row form-field">
+                    <div class="col-lg-3 col-md-4 col-sm-4 custom-text">
+                        <label class="col-form-label" for="xaa_aa_joint_color">Joint Color</label>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6">
+                        <div>
+                            <select name="xaa_aa_joint_color" class="form-control">
+                                <option></option>
+                                <option value='wit' t-att-selected="formulier_id.xaa_aa_joint_color == 'wit'">
+                                    wit
+                                </option>
+                                <option value='licht grijs' t-att-selected="formulier_id.xaa_aa_joint_color == 'licht grijs'">
+                                    licht grijs
+                                </option>
+                                <option value='grijs' t-att-selected="formulier_id.xaa_aa_joint_color == 'grijs'">
+                                    grijs
+                                </option>
+                                <option value='donkergrijs' t-att-selected="formulier_id.xaa_aa_joint_color == 'donkergrijs'">
+                                    donkergrijs
+                                </option>
+                                <option value='anders' t-att-selected="formulier_id.xaa_aa_joint_color == 'anders'">
+                                    anders
+                                </option>
+                                <option value='nvt' t-att-selected="formulier_id.xaa_aa_joint_color == 'nvt'">
+                                    nvt
+                                </option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group row form-field">
+                    <div class="col-lg-3 col-md-4 col-sm-4 custom-text">
+                        <label class="col-form-label" for="xaa_aa_painted_facade">Painted facade</label>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6">
+                        <div>
+                            <select name="xaa_aa_painted_facade" class="form-control">
+                                <option></option>
+                                <option value='nee' t-att-selected="formulier_id.xaa_aa_painted_facade == 'nee'">
+                                    nee
+                                </option>
+                                <option value='ja, besproken' t-att-selected="formulier_id.xaa_aa_painted_facade == 'ja, besproken'">
+                                    ja, besproken
+                                </option>
+                                <option value='ja, niet besproken' t-att-selected="formulier_id.xaa_aa_painted_facade == 'ja, niet besproken'">
+                                    ja, niet besproken
+                                </option>
+                                <option value='anders' t-att-selected="formulier_id.xaa_aa_painted_facade == 'anders'">
+                                    anders
+                                </option>
+                                <option value='nvt' t-att-selected="formulier_id.xaa_aa_painted_facade == 'nvt'">
+                                    nvt
+                                </option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group row form-field">
+                    <div class="col-lg-3 col-md-4 col-sm-4 custom-text">
+                        <label class="col-form-label" for="xaa_aa_condition_add">Condition Add</label>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6">
+                        <div>
+                            <select name="xaa_aa_condition_add" class="form-control">
+                                <option></option>
+                                <option value='goed' t-att-selected="formulier_id.xaa_aa_condition_add == 'goed'">
+                                    goed
+                                </option>
+                                <option value='normaal' t-att-selected="formulier_id.xaa_aa_condition_add == 'normaal'">
+                                    normaal
+                                </option>
+                                <option value='slecht' t-att-selected="formulier_id.xaa_aa_condition_add == 'slecht'">
+                                    slecht
+                                </option>
+                                <option value='heel slecht' t-att-selected="formulier_id.xaa_aa_condition_add == 'heel slecht'">
+                                    heel slecht
+                                </option>
+                                <option value='anders' t-att-selected="formulier_id.xaa_aa_condition_add == 'anders'">
+                                    anders
+                                </option>
+                                <option value='nvt' t-att-selected="formulier_id.xaa_aa_condition_add == 'nvt'">
+                                    nvt
+                                </option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group row form-field">
+                    <div class="col-lg-3 col-md-4 col-sm-4 custom-text">
+                        <label class="col-form-label" for="xaa_aa_cavity_width">Cavity width</label>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6">
+                        <div>
+                            <select name="xaa_aa_cavity_width" class="form-control">
+                                <option></option>
+                                <option value='geen' t-att-selected="formulier_id.xaa_aa_cavity_width == 'geen'">
+                                    geen
+                                </option>
+                                <option value='3 CM' t-att-selected="formulier_id.xaa_aa_cavity_width == '3 CM'">
+                                    3 CM
+                                </option>
+                                <option value='4 CM' t-att-selected="formulier_id.xaa_aa_cavity_width == '4 CM'">
+                                    4 CM
+                                </option>
+                                <option value='5 CM' t-att-selected="formulier_id.xaa_aa_cavity_width == '5 CM'">
+                                    5 CM
+                                </option>
+                                <option value='6 CM' t-att-selected="formulier_id.xaa_aa_cavity_width == '6 CM'">
+                                    6 CM
+                                </option>
+                                <option value='7 CM' t-att-selected="formulier_id.xaa_aa_cavity_width == '7 CM'">
+                                    7 CM
+                                </option>
+                                <option value='8 CM' t-att-selected="formulier_id.xaa_aa_cavity_width == '8 CM'">
+                                    8 CM
+                                </option>
+                                <option value='9 CM' t-att-selected="formulier_id.xaa_aa_cavity_width == '9 CM'">
+                                    9 CM
+                                </option>
+                                <option value='10 CM' t-att-selected="formulier_id.xaa_aa_cavity_width == '10 CM'">
+                                    10 CM
+                                </option>
+                                <option value='11 CM' t-att-selected="formulier_id.xaa_aa_cavity_width == '11 CM'">
+                                    11 CM
+                                </option>
+                                <option value='12 CM' t-att-selected="formulier_id.xaa_aa_cavity_width == '12 CM'">
+                                    12 CM
+                                </option>
+                                <option value='13 CM' t-att-selected="formulier_id.xaa_aa_cavity_width == '13 CM'">
+                                    13 CM
+                                </option>
+                                <option value='14 CM' t-att-selected="formulier_id.xaa_aa_cavity_width == '14 CM'">
+                                    14 CM
+                                </option>
+                                <option value='15 CM' t-att-selected="formulier_id.xaa_aa_cavity_width == '15 CM'">
+                                    15 CM
+                                </option>
+                                <option value='anders' t-att-selected="formulier_id.xaa_aa_cavity_width == 'anders'">
+                                    anders
+                                </option>
+                                <option value='nvt' t-att-selected="formulier_id.xaa_aa_cavity_width == 'nvt'">
+                                    nvt
+                                </option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group row form-field">
+                    <div class="col-lg-3 col-md-4 col-sm-4 custom-text">
+                        <label class="col-form-label" for="xaa_aa_cavity_inspection">Cavity inspection</label>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6">
+                        <div>
+                            <select name="xaa_aa_cavity_inspection" class="form-control">
+                                <option></option>
+                                <option value='geen' t-att-selected="formulier_id.xaa_aa_cavity_inspection == 'geen'">
+                                    geen
+                                </option>
+                                <option value='1 gat' t-att-selected="formulier_id.xaa_aa_cavity_inspection == '1 gat'">
+                                    1 gat
+                                </option>
+                                <option value='2 gaten' t-att-selected="formulier_id.xaa_aa_cavity_inspection == '2 gaten'">
+                                    2 gaten
+                                </option>
+                                <option value='3 gaten' t-att-selected="formulier_id.xaa_aa_cavity_inspection == '3 gaten'">
+                                    3 gaten
+                                </option>
+                                <option value='4 gaten' t-att-selected="formulier_id.xaa_aa_cavity_inspection == '4 gaten'">
+                                    4 gaten
+                                </option>
+                                <option value='5 gaten' t-att-selected="formulier_id.xaa_aa_cavity_inspection == '5 gaten'">
+                                    5 gaten
+                                </option>
+                                <option value='anders' t-att-selected="formulier_id.xaa_aa_cavity_inspection == 'anders'">
+                                    anders
+                                </option>
+                                <option value='nvt' t-att-selected="formulier_id.xaa_aa_cavity_inspection == 'nvt'">
+                                    nvt
+                                </option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group row form-field">
+                    <div class="col-lg-3 col-md-4 col-sm-4 custom-text">
+                        <label class="col-form-label" for="xaa_aa_plant_growth">Plant growth</label>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6">
+                        <div>
+                            <select name="xaa_aa_plant_growth" class="form-control">
+                                <option></option>
+                                <option value='ja' t-att-selected="formulier_id.xaa_aa_plant_growth == 'ja'">
+                                    ja
+                                </option>
+                                <option value='nee' t-att-selected="formulier_id.xaa_aa_plant_growth == 'nee'">
+                                    nee
+                                </option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group row form-field">
+                    <div class="col-lg-3 col-md-4 col-sm-4 custom-text">
+                        <label class="col-form-label" for="xaa_aa_housing_separation">Housing separation</label>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6">
+                        <div>
+                            <select name="xaa_aa_housing_separation" class="form-control">
+                                <option></option>
+                                <option value='geen' t-att-selected="formulier_id.xaa_aa_housing_separation == 'geen'">
+                                    geen
+                                </option>
+                                <option value='1 borstel' t-att-selected="formulier_id.xaa_aa_housing_separation == '1 borstel'">
+                                    1 borstel
+                                </option>
+                                <option value='2 borstel' t-att-selected="formulier_id.xaa_aa_housing_separation == '2 borstel'">
+                                    2 borstel
+                                </option>
+                                <option value='3 borstel' t-att-selected="formulier_id.xaa_aa_housing_separation == '3 borstel'">
+                                    3 borstel
+                                </option>
+                                <option value='4 borstel' t-att-selected="formulier_id.xaa_aa_housing_separation == '4 borstel'">
+                                    4 borstel
+                                </option>
+                                <option value='5 borstel' t-att-selected="formulier_id.xaa_aa_housing_separation == '5 borstel'">
+                                    5 borstel
+                                </option>
+                                <option value='6 borstel' t-att-selected="formulier_id.xaa_aa_housing_separation == '6 borstel'">
+                                    6 borstel
+                                </option>
+                                <option value='7 borstel' t-att-selected="formulier_id.xaa_aa_housing_separation == '7 borstel'">
+                                    7 borstel
+                                </option>
+                                <option value='8 borstel' t-att-selected="formulier_id.xaa_aa_housing_separation == '8 borstel'">
+                                    8 borstel
+                                </option>
+                                <option value='9 borstel' t-att-selected="formulier_id.xaa_aa_housing_separation == '9 borstel'">
+                                    9 borstel
+                                </option>
+                                <option value='10 borstel' t-att-selected="formulier_id.xaa_aa_housing_separation == '10 borstel'">
+                                    10 borstel
+                                </option>
+                                <option value='11 borstel' t-att-selected="formulier_id.xaa_aa_housing_separation == '11 borstel'">
+                                    11 borstel
+                                </option>
+                                <option value='12 borstel' t-att-selected="formulier_id.xaa_aa_housing_separation == '12 borstel'">
+                                    12 borstel
+                                </option>
+                                <option value='13 borstel' t-att-selected="formulier_id.xaa_aa_housing_separation == '13 borstel'">
+                                    13 borstel
+                                </option>
+                                <option value='14 borstel' t-att-selected="formulier_id.xaa_aa_housing_separation == '14 borstel'">
+                                    14 borstel
+                                </option>
+                                <option value='15 borstel' t-att-selected="formulier_id.xaa_aa_housing_separation == '15 borstel'">
+                                    15 borstel
+                                </option>
+                                <option value='16 borstel' t-att-selected="formulier_id.xaa_aa_housing_separation == '16 borstel'">
+                                    16 borstel
+                                </option>
+                                <option value='17 borstel' t-att-selected="formulier_id.xaa_aa_housing_separation == '17 borstel'">
+                                    17 borstel
+                                </option>
+                                <option value='18 borstel' t-att-selected="formulier_id.xaa_aa_housing_separation == '18 borstel'">
+                                    18 borstel
+                                </option>
+                                <option value='19 borstel' t-att-selected="formulier_id.xaa_aa_housing_separation == '19 borstel'">
+                                    19 borstel
+                                </option>
+                                <option value='20 borstel' t-att-selected="formulier_id.xaa_aa_housing_separation == '20 borstel'">
+                                    20 borstel
+                                </option>
+                                <option value='anders' t-att-selected="formulier_id.xaa_aa_housing_separation == 'anders'">
+                                    anders
+                                </option>
+                                <option value='nvt' t-att-selected="formulier_id.xaa_aa_housing_separation == 'nvt'">
+                                    nvt
+                                </option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center text-primary">
+                    <h3><u>Floor</u></h3>
+                </div>
+                <div class="form-group row form-field">
+                    <div class="col-lg-3 col-md-4 col-sm-4 custom-text">
+                        <label class="col-form-label" for="xaa_aa_floor_number_m2">Floor Number of m2</label>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6">
+                        <input type="number" name="xaa_aa_floor_number_m2" class="form-control" t-att-value="formulier_id.xaa_aa_floor_number_m2"/>
+                    </div>
+                </div>
+                <div class="form-group row form-field">
+                    <div class="col-lg-3 col-md-4 col-sm-4 custom-text">
+                        <label class="col-form-label" for="xaa_aa_floor_material">Floor Material</label>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6">
+                        <div>
+                            <select name="xaa_aa_floor_material" class="form-control">
+                                <option></option>
+                                <option value='PUR' t-att-selected="formulier_id.xaa_aa_floor_material == 'PUR'">
+                                    PUR
+                                </option>
+                                <option value='Bodemparels' t-att-selected="formulier_id.xaa_aa_floor_material == 'Bodemparels'">
+                                    Bodemparels
+                                </option>
+                                <option value='Anders' t-att-selected="formulier_id.xaa_aa_floor_material == 'Anders'">
+                                    Anders
+                                </option>
+                                <option value='NVT' t-att-selected="formulier_id.xaa_aa_floor_material == 'NVT'">
+                                    NVT
+                                </option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group row form-field">
+                    <div class="col-lg-3 col-md-4 col-sm-4 custom-text">
+                        <label class="col-form-label" for="xaa_aa_floor_ventilation">Floor Ventilation</label>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6">
+                        <div>
+                            <select name="xaa_aa_floor_ventilation" class="form-control">
+                                <option></option>
+                                <option value='geen' t-att-selected="formulier_id.xaa_aa_floor_ventilation == 'geen'">
+                                    geen
+                                </option>
+                                <option value='1 rooster' t-att-selected="formulier_id.xaa_aa_floor_ventilation == '1 rooster'">
+                                    1 rooster
+                                </option>
+                                <option value='2 rooster' t-att-selected="formulier_id.xaa_aa_floor_ventilation == '2 rooster'">
+                                    2 rooster
+                                </option>
+                                <option value='3 rooster' t-att-selected="formulier_id.xaa_aa_floor_ventilation == '3 rooster'">
+                                    3 rooster
+                                </option>
+                                <option value='4 rooster' t-att-selected="formulier_id.xaa_aa_floor_ventilation == '4 rooster'">
+                                    4 rooster
+                                </option>
+                                <option value='5 rooster' t-att-selected="formulier_id.xaa_aa_floor_ventilation == '5 rooster'">
+                                    5 rooster
+                                </option>
+                                <option value='6 rooster' t-att-selected="formulier_id.xaa_aa_floor_ventilation == '6 rooster'">
+                                    6 rooster
+                                </option>
+                                <option value='7 rooster' t-att-selected="formulier_id.xaa_aa_floor_ventilation == '7 rooster'">
+                                    7 rooster
+                                </option>
+                                <option value='8 rooster' t-att-selected="formulier_id.xaa_aa_floor_ventilation == '8 rooster'">
+                                    8 rooster
+                                </option>
+                                <option value='9 rooster' t-att-selected="formulier_id.xaa_aa_floor_ventilation == '9 rooster'">
+                                    9 rooster
+                                </option>
+                                <option value='10 rooster' t-att-selected="formulier_id.xaa_aa_floor_ventilation == '10 rooster'">
+                                    10 rooster
+                                </option>
+                                <option value='11 rooster' t-att-selected="formulier_id.xaa_aa_floor_ventilation == '11 rooster'">
+                                    11 rooster
+                                </option>
+                                <option value='12 rooster' t-att-selected="formulier_id.xaa_aa_floor_ventilation == '12 rooster'">
+                                    12 rooster
+                                </option>
+                                <option value='13 rooster' t-att-selected="formulier_id.xaa_aa_floor_ventilation == '13 rooster'">
+                                    13 rooster
+                                </option>
+                                <option value='14 rooster' t-att-selected="formulier_id.xaa_aa_floor_ventilation == '14 rooster'">
+                                    14 rooster
+                                </option>
+                                <option value='15 rooster' t-att-selected="formulier_id.xaa_aa_floor_ventilation == '15 rooster'">
+                                    15 rooster
+                                </option>
+                                <option value='16 rooster' t-att-selected="formulier_id.xaa_aa_floor_ventilation == '16 rooster'">
+                                    16 rooster
+                                </option>
+                                <option value='17 rooster' t-att-selected="formulier_id.xaa_aa_floor_ventilation == '17 rooster'">
+                                    17 rooster
+                                </option>
+                                <option value='18 rooster' t-att-selected="formulier_id.xaa_aa_floor_ventilation == '18 rooster'">
+                                    18 rooster
+                                </option>
+                                <option value='19 rooster' t-att-selected="formulier_id.xaa_aa_floor_ventilation == '19 rooster'">
+                                    19 rooster
+                                </option>
+                                <option value='20 rooster' t-att-selected="formulier_id.xaa_aa_floor_ventilation == '20 rooster'">
+                                    20 rooster
+                                </option>
+                                <option value='anders' t-att-selected="formulier_id.xaa_aa_floor_ventilation == 'anders'">
+                                    anders
+                                </option>
+                                <option value='nvt' t-att-selected="formulier_id.xaa_aa_floor_ventilation == 'nvt'">
+                                    nvt
+                                </option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group row form-field">
+                    <div class="col-lg-3 col-md-4 col-sm-4 custom-text">
+                        <label class="col-form-label" for="xaa_aa_crawl_space_available">Crawl space available</label>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6">
+                        <div>
+                            <select name="xaa_aa_crawl_space_available" class="form-control">
+                                <option></option>
+                                <option value='ja' t-att-selected="formulier_id.xaa_aa_crawl_space_available == 'ja'">
+                                    ja
+                                </option>
+                                <option value='nee' t-att-selected="formulier_id.xaa_aa_crawl_space_available == 'nee'">
+                                    nee
+                                </option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group row form-field">
+                    <div class="col-lg-3 col-md-4 col-sm-4 custom-text">
+                        <label class="col-form-label" for="xaa_aa_crawl_space_accessible">Crawl space accessible</label>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6">
+                        <div>
+                            <select name="xaa_aa_crawl_space_accessible" class="form-control">
+                                <option></option>
+                                <option value='ja' t-att-selected="formulier_id.xaa_aa_crawl_space_accessible == 'ja'">
+                                    ja
+                                </option>
+                                <option value='nee' t-att-selected="formulier_id.xaa_aa_crawl_space_accessible == 'nee'">
+                                    nee
+                                </option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group row form-field">
+                    <div class="col-lg-3 col-md-4 col-sm-4 custom-text">
+                        <label class="col-form-label" for="xaa_aa_crawl_space_isolated">Crawl space isolated</label>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6">
+                        <div>
+                            <select name="xaa_aa_crawl_space_isolated" class="form-control">
+                                <option></option>
+                                <option value='ja' t-att-selected="formulier_id.xaa_aa_crawl_space_isolated == 'ja'">
+                                    ja
+                                </option>
+                                <option value='nee' t-att-selected="formulier_id.xaa_aa_crawl_space_isolated == 'nee'">
+                                    nee
+                                </option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center text-primary">
+                    <h3><u>Roof</u></h3>
+                </div>
+                <div class="form-group row form-field">
+                    <div class="col-lg-3 col-md-4 col-sm-4 custom-text">
+                        <label class="col-form-label" for="xaa_aa_roof_number_m2">Roof Number of m2</label>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6">
+                        <input type="number" name="xaa_aa_roof_number_m2" class="form-control" t-att-value="formulier_id.xaa_aa_roof_number_m2"/>
+                    </div>
+                </div>
+                <div class="form-group row form-field">
+                    <div class="col-lg-3 col-md-4 col-sm-4 custom-text">
+                        <label class="col-form-label" for="xaa_aa_roof_material">Roof Material</label>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6">
+                        <div>
+                            <select name="xaa_aa_roof_material" class="form-control">
+                                <option></option>
+                                <option value='PUR' t-att-selected="formulier_id.xaa_aa_roof_material == 'PUR'">
+                                    PUR
+                                </option>
+                                <option value='Isovlas incl witte afwerking' t-att-selected="formulier_id.xaa_aa_roof_material == 'Isovlas incl witte afwerking'">
+                                    Isovlas incl witte afwerking
+                                </option>
+                                <option value='PIR plaat' t-att-selected="formulier_id.xaa_aa_roof_material == 'PIR plaat'">
+                                    PIR plaat
+                                </option>
+                                <option value='Rockwool' t-att-selected="formulier_id.xaa_aa_roof_material == 'Rockwool'">
+                                    Rockwool
+                                </option>
+                                <option value='Knauf timberframe' t-att-selected="formulier_id.xaa_aa_roof_material == 'Knauf timberframe'">
+                                    Knauf timberframe
+                                </option>
+                                <option value='Anders' t-att-selected="formulier_id.xaa_aa_roof_material == 'Anders'">
+                                    Anders
+                                </option>
+                                <option value='NVT' t-att-selected="formulier_id.xaa_aa_roof_material == 'NVT'">
+                                    NVT
+                                </option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group row form-field">
+                    <div class="col-lg-3 col-md-4 col-sm-4 custom-text">
+                        <label class="col-form-label" for="xaa_aa_accessible">Accessible</label>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6">
+                        <div>
+                            <select name="xaa_aa_accessible" class="form-control">
+                                <option></option>
+                                <option value='ja' t-att-selected="formulier_id.xaa_aa_accessible == 'ja'">
+                                    ja
+                                </option>
+                                <option value='nee' t-att-selected="formulier_id.xaa_aa_accessible == 'nee'">
+                                    nee
+                                </option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </t>
+        </xpath>
+    </template>
+</odoo>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="customer_quote_formulier_data" name="Customer Formulier Quote Data">
+        <div class="div_padding_left">
+            <div class="form_lable mt24">
+                <h3 class="montserrat_bold">
+                    Check the following data.
+                </h3>
+            </div>
+            <div class="form-group row mt24">
+                <div class="col-lg-2 col-md-4 col-sm-4 ">
+                    <label class="col-form-label" for="">
+                        Your name
+                    </label>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                    <input type="text" name="" class="form-control"
+                        t-att-value="formulier_id.xaa_aa_partner_id.name"
+                        readonly=""/>
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-lg-2 col-md-4 col-sm-4">
+                    <label class="col-form-label" for="">
+                        Company Name
+                    </label>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                    <input type="text" name="" class="form-control" t-att-value="formulier_id.xaa_aa_partner_id.name" readonly=""/>
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-lg-2 col-md-4 col-sm-4">
+                    <label class="col-form-label">
+                        E-mail address
+                    </label>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                    <input type="text" name=""
+                        class="form-control"
+                        t-att-value="formulier_id.xaa_aa_partner_id.email"
+                        readonly=""/>
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-lg-2 col-md-4 col-sm-4 ">
+                    <label class="col-form-label">
+                        Telephone number
+                    </label>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                    <input type="text" name="" class="form-control"
+                        t-att-value="formulier_id.xaa_aa_partner_id.phone"
+                        readonly=""/>
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-lg-2 col-md-4 col-sm-4">
+                    <label class="col-form-label" for="">
+                        Address
+                    </label>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                    <input type="text" name="" class="form-control"
+                        t-att-value="formulier_id.xaa_aa_partner_id.street"
+                        readonly=""/>
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-lg-2 col-md-4 col-sm-4">
+                    <label class="col-form-label" for="">
+                        Postal Code
+                    </label>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                    <input type="text" name="" class="form-control"
+                        t-att-value="formulier_id.xaa_aa_partner_id.zip"
+                        readonly=""/>
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-lg-2 col-md-4 col-sm-4">
+                    <label class="col-form-label" for="">
+                        Residence
+                    </label>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                    <input type="text" name="" class="form-control"
+                        t-att-value="formulier_id.xaa_aa_partner_id.city"
+                        readonly=""/>
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-lg-8 col-md-10 col-sm-12 checkbox_div ">
+                    <div>
+                        <div class="checkbox mb16 mt16">
+                            <input type="radio" class="radio_design" name="xaa_aa_details_are_correct" t-att-checked="formulier_id.xaa_aa_details_are_correct" value="true"/>
+                            <label class="ng-binding col-form-label ml16" for="xaa_aa_details_are_correct">My details are correct.
+                            </label>
+                        </div>
+                        <div class="checkbox">
+                            <input type="radio" class="radio_design" name="xaa_aa_details_are_correct" t-att-checked="not formulier_id.xaa_aa_details_are_correct" value="false"/>
+                            <label class="ng-binding col-form-label ml16" for="xaa_aa_details_are_correct">My details are incorrect.
+                            </label>
+                            <span class="incorrect_info mt8" t-att-style="'display:block;'if not formulier_id.xaa_aa_details_are_correct else 'display:none;'">
+                                We will contact you to adjust your data.<br/>You can continue to create the quote
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="form-group row mt64" id="next_privious">
+            <div class="col-md-12 col-lg-12 col-sm-12 text-center">
+                <button class="btn btn-next mt16"
+                    data-id="anergy_consumpation_id" type="Button"
+                    t-att-value="formulier_id.id">Next step
+                </button>
+            </div>
+        </div>
+    </template>
+</odoo>

@@ -56,7 +56,7 @@
                 </div>
                 <div class="col-lg-6 col-md-6 col-sm-6">
                     <div class="div_product">
-                        <select class="form-control" name="xaa_aa_solar_color_one">
+                        <select class="form-control select_solar_color" name="xaa_aa_solar_color_one">
                             <option></option>
                             <t t-foreach="solar_type_ids" t-as="st">
                                 <option t-att-value="st.id" t-att-selected="st.id in formulier_id.xaa_aa_solar_color_one.ids">
@@ -75,7 +75,8 @@
                 </div>
                 <div class="col-lg-6 col-md-6 col-sm-6">
                     <div class="div_product">
-                        <select class="form-control" name="xaa_aa_solar_product_one">
+                        <select class="form-control select_solar_product" name="xaa_aa_solar_product_one">
+                            <option></option>
                             <t t-foreach="solar_product_one_ids" t-as="st">
                                 <option t-att-value="st.id" t-att-selected="st.id in formulier_id.xaa_aa_solar_product_one.ids">
                                     <t t-esc="st.xaa_aa_name"/>
@@ -105,11 +106,17 @@
                         Choose the number of panels:
                     </label>
                 </div>
-                <div class="col-lg-3 col-md-3 col-sm-3">
-                    <input type="text" name="xaa_aa_no_of_panels_one" class="form-control" t-att-value="formulier_id.xaa_aa_no_of_panels_one"/>
+                <div class="col-lg-2 col-md-3 col-sm-3">
+                    <div class="snipper_Add_Minus">
+                        <button type="button" class="pf_sub update_panel_qty">-</button>
+                        <input class="solar_pannel_qty" name="xaa_aa_no_of_panels_one" type="text" value="1" min="1" max="100" />
+                        <button type="button" class="pf_add update_panel_qty">+</button>
+                    </div>
                 </div>
-                <span> = </span>
-                <div class="col-lg-3 col-md-3 col-sm-3">
+                <div class="mt8 mr4">
+                    <span> = </span>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-3 mt4">
                     <input type="text" name="xaa_aa_panel_inclination_one" class="form-control" 
                     t-att-value="formulier_id.xaa_aa_panel_inclination_one"/>
                     The position and angle of inclination of the panels have been taken into account in the calculation

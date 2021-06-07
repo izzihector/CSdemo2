@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <menuitem
+        id="menu_calendar_event"
+        parent="calendar.mail_menu_calendar"
+        name="Meetings"
+        sequence="1"
+        action="calendar.action_calendar_event"
+        groups="base.group_user"/>
+
+    <menuitem
+        id="menu_calendar_configuration_mac5"
+        parent="calendar.mail_menu_calendar"
+        name="Configuration"
+        sequence="500"
+        groups="base.group_no_one"/>
+
+</odoo>

@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="quote_question_conclusion" name="Conclusion and Photos">
+        <div>
+            <div class="tab inner_tabs div_padding_left" role="tabpanel">
+                <!-- Nav tabs -->
+                <ul class="nav nav-tabs" role="tablist">
+                    <li class="active inner_li" id="quote_conclusion_tab_1" style="margin-left:11%;">
+                        <a href="#quote_conclusion_section" aria-controls="home"
+                            role="tab" data-toggle="tab">Concluding questions
+                        </a>
+                    </li>
+                    <li class="inner_li" id="quote_photo_tab_2" style="margin-left:10%;">
+                        <a href="#quote_photo_section" aria-controls="profile"
+                            role="tab" data-toggle="tab">Photos of your home
+                        </a>
+                    </li>
+                </ul>
+                <div class="tab-content tabs">
+                    <div role="tabpanel" class="tab-pane fade in active show"
+                        id="quote_conclusion_section">
+                        <div class="form-group mt32">
+                            <div class="col-lg-12 col-md-12 col-sm-12 ">
+                                <div class="form_lable mt16">
+                                    <label class="montserrat-extrabold_24">
+                                        Do you have a monument and / or building where a permit is required to do work on the outside of your home?
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-lg-8 col-md-10 col-sm-12 checkbox_div ">
+                                <div>
+                                    <div class="checkbox mb4 mt16">
+                                        <input type="radio" class="radio_design" name="xaa_aa_quote_building_permit_required" t-att-checked="formulier_id.xaa_aa_quote_building_permit_required == 'ja'" value="ja"/>
+                                        <label class="ng-binding col-form-label ml16" for="xaa_aa_quote_building_permit_required">ja
+                                        </label>
+                                    </div>
+                                    <div class="checkbox mb4">
+                                        <input type="radio" class="radio_design" name="xaa_aa_quote_building_permit_required" t-att-checked="formulier_id.xaa_aa_quote_building_permit_required == 'nee'" value="nee"/>
+                                        <label class="ng-binding col-form-label ml16" for="xaa_aa_quote_building_permit_required">nee
+                                        </label>
+                                    </div>
+                                    <div class="checkbox">
+                                        <input type="radio" class="radio_design" name="xaa_aa_quote_building_permit_required" t-att-checked="formulier_id.xaa_aa_quote_building_permit_required == 'Ik weet het niet'" value="Ik weet het niet"/>
+                                        <label class="ng-binding col-form-label ml16" for="xaa_aa_quote_building_permit_required">Ik weet het niet
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group mt32">
+                            <div class="col-lg-12 col-md-12 col-sm-12 ">
+                                <div class="form_lable mt16">
+                                    <label class="montserrat-extrabold_24">
+                                        Do you have a rental or owner-occupied home?
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-lg-8 col-md-10 col-sm-12 checkbox_div ">
+                                <div>
+                                    <div class="checkbox mb4 mt16">
+                                        <input type="radio" class="radio_design" name="xaa_aa_quote_occupied_home" t-att-checked="formulier_id.xaa_aa_quote_occupied_home == 'koop'" value="koop"/>
+                                        <label class="ng-binding col-form-label ml16" for="xaa_aa_quote_occupied_home">koop
+                                        </label>
+                                    </div>
+                                    <div class="checkbox mb4">
+                                        <input type="radio" class="radio_design" name="xaa_aa_quote_occupied_home" t-att-checked="formulier_id.xaa_aa_quote_occupied_home == 'huur'" value="huur"/>
+                                        <label class="ng-binding col-form-label ml16" for="xaa_aa_quote_occupied_home">huur
+                                        </label>
+                                    </div>
+                                    <div class="checkbox">
+                                        <input type="radio" class="radio_design" name="xaa_aa_quote_occupied_home" t-att-checked="formulier_id.xaa_aa_quote_occupied_home == 'de woning moet nog aangekocht worden'" value="de woning moet nog aangekocht worden"/>
+                                        <label class="ng-binding col-form-label ml16" for="xaa_aa_quote_occupied_home">de woning moet nog aangekocht worden
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group mt32">
+                            <div class="col-lg-12 col-md-12 col-sm-12 ">
+                                <div class="form_lable mt16">
+                                    <label class="montserrat-extrabold_24">
+                                        Are you an entrepreneur?
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-lg-8 col-md-10 col-sm-12 checkbox_div ">
+                                <div>
+                                    <div class="checkbox mb4 mt16">
+                                        <input type="radio" class="radio_design" name="xaa_aa_quote_entrepreneur" t-att-checked="formulier_id.xaa_aa_quote_entrepreneur == 'nee'" value="nee"/>
+                                        <label class="ng-binding col-form-label ml16" for="xaa_aa_quote_entrepreneur">nee
+                                        </label>
+                                    </div>
+                                    <div class="checkbox mb4">
+                                        <input type="radio" class="radio_design" name="xaa_aa_quote_entrepreneur" t-att-checked="formulier_id.xaa_aa_quote_entrepreneur == 'Ik ben ondernemer maar mijn partner niet.'" value="Ik ben ondernemer maar mijn partner niet."/>
+                                        <label class="ng-binding col-form-label ml16" for="xaa_aa_quote_entrepreneur">Ik ben ondernemer maar mijn partner niet.
+                                        </label>
+                                    </div>
+                                    <div class="checkbox mb4">
+                                        <input type="radio" class="radio_design" name="xaa_aa_quote_entrepreneur" t-att-checked="formulier_id.xaa_aa_quote_entrepreneur == 'ja'" value="ja"/>
+                                        <label class="ng-binding col-form-label ml16" for="xaa_aa_quote_entrepreneur">ja
+                                        </label>
+                                    </div>
+                                    <div class="checkbox mb4">
+                                        <input type="radio" class="radio_design" name="xaa_aa_quote_entrepreneur" t-att-checked="formulier_id.xaa_aa_quote_entrepreneur == 'Ik weet het niet'" value="Ik weet het niet"/>
+                                        <label class="ng-binding col-form-label ml16" for="xaa_aa_quote_entrepreneur">Ik weet het niet
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group mt24 montserrat_regular quote_entrepreneur_block ml8" t-att-style="'display:flex;'if formulier_id.xaa_aa_quote_entrepreneur == 'Ik ben ondernemer maar mijn partner niet.' else 'display:none;'">
+                            <img class="img img-fluid mr8 warning_image"
+                                src="/project_formulier_quote/static/src/images/Warning icon.png">
+                            <span>Note: Make sure the energy bill is not in your name of the entrepreneur.</span>
+                            </img>
+                        </div>
+                        <div class="mt48 montserrat_regular">
+                            <span>Perhaps there are still things that you find important and that we should know to proceed with the proper placement of solar panels. You can indicate these matters in the field below. This field is not mandatory.</span>
+                        </div>
+                        <div class="form-group mt32">
+                            <div class="col-lg-12 col-md-12 col-sm-12 ">
+                                <div class="form_lable mt16">
+                                    <label class="montserrat-extrabold_24">
+                                        Do you have any important additions?
+                                    </label>
+                                    <span class="montserrat_regular mt4 ml8">(not required)</span>
+                                </div>
+                            </div>
+                            <div class="col-lg-5 col-md-6 col-sm-8 mt8">
+                                <textarea rows="4" name="xaa_aa_quote_solar_panel_description" class="form-control"><t t-esc="formulier_id.xaa_aa_quote_solar_panel_description"/></textarea>
+                            </div>
+                        </div>
+                        <div class="form-group row mt64" id="next_privious">
+                            <div class="col-md-4 col-lg-4 col-sm-5 col-6">
+                                <a class="btn-privoius mt16"
+                                    data-id="quote_placement_id" type="Button"
+                                    t-att-value="formulier_id.id">
+                                    <i class="fa fa-chevron-left" aria-hidden="false"/>Previous step
+                                </a>
+                            </div>
+                            <div class="col-md-4 col-lg-4 col-sm-5 col-4">
+                                <button class="btn btn-next mt16 mr8"
+                                    data-id="quote_photo_tab_2" type="Button"
+                                    t-att-value="formulier_id.id">Next step
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div role="tabpanel" class="tab-pane fade" id="quote_photo_section">
+                        <div class="mt32 montserrat_regular">
+                            <span>We kindly request you to provide us with some pictures: this way we get a good picture of your home and the work to be carried out.</span>
+                        </div>
+                        <div class="form-group row mt32" id="overview_image">
+                            <div class="col-lg-12 col-md-12 col-sm-12">
+                               <label class="montserrat-extrabold_24">
+                                    Overview photo of the roof (important)
+                                </label>
+                            </div>
+                            <div class="col-lg-3 col-md-3 col-sm-3 div_image">
+                                <button aria-label="Edit" class="fa fa-pencil pull-right fa-lg edit_button" title="Edit" ></button>
+                                <img class="img img-fluid change_image" id="xaa_aa_quote_overview_roof_photo" t-attf-src="/web/image/question.formulier/{{formulier_id.id}}/xaa_aa_quote_overview_roof_photo"/>
+                                <input type="file" name="xaa_aa_quote_overview_roof_photo" class="hide_input_image form-control o_website_form_input"/>
+                                <input type="hidden" name="que_id" t-att-value="formulier_id.id"/>
+                            </div>
+                        </div>
+                        <div class="form-group row mt32" id="overview_image">
+                            <div class="col-lg-12 col-md-12 col-sm-12">
+                               <label class="montserrat-extrabold_24">
+                                    Photo of the preferred location of the inverter (important)
+                                </label>
+                            </div>
+                            <div class="col-lg-3 col-md-3 col-sm-3 div_image">
+                                <button aria-label="Edit" class="fa fa-pencil pull-right fa-lg edit_button" title="Edit" ></button>
+                                <img class="img img-fluid change_image" id="xaa_aa_quote_location_inverter_photo" t-attf-src="/web/image/question.formulier/{{formulier_id.id}}/xaa_aa_quote_location_inverter_photo"/>
+                                <input type="file" name="xaa_aa_quote_location_inverter_photo" class="hide_input_image form-control o_website_form_input"/>
+                            </div>
+                        </div>
+                        <div class="form-group row mt32" id="overview_image">
+                            <div class="col-lg-12 col-md-12 col-sm-12">
+                               <label class="montserrat-extrabold_24">
+                                    Photograph of your meter cupboard (important)
+                                </label>
+                            </div>
+                            <div class="col-lg-3 col-md-3 col-sm-3 div_image">
+                                <button aria-label="Edit" class="fa fa-pencil pull-right fa-lg edit_button" title="Edit" ></button>
+                                <img class="img img-fluid change_image" id="xaa_aa_quote_meter_cupboard_photo" t-attf-src="/web/image/question.formulier/{{formulier_id.id}}/xaa_aa_quote_meter_cupboard_photo"/>
+                                <input type="file" name="xaa_aa_quote_meter_cupboard_photo" class="hide_input_image form-control o_website_form_input"/>
+                            </div>
+                        </div>
+                        <div class="form-group row mt32" id="overview_image">
+                            <div class="col-lg-12 col-md-12 col-sm-12">
+                               <label class="montserrat-extrabold_24">
+                                    Photograph or drawing of the desired placement of solar panels
+                                </label>
+                            </div>
+                            <div class="col-lg-3 col-md-3 col-sm-3 div_image">
+                                <button aria-label="Edit" class="fa fa-pencil pull-right fa-lg edit_button" title="Edit" ></button>
+                                <img class="img img-fluid change_image" id="xaa_aa_quote_placement_panels_photo" t-attf-src="/web/image/question.formulier/{{formulier_id.id}}/xaa_aa_quote_placement_panels_photo"/>
+                                <input type="file" name="xaa_aa_quote_placement_panels_photo" class="hide_input_image form-control o_website_form_input"/>
+                            </div>
+                        </div>
+                        <div class="form-group row mt32" id="overview_image">
+                            <div class="col-lg-12 col-md-12 col-sm-12">
+                               <label class="montserrat-extrabold_24">
+                                    Photo of where the cabling can go
+                                </label>
+                            </div>
+                            <div class="col-lg-3 col-md-3 col-sm-3 div_image">
+                                <button aria-label="Edit" class="fa fa-pencil pull-right fa-lg edit_button" title="Edit" ></button>
+                                <img class="img img-fluid change_image" id="xaa_aa_quote_where_cabling_photo" t-attf-src="/web/image/question.formulier/{{formulier_id.id}}/xaa_aa_quote_where_cabling_photo"/>
+                                <input type="file" name="xaa_aa_quote_where_cabling_photo" class="hide_input_image form-control o_website_form_input"/>
+                            </div>
+                        </div>
+                        <div class="form-group row mt32" id="overview_image">
+                            <div class="col-lg-12 col-md-12 col-sm-12">
+                               <label class="montserrat-extrabold_24">
+                                    Extra photos
+                                </label>
+                            </div>
+                            <div class="col-lg-3 col-md-3 col-sm-3 div_image">
+                                <button aria-label="Edit" class="fa fa-pencil pull-right fa-lg edit_button" title="Edit" ></button>
+                                <img class="img img-fluid change_image" id="xaa_aa_quote_extra_photo" t-attf-src="/web/image/question.formulier/{{formulier_id.id}}/xaa_aa_quote_extra_photo"/>
+                                <input type="file" name="xaa_aa_quote_extra_photo" class="hide_input_image form-control o_website_form_input"/>
+                            </div>
+                        </div>
+                        <div class="mt48 montserrat_regular">
+                            <span>Do we have to adjust your quotation with products from quotes already received? Then upload your quotation already received here. This is not mandatory.</span>
+                        </div>
+                        <div class="form-group row mt32" id="overview_image">
+                            <div class="col-lg-12 col-md-12 col-sm-12">
+                               <label class="montserrat-extrabold_24">
+                                    Previously received quotation
+                                </label>
+                            </div>
+                            <div class="col-lg-3 col-md-3 col-sm-3 div_image">
+                                <button aria-label="Edit" class="fa fa-pencil pull-right fa-lg edit_button" title="Edit" ></button>
+                                <img class="img img-fluid change_image" id="xaa_aa_quote_extra_photo_one" t-attf-src="/web/image/question.formulier/{{formulier_id.id}}/xaa_aa_quote_extra_photo_one"/>
+                                <input type="file" name="xaa_aa_quote_extra_photo_one" class="hide_input_image form-control o_website_form_input"/>
+                            </div>
+                        </div>
+                        <div class="mt48 montserrat_regular">
+                            <span>Thank you for filling in these questions. We would like to know what we can do for you now. If approved, it is possible to install the solar panels within now and five working days.</span>
+                        </div>
+                        <div class="form-group mt32">
+                            <div class="col-lg-12 col-md-12 col-sm-12 ">
+                                <div class="form_lable mt16">
+                                    <label class="montserrat-extrabold_24">
+                                        What can we do for you now?
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-lg-10 col-md-10 col-sm-12 checkbox_div ">
+                                <div>
+                                    <div class="checkbox mb4 mt16">
+                                        <input type="radio" class="radio_design" name="xaa_aa_quote_final_approval" t-att-checked="formulier_id.xaa_aa_quote_final_approval == 'Ik word graag gebeld om de offerte door te nemen van de spouwmuurisolatie en de woning wellicht binnen 5 werkdagen te hebben geisoleerd.'" value="Ik word graag gebeld om de offerte door te nemen van de spouwmuurisolatie en de woning wellicht binnen 5 werkdagen te hebben geisoleerd."/>
+                                        <label class="ng-binding col-form-label ml16" for="xaa_aa_quote_final_approval">Ik word graag gebeld om de offerte door te nemen van de spouwmuurisolatie en de woning wellicht binnen 5 werkdagen te hebben geisoleerd.
+                                        </label>
+                                    </div>
+                                    <div class="checkbox mb4">
+                                        <input type="radio" class="radio_design" name="xaa_aa_quote_final_approval" t-att-checked="formulier_id.xaa_aa_quote_final_approval == 'Ik word graag gebeld voor meer informatie over de spouwmuurisolatie.'" value="Ik word graag gebeld voor meer informatie over de spouwmuurisolatie."/>
+                                        <label class="ng-binding col-form-label ml16" for="xaa_aa_quote_final_approval">Ik word graag gebeld voor meer informatie over de spouwmuurisolatie.
+                                        </label>
+                                    </div>
+                                    <div class="checkbox mb4">
+                                        <input type="radio" class="radio_design" name="xaa_aa_quote_final_approval" t-att-checked="formulier_id.xaa_aa_quote_final_approval == 'Ik neem binnen twee weken telefonisch contact op.'" value="Ik neem binnen twee weken telefonisch contact op."/>
+                                        <label class="ng-binding col-form-label ml16" for="xaa_aa_quote_final_approval">Ik neem binnen twee weken telefonisch contact op.
+                                        </label>
+                                    </div>
+                                    <div class="checkbox mb4">
+                                        <input type="radio" class="radio_design" name="xaa_aa_quote_final_approval" t-att-checked="formulier_id.xaa_aa_quote_final_approval == 'Ik neem deze offerte mee in mijn vergelijking en neem binnen twee weken contact op.'" value="Ik neem deze offerte mee in mijn vergelijking en neem binnen twee weken contact op."/>
+                                        <label class="ng-binding col-form-label ml16" for="xaa_aa_quote_final_approval">Ik neem deze offerte mee in mijn vergelijking en neem binnen twee weken contact op.
+                                        </label>
+                                    </div>
+                                    <div class="checkbox mb4">
+                                        <input type="radio" class="radio_design" name="xaa_aa_quote_final_approval" t-att-checked="formulier_id.xaa_aa_quote_final_approval == 'Anders, namelijk'" value="Anders, namelijk"/>
+                                        <label class="ng-binding col-form-label ml16 pull-left" for="quote_final_approval">Anders, namelijk
+                                        </label>
+                                        <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+                                            <input  type="text" name="xaa_aa_quote_final_approval_text" class="form-control" t-att-value="formulier_id.xaa_aa_quote_final_approval_text"/>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group row mt24 quote_final_approval_date"  t-att-style="'display:block;'if formulier_id.xaa_aa_quote_final_approval in ['Ik word graag gebeld om de offerte door te nemen en de zonnepanelen binnen 5 werkdagen op mijin dak te hebben.','Ik word graag gebeld voor meer informatie over de zonnepaneleninstallatie.'] else 'display:none;'">
+                            <div class="col-lg-12 col-md-12 col-sm-12">
+                               <label class="montserrat-extrabold_24">
+                                    At what time would you like to be called about this?
+                                </label>
+                            </div>
+                            <div class="col-lg-3 col-md-3 col-sm-3 ">
+                                <input type="datetime-local" name="xaa_aa_quote_final_approval_date" class="form-control" t-att-data-value="formulier_id.xaa_aa_quote_final_approval_date"/>
+                            </div>
+                        </div>
+                        <div class="form-group row mt64" id="next_privious">
+                            <div class="col-md-4 col-lg-4 col-sm-5 col-6">
+                                <a class="btn-privoius mt16" data-id="quote_conclusion_tab_1" 
+                                    type="Button" t-att-value="formulier_id.id">
+                                    <i class="fa fa-chevron-left" aria-hidden="false"/>Previous step
+                                </a>
+                            </div>
+                            <div class="col-md-4 col-lg-4 col-sm-5 col-5">
+                                <div class="">
+                                    <button class="btn o_website_form_send mt16 formulier_submit btn_formulier_submit" type="submit" >Send</button>
+                                </div>
+                                <div class="">
+                                    <span id="o_website_form_result"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </template>
+</odoo>

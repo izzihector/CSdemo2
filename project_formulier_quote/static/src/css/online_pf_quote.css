@@ -1,0 +1,112 @@
+.pf_sub{
+    width: 36px;
+    border: 0px solid #78BD43;
+    height: 43px;
+    margin-right: -4px;
+    border-right: none;
+    border-bottom-left-radius: 12px;
+    border-top-left-radius: 12px;
+    background-color: #78BD43;
+    color: #fff;
+    font-size: 30px;
+    font-family: "Montserrat ExtraBold";
+    vertical-align: bottom;
+}
+
+.product_qty{
+    width: 46px;
+    padding: 8px 18px 6px 18px;
+    border: 1px solid #1A8786;
+    font-size: 23px;
+    vertical-align: super;
+}
+.solar_qty{
+    width: 48px;
+    text-align: center;
+    padding: 4px 3px;
+    border: 1px solid #1A8786;
+    font-size: 23px;
+    vertical-align: super;
+}
+.pf_add{
+    width: 36px;
+    border: 0px solid #78BD43;
+    height: 43px;
+    margin-left: -4px;
+    border-left: none;
+    border-bottom-right-radius: 12px;
+    border-top-right-radius: 12px;
+    background-color: #78BD43;
+    color: #fff;
+    font-size: 30px;
+    font-family: "Montserrat ExtraBold";
+    vertical-align: bottom;
+}
+
+.product_li{
+    overflow: hidden;
+    width: 250px;
+    height: 222px;
+}
+.product_li >.text-center{
+    min-height: 60px;
+    overflow: hidden;
+    line-height: 22px;
+}
+.product_li >.text-left{
+    min-height: 60px;
+    overflow: hidden;
+    line-height: 16px;
+}
+.product_li >.img_house_info,.product_li >.img_house_info>img{
+    margin-top: 0px;
+    height: 60px;
+    width:100px;
+}
+a {
+    color: #78BD43;
+    font-family: 'Montserrat Regular';
+}
+.btn-primary{
+    background-color: #78BD43;
+    border-color: #78BD43;
+}
+label{
+    font-family: 'Montserrat Regular';
+}
+button{
+    font-family: 'Montserrat Bold';
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Montserrat Bold';
+}
+.percentage_div{
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    position: fixed;
+    display: none;
+    background-color: #00000085;
+    z-index: 99;
+    text-align: center;
+}
+.custom_progress{
+    box-shadow: inset 0 1px 8px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    top: 40%;
+    left: 30%;
+    position: fixed;
+    background-color: cornsilk;
+}
+#progress_percentage{
+    height: 24px;
+    background-color: #508a23;
+    position: relative;
+    text-align: center;
+    color: white;
+    width: 1%;
+}
+#quote_content{
+    display: grid;
+}

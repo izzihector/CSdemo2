@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <record id="view_sale_line_form" model="ir.ui.view">
+            <field name="name">sale.line.config.wizard.form</field>
+            <field name="model">sale.line.config.wizard</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <form string="Sale Line Configure">
+                    <group>
+                        <field name="xaa_aa_formulier_type" invisible="1"/>
+                        <field name="xaa_aa_qty_hours"/>
+                        <field name="xaa_aa_sale_id" invisible="1"/>
+                        <field name="xaa_aa_product_qty" invisible="1"/>
+                    </group>
+                    <footer>
+                        <button string="Add" name="add_lines" type="object" class="oe_highlight"/>
+                        of
+                        <button string="Cancel" class="oe_link" special="cancel" />
+                    </footer>
+                </form>
+            </field>
+        </record>
+
+        <record id="action_sale_line_wizard" model="ir.actions.act_window">
+            <field name="name">Sale Line Configure</field>
+            <field name="res_model">sale.line.config.wizard</field>
+            <field name="view_mode">form</field>
+            <field name="target">new</field>
+        </record>
+
+    </data>
+</odoo>

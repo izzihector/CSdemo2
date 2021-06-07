@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+        <!-- Sequences for sale.order -->
+        <record id="roof_info_1" model="roof.info">
+            <field name="xaa_aa_roof_type">schuin dak</field>
+            <field name="xaa_aa_roof_image" type="base64" file="project_formulier_quote/static/src/images/Schuin-dak.png"/>
+        </record>
+        <record id="roof_info_2" model="roof.info">
+            <field name="xaa_aa_roof_type">plat dak</field>
+            <field name="xaa_aa_roof_image" type="base64" file="project_formulier_quote/static/src/images/Plat-dak.png"/>
+        </record>
+
+    </data>
+</odoo>

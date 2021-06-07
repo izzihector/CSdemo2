@@ -1,0 +1,11 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_sale_order_temp,sale.order.temp,model_sale_order_temp,,1,1,1,1
+access_sale_order_line_temp,sale.order.line.temp,model_sale_order_line_temp,,1,1,1,1
+access_product_product,product.product,product.model_product_product,,1,1,1,1
+access_product_template,product.template,product.model_product_template,,1,1,1,1
+access_house_info,access_house_info,model_house_info,base.group_user,1,1,1,1
+access_roof_info,access_roof_info,model_roof_info,base.group_user,1,1,1,1
+access_house_info_public,access_house_info_public,model_house_info,,1,1,1,1
+access_roof_info_public,access_roof_info_public,model_roof_info,,1,1,1,1
+access_solar_type,solar.type,model_solar_type,,1,1,1,1
+access_product_brand,product.brand,model_product_brand,,1,1,1,1

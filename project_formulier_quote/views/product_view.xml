@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="product_template_only_form_view_inh" model="ir.ui.view">
+        <field name="name">product.template.product.form.inh</field>
+        <field name="model">product.template</field>
+        <field name="inherit_id" ref="product.product_template_only_form_view"/>
+        <field name="arch" type="xml">
+            <xpath expr="//page[@name='sales']" position="after">
+                <page string="PF Quote" name="pf_quote">
+                    <group>
+                        <group>
+                            <field name="xaa_aa_priority"/>
+                            <field name="xaa_aa_product_type"/>
+                            <field name="xaa_aa_solar_type" widget="many2many_tags" attrs="{'invisible': [('xaa_aa_product_type', '!=', 'Solar Panel')]}" options="{'no_create_edit': True}"/>
+                            <field name="xaa_aa_product_brand" attrs="{'invisible': [('xaa_aa_product_type', 'not in', ['Converter','Optimisers'])]}"/>
+                            <field name="xaa_aa_is_solar_panel_product"/>
+                            <field name="xaa_aa_show_product_user"/>
+                            <field name="xaa_aa_product_portal_user" widget="many2many_tags" options="{'no_create_edit': True}"/>
+                        </group>
+                        <group>
+                            <field name="xaa_aa_min_product_range"/>
+                            <field name="xaa_aa_max_product_range"/>
+                            <field name="xaa_aa_wq_min_range"/>
+                            <field name="xaa_aa_wq_max_range"/>
+                        </group>
+                    </group>
+                </page>
+                <page string="WQ product" name="wq_product">
+                    <group>
+                        <group>
+                            <field name="xaa_aa_wq_header_1"/>
+                            <field name="xaa_aa_wq_header_2"/>
+                            <field name="xaa_aa_wq_line1"/>
+                            <field name="xaa_aa_wq_line2"/>
+                            <field name="xaa_aa_wq_line3"/>
+                            <field name="xaa_aa_wq_line4"/>
+                            <field name="xaa_aa_wq_image" widget="image"/>
+                        </group>
+                    </group>
+                </page>
+            </xpath>
+        </field>
+    </record>
+    <record id="action_product_brand" model="ir.actions.act_window">
+        <field name="name">Product Brands</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">product.brand</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+            <p class="oe_view_nocontent_create">
+                Click here to create your Product Brand.
+            </p>
+        </field>
+    </record>
+    <menuitem id="menu_pf_product"
+        parent="project_formulier_quote.menu_formulier_configure_settings" 
+        action="product.product_template_action" sequence="2"/>
+    <menuitem id="menu_product_brand"
+        name="Brand"
+        parent="project_formulier_quote.menu_formulier_configure_settings"
+        action="action_product_brand" sequence="3"/>
+</odoo>

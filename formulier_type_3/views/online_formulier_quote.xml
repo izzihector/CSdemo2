@@ -1,0 +1,667 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <template id="online_formulier_pv_quote">
+        <t t-if="formulier_id.xaa_aa_formulier_type == 'formulier_three'">
+            <div class="form-group row form-field">
+                <div class="col-lg-3 col-md-4 col-sm-4 col-lg-offset-1 col-md-offset-1 custom-text">
+                    <label class="col-form-label" for="xaa_aa_energy_use">How much energy You use ?</label>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6 col-9">
+                    <input type="number" name="xaa_aa_energy_use" class="form-control" t-att-value="formulier_id.xaa_aa_energy_use" min="1"/>
+                </div>
+                <div class="">
+                    <button class="btn btn-primary reset_value" type="reset" >Reset</button>
+                </div>
+            </div>
+            <div class="form-group row form-field">
+                <div class="col-lg-3 col-md-4  col-sm-4 col-lg-offset-1 col-md-offset-1 custom-text">
+                    <label class="col-form-label" for="xaa_aa_location_correction">Location Correction</label>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6">
+                    <input type="number" name="xaa_aa_location_correction" class="form-control" t-att-value="formulier_id.xaa_aa_location_correction" placeholder="Enter a whole number, not a decimal" min="1"/>
+                </div>
+            </div>
+            <div class="form-group row form-field">
+                <div class="col-lg-3 col-md-4  col-sm-4 col-lg-offset-1 col-md-offset-1 custom-text">
+                    <label class="col-form-label" for="xaa_aa_location_calculation">Location Calculations</label>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6">
+                    <input type="number" name="xaa_aa_location_calculation" class="form-control" t-att-value="formulier_id.xaa_aa_location_calculation" readonly="" min="1"/>
+                </div>
+            </div>
+            <div class="form-group row form-field">
+                <div class="col-lg-3 col-md-4 col-sm-4 col-lg-offset-1 col-md-offset-1 custom-text">
+                    <label class="col-form-label" for="xaa_aa_solar_type">Solar type</label>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6">
+                    <div class="div_product">
+                        <select class="form-control" name="xaa_aa_solar_type" multiple="multiple">
+                            <t t-foreach="solar_type_ids" t-as="st">
+                                <option t-att-value="st.id" t-att-selected="st.id in formulier_id.xaa_aa_solar_type.ids">
+                                    <t t-esc="st.xaa_aa_name"/>
+                                </option>
+                            </t>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="solar_product">
+                <div class="div_padding_left" >
+                    <div class="col-lg-3 col-md-4 col-sm-4 col-lg-offset-1 col-md-offset-1 custom-text">
+                        <label class="col-form-label" for="xaa_aa_solar_product">Which solar panel do you want?</label>
+                    </div>
+                    <div class="row col-lg-12 col-md-12 col-sm-12">
+                        <div class="solar_product_section"
+                            style="display:block; list-style-type:none;">
+                            <t t-foreach="solar_product_ids" t-as="solar_prod">
+                                <div t-att-class="'col-lg-6 col-md-6 col-sm-6 col-12 padding_14_10 solar_product_li product_li selected text-center mt8' if formulier_id.xaa_aa_solar_product and formulier_id.xaa_aa_solar_product.id == solar_prod.id else 'col-lg-6 col-md-6 col-sm-6 col-12 padding_14_10 solar_product_li product_li text-center mt8'" t-att-data-id="solar_prod.id">
+                                    <div class="text-center mt4">
+                                        <span t-if="solar_prod.xaa_aa_wq_header_1" style="font-size:16px;" t-esc="solar_prod.xaa_aa_wq_header_1"/>
+                                        <span t-if="not solar_prod.xaa_aa_wq_header_1" style="font-size:16px;" t-esc="solar_prod.name"/><br/>
+                                        <span t-if="solar_prod.xaa_aa_wq_header_2" style="font-size:14px;" t-esc="solar_prod.xaa_aa_wq_header_2"/>
+                                    </div>
+                                    <div class="img_house_info">
+                                        <img class="img img-fluid" t-attf-src="/web/image/product.product/{{solar_prod.id}}/xaa_aa_wq_image"/>
+                                    </div>
+                                    <div class="text-left">
+                                        <t t-if="solar_prod.xaa_aa_wq_line1">
+                                            <b><span style="font-size:12px;" t-esc="solar_prod.xaa_aa_wq_line1"/></b><br/>
+                                        </t>
+                                        <t t-if="solar_prod.xaa_aa_wq_line2">
+                                            <b><span style="font-size:12px;" t-esc="solar_prod.xaa_aa_wq_line2"/></b><br/>
+                                        </t>
+                                        <t t-if="solar_prod.xaa_aa_wq_line3">
+                                            <b><span style="font-size:12px;" t-esc="solar_prod.xaa_aa_wq_line3"/></b><br/>
+                                        </t>
+                                        <t t-if="solar_prod.xaa_aa_wq_line4">
+                                            <b><span style="font-size:12px;" t-esc="solar_prod.xaa_aa_wq_line4"/></b>
+                                        </t>
+                                    </div>
+                                </div>
+                            </t>
+                        </div>
+                        <div class="solar_product_qty_show" t-att-style="'display:block;'if formulier_id.xaa_aa_solar_product else 'display:none;'">
+                            <div class="col-lg-12 col-md-12 col-sm-12">
+                                <div class="snipper_Add_Minus mt24">
+                                    <button type="button" class="pf_sub remove_solar_qty update_solar_qty" t-att-value="formulier_id.xaa_aa_solar_product.id">-</button>
+                                    <input type="text" name="" class="solar_qty update_solar_qty" value="1"/>
+                                    <button type="button" class="pf_add add_solar_qty update_solar_qty" t-att-value="formulier_id.xaa_aa_solar_product.id">+</button>
+                                    <span class="montserrat_regular ml8 mb8">QTY</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group row form-field mt16">
+                <div class="col-lg-3 col-md-4 col-sm-4 col-lg-offset-1 col-md-offset-1 custom-text">
+                    <label class="col-form-label" for="xaa_aa_solar_watt_piek">Solar Energy Watt Piek</label>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6">
+                    <input type="number" name="xaa_aa_solar_watt_piek" class="form-control" t-att-value="formulier_id.xaa_aa_solar_watt_piek"/>
+                </div>
+            </div>
+            <div class="form-group row form-field">
+                <div class="col-lg-3 col-md-4 col-sm-4 col-lg-offset-1 col-md-offset-1 custom-text">
+                    <label class="col-form-label" for="xaa_aa_energy_wat_piek">Energy Wat Piek Calclulation</label>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6">
+                    <input type="number" name="xaa_aa_energy_wat_piek" class="form-control" t-att-value="formulier_id.xaa_aa_energy_wat_piek" readonly=""/>
+                </div>
+            </div>
+            <div class="form-group row form-field">
+                <div class="col-lg-3 col-md-4 col-sm-4 col-lg-offset-1 col-md-offset-1 custom-text">
+                    <label class="col-form-label" for="xaa_aa_need_converter">Do You need Converter ?</label>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6">
+                    <div>
+                        <select name="xaa_aa_need_converter" class="form-control">
+                            <option></option>
+                            <option value='ja' t-att-selected="formulier_id.xaa_aa_need_converter == 'ja'">
+                                    ja
+                                </option>
+                                <option value='nee' t-att-selected="formulier_id.xaa_aa_need_converter == 'nee'">
+                                    nee
+                                </option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group row form-field converter_field" t-att-style="'display:block;' if formulier_id.xaa_aa_need_converter == 'ja' else 'display:none;'">
+                <div class="div_padding_left" >
+                    <div class="col-lg-3 col-md-4 col-sm-4 col-lg-offset-1 col-md-offset-1 custom-text">
+                        <label class="col-form-label" for="formulier_id.xaa_aa_converter_product">Which converter do you want ?</label>
+                    </div>
+                    <div class="row col-lg-12 col-md-12 col-sm-12">
+                        <div class="converter_product_section"
+                            style="display:block; list-style-type:none;">
+                            <t t-foreach="converter_product_ids" t-as="cp">
+                                <div t-att-class="'col-lg-6 col-md-6 col-sm-6 col-12 padding_14_10 converter_product_li product_li selected text-center mt8' if formulier_id.xaa_aa_converter_product and formulier_id.xaa_aa_converter_product.id == cp.id else 'col-lg-6 col-md-6 col-sm-6 col-12 padding_14_10 converter_product_li product_li text-center mt8'" t-att-data-id="cp.id">
+                                    <div class="text-center mt4">
+                                        <span t-if="cp.xaa_aa_wq_header_1" style="font-size:16px;" t-esc="cp.xaa_aa_wq_header_1"/>
+                                        <span t-if="not cp.xaa_aa_wq_header_1" style="font-size:16px;" t-esc="cp.name"/><br/>
+                                        <span t-if="cp.xaa_aa_wq_header_2" style="font-size:14px;" t-esc="cp.xaa_aa_wq_header_2"/>
+                                    </div>
+                                    <div class="img_house_info">
+                                        <img class="img img-fluid" t-attf-src="/web/image/product.product/{{cp.id}}/xaa_aa_wq_image"/>
+                                    </div>
+                                    <div class="text-left">
+                                        <t t-if="cp.xaa_aa_wq_line1">
+                                            <b><span style="font-size:12px;" t-esc="cp.xaa_aa_wq_line1"/></b><br/>
+                                        </t>
+                                        <t t-if="cp.xaa_aa_wq_line2">
+                                            <b><span style="font-size:12px;" t-esc="cp.xaa_aa_wq_line2"/></b><br/>
+                                        </t>
+                                        <t t-if="cp.xaa_aa_wq_line3">
+                                            <b><span style="font-size:12px;" t-esc="cp.xaa_aa_wq_line3"/></b><br/>
+                                        </t>
+                                        <t t-if="cp.xaa_aa_wq_line4">
+                                            <b><span style="font-size:12px;" t-esc="cp.xaa_aa_wq_line4"/></b>
+                                        </t>
+                                    </div>
+                                </div>
+                            </t>
+                        </div>
+                        <div class="converter_product_qty_show" t-att-style="'display:block;' if formulier_id.xaa_aa_converter_product else 'display:none;'">
+                            <div class="col-lg-12 col-md-12 col-sm-12">
+                                <div class="snipper_Add_Minus mt24">
+                                    <button type="button" class="pf_sub remove_converter_qty update_converter_qty" t-att-value="formulier_id.xaa_aa_converter_product.id">-</button>
+                                    <span class="product_qty converter_qty">1</span>
+                                    <button type="button" class="pf_add add_converter_qty update_converter_qty" t-att-value="formulier_id.xaa_aa_converter_product.id">+</button>
+                                    <span class="montserrat_regular ml8 mb8">QTY</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group row form-field">
+                <div class="col-lg-3 col-md-4 col-sm-4 col-lg-offset-1 col-md-offset-1 custom-text">
+                    <label class="col-form-label" for="xaa_aa_need_optimiser">Do You need product Optimisers ?</label>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6">
+                    <div>
+                        <select name="xaa_aa_need_optimiser" class="form-control">
+                            <option></option>
+                            <option value='ja' t-att-selected="formulier_id.xaa_aa_need_optimiser == 'ja'">
+                                ja
+                            </option>
+                            <option value='nee' t-att-selected="formulier_id.xaa_aa_need_optimiser == 'nee'">
+                                nee
+                            </option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group row form-field optimiser_field" t-att-style="'display:block;' if formulier_id.xaa_aa_need_optimiser == 'ja' else 'display:none;'">
+                <div class="div_padding_left" >
+                    <div class="col-lg-3 col-md-4 col-sm-4 col-lg-offset-1 col-md-offset-1 custom-text">
+                        <label class="col-form-label" for="xaa_aa_optimiser_product">Which optimizer do you want ?</label>
+                    </div>
+                    <div class="row col-lg-12 col-md-12 col-sm-12">
+                        <div class="optimiser_product_section"
+                            style="display:block; list-style-type:none;">
+                            <t t-foreach="optimiser_products" t-as="op">
+                                <div t-att-class="'col-lg-6 col-md-6 col-sm-6 col-12 padding_14_10 optimiser_product_li product_li selected text-center mt8' if formulier_id.xaa_aa_optimiser_product and formulier_id.xaa_aa_optimiser_product.id == op.id else 'col-lg-6 col-md-6 col-sm-6 col-12 padding_14_10 optimiser_product_li product_li text-center mt8'" t-att-data-id="op.id">
+                                    <div class="text-center mt4">
+                                        <span t-if="op.xaa_aa_wq_header_1" style="font-size:16px;" t-esc="op.xaa_aa_wq_header_1"/>
+                                        <span t-if="not op.xaa_aa_wq_header_1" style="font-size:16px;" t-esc="op.name"/><br/>
+                                        <span t-if="op.xaa_aa_wq_header_2" style="font-size:14px;" t-esc="op.xaa_aa_wq_header_2"/>
+                                    </div>
+                                    <div class="img_house_info">
+                                        <img class="img img-fluid" t-attf-src="/web/image/product.product/{{op.id}}/xaa_aa_wq_image"/>
+                                    </div>
+                                    <div class="text-left">
+                                        <t t-if="op.xaa_aa_wq_line1">
+                                            <b><span style="font-size:12px;" t-esc="op.xaa_aa_wq_line1"/></b><br/>
+                                        </t>
+                                        <t t-if="op.xaa_aa_wq_line2">
+                                            <b><span style="font-size:12px;" t-esc="op.xaa_aa_wq_line2"/></b><br/>
+                                        </t>
+                                        <t t-if="op.xaa_aa_wq_line3">
+                                            <b><span style="font-size:12px;" t-esc="op.xaa_aa_wq_line3"/></b><br/>
+                                        </t>
+                                        <t t-if="op.xaa_aa_wq_line4">
+                                            <b><span style="font-size:12px;" t-esc="op.xaa_aa_wq_line4"/></b>
+                                        </t>
+                                    </div>
+                                </div>
+                            </t>
+                        </div>
+                        <div class="optimiser_product_qty_show" t-att-style="'display:block;' if formulier_id.xaa_aa_optimiser_product else 'display:none;'">
+                            <div class="col-lg-12 col-md-12 col-sm-12">
+                                <div class="snipper_Add_Minus mt24">
+                                    <button type="button" class="pf_sub remove_optimiser_qty update_optimiser_qty" t-att-value="formulier_id.xaa_aa_optimiser_product.id">-</button>
+                                    <span class="product_qty o_qty optimiser_qty">1</span>
+                                    <button type="button" class="pf_add add_optimiser_qty update_optimiser_qty" t-att-value="formulier_id.xaa_aa_optimiser_product.id">+</button>
+                                    <span class="montserrat_regular ml8 mb8">QTY</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group row form-field">
+                <div class="col-lg-3 col-md-4 col-sm-4 col-lg-offset-1 col-md-offset-1 custom-text">
+                    <label class="col-form-label" for="xaa_aa_pf_select_roof">Is it a flat roof or a slanted roof ?</label>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6">
+                    <div>
+                        <select name="xaa_aa_pf_select_roof" class="form-control">
+                            <option></option>
+                            <option value='Flat Roof' t-att-selected="formulier_id.xaa_aa_pf_select_roof == 'Flat Roof'">
+                                Flat Roof
+                            </option>
+                            <option value='Slanted Roof' t-att-selected="formulier_id.xaa_aa_pf_select_roof == 'Slanted Roof'">
+                                Slanted Roof
+                            </option>
+                            <option value='Mix Roof' t-att-selected="formulier_id.xaa_aa_pf_select_roof == 'Mix Roof'">
+                                Mix Roof
+                            </option>
+
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group row form-field flat_product" t-att-style="'display:block;' if formulier_id.xaa_aa_pf_select_roof in ['Flat Roof','Mix Roof'] else 'display:none;'">
+                <div class="div_padding_left" >
+                    <div class="col-lg-3 col-md-4 col-sm-4 col-lg-offset-1 col-md-offset-1 custom-text">
+                        <label class="col-form-label" for="formulier_id.xaa_aa_flat_roof_product">Which Flat roof system You want ?</label>
+                    </div>
+                    <div class="row col-lg-12 col-md-12 col-sm-12">
+                        <div class="flat_product_section"
+                            style="display:block; list-style-type:none;">
+                            <t t-foreach="flat_product_ids" t-as="frp">
+                                <div t-att-class="'col-lg-6 col-md-6 col-sm-6 col-12 padding_14_10 flat_product_li product_li selected text-center mt8' if formulier_id.xaa_aa_flat_roof_product and formulier_id.xaa_aa_flat_roof_product.id == frp.id else 'col-lg-6 col-md-6 col-sm-6 col-12 padding_14_10 flat_product_li product_li text-center mt8'" t-att-data-id="frp.id">
+                                    <div class="text-center mt4">
+                                        <span t-if="frp.xaa_aa_wq_header_1" style="font-size:16px;" t-esc="frp.xaa_aa_wq_header_1"/>
+                                        <span t-if="not frp.xaa_aa_wq_header_1" style="font-size:16px;" t-esc="frp.name"/><br/>
+                                        <span t-if="frp.xaa_aa_wq_header_2" style="font-size:14px;" t-esc="frp.xaa_aa_wq_header_2"/>
+                                    </div>
+                                    <div class="img_house_info">
+                                        <img class="img img-fluid" t-attf-src="/web/image/product.product/{{frp.id}}/xaa_aa_wq_image"/>
+                                    </div>
+                                    <div class="text-left">
+                                        <t t-if="frp.xaa_aa_wq_line1">
+                                            <b><span style="font-size:12px;" t-esc="frp.xaa_aa_wq_line1"/></b><br/>
+                                        </t>
+                                        <t t-if="frp.xaa_aa_wq_line2">
+                                            <b><span style="font-size:12px;" t-esc="frp.xaa_aa_wq_line2"/></b><br/>
+                                        </t>
+                                        <t t-if="frp.xaa_aa_wq_line3">
+                                            <b><span style="font-size:12px;" t-esc="frp.xaa_aa_wq_line3"/></b><br/>
+                                        </t>
+                                        <t t-if="frp.xaa_aa_wq_line4">
+                                            <b><span style="font-size:12px;" t-esc="frp.xaa_aa_wq_line4"/></b>
+                                        </t>
+                                    </div>
+                                </div>
+                            </t>
+                        </div>
+                        <div class="flat_product_qty_show" t-att-style="'display:block;' if formulier_id.xaa_aa_flat_roof_product else 'display:none;'">
+                            <div class="col-lg-12 col-md-12 col-sm-12">
+                                <div class="snipper_Add_Minus mt24">
+                                    <button type="button" class="pf_sub remove_roof_qty update_roof_qty" t-att-value="formulier_id.xaa_aa_flat_roof_product.id">-</button>
+                                    <span class="product_qty roof_qty flat_roof_qty">1</span>
+                                    <button type="button" class="pf_add add_roof_qty update_roof_qty" t-att-value="formulier_id.xaa_aa_flat_roof_product.id">+</button>
+                                    <span class="montserrat_regular ml8 mb8">QTY</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group row form-field slanted_product" t-att-style="'display:block;' if formulier_id.xaa_aa_pf_select_roof in ['Slanted Roof','Mix Roof'] else 'display:none;'">
+                <div class="div_padding_left" >
+                    <div class="col-lg-3 col-md-4 col-sm-4 col-lg-offset-1 col-md-offset-1 custom-text">
+                        <label class="col-form-label" for="formulier_id.xaa_aa_slanted_roof_product">Which Slanted roof system You want ?</label>
+                    </div>
+                    <div class="row col-lg-12 col-md-12 col-sm-12">
+                        <div class="slanted_product_section"
+                            style="display:block; list-style-type:none;">
+                            <t t-foreach="slanted_product_ids" t-as="srp">
+                                <div t-att-class="'col-lg-6 col-md-6 col-sm-6 col-12 padding_14_10 slanted_product_li product_li selected text-center mt8' if formulier_id.xaa_aa_slanted_roof_product and formulier_id.xaa_aa_slanted_roof_product.id == srp.id else 'col-lg-6 col-md-6 col-sm-6 col-12 padding_14_10 slanted_product_li product_li text-center mt8'" t-att-data-id="srp.id">
+                                    <div class="text-center mt4">
+                                        <span t-if="srp.xaa_aa_wq_header_1" style="font-size:16px;" t-esc="srp.xaa_aa_wq_header_1"/>
+                                        <span t-if="not srp.xaa_aa_wq_header_1" style="font-size:16px;" t-esc="srp.name"/><br/>
+                                        <span t-if="srp.xaa_aa_wq_header_2" style="font-size:14px;" t-esc="srp.xaa_aa_wq_header_2"/>
+                                    </div>
+                                    <div class="img_house_info">
+                                        <img class="img img-fluid" t-attf-src="/web/image/product.product/{{srp.id}}/xaa_aa_wq_image"/>
+                                    </div>
+                                    <div class="text-left">
+                                        <t t-if="srp.xaa_aa_wq_line1">
+                                            <b><span style="font-size:12px;" t-esc="srp.xaa_aa_wq_line1"/></b><br/>
+                                        </t>
+                                        <t t-if="srp.xaa_aa_wq_line2">
+                                            <b><span style="font-size:12px;" t-esc="srp.xaa_aa_wq_line2"/></b><br/>
+                                        </t>
+                                        <t t-if="srp.xaa_aa_wq_line3">
+                                            <b><span style="font-size:12px;" t-esc="srp.xaa_aa_wq_line3"/></b><br/>
+                                        </t>
+                                        <t t-if="srp.xaa_aa_wq_line4">
+                                            <b><span style="font-size:12px;" t-esc="srp.xaa_aa_wq_line4"/></b>
+                                        </t>
+                                    </div>
+                                </div>
+                            </t>
+                        </div>
+                        <div class="slanted_product_qty_show" t-att-style="'display:block;' if formulier_id.xaa_aa_slanted_roof_product else 'display:none;'">
+                            <div class="col-lg-12 col-md-12 col-sm-12">
+                                <div class="snipper_Add_Minus mt24">
+                                    <button type="button" class="pf_sub remove_roof_qty update_roof_qty" t-att-value="formulier_id.xaa_aa_slanted_roof_product.id">-</button>
+                                    <span class="product_qty roof_qty slanted_roof_qty">1</span>
+                                    <button type="button" class="pf_add add_roof_qty update_roof_qty" t-att-value="formulier_id.xaa_aa_slanted_roof_product.id">+</button>
+                                    <span class="montserrat_regular ml8 mb8">QTY</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group row form-field">
+                <div class="col-lg-3 col-md-4 col-sm-4 col-lg-offset-1 col-md-offset-1 custom-text">
+                    <label class="col-form-label" for="xaa_aa_installation_time">How many time needed for installation ?</label>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6">
+                    <div>
+                        <select name="xaa_aa_installation_time" class="form-control">
+                            <option></option>
+                            <option value='4 Hours' t-att-selected="formulier_id.xaa_aa_installation_time == '4 Hours'">
+                                4 Hours
+                            </option>
+                            <option value='8 Hours' t-att-selected="formulier_id.xaa_aa_installation_time == '8 Hours'">
+                                8 Hours
+                            </option>
+                            <option value='12 Hours' t-att-selected="formulier_id.xaa_aa_installation_time == '12 Hours'">
+                                12 Hours
+                            </option>
+                            <option value='16 Hours' t-att-selected="formulier_id.xaa_aa_installation_time == '16 Hours'">
+                                16 Hours
+                            </option>
+                            <option value='24 Hours' t-att-selected="formulier_id.xaa_aa_installation_time == '24 Hours'">
+                                24 Hours
+                            </option>
+                            <option value='32 Hours' t-att-selected="formulier_id.xaa_aa_installation_time == '32 Hours'">
+                                32 Hours
+                            </option>
+                            <option value='36 Hours' t-att-selected="formulier_id.xaa_aa_installation_time == '36 Hours'">
+                                36 Hours
+                            </option>
+                            <option value='40 Hours' t-att-selected="formulier_id.xaa_aa_installation_time == '40 Hours'">
+                                40 Hours
+                            </option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="form-group row form-field">
+                <div class="col-lg-3 col-md-4 col-sm-4 col-lg-offset-1 col-md-offset-1 custom-text">
+                    <label class="col-form-label" for="xaa_aa_need_discount_2">Do You need Discount 2 ?</label>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6">
+                    <div>
+                        <select name="xaa_aa_need_discount_2" class="form-control">
+                            <option></option>
+                            <option value='ja' t-att-selected="formulier_id.xaa_aa_need_discount_2 == 'ja'">
+                                ja
+                            </option>
+                            <option value='nee' t-att-selected="formulier_id.xaa_aa_need_discount_2 == 'nee'">
+                                nee
+                            </option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group row form-field amount_range display-none">
+                <div class="col-lg-3 col-md-4 col-sm-4 col-lg-offset-1 col-md-offset-1 custom-text">
+                    <label class="col-form-label" for="xaa_aa_amount_range">Aanpassing anders</label>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6">
+                    <input type="number" name="xaa_aa_amount_range" class="form-control" t-att-value="formulier_id.xaa_aa_amount_range" placeholder="Enter a whole number, not a decimal"/>
+                </div>
+            </div> -->
+            <div class="form-group row form-field">
+                <div class="col-lg-3 col-md-4 col-sm-4 col-lg-offset-1 col-md-offset-1 custom-text">
+                    <label class="col-form-label" for="xaa_aa_pv_need_custm_extra_product">Do you need extra product ?</label>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6">
+                    <div>
+                        <select name="xaa_aa_pv_need_custm_extra_product" class="form-control">
+                            <option></option>
+                            <option value='ja 1' t-att-selected="formulier_id.xaa_aa_pv_need_custm_extra_product == 'ja 1'">
+                                ja 1
+                            </option>
+                            <option value='ja 2' t-att-selected="formulier_id.xaa_aa_pv_need_custm_extra_product == 'ja 2'">
+                                ja 2
+                            </option>
+                            <option value='ja 3' t-att-selected="formulier_id.xaa_aa_pv_need_custm_extra_product == 'ja 3'">
+                                ja 3
+                            </option>
+                            <option value='nee' t-att-selected="formulier_id.xaa_aa_pv_need_custm_extra_product == 'nee'">
+                                nee
+                            </option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group row form-field pv_extra_product_description" t-att-style="'display:flex;' if formulier_id.xaa_aa_pv_need_custm_extra_product == 'ja 1' or formulier_id.xaa_aa_pv_need_custm_extra_product == 'ja 2' or formulier_id.xaa_aa_pv_need_custm_extra_product == 'ja 3' else 'display:none;'">
+                <div class="col-lg-3 col-md-4  col-sm-4 col-lg-offset-1 col-md-offset-1 custom-text">
+                    <label class="col-form-label" for="xaa_aa_pv_extra_product_description">Extra product 1: give description</label>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6">
+                    <input type="text" name="xaa_aa_pv_extra_product_description" class="form-control" placeholder="vui omschrijving in" t-att-value="formulier_id.xaa_aa_pv_extra_product_description"/>
+                </div>
+            </div>
+            <div class="form-group row form-field pv_extra_product_cost" t-att-style="'display:flex;' if formulier_id.xaa_aa_pv_need_custm_extra_product == 'ja 1' or formulier_id.xaa_aa_pv_need_custm_extra_product == 'ja 2' or formulier_id.xaa_aa_pv_need_custm_extra_product == 'ja 3' else 'display:none;'">
+                <div class="col-lg-3 col-md-4  col-sm-4 col-lg-offset-1 col-md-offset-1 custom-text">
+                    <label class="col-form-label" for="xaa_aa_pv_extra_product_cost">Cost price</label>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6">
+                    <input type="text" name="xaa_aa_pv_extra_product_cost" class="form-control" t-att-value="formulier_id.xaa_aa_pv_extra_product_cost or iso_extra_product.standard_price"/>
+                </div>
+            </div>
+            <div class="form-group row form-field pv_extra_product_sale" t-att-style="'display:flex;' if formulier_id.xaa_aa_pv_need_custm_extra_product == 'ja 1' or formulier_id.xaa_aa_pv_need_custm_extra_product == 'ja 2' or formulier_id.xaa_aa_pv_need_custm_extra_product == 'ja 3' else 'display:none;'">
+                <div class="col-lg-3 col-md-4  col-sm-4 col-lg-offset-1 col-md-offset-1 custom-text">
+                    <label class="col-form-label" for="xaa_aa_pv_extra_product_sale">Sale price</label>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6">
+                    <input type="text" name="xaa_aa_pv_extra_product_sale" class="form-control" t-att-value="formulier_id.xaa_aa_pv_extra_product_sale or iso_extra_product.lst_price"/>
+                </div>
+            </div>
+            <div class="form-group row form-field pv_extra_product_description_two" t-att-style="'display:flex;' if formulier_id.xaa_aa_pv_need_custm_extra_product == 'ja 2' or formulier_id.xaa_aa_pv_need_custm_extra_product == 'ja 3' else 'display:none;'">
+                <div class="col-lg-3 col-md-4  col-sm-4 col-lg-offset-1 col-md-offset-1 custom-text">
+                    <label class="col-form-label" for="xaa_aa_pv_extra_product_description_two">Extra product 2: give description</label>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6">
+                    <input type="text" name="xaa_aa_pv_extra_product_description_two" class="form-control" placeholder="vui omschrijving in" t-att-value="formulier_id.xaa_aa_pv_extra_product_description_two"/>
+                </div>
+            </div>
+            <div class="form-group row form-field pv_extra_product_cost_two" t-att-style="'display:flex;' if formulier_id.xaa_aa_pv_need_custm_extra_product == 'ja 2' or formulier_id.xaa_aa_pv_need_custm_extra_product == 'ja 3' else 'display:none;'">
+                <div class="col-lg-3 col-md-4  col-sm-4 col-lg-offset-1 col-md-offset-1 custom-text">
+                    <label class="col-form-label" for="xaa_aa_pv_extra_product_cost_two">Cost price</label>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6">
+                    <input type="text" name="xaa_aa_pv_extra_product_cost_two" class="form-control" t-att-value="formulier_id.xaa_aa_pv_extra_product_cost_two or iso_extra_product.standard_price"/>
+                </div>
+            </div>
+            <div class="form-group row form-field pv_extra_product_sale_two" t-att-style="'display:flex;' if formulier_id.xaa_aa_pv_need_custm_extra_product == 'ja 2' or formulier_id.xaa_aa_pv_need_custm_extra_product == 'ja 3' else 'display:none;'">
+                <div class="col-lg-3 col-md-4  col-sm-4 col-lg-offset-1 col-md-offset-1 custom-text">
+                    <label class="col-form-label" for="xaa_aa_pv_extra_product_sale_two">Sale price</label>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6">
+                    <input type="text" name="xaa_aa_pv_extra_product_sale_two" class="form-control" t-att-value="formulier_id.xaa_aa_pv_extra_product_sale_two or iso_extra_product.lst_price"/>
+                </div>
+            </div>
+            <div class="form-group row form-field pv_extra_product_description_three" t-att-style="'display:flex;' if formulier_id.xaa_aa_pv_need_custm_extra_product == 'ja 3' else 'display:none;'">
+                <div class="col-lg-3 col-md-4  col-sm-4 col-lg-offset-1 col-md-offset-1 custom-text">
+                    <label class="col-form-label" for="xaa_aa_pv_extra_product_description_three">Extra product 3: give description</label>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6">
+                    <input type="text" name="xaa_aa_pv_extra_product_description_three" class="form-control" placeholder="vui omschrijving in" t-att-value="formulier_id.xaa_aa_pv_extra_product_description_three"/>
+                </div>
+            </div>
+            <div class="form-group row form-field pv_extra_product_cost_three" t-att-style="'display:flex;' if formulier_id.xaa_aa_pv_need_custm_extra_product == 'ja 3' else 'display:none;'">
+                <div class="col-lg-3 col-md-4  col-sm-4 col-lg-offset-1 col-md-offset-1 custom-text">
+                    <label class="col-form-label" for="xaa_aa_pv_extra_product_cost_three">Cost price</label>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6">
+                    <input type="text" name="xaa_aa_pv_extra_product_cost_three" class="form-control" t-att-value="formulier_id.xaa_aa_pv_extra_product_cost_three or iso_extra_product.standard_price"/>
+                </div>
+            </div>
+            <div class="form-group row form-field pv_extra_product_sale_three" t-att-style="'display:flex;' if formulier_id.xaa_aa_pv_need_custm_extra_product == 'ja 3' else 'display:none;'">
+                <div class="col-lg-3 col-md-4  col-sm-4 col-lg-offset-1 col-md-offset-1 custom-text">
+                    <label class="col-form-label" for="xaa_aa_pv_extra_product_sale_three">Sale price</label>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6">
+                    <input type="text" name="xaa_aa_pv_extra_product_sale_three" class="form-control" t-att-value="formulier_id.xaa_aa_pv_extra_product_sale_three or iso_extra_product.lst_price"/>
+                </div>
+            </div>
+            <div class="form-group row form-field">
+                <div class="col-lg-3 col-md-4 col-sm-4 col-lg-offset-1 col-md-offset-1 custom-text">
+                    <label class="col-form-label" for="xaa_aa_need_schouw">Do a look?</label>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6">
+                    <div>
+                        <select name="xaa_aa_need_schouw" class="form-control">
+                            <option></option>
+                            <option value='ja' t-att-selected="formulier_id.xaa_aa_need_schouw == 'ja'">
+                                ja
+                            </option>
+                            <option value='nee' t-att-selected="formulier_id.xaa_aa_need_schouw == 'nee'">
+                                nee
+                            </option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group row form-field">
+                <div class="col-lg-3 col-md-4 col-sm-4 col-lg-offset-1 col-md-offset-1 custom-text">
+                    <label class="col-form-label" for="xaa_aa_need_discount">Do You need Discount ?</label>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6">
+                    <div>
+                        <select name="xaa_aa_need_discount" class="form-control">
+                            <option></option>
+                            <option value='ja' t-att-selected="formulier_id.xaa_aa_need_discount == 'ja'">
+                                ja
+                            </option>
+                            <option value='nee' t-att-selected="formulier_id.xaa_aa_need_discount == 'nee'">
+                                nee
+                            </option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="form-group row form-field discount_field" t-att-style="'display:block;' if formulier_id.xaa_aa_need_discount == 'ja' else 'display:none;'">
+                <div class="div_padding_left" >
+                    <div class="row custom-text">
+                        <label class="col-form-label" for="xaa_aa_discount_product">Select Discount</label>
+                    </div>
+                    <div class="row col-lg-12 col-md-12 col-sm-12">
+                        <div class="discount_product_section"
+                            style="display:block; list-style-type:none;">
+                            <t t-foreach="discount_products" t-as="dis">
+                                <div t-att-class="'col-lg-6 col-md-6 col-sm-6 col-12 padding_14_10 discount_product_li product_li selected text-center mt8' if formulier_id.xaa_aa_discount_product and formulier_id.xaa_aa_discount_product.id == dis.id else 'col-lg-6 col-md-6 col-sm-6 col-12 padding_14_10 discount_product_li product_li text-center mt8'" t-att-data-id="dis.id">
+                                    <div class="text-center mt4">
+                                        <span t-if="dis.xaa_aa_wq_header_1" style="font-size:16px;" t-esc="dis.xaa_aa_wq_header_1"/>
+                                        <span t-if="not dis.xaa_aa_wq_header_1" style="font-size:16px;" t-esc="dis.name"/><br/>
+                                        <span t-if="dis.xaa_aa_wq_header_2" style="font-size:14px;" t-esc="dis.xaa_aa_wq_header_2"/>
+                                    </div>
+                                    <div class="img_house_info">
+                                        <img class="img img-fluid" t-attf-src="/web/image/product.product/{{dis.id}}/xaa_aa_wq_image"/>
+                                    </div>
+                                    <div class="text-left">
+                                        <t t-if="dis.xaa_aa_wq_line1">
+                                            <b><span style="font-size:12px;" t-esc="dis.xaa_aa_wq_line1"/></b><br/>
+                                        </t>
+                                        <t t-if="dis.xaa_aa_wq_line2">
+                                            <b><span style="font-size:12px;" t-esc="dis.xaa_aa_wq_line2"/></b><br/>
+                                        </t>
+                                        <t t-if="dis.xaa_aa_wq_line3">
+                                            <b><span style="font-size:12px;" t-esc="dis.xaa_aa_wq_line3"/></b><br/>
+                                        </t>
+                                        <t t-if="dis.xaa_aa_wq_line4">
+                                            <b><span style="font-size:12px;" t-esc="dis.xaa_aa_wq_line4"/></b>
+                                        </t>
+                                    </div>
+                                </div>
+                            </t>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+            <div class="form-group row form-field discount_qty display-none">
+                <div class="col-lg-3 col-md-4  col-sm-4 col-lg-offset-1 col-md-offset-1 custom-text">
+                    <label class="col-form-label" for="xaa_aa_discount_qty">Discount Quantity</label>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6">
+                    <input type="number" name="xaa_aa_discount_qty" class="form-control" t-att-value="formulier_id.xaa_aa_discount_qty"/>
+                </div>
+            </div>
+            <div class="form-group row form-field vat_field">
+                <div class="col-lg-3 col-md-4 col-sm-4 col-lg-offset-1 col-md-offset-1 custom-text">
+                    <label class="col-form-label" for="xaa_aa_quote_template_id">Choose your quote template</label>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6">
+                    <div class="div_product">
+                        <select class="form-control" name="xaa_aa_quote_template_id">
+                            <t t-foreach="quote_templates" t-as="template">
+                                <option t-att-value="template.id" t-att-selected="template.id == formulier_id.xaa_aa_quote_template_id.id">
+                                    <t t-esc="template.name"/>
+                                </option>
+                            </t>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group row form-field converter_price" style="display:none;">
+                <div class="col-lg-3 col-md-4  col-sm-4 col-lg-offset-1 col-md-offset-1 custom-text mt8">
+                    <label class="col-form-label" for="xaa_aa_converter_price">Converter Price</label>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6 mt8">
+                    <div>
+                        <input type="number" name="xaa_aa_converter_price" class="form-control" t-att-value="formulier_id.xaa_aa_converter_price" min="1"/>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group row form-field panel_price" style="display:none;">
+                <div class="col-lg-3 col-md-4  col-sm-4 col-lg-offset-1 col-md-offset-1 custom-text">
+                    <label class="col-form-label" for="xaa_aa_panel_price">Panel Price</label>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6">
+                    <div>
+                        <input type="number" name="xaa_aa_panel_price" class="form-control" t-att-value="formulier_id.xaa_aa_panel_price" min="1"/>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group row form-field optimisers_price" style="display:none;">
+                <div class="col-lg-3 col-md-4  col-sm-4 col-lg-offset-1 col-md-offset-1 custom-text">
+                    <label class="col-form-label" for="xaa_aa_optimisers_price">Optimisers Price</label>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6">
+                    <div>
+                        <input type="number" name="xaa_aa_optimisers_price" class="form-control" t-att-value="formulier_id.xaa_aa_optimisers_price" min="1"/>
+                    </div>
+                </div>
+            </div>
+            <div id="loading">
+                <img id="loading-image" src="/formulier_type_3/static/src/images/5.gif" alt="Loading..." />
+            </div>
+            <div class="percentage_div">
+                <div class="custom_progress">
+                    <div id="progress_percentage" data-id="150">1%</div>
+                </div>
+            </div>
+            <div class="form-group row form-field" id="quote_create">
+                <div class="col-md-offset-1 col-md-4 col-lg-4 col-sm-4 text-center">
+                    <button class="btn btn-primary o_website_eval_quote mt16" type="Button" t-att-value="formulier_id.id">Quote Evaluation</button>
+                </div>
+                <div class="col-md-offset-1 col-md-4 col-lg-4 col-sm-4 text-center">
+                    <button class="btn btn-primary o_website_create_quote mt16" type="Button" t-att-value="formulier_id.id">Create Quote</button>
+                </div>
+            </div>
+        </t>
+    </template>
+</odoo>

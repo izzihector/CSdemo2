@@ -1,0 +1,46 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#   * watt_piek_iso
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 14.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-10-29 05:59+0000\n"
+"PO-Revision-Date: 2020-10-29 05:59+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+
+#. module: watt_piek_iso
+#: model:ir.model.fields,field_description:watt_piek_iso.field_sale_order__xaa_aa_order_iso
+#: model:ir.model.fields,field_description:watt_piek_iso.field_sale_report__xaa_aa_order_iso
+msgid "Order ISO"
+msgstr "Offerte ISO"
+
+#. module: watt_piek_iso
+#: model:ir.model.fields,field_description:watt_piek_iso.field_sale_order__xaa_aa_order_watt_piek
+#: model:ir.model.fields,field_description:watt_piek_iso.field_sale_report__xaa_aa_order_watt_piek
+msgid "Order Watt Peak"
+msgstr "Offerte Watt Piek"
+
+#. module: watt_piek_iso
+#: model:ir.model.fields,field_description:watt_piek_iso.field_sale_order_line__xaa_aa_total_iso
+msgid "Total ISO"
+msgstr "Totaal ISO"
+
+#. module: watt_piek_iso
+#: model:ir.model.fields,field_description:watt_piek_iso.field_sale_order_line__xaa_aa_total_watt_piek
+msgid "Total Watt Peak"
+msgstr "Totaal Watt Piek"
+
+#. module: watt_piek_iso
+#: model:ir.model.fields,field_description:watt_piek_iso.field_product_product__xaa_aa_watt_piek
+#: model:ir.model.fields,field_description:watt_piek_iso.field_product_template__xaa_aa_watt_piek
+#: model:ir.model.fields,field_description:watt_piek_iso.field_sale_order_line__xaa_aa_watt_piek
+msgid "Watt Peak"
+msgstr "Watt Piek"

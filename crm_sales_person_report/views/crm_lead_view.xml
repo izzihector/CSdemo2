@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<odoo>
+    <data>
+        <!-- <record model="ir.ui.view" id="crm_case_form_view_oppor_inherits">
+            <field name="name">Opportunities Activities</field>
+            <field name="model">crm.lead</field>
+            <field name="inherit_id" ref="crm.crm_lead_view_form"/> 
+            <field name="arch" type="xml">
+                <xpath expr="//sheet/group" position="after">
+                    <group string="Activities">
+                        <group>
+                            <field name="xaa_aa_stage_name" invisible="1"/>
+                            <field name="xaa_aa_phone_by" widget="many2one_avatar_user"/>
+                            <field name="xaa_aa_opportunity_by" widget="many2one_avatar_user"/>
+                            <field name="xaa_aa_quote_by" widget="many2one_avatar_user"/>
+                            <field name="xaa_aa_deal_by" widget="many2one_avatar_user"/>
+                            <field name="xaa_aa_work_by" widget="many2one_avatar_user"/>
+                        </group>
+                        <group>
+                            <field name="xaa_aa_phone_date"/>
+                            <field name="xaa_aa_opportunity_date"/>
+                            <field name="xaa_aa_quote_date"/>
+                            <field name="xaa_aa_deal_date"/>
+                            <field name="xaa_aa_work_date"/>
+                        </group>
+                    </group>
+                </xpath>
+            </field>
+        </record> -->
+    </data>
+</odoo>

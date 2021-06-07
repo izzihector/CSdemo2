@@ -1,0 +1,247 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#   * web_kanban_custom_project
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 13.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-05-05 06:45+0000\n"
+"PO-Revision-Date: 2020-05-05 06:45+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+
+#. module: web_kanban_custom_project
+#: model:ir.model.fields,field_description:web_kanban_custom_project.field_project_task_type_custom__xaa_aa_action_time
+msgid "Time"
+msgstr "Tijd"
+
+#. module: web_kanban_custom_project
+#: model:ir.model.fields,field_description:web_kanban_custom_project.field_project_task_type_custom__xaa_aa_priority
+msgid "Priority"
+msgstr "Prioriteit"
+
+#. module: web_kanban_custom_project
+#: model:ir.model.fields,field_description:web_kanban_custom_project.field_project_task_type_custom__xaa_aa_send_mail
+msgid "Send mail"
+msgstr "Verzend mail"
+
+#. module: web_kanban_custom_project
+#: model:ir.model.fields,field_description:web_kanban_custom_project.field_project_task_type_custom__xaa_aa_template_id
+msgid "Template"
+msgstr "Sjabloon"
+
+#. module: web_kanban_custom_project
+#: model:ir.model.fields,field_description:web_kanban_custom_project.field_project_task_type_custom__xaa_aa_custom_type_id
+msgid "Stage"
+msgstr "Stadium"
+
+#. module: web_kanban_custom_project
+#: model:ir.model.fields,field_description:web_kanban_custom_project.field_project_task_type_custom__xaa_aa_action_when
+msgid "Before/After"
+msgstr "Voor/na"
+
+#. module: web_kanban_custom_project
+#: model:ir.model.fields.selection,name:web_kanban_custom_project.selection__project_task_type_custom__xaa_aa_action_when__before
+msgid "Before"
+msgstr "Voordat"
+
+#. module: web_kanban_custom_project
+#: model:ir.model.fields.selection,name:web_kanban_custom_project.selection__project_task_type_custom__xaa_aa_action_when__after
+msgid "After"
+msgstr "Na"
+
+#. module: web_kanban_custom_project
+#: model:ir.model.fields,field_description:web_kanban_custom_project.field_project_task_type_custom__xaa_aa_mail_action
+msgid "Mail Action"
+msgstr "Mailactie"
+
+#. module: web_kanban_custom_project
+#: model:ir.model.fields,field_description:web_kanban_custom_project.field_project_task__xaa_aa_remainder_mail
+#: model:ir.model.fields.selection,name:web_kanban_custom_project.selection__project_task_type_custom__xaa_aa_mail_action__remainder
+msgid "FollowUp Mail"
+msgstr "Vervolgmail"
+
+#. module: web_kanban_custom_project
+#: model:ir.model.fields,field_description:web_kanban_custom_project.field_project_task__xaa_aa_warning_mail
+#: model:ir.model.fields.selection,name:web_kanban_custom_project.selection__project_task_type_custom__xaa_aa_mail_action__warning
+msgid "Reminder Mail"
+msgstr "Herinneringsmail"
+
+#. module: web_kanban_custom_project
+#: model:ir.model.fields.selection,name:web_kanban_custom_project.selection__project_task_type_custom__xaa_aa_action_time__1_m
+msgid "1 Minute"
+msgstr "1 minuut"
+
+#. module: web_kanban_custom_project
+#: model:ir.model.fields.selection,name:web_kanban_custom_project.selection__project_task_type_custom__xaa_aa_action_time__5_m
+msgid "5 Minutes"
+msgstr "5 minuten"
+
+#. module: web_kanban_custom_project
+#: model:ir.model.fields.selection,name:web_kanban_custom_project.selection__project_task_type_custom__xaa_aa_action_time__15_m
+msgid "15 Minutes"
+msgstr "15 minuten"
+
+#. module: web_kanban_custom_project
+#: model:ir.model.fields.selection,name:web_kanban_custom_project.selection__project_task_type_custom__xaa_aa_action_time__30_m
+msgid "30 Minutes"
+msgstr "30 minuten"
+
+#. module: web_kanban_custom_project
+#: model:ir.model.fields.selection,name:web_kanban_custom_project.selection__project_task_type_custom__xaa_aa_action_time__1_h
+msgid "1 Hour"
+msgstr "1 uur"
+
+#. module: web_kanban_custom_project
+#: model:ir.model.fields.selection,name:web_kanban_custom_project.selection__project_task_type_custom__xaa_aa_action_time__2_h
+msgid "2 Hours"
+msgstr "2 uur"
+
+#. module: web_kanban_custom_project
+#: model:ir.model.fields.selection,name:web_kanban_custom_project.selection__project_task_type_custom__xaa_aa_action_time__4_h
+msgid "4 Hours"
+msgstr "4 uur"
+
+#. module: web_kanban_custom_project
+#: model:ir.model.fields.selection,name:web_kanban_custom_project.selection__project_task_type_custom__xaa_aa_action_time__8_h
+msgid "8 Hours"
+msgstr "8 uur"
+
+#. module: web_kanban_custom_project
+#: model:ir.model.fields.selection,name:web_kanban_custom_project.selection__project_task_type_custom__xaa_aa_action_time__1_d
+msgid "1 Day"
+msgstr "1 dag"
+
+#. module: web_kanban_custom_project
+#: model:ir.model.fields.selection,name:web_kanban_custom_project.selection__project_task_type_custom__xaa_aa_action_time__2_d
+msgid "2 Day"
+msgstr "2 dag"
+
+#. module: web_kanban_custom_project
+#: model:ir.model.fields.selection,name:web_kanban_custom_project.selection__project_task_type_custom__xaa_aa_action_time__3_d
+msgid "3 Days"
+msgstr "3 dag"
+
+#. module: web_kanban_custom_project
+#: model:ir.model.fields.selection,name:web_kanban_custom_project.selection__project_task_type_custom__xaa_aa_action_time__4_d
+msgid "4 Days"
+msgstr "4 dag"
+
+#. module: web_kanban_custom_project
+#: model:ir.model.fields.selection,name:web_kanban_custom_project.selection__project_task_type_custom__xaa_aa_action_time__5_d
+msgid "5 Days"
+msgstr "5 dag"
+
+#. module: web_kanban_custom_project
+#: model:ir.model.fields.selection,name:web_kanban_custom_project.selection__project_task_type_custom__xaa_aa_action_time__7_d
+msgid "7 Days"
+msgstr "7 dag"
+
+#. module: web_kanban_custom_project
+#: model:ir.model.fields.selection,name:web_kanban_custom_project.selection__project_task_type_custom__xaa_aa_action_time__10_d
+msgid "10 Days"
+msgstr "10 dag"
+
+#. module: web_kanban_custom_project
+#: model:ir.model.fields.selection,name:web_kanban_custom_project.selection__project_task_type_custom__xaa_aa_action_time__20_d
+msgid "20 Days"
+msgstr "20 dag"
+
+#. module: web_kanban_custom_project
+#: model:ir.model.fields.selection,name:web_kanban_custom_project.selection__project_task_type_custom__xaa_aa_action_time__30_d
+msgid "30 Days"
+msgstr "30 dag"
+
+#. module: web_kanban_custom_project
+#: model:ir.model.fields.selection,name:web_kanban_custom_project.selection__project_task_type_custom__xaa_aa_action_time__180_d
+msgid "180 Days"
+msgstr "180 dag"
+
+#. module: web_kanban_custom_project
+#: model:ir.model.fields.selection,name:web_kanban_custom_project.selection__project_task_type_custom__xaa_aa_action_time__365_d
+msgid "365 Days"
+msgstr "365 dag"
+
+#. module: web_kanban_custom_project
+#: model:ir.model.fields,field_description:web_kanban_custom_project.field_project_task_type_custom__xaa_aa_action_color
+msgid "Colors"
+msgstr "Kleuren"
+
+#. module: web_kanban_custom_project
+#: model:ir.model.fields.selection,name:web_kanban_custom_project.selection__project_task_type_custom__xaa_aa_action_color__orange
+msgid "Orange"
+msgstr "Oranje"
+
+#. module: web_kanban_custom_project
+#: model:ir.model.fields.selection,name:web_kanban_custom_project.selection__project_task_type_custom__xaa_aa_action_color__red
+msgid "Red"
+msgstr "Rood"
+
+#. module: web_kanban_custom_project
+#: model:ir.model.fields.selection,name:web_kanban_custom_project.selection__project_task_type_custom__xaa_aa_action_color__green
+msgid "Green"
+msgstr "Groen"
+
+#. module: web_kanban_custom_project
+#: model:ir.model.fields.selection,name:web_kanban_custom_project.selection__project_task_type_custom__xaa_aa_action_color__purple
+msgid "Purple"
+msgstr "Purper"
+
+#. module: web_kanban_custom_project
+#: model:ir.model.fields.selection,name:web_kanban_custom_project.selection__project_task_type_custom__xaa_aa_action_color__yellow
+msgid "Yellow"
+msgstr "Geel"
+
+#. module: web_kanban_custom_project
+#: model:ir.model.fields.selection,name:web_kanban_custom_project.selection__project_task_type_custom__xaa_aa_action_color__blue
+msgid "Blue"
+msgstr "Blauw"
+
+#. module: web_kanban_custom_project
+#: model:ir.model.fields,field_description:web_kanban_custom_project.field_project_task_type_custom__xaa_aa_action_perform_task
+msgid "Field"
+msgstr "Veld"
+
+#. module: web_kanban_custom_project
+#: model:ir.model.fields.selection,name:web_kanban_custom_project.selection__project_task_type_custom__xaa_aa_action_perform_task__date_last_stage_update
+msgid "Last Stage Update"
+msgstr "Laatste fase-update"
+
+#. module: web_kanban_custom_project
+#: model:ir.model.fields,field_description:web_kanban_custom_project.field_project_task_type_custom__write_uid
+msgid "Last Updated by"
+msgstr "Laatst bijgewerkt door"
+
+#. module: web_kanban_custom_project
+#: model:ir.model.fields,field_description:web_kanban_custom_project.field_project_task_type_custom__write_date
+msgid "Last Updated on"
+msgstr "Laatst geupdate op"
+
+#. module: web_kanban_custom_project
+#: model:ir.model.fields.selection,name:web_kanban_custom_project.selection__project_task_type_custom__xaa_aa_action_perform_task__date_assign
+msgid "Assigning Date"
+msgstr "Datum toewijzen"
+
+
+#. module: web_kanban_custom_project
+#: model:ir.model.fields,field_description:web_kanban_custom_project.field_project_task_type_custom__create_date
+msgid "Created on"
+msgstr "Gemaakt op"
+
+#. module: web_kanban_custom_project
+#: model:ir.actions.server,name:web_kanban_custom_project.action_fetchmail_mail_reminder_task
+msgid "Reminder mail for Task"
+msgstr "Herinneringsmail voor taak"
+
+#. module: web_kanban_custom_project
+#: model:ir.actions.server,name:web_kanban_custom_project.ir_cron_mail_reminder_send_task_ir_actions_server
+#: model:ir.cron,cron_name:web_kanban_custom_project.ir_cron_mail_reminder_send_task
+#: model:ir.cron,name:web_kanban_custom_project.ir_cron_mail_reminder_send_task
+msgid "Task Remainder"
+msgstr "Resterende taak"

@@ -1,0 +1,24 @@
+<odoo>
+    <data>
+        <record id="view_order_form_inh" model="ir.ui.view">
+            <field name="name">sale_order_form_inh</field>
+            <field name="model">sale.order</field>
+            <field name="inherit_id" ref="sale.view_order_form" />
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='partner_id']" position="after">
+                    <field name="xaa_aa_formulier_type" required="0"/>
+                </xpath>
+                <xpath expr="//button[@name='action_cancel']" position="after">
+                    <button name="action_set_opportunity" string="Create Opportunity" type="object" attrs="{'invisible': [('opportunity_id', '!=', False)]}"/>
+                </xpath>
+                <xpath expr="//form/sheet/div" position="inside">
+                    <button name="preview_opportunity" type="object" class="oe_stat_button" icon="fa-star" context="{'opportunity_from_quote': False}" attrs="{'invisible': [('opportunity_id', '=', False)]}">
+                        <div class="o_field_widget o_stat_info">
+                            <span class="o_stat_text">Opportunity</span>
+                        </div>
+                    </button>
+                </xpath>
+            </field>
+        </record>
+    </data>
+</odoo>

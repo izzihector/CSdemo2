@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <template id="web_quotation_first_page" name="Quotation Content Custom">
+            <div style="width:100%;">
+                <t t-call="custom_header_footer.ec_sale_external_layout_header" />
+                <div class="article page">
+                    <div t-if="sale_order.sale_order_template_id.xaa_aa_report_layout == 'address_only'" class="row">
+                        <div><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+                            <h1 class="text-center mt8 mb8" style="margin-left:320px;">
+                                <span t-if="sale_order.state in ('draft','sent','cancel')">Quotation</span>
+                                <span t-if="sale_order.state not in ('draft','sent','cancel')">Quotation</span>
+                                <span><em t-esc="sale_order.name"/></span>
+                            </h1><br/><br/><br/><br/><br/><br/><br/><br/>
+                        </div>
+                    </div>
+                    <div t-if="sale_order.sale_order_template_id.xaa_aa_report_layout == 'no_extra_space'" class="row">
+                        <div>
+                            <h1 class="text-center mt8 mb8" style="margin-left:320px;">
+                                <span t-if="sale_order.state in ('draft','sent','cancel')">Quotation</span>
+                                <span t-if="sale_order.state not in ('draft','sent','cancel')">Quotation</span>
+                                <span><em t-esc="sale_order.name"/></span>
+                            </h1><br/><br/><br/>
+                        </div>
+                    </div>
+                    <div t-if="not sale_order.sale_order_template_id.xaa_aa_report_layout" class="row">
+                        <div><br/><br/><br/><br/><br/><br/><br/>
+                            <h1 class="text-center mt8 mb8" style="margin-left:320px;">
+                                <span t-if="sale_order.state in ('draft','sent','cancel')">Quotation</span>
+                                <span t-if="sale_order.state not in ('draft','sent','cancel')">Quotation</span>
+                                <span><em t-esc="sale_order.name"/></span>
+                            </h1><br/><br/><br/><br/><br/><br/>
+                        </div>
+                    </div>
+                    <div class="row" style="margin-left:80px;">
+                        <div class="col-lg-6 row">
+                            <strong class="d-block mb-1">Customer:</strong>
+                            <div class="col-sm-8 col-xs-8 row">
+                                <div class="col-sm-2 col-xs-2 text-right">
+                                    <label></label>
+                                </div>
+                                <span t-field="sale_order.partner_id"/>
+                                <t t-if="sale_order.partner_invoice_id.street">
+                                    <br/><span t-field="sale_order.partner_invoice_id.street"/>
+                                </t>
+                                <t t-if="sale_order.partner_invoice_id.street2">
+                                    <br/><span t-field="sale_order.partner_invoice_id.street2"/>
+                                </t>
+                                <t t-if="sale_order.partner_invoice_id.zip or sale_order.partner_invoice_id.city or sale_order.partner_invoice_id.state_id">
+                                    <br/>
+                                    <span t-field="sale_order.partner_invoice_id.zip"/>
+                                    <span t-field="sale_order.partner_invoice_id.city"/>
+                                    <span t-field="sale_order.partner_invoice_id.state_id"/>
+                                </t>
+                                <t t-if="sale_order.partner_invoice_id.country_id">
+                                    <br/><span t-field="sale_order.partner_invoice_id.country_id"/>
+                                </t>
+                                <t t-if="sale_order.partner_invoice_id.phone">
+                                    <br/><span t-field="sale_order.partner_invoice_id.phone"/>
+                                </t>
+                                <t t-if="sale_order.partner_invoice_id.email">
+                                    <br/><span t-field="sale_order.partner_invoice_id.email"/>
+                                </t>
+                            </div>
+                        </div>
+                        <div id="your_contact" class="col-lg-7 row">
+                            <strong class="d-block mb-1">Your Contact:</strong>
+                            <address class="col-sm-8 col-xs-8" t-field="sale_order.user_id" t-options='{"widget": "contact", "fields": ["name", "phone", "email"]}'/>
+                        </div>
+                    </div>
+                    <div class="row" style="margin-left:90px;">
+                        <div t-if="sale_order.partner_shipping_id.id != sale_order.partner_invoice_id.id" class="col-lg-6 row">
+                            <strong class="d-block mb-1">Ship To:</strong>
+                            <div class="col-sm-1 col-xs-1 text-right">
+                                <label></label>
+                            </div>
+                            <address class="col-sm-8 col-xs-8" t-field="sale_order.partner_shipping_id" t-options='{"widget": "contact", "fields": ["address", "name", "phone"]}'/>
+                        </div>
+                        <div t-else="else" class="col-lg-6">
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="row">
+                                <strong class="d-block mb-1">Quote Date:</strong>
+                                <span class="col-sm-8 col-xs-8" t-field="sale_order.date_order" t-options='{"widget": "date"}'/>
+                            </div>
+                            <div class="row" t-if="sale_order.validity_date and sale_order.state in ['draft', 'sent']">
+                                <strong class="d-block mb-1">Expiration Date:</strong>
+                                <span class="col-sm-8 col-xs-8" t-field="sale_order.validity_date" t-options='{"widget": "date"}'/>
+                            </div>
+                            <div class="row" t-if="sale_order.client_order_ref">
+                                <strong class="d-block mb-1">Your Reference:</strong>
+                                <span class="col-sm-8 col-xs-8" t-field="sale_order.client_order_ref"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <t t-call="custom_header_footer.ec_sale_external_layout_footer"/>
+            </div>
+        </template>
+    </data>
+</odoo>

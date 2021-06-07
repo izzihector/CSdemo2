@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="customer_lead_template" name="Thanks you">
+        <t t-call="website.layout">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h3>Thanks For Your Response</h3>
+                </div>
+            </div>
+        </t>
+    </template>
+</odoo>

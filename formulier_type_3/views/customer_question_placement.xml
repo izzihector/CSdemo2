@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="quote_question_placement" name="Roof Questions">
+        <div class="div_padding_left">
+            <div class="mt32 montserrat_regular mr16">
+                <span>You may already have an idea how you would like your solar panels installed. You can upload a photo at the end of this questionnaire for clarification. Don't have a photo? Then you can give a brief description in the field below.</span>
+            </div>
+            <div class="form-group mt32">
+                <div class="col-lg-12 col-md-12 col-sm-12 ">
+                    <div class="form_lable mt16">
+                        <label class="montserrat-extrabold_24">
+                            Where do you want to mount your solar panels?
+                        </label>
+                        <span class="montserrat_regular mt4 ml8">(not required)</span>
+                    </div>
+                </div>
+                <div class="col-lg-5 col-md-6 col-sm-8 mt8 mb16">
+                    <textarea rows="4" name="xaa_aa_quote_description" class="form-control"><t t-esc="formulier_id.xaa_aa_quote_description"/></textarea>
+                </div>
+            </div>
+            <div class="mt24 montserrat_regular">
+                <span>The quote that you have received from us will state the dimensions of your inverter. There must be a natural ventilation of about 50 cm around this inverter. We will always try to place the inverter as close as possible to the panels. However, other places are also possible in consultation.</span>
+            </div>
+            <div class="mt24 montserrat_regular">
+                <span>It is important that the inverter comes to hang on a sturdy wall, with cables attached to the bottom. A few cables come from the solar panels to the inverter; the so-called DC (direct voltage) cabling. In addition, a cable with approximately the thickness of an inch will come to the meter box: the so-called AC (alternating voltage) cabling.</span>
+            </div>
+            <div class="form-group mt32">
+                <div class="col-lg-12 col-md-12 col-sm-12 ">
+                    <div class="form_lable mt16">
+                        <label class="montserrat-extrabold_24">
+                            Do you have a good place in mind where the inverter can hang?
+                        </label>
+                    </div>
+                </div>
+                <div class="col-lg-12 col-md-12 col-sm-12 checkbox_div ">
+                    <div>
+                        <div class="checkbox mb8 mt16">
+                            <input type="radio" class="radio_design" name="xaa_aa_quote_inverter_hang" t-att-checked="formulier_id.xaa_aa_quote_inverter_hang == 'Ja, ik weet alleen niet zeker of dit technisch gezien kan.'" value="Ja, ik weet alleen niet zeker of dit technisch gezien kan."/>
+                            <label class="ng-binding col-form-label ml16" for="xaa_aa_quote_inverter_hang">Ja, ik weet alleen niet zeker of dit technisch gezien kan.
+                            </label>
+                        </div>
+                        <div class="checkbox mb8">
+                            <input type="radio" class="radio_design" name="xaa_aa_quote_inverter_hang" t-att-checked="formulier_id.xaa_aa_quote_inverter_hang == 'Ja, ik heb dit uitgezocht en ben (vrijwel) zeker van een correcte, en eenvoudige montageplaats.'" value="Ja, ik heb dit uitgezocht en ben (vrijwel) zeker van een correcte, en eenvoudige montageplaats."/>
+                            <label class="ng-binding col-form-label ml16" for="xaa_aa_quote_inverter_hang">Ja, ik heb dit uitgezocht en ben (vrijwel) zeker van een correcte, en eenvoudige montageplaats.
+                            </label>
+                        </div>
+                        <div class="checkbox mb8">
+                            <input type="radio" class="radio_design" name="xaa_aa_quote_inverter_hang" t-att-checked="formulier_id.xaa_aa_quote_inverter_hang == 'Ja, Ik heb dit uitgezocht en ben (vrijwel) zeker van een correcte, maar moeilijk te bereiken montageplaats: hiervoor moeten diverse ruimtes gepasseerd worden.'" value="Ja, Ik heb dit uitgezocht en ben (vrijwel) zeker van een correcte, maar moeilijk te bereiken montageplaats: hiervoor moeten diverse ruimtes gepasseerd worden."/>
+                            <label class="ng-binding col-form-label ml16" for="xaa_aa_quote_inverter_hang">Ja, Ik heb dit uitgezocht en ben (vrijwel) zeker van een correcte, maar moeilijk te bereiken montageplaats: hiervoor moeten diverse ruimtes gepasseerd worden.
+                            </label>
+                        </div>
+                        <div class="checkbox mb8">
+                            <input type="radio" class="radio_design" name="xaa_aa_quote_inverter_hang" t-att-checked="formulier_id.xaa_aa_quote_inverter_hang == 'Ja, ik heb zelfs een loze leiding waar rechtstreeks een kabel door kan naar de meterkast.'" value="Ja, ik heb zelfs een loze leiding waar rechtstreeks een kabel door kan naar de meterkast."/>
+                            <label class="ng-binding col-form-label ml16" for="xaa_aa_quote_inverter_hang">Ja, ik heb zelfs een loze leiding waar rechtstreeks een kabel door kan naar de meterkast.
+                            </label>
+                        </div>
+                        <div class="checkbox mb8">
+                            <input type="radio" class="radio_design" name="xaa_aa_quote_inverter_hang" t-att-checked="formulier_id.xaa_aa_quote_inverter_hang == 'Nee, ik zou hierover graag extra advies krijgen.'" value="Nee, ik zou hierover graag extra advies krijgen."/>
+                            <label class="ng-binding col-form-label ml16" for="xaa_aa_quote_inverter_hang">Nee, ik zou hierover graag extra advies krijgen.
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group mt32">
+                <div class="col-lg-12 col-md-12 col-sm-12 ">
+                    <div class="form_lable mt16">
+                        <label class="montserrat-extrabold_24">
+                            Is the router/internet port in the meter cupboard?
+                        </label>
+                    </div>
+                </div>
+                <div class="col-lg-12 col-md-12 col-sm-12 checkbox_div ">
+                    <div>
+                        <div class="checkbox mb8 mt16">
+                            <input type="radio" class="radio_design" name="xaa_aa_quote_meter_cupboard" t-att-checked="formulier_id.xaa_aa_quote_meter_cupboard == 'ja'" value="ja"/>
+                            <label class="ng-binding col-form-label ml16" for="xaa_aa_quote_meter_cupboard">ja
+                            </label>
+                        </div>
+                        <div class="checkbox mb8">
+                            <input type="radio" class="radio_design" name="xaa_aa_quote_meter_cupboard" t-att-checked="formulier_id.xaa_aa_quote_meter_cupboard == 'Nee, maar er is een goed Wi-Fi ontvangst op de plek waar de omvormer komt te hangen.'" value="Nee, maar er is een goed Wi-Fi ontvangst op de plek waar de omvormer komt te hangen."/>
+                            <label class="ng-binding col-form-label ml16" for="xaa_aa_quote_meter_cupboard">Nee, maar er is een goed Wi-Fi ontvangst op de plek waar de omvormer komt te hangen.
+                            </label>
+                        </div>
+                        <div class="checkbox mb8">
+                            <input type="radio" class="radio_design" name="xaa_aa_quote_meter_cupboard" t-att-checked="formulier_id.xaa_aa_quote_meter_cupboard == 'Nee, maar ik hoef de omvormer niet uit te lezen met mijn telefoon, tablet en- of computer.'" value="Nee, maar ik hoef de omvormer niet uit te lezen met mijn telefoon, tablet en- of computer."/>
+                            <label class="ng-binding col-form-label ml16" for="xaa_aa_quote_meter_cupboard">Nee, maar ik hoef de omvormer niet uit te lezen met mijn telefoon, tablet en- of computer.
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mt32 montserrat_regular">
+                <span>You may already know how to lay the cables. In that case you can give a brief description in the field below. This field is not mandatory.</span>
+            </div>
+            <div class="form-group mt32">
+                <div class="col-lg-12 col-md-12 col-sm-12 ">
+                    <div class="form_lable mt16">
+                        <label class="montserrat-extrabold_24">
+                            How would you like to have the cables laid?
+                        </label>
+                        <span class="montserrat_regular mt4 ml8">(not required)</span>
+                    </div>
+                </div>
+                <div class="col-lg-5 col-md-6 col-sm-8 mt8">
+                    <textarea rows="4" name="xaa_aa_quote_lay_cable_description" class="form-control"><t t-esc="formulier_id.xaa_aa_quote_lay_cable_description"/></textarea>
+                </div>
+            </div>
+            <div class="form-group row mt64" id="next_privious">
+                <div class="col-md-4 col-lg-4 col-sm-5 col-6">
+                    <a class="btn-privoius mt16"
+                        data-id="quote_roof_id"
+                        type="Button" t-att-value="formulier_id.id">
+                        <i class="fa fa-chevron-left" aria-hidden="false"/>Previous step
+                    </a>
+                </div>
+                <div class="col-md-4 col-lg-4 col-sm-5 col-6 quotation_tab_next">
+                    <button class="btn btn-next mt16 mr16"
+                        data-id="quote_conclusion_photos_id" type="Button"
+                        t-att-value="formulier_id.id" style="left:-10px;">
+                        Next step
+                    </button>
+                </div>
+            </div>
+        </div>
+    </template>
+</odoo>

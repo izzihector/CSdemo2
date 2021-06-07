@@ -1,0 +1,113 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* create_crm_lead
+#
+msgid "" 
+msgstr ""
+"Project-Id-Version: Odoo Server 14.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-09-30 13:05+0000\n"
+"PO-Revision-Date: 2020-09-30 13:05+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n" 
+
+#. module: create_crm_lead
+#: model_terms:ir.ui.view,arch_db:create_crm_lead.lead_email_lead_category_tree
+msgid "Category"
+msgstr "Categorie"
+
+#. module: create_crm_lead
+#: model_terms:ir.ui.view,arch_db:create_crm_lead.lead_email_lead_source_tree
+msgid "Company"   
+msgstr "Bedrijf"
+
+#. module: create_crm_lead
+#: model:ir.model.fields,field_description:create_crm_lead.field_mail_mail__company
+#: model:ir.model.fields,field_description:create_crm_lead.field_mail_message__company
+msgid "Company Name"
+msgstr "Bedrijfsnaam"
+
+#. module: create_crm_lead
+#: model:ir.model.fields,field_description:create_crm_lead.field_lead_email_lead_category__content
+msgid "Content"
+msgstr "Inhoud"
+
+#. module: create_crm_lead
+#: model:ir.actions.server,name:create_crm_lead.action_fetchmail_create_lead
+msgid "Create lead from fetched email's body"
+msgstr "Maak een lead op basis van de hoofdtekst van de opgehaalde e-mail"
+
+#. module: create_crm_lead
+#: model:ir.model.fields,field_description:create_crm_lead.field_lead_email_lead_source__domain
+msgid "Domain"
+msgstr "Domein"
+
+#. module: create_crm_lead
+#: model:ir.model.fields,field_description:create_crm_lead.field_crm_lead__email_description
+#: model_terms:ir.ui.view,arch_db:create_crm_lead.inherited_crm_lead_form_email_desc_view_leads
+msgid "Email Description"
+msgstr "Email omschrijving" 
+
+#. module: create_crm_lead
+#: model:ir.model,name:create_crm_lead.model_lead_email_lead_category
+#: model_terms:ir.ui.view,arch_db:create_crm_lead.lead_email_lead_category_form
+msgid "Email Lead Category"
+msgstr "Email Lead Category"
+
+#. module: create_crm_lead
+#: model_terms:ir.ui.view,arch_db:create_crm_lead.lead_email_lead_source_form
+msgid "Email Lead Company"
+msgstr "E-mail hoofdbedrijf"
+
+#. module: create_crm_lead
+#: model:ir.model,name:create_crm_lead.model_lead_email_lead_source
+msgid "Email Lead Source"
+msgstr "E-mail leadbron"
+
+#. module: create_crm_lead
+#: model:ir.model.fields,field_description:create_crm_lead.field_lead_email_lead_category__lead_category
+msgid "Lead Category"
+msgstr "Aanvraag soort"
+
+#. module: create_crm_lead
+#: model:ir.actions.act_window,name:create_crm_lead.lead_email_lead_category
+#: model:ir.ui.menu,name:create_crm_lead.menu_lead_email_lead_category
+msgid "Lead Email Lead Category"
+msgstr "Lead E-mail Leadcategorie"
+
+#. module: create_crm_lead
+#: model:ir.actions.act_window,name:create_crm_lead.lead_email_lead_source
+#: model:ir.model.fields,field_description:create_crm_lead.field_lead_email_lead_category__lead_email_lead_source
+#: model:ir.ui.menu,name:create_crm_lead.menu_lead_email_lead_source
+msgid "Lead Email Lead Source"
+msgstr "Lead-e-mail Leadbron"
+
+#. module: create_crm_lead
+#: model:ir.model.fields,field_description:create_crm_lead.field_lead_email_lead_source__lead_source
+msgid "Lead Source"
+msgstr "Aanvraag bron "
+
+#. module: create_crm_lead
+#: model:ir.model,name:create_crm_lead.model_crm_lead
+msgid "Lead/Opportunity"
+msgstr "Lead/Prospect"
+
+#. module: create_crm_lead
+#: model:ir.model,name:create_crm_lead.model_mail_message
+msgid "Message"
+msgstr "Bericht"
+
+#. module: create_crm_lead
+#: model:ir.model.fields,field_description:create_crm_lead.field_lead_email_lead_source__name
+msgid "Name"
+msgstr "Naam"
+
+#. module: create_crm_lead
+#: model:ir.model.fields,field_description:create_crm_lead.field_lead_email_lead_category__priority
+msgid "Priority"
+msgstr "Prioriteit"
+

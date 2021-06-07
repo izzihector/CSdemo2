@@ -1,0 +1,719 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <template id="task_formulier_template" inherit_id="project_formulier.task_formulier_template">
+        <xpath expr="." position="inside">
+            <t t-if="formulier_id.xaa_aa_formulier_type == 'formulier_three'">
+                <div class="text-center text-primary">
+                    <h3><u>General</u></h3>
+                </div>
+                <div class="form-group row form-field">
+                    <div class="col-lg-3 col-md-4 col-sm-4 custom-text">
+                        <label class="col-form-label" for="xaa_aa_email_address">E-mail address</label>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6">
+                        <input type="text" name="xaa_aa_email_address" class="form-control" t-att-value="formulier_id.xaa_aa_email_address"/>
+                    </div>
+                </div>
+                <div class="form-group row form-field">
+                    <div class="col-lg-3 col-md-4 col-sm-4 custom-text">
+                        <label class="col-form-label" for="xaa_aa_system_vendor_name">Vendor name of the system</label>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6">
+                        <input type="text" name="xaa_aa_system_vendor_name" class="form-control" t-att-value="formulier_id.xaa_aa_system_vendor_name"/>
+                    </div>
+                </div>
+                <div class="form-group row form-field">
+                    <div class="col-lg-3 col-md-4 col-sm-4 custom-text">
+                        <label class="col-form-label" for="xaa_aa_commencement_work_date">Date of commencement of work</label>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6">
+                        <input type="date" name="xaa_aa_commencement_work_date" class="form-control" t-att-value="formulier_id.xaa_aa_commencement_work_date"/>
+                    </div>
+                </div>
+                <div class="form-group row form-field">
+                    <div class="col-lg-3 col-md-4 col-sm-4 custom-text">
+                        <label class="col-form-label" for="xaa_aa_delivery_date">Delivery date</label>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6">
+                        <input type="date" name="xaa_aa_delivery_date" class="form-control" t-att-value="formulier_id.xaa_aa_delivery_date"/>
+                    </div>
+                </div>
+                <div class="form-group row form-field">
+                    <div class="col-lg-3 col-md-4 col-sm-4 custom-text">
+                        <label class="col-form-label" for="xaa_aa_mechanic_name_1">Mechanic Name 1</label>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6">
+                        <input type="text" name="xaa_aa_mechanic_name_1" class="form-control" t-att-value="formulier_id.xaa_aa_mechanic_name_1"/>
+                    </div>
+                </div>
+                <div class="form-group row form-field">
+                    <div class="col-lg-3 col-md-4 col-sm-4 custom-text">
+                        <label class="col-form-label" for="xaa_aa_mechanic_name_2">Mechanic Name 2</label>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6">
+                        <input type="text" name="xaa_aa_mechanic_name_2" class="form-control" t-att-value="formulier_id.xaa_aa_mechanic_name_2"/>
+                    </div>
+                </div>
+                <div class="form-group row form-field">
+                    <div class="col-lg-3 col-md-4 col-sm-4 custom-text">
+                        <label class="col-form-label" for="xaa_aa_mechanic_name_3">Mechanic Name 3</label>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6">
+                        <input type="text" name="xaa_aa_mechanic_name_3" class="form-control" t-att-value="formulier_id.xaa_aa_mechanic_name_3"/>
+                    </div>
+                </div>
+                <div class="text-center text-primary">
+                    <h3><u>Roofing</u></h3>
+                </div>
+                <div class="form-group row form-field">
+                    <div class="col-lg-3 col-md-4 col-sm-4 custom-text">
+                        <label class="col-form-label" for="xaa_aa_any_damage_detected_start">Have any damage already been detected at the start of the work?</label>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6">
+                        <div>
+                            <select name="xaa_aa_any_damage_detected_start" class="form-control">
+                                <option></option>
+                                <option value='ja' t-att-selected="formulier_id.xaa_aa_any_damage_detected_start == 'ja'">
+                                    ja
+                                </option>
+                                <option value='nee' t-att-selected="formulier_id.xaa_aa_any_damage_detected_start == 'nee'">
+                                    nee
+                                </option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group row form-field">
+                    <div class="col-lg-3 col-md-4 col-sm-4 custom-text">
+                        <label class="col-form-label" for="xaa_aa_solar_panels_installed">Have the solar panels been installed in accordance with the roof plan?</label>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6">
+                        <div>
+                            <select name="xaa_aa_solar_panels_installed" class="form-control">
+                                <option></option>
+                                <option value='ja' t-att-selected="formulier_id.xaa_aa_solar_panels_installed == 'ja'">
+                                    ja
+                                </option>
+                                <option value='nee' t-att-selected="formulier_id.xaa_aa_solar_panels_installed == 'nee'">
+                                    nee
+                                </option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group row form-field">
+                    <div class="col-lg-3 col-md-4 col-sm-4 custom-text">
+                        <label class="col-form-label" for="xaa_aa_extra_solar_panels_installed">Have additional solar panels been installed?</label>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6">
+                        <div>
+                            <select name="xaa_aa_extra_solar_panels_installed" class="form-control">
+                                <option></option>
+                                <option value='Yes, enter the amount for other' t-att-selected="formulier_id.xaa_aa_extra_solar_panels_installed == 'Yes, enter the amount for other'">
+                                    Yes, enter the amount for other
+                                </option>
+                                <option value='nee' t-att-selected="formulier_id.xaa_aa_extra_solar_panels_installed == 'nee'">
+                                    nee
+                                </option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group row form-field">
+                    <div class="col-lg-3 col-md-4 col-sm-4 custom-text">
+                        <label class="col-form-label" for="xaa_aa_waterline_installed">Have all plugs from the waterline been installed?</label>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6">
+                        <div>
+                            <select name="xaa_aa_waterline_installed" class="form-control">
+                                <option></option>
+                                <option value='ja' t-att-selected="formulier_id.xaa_aa_waterline_installed == 'ja'">
+                                    ja
+                                </option>
+                                <option value='nee' t-att-selected="formulier_id.xaa_aa_waterline_installed == 'nee'">
+                                    nee
+                                </option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group row form-field">
+                    <div class="col-lg-3 col-md-4 col-sm-4 custom-text">
+                        <label class="col-form-label" for="xaa_aa_cables_separated">Are the plus and minus cables separated?</label>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6">
+                        <div>
+                            <select name="xaa_aa_cables_separated" class="form-control">
+                                <option></option>
+                                <option value='ja' t-att-selected="formulier_id.xaa_aa_cables_separated == 'ja'">
+                                    ja
+                                </option>
+                                <option value='nee' t-att-selected="formulier_id.xaa_aa_cables_separated == 'nee'">
+                                    nee
+                                </option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group row form-field">
+                    <div class="col-lg-3 col-md-4 col-sm-4 custom-text">
+                        <label class="col-form-label" for="xaa_aa_pans_pushed">Have all pans been pushed back?</label>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6">
+                        <div>
+                            <select name="xaa_aa_pans_pushed" class="form-control">
+                                <option></option>
+                                <option value='ja' t-att-selected="formulier_id.xaa_aa_pans_pushed == 'ja'">
+                                    ja
+                                </option>
+                                <option value='nee' t-att-selected="formulier_id.xaa_aa_pans_pushed == 'nee'">
+                                    nee
+                                </option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group row form-field">
+                    <div class="col-lg-3 col-md-4 col-sm-4 custom-text">
+                        <label class="col-form-label" for="xaa_aa_is_representatives_inspection">Is the inspection by the representatives correct?</label>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6">
+                        <div>
+                            <select name="xaa_aa_is_representatives_inspection" class="form-control">
+                                <option></option>
+                                <option value='ja' t-att-selected="formulier_id.xaa_aa_is_representatives_inspection == 'ja'">
+                                    ja
+                                </option>
+                                <option value='nee' t-att-selected="formulier_id.xaa_aa_is_representatives_inspection == 'nee'">
+                                    nee
+                                </option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group row form-field">
+                    <div class="col-lg-3 col-md-4 col-sm-4 custom-text">
+                        <label class="col-form-label" for="xaa_aa_is_roof_plan_fit">Does the roof plan fit?</label>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6">
+                        <div>
+                            <select name="xaa_aa_is_roof_plan_fit" class="form-control">
+                                <option></option>
+                                <option value='ja' t-att-selected="formulier_id.xaa_aa_is_roof_plan_fit == 'ja'">
+                                    ja
+                                </option>
+                                <option value='nee' t-att-selected="formulier_id.xaa_aa_is_roof_plan_fit == 'nee'">
+                                    nee
+                                </option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group row form-field">
+                    <div class="col-lg-3 col-md-4 col-sm-4 custom-text">
+                        <label class="col-form-label" for="xaa_aa_what_panel_installed">What panels have been installed?</label>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6">
+                        <input type="text" name="xaa_aa_what_panel_installed" class="form-control" t-att-value="formulier_id.xaa_aa_what_panel_installed"/>
+                    </div>
+                </div>
+                <div class="text-center text-primary">
+                    <h3><u>Electric</u></h3>
+                </div>
+                <div class="form-group row form-field">
+                    <div class="col-lg-3 col-md-4 col-sm-4 custom-text">
+                        <label class="col-form-label" for="xaa_aa_cabling_length">Length of the used string cabling?</label>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6">
+                        <input type="number" name="xaa_aa_cabling_length" class="form-control" t-att-value="formulier_id.xaa_aa_cabling_length"/>
+                    </div>
+                </div>
+                <div class="form-group row form-field">
+                    <div class="col-lg-3 col-md-4 col-sm-4 custom-text">
+                        <label class="col-form-label" for="xaa_aa_cable_thickness">Applied cable thickness of string cabling?</label>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6">
+                        <div>
+                            <select name="xaa_aa_cable_thickness" class="form-control">
+                                <option></option>
+                                <option value='4mm2' t-att-selected="formulier_id.xaa_aa_cable_thickness == '4mm2'">
+                                    4mm2
+                                </option>
+                                <option value='6mm2' t-att-selected="formulier_id.xaa_aa_cable_thickness == '6mm2'">
+                                    6mm2
+                                </option>
+                                <option value='10mm2' t-att-selected="formulier_id.xaa_aa_cable_thickness == '10mm2'">
+                                    10mm2
+                                </option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group row form-field">
+                    <div class="col-lg-3 col-md-4 col-sm-4 custom-text">
+                        <label class="col-form-label" for="xaa_aa_inverter_length">Length of the inverter wiring used -> meter box?</label>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6">
+                        <input type="number" name="xaa_aa_inverter_length" class="form-control" t-att-value="formulier_id.xaa_aa_inverter_length"/>
+                    </div>
+                </div>
+                <div class="form-group row form-field">
+                    <div class="col-lg-3 col-md-4 col-sm-4 custom-text">
+                        <label class="col-form-label" for="xaa_aa_inverter_cable_thickness">Applied cable thickness of string cabling?</label>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6">
+                        <div>
+                            <select name="xaa_aa_inverter_cable_thickness" class="form-control">
+                                <option></option>
+                                <option value='3x2,5mm2' t-att-selected="formulier_id.xaa_aa_inverter_cable_thickness == '3x2,5mm2'">
+                                    3x2,5mm2
+                                </option>
+                                <option value='5x2,5mm2' t-att-selected="formulier_id.xaa_aa_inverter_cable_thickness == '5x2,5mm2'">
+                                    5x2,5mm2
+                                </option>
+                                <option value='3x4mm2' t-att-selected="formulier_id.xaa_aa_inverter_cable_thickness == '3x4mm2'">
+                                    3x4mm2
+                                </option>
+                                <option value='5x4mm2' t-att-selected="formulier_id.xaa_aa_inverter_cable_thickness == '5x4mm2'">
+                                    5x4mm2
+                                </option>
+                                <option value='5x6mm2' t-att-selected="formulier_id.xaa_aa_inverter_cable_thickness == '5x6mm2'">
+                                    5x6mm2
+                                </option>
+                                <option value='5x10mm2' t-att-selected="formulier_id.xaa_aa_inverter_cable_thickness == '5x10mm2'">
+                                    5x10mm2
+                                </option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group row form-field">
+                    <div class="col-lg-3 col-md-4 col-sm-4 custom-text">
+                        <label class="col-form-label" for="xaa_aa_is_earthing_total_length">Has the earthing been checked for correct installation?</label>
+                    </div>
+                     <div class="col-lg-6 col-md-6 col-sm-6">
+                        <div>
+                            <select name="xaa_aa_is_earthing_total_length" class="form-control">
+                                <option></option>
+                                <option value='ja' t-att-selected="formulier_id.xaa_aa_is_earthing_total_length == 'ja'">
+                                    ja
+                                </option>
+                                <option value='nee' t-att-selected="formulier_id.xaa_aa_is_earthing_total_length == 'nee'">
+                                    nee
+                                </option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group row form-field is_earthing_total_length" style="display:none;">
+                    <div class="col-lg-3 col-md-4 col-sm-4 custom-text">
+                        <label class="col-form-label" for="xaa_aa_earthing_total_length">What is the earth cable length?</label>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6">
+                        <input type="number" name="xaa_aa_earthing_total_length" class="form-control" t-att-value="formulier_id.xaa_aa_earthing_total_length"/>
+                    </div>
+                </div>
+                <div class="form-group row form-field">
+                    <div class="col-lg-3 col-md-4 col-sm-4 custom-text">
+                        <label class="col-form-label" for="xaa_aa_is_utp_total_length">Is the UTP cable connected correctly?</label>
+                    </div>
+                     <div class="col-lg-6 col-md-6 col-sm-6">
+                        <div>
+                            <select name="xaa_aa_is_utp_total_length" class="form-control">
+                                <option></option>
+                                <option value='ja' t-att-selected="formulier_id.xaa_aa_is_utp_total_length == 'ja'">
+                                    ja
+                                </option>
+                                <option value='nee' t-att-selected="formulier_id.xaa_aa_is_utp_total_length == 'nee'">
+                                    nee
+                                </option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group row form-field earthing is_utp_total_length" style="display:none;">
+                    <div class="col-lg-3 col-md-4 col-sm-4 custom-text">
+                        <label class="col-form-label" for="xaa_aa_utp_total_length">What is the length of the UTP cable used?</label>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6">
+                        <input type="number" name="xaa_aa_utp_total_length" class="form-control" t-att-value="formulier_id.xaa_aa_utp_total_length"/>
+                    </div>
+                </div>
+                <div class="form-group row form-field">
+                    <div class="col-lg-3 col-md-4 col-sm-4 custom-text">
+                        <label class="col-form-label" for="xaa_aa_measured_voltage">Measured string voltage - Value</label>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6">
+                        <input type="number" name="xaa_aa_measured_voltage" class="form-control" t-att-value="formulier_id.xaa_aa_measured_voltage"/>
+                    </div>
+                </div>
+                <div class="form-group row form-field">
+                    <div class="col-lg-3 col-md-4 col-sm-4 custom-text">
+                        <label class="col-form-label" for="xaa_aa_measured_panels_voltage">Measured String Voltage - Panels</label>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6">
+                        <input type="number" name="xaa_aa_measured_panels_voltage" class="form-control" t-att-value="formulier_id.xaa_aa_measured_panels_voltage"/>
+                    </div>
+                </div>
+                <div class="form-group row form-field">
+                    <div class="col-lg-3 col-md-4 col-sm-4 custom-text">
+                        <label class="col-form-label" for="xaa_aa_measured_optimizers_voltage">Measured string voltage - Number of optimizers</label>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6">
+                        <input type="number" name="xaa_aa_measured_optimizers_voltage" class="form-control" t-att-value="formulier_id.xaa_aa_measured_optimizers_voltage"/>
+                    </div>
+                </div>
+                <div class="form-group row form-field">
+                    <div class="col-lg-3 col-md-4 col-sm-4 custom-text">
+                        <label class="col-form-label" for="xaa_aa_internet_via">Internet connection established via?</label>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6">
+                        <div>
+                            <select name="xaa_aa_internet_via" class="form-control">
+                                <option></option>
+                                <option value='UTP' t-att-selected="formulier_id.xaa_aa_internet_via == 'UTP'">
+                                    UTP
+                                </option>
+                                <option value='WiFi' t-att-selected="formulier_id.xaa_aa_internet_via == 'WiFi'">
+                                    WiFi
+                                </option>
+                                <option value='Socket boxes' t-att-selected="formulier_id.xaa_aa_internet_via == 'Socket boxes'">
+                                    Socket boxes
+                                </option>
+                                <option value='Customer arranges itself' t-att-selected="formulier_id.xaa_aa_internet_via == 'Customer arranges itself'">
+                                    Customer arranges itself
+                                </option>
+                                <option value='No internet i.o.m. customer agreement' t-att-selected="formulier_id.xaa_aa_internet_via == 'No internet i.o.m. customer agreement'">
+                                    No internet i.o.m. customer agreement
+                                </option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group row form-field">
+                    <div class="col-lg-3 col-md-4 col-sm-4 custom-text">
+                        <label class="col-form-label" for="xaa_aa_is_home_installation_ok">Is the home installation still OK after installing the earth leakage circuit breaker?</label>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6">
+                        <div>
+                            <select name="xaa_aa_is_home_installation_ok" class="form-control">
+                                <option></option>
+                                <option value='ja' t-att-selected="formulier_id.xaa_aa_is_home_installation_ok == 'ja'">
+                                    ja
+                                </option>
+                                <option value='nee' t-att-selected="formulier_id.xaa_aa_is_home_installation_ok == 'nee'">
+                                    nee
+                                </option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center text-primary">
+                    <h3><u>Others</u></h3>
+                </div>
+                <div class="form-group row form-field">
+                    <div class="col-lg-3 col-md-4 col-sm-4 custom-text">
+                        <label class="col-form-label" for="xaa_aa_extra_panels">How many panels have been installed extra?</label>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6">
+                        <input type="number" name="xaa_aa_extra_panels" class="form-control" t-att-value="formulier_id.xaa_aa_extra_panels"/>
+                    </div>
+                </div>
+                <div class="form-group row form-field">
+                    <div class="col-lg-3 col-md-4 col-sm-4 custom-text">
+                        <label class="col-form-label" for="xaa_aa_installation_damages">What damages have been detected or made during the installation process?</label>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6">
+                        <textarea rows="3" name="xaa_aa_installation_damages" class="form-control"><t t-esc="formulier_id.xaa_aa_installation_damages"/></textarea>
+                    </div>
+                </div>
+                <div class="form-group row form-field">
+                    <div class="col-lg-3 col-md-4 col-sm-4 custom-text">
+                        <label class="col-form-label" for="xaa_aa_other_remarks">Other remarks</label>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6">
+                        <textarea rows="3" name="xaa_aa_other_remarks" class="form-control"><t t-esc="formulier_id.xaa_aa_other_remarks"/></textarea>
+                    </div>
+                </div>
+                <div class="text-center text-primary">
+                    <h3><u>Closure to be completed by the customer</u></h3>
+                </div>
+                <div class="form-group row form-field">
+                    <div class="col-lg-3 col-md-4 col-sm-4 custom-text">
+                        <label class="col-form-label" for="xaa_aa_is_engineers_work_safely">Did our engineers work safely with scaffolding or fall protection?</label>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6">
+                        <div>
+                            <select name="xaa_aa_is_engineers_work_safely" class="form-control">
+                                <option></option>
+                                <option value='ja' t-att-selected="formulier_id.xaa_aa_is_engineers_work_safely == 'ja'">
+                                    ja
+                                </option>
+                                <option value='nee' t-att-selected="formulier_id.xaa_aa_is_engineers_work_safely == 'nee'">
+                                    nee
+                                </option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group row form-field">
+                    <div class="col-lg-3 col-md-4 col-sm-4 custom-text">
+                        <label class="col-form-label" for="xaa_aa_is_workplace_clean">Has the workplace been left clean?</label>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6">
+                        <div>
+                            <select name="xaa_aa_is_workplace_clean" class="form-control">
+                                <option></option>
+                                <option value='ja' t-att-selected="formulier_id.xaa_aa_is_workplace_clean == 'ja'">
+                                    ja
+                                </option>
+                                <option value='nee' t-att-selected="formulier_id.xaa_aa_is_workplace_clean == 'nee'">
+                                    nee
+                                </option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group row form-field">
+                    <div class="col-lg-3 col-md-4 col-sm-4 custom-text">
+                        <label class="col-form-label" for="xaa_aa_is_sufficient_explanation">Have you received sufficient explanation during installation?</label>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6">
+                        <div>
+                            <select name="xaa_aa_is_sufficient_explanation" class="form-control">
+                                <option></option>
+                                <option value='ja' t-att-selected="formulier_id.xaa_aa_is_sufficient_explanation == 'ja'">
+                                    ja
+                                </option>
+                                <option value='nee' t-att-selected="formulier_id.xaa_aa_is_sufficient_explanation == 'nee'">
+                                    nee
+                                </option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group row form-field">
+                    <div class="col-lg-3 col-md-4 col-sm-4 custom-text">
+                        <label class="col-form-label" for="xaa_aa_setting_explanation">Did you have an explanation when setting up the monitoring app?</label>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6">
+                        <div>
+                            <select name="xaa_aa_setting_explanation" class="form-control">
+                                <option></option>
+                                <option value='ja' t-att-selected="formulier_id.xaa_aa_setting_explanation == 'ja'">
+                                    ja
+                                </option>
+                                <option value='nee' t-att-selected="formulier_id.xaa_aa_setting_explanation == 'nee'">
+                                    nee
+                                </option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group row form-field">
+                    <div class="col-lg-3 col-md-4 col-sm-4 custom-text">
+                        <label class="col-form-label" for="xaa_aa_any_comments">Do you have any comments for us?</label>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6">
+                        <textarea rows="3" name="xaa_aa_any_comments" class="form-control"><t t-esc="formulier_id.xaa_aa_any_comments"/></textarea>
+                    </div>
+                </div>
+                <div class="form-group row form-field">
+                    <div class="col-lg-3 col-md-4 col-sm-4 custom-text">
+                        <label class="col-form-label" for="xaa_aa_use_home_photos">Can we use photos of your home as a reference on the internet?</label>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6">
+                        <div>
+                            <select name="xaa_aa_use_home_photos" class="form-control">
+                                <option></option>
+                                <option value='ja' t-att-selected="formulier_id.xaa_aa_use_home_photos == 'ja'">
+                                    ja
+                                </option>
+                                <option value='nee' t-att-selected="formulier_id.xaa_aa_use_home_photos == 'nee'">
+                                    nee
+                                </option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group row form-field">
+                    <div class="col-lg-3 col-md-4 col-sm-4 custom-text">
+                        <label class="col-form-label" for="xaa_aa_other_interested_customers">Do you have other customers who are also interested in our services?</label>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6">
+                        <textarea rows="3" name="xaa_aa_other_interested_customers" class="form-control"><t t-esc="formulier_id.xaa_aa_other_interested_customers"/></textarea>
+                    </div>
+                </div>
+                <div class="form-group row form-field">
+                    <div class="col-lg-3 col-md-4 col-sm-4 custom-text">
+                        <label class="col-form-label" for="xaa_aa_receive_order">order you receive a whopping € 100 application premium.</label>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6">
+                        <input type="text" name="xaa_aa_receive_order" class="form-control" t-att-value="formulier_id.xaa_aa_receive_order"/>
+                    </div>
+                </div>
+                <div class="form-group row form-field">
+                    <div class="col-lg-3 col-md-4 col-sm-4 custom-text">
+                        <label class="col-form-label" for="xaa_aa_other_discussed">Other discussed matters</label>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6">
+                        <textarea rows="3" name="xaa_aa_other_discussed" class="form-control"><t t-esc="formulier_id.xaa_aa_other_discussed"/></textarea>
+                    </div>
+                </div>
+            </t>
+        </xpath>
+    </template>
+
+    <template id="task_project_formulier_image" inherit_id="project_formulier.task_project_formulier_image">
+        <xpath expr="." position="inside">
+            <t t-if="formulier_id.xaa_aa_formulier_type == 'formulier_three'">
+                <div class="form-group row form-field" id="formulier_3_images">
+                    <input type="file" name="xaa_aa_cables_together_1" class="hide_input_image form-control o_website_form_input"/>
+                    <input type="file" name="xaa_aa_cables_together_2" class="hide_input_image form-control o_website_form_input"/>
+                    <input type="file" name="xaa_aa_cables_together_3" class="hide_input_image form-control o_website_form_input"/>
+                    <input type="file" name="xaa_aa_pans_pushed_back" class="hide_input_image form-control o_website_form_input"/>
+                    <input type="file" name="xaa_aa_photo_roof_1" class="hide_input_image form-control o_website_form_input"/>
+                    <input type="file" name="xaa_aa_photo_roof_2" class="hide_input_image form-control o_website_form_input"/>
+                    <input type="file" name="xaa_aa_photo_roof_3" class="hide_input_image form-control o_website_form_input"/>
+                    <input type="file" name="xaa_aa_outlet_inverter_roof" class="hide_input_image form-control o_website_form_input"/>
+                    <input type="file" name="xaa_aa_work_switch" class="hide_input_image form-control o_website_form_input"/>
+                    <input type="file" name="xaa_aa_photo_placement_inverter" class="hide_input_image form-control o_website_form_input"/>
+                    <input type="file" name="xaa_aa_inverter_in_operation" class="hide_input_image form-control o_website_form_input"/>
+                    <input type="file" name="xaa_aa_inverter_internet" class="hide_input_image form-control o_website_form_input"/>
+                    <input type="file" name="xaa_aa_cupboard_opened" class="hide_input_image form-control o_website_form_input"/>
+                    <input type="file" name="xaa_aa_cupboard_closed" class="hide_input_image form-control o_website_form_input"/>
+                    <input type="file" name="xaa_aa_inverter_serial_number" class="hide_input_image form-control o_website_form_input"/>
+                    <input type="file" name="xaa_aa_optimizers_serial_number" class="hide_input_image form-control o_website_form_input"/>
+                    <div class="col-lg-3 col-md-3 col-sm-3 custom-text">
+                        <h5>Are the plus and minus cables together 1</h5>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-3">
+                        <button aria-label="Edit" class="fa fa-pencil pull-right fa-lg edit_button" title="Edit" ></button>
+                        <img class="img img-fluid" id="xaa_aa_cables_together_1" t-attf-src="/web/image/question.formulier/{{formulier_id.id}}/xaa_aa_cables_together_1"/>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-3 custom-text">
+                        <h5>Are the plus and minus cables together 2</h5>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-3">
+                        <button aria-label="Edit" class="fa fa-pencil pull-right fa-lg edit_button" title="Edit" ></button>
+                        <img class="img img-fluid" id="xaa_aa_cables_together_2" t-attf-src="/web/image/question.formulier/{{formulier_id.id}}/xaa_aa_cables_together_2"/>
+                    </div>
+                </div>
+                <div class="form-group row form-field">
+                    <div class="col-lg-3 col-md-3 col-sm-3 custom-text">
+                        <h5>Are the plus and minus cables together 3</h5>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-3">
+                        <button aria-label="Edit" class="fa fa-pencil pull-right fa-lg edit_button" title="Edit" ></button>
+                        <img class="img img-fluid" id="xaa_aa_cables_together_3" t-attf-src="/web/image/question.formulier/{{formulier_id.id}}/xaa_aa_cables_together_3"/>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-3 custom-text">
+                        <h5>All pans pushed back</h5>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-3">
+                        <button aria-label="Edit" class="fa fa-pencil pull-right fa-lg edit_button" title="Edit" ></button>
+                        <img class="img img-fluid" id="xaa_aa_pans_pushed_back" t-attf-src="/web/image/question.formulier/{{formulier_id.id}}/xaa_aa_pans_pushed_back"/>
+                    </div>
+                </div>
+                <div class="form-group row form-field">
+                    <div class="col-lg-3 col-md-3 col-sm-3 custom-text">
+                        <h5>Overview photo roof 1</h5>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-3">
+                        <button aria-label="Edit" class="fa fa-pencil pull-right fa-lg edit_button" title="Edit" ></button>
+                        <img class="img img-fluid" id="xaa_aa_photo_roof_1" t-attf-src="/web/image/question.formulier/{{formulier_id.id}}/xaa_aa_photo_roof_1"/>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-3 custom-text">
+                        <h5>Overview photo roof 2</h5>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-3">
+                        <button aria-label="Edit" class="fa fa-pencil pull-right fa-lg edit_button" title="Edit" ></button>
+                        <img class="img img-fluid" id="xaa_aa_photo_roof_2" t-attf-src="/web/image/question.formulier/{{formulier_id.id}}/xaa_aa_photo_roof_2"/>
+                    </div>
+                </div>
+                <div class="form-group row form-field">
+                    <div class="col-lg-3 col-md-3 col-sm-3 custom-text">
+                        <h5>Overview photo roof 3</h5>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-3">
+                        <button aria-label="Edit" class="fa fa-pencil pull-right fa-lg edit_button" title="Edit" ></button>
+                        <img class="img img-fluid" id="xaa_aa_photo_roof_3" t-attf-src="/web/image/question.formulier/{{formulier_id.id}}/xaa_aa_photo_roof_3"/>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-3 custom-text">
+                        <h5>Photo roof outlet inverter -> roof</h5>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-3">
+                        <button aria-label="Edit" class="fa fa-pencil pull-right fa-lg edit_button" title="Edit" ></button>
+                        <img class="img img-fluid" id="xaa_aa_outlet_inverter_roof" t-attf-src="/web/image/question.formulier/{{formulier_id.id}}/xaa_aa_outlet_inverter_roof"/>
+                    </div>
+                </div>
+                <div class="form-group row form-field">
+                    <div class="col-lg-3 col-md-3 col-sm-3 custom-text">
+                        <h5>Photo opened work switch</h5>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-3">
+                        <button aria-label="Edit" class="fa fa-pencil pull-right fa-lg edit_button" title="Edit" ></button>
+                        <img class="img img-fluid" id="xaa_aa_work_switch" t-attf-src="/web/image/question.formulier/{{formulier_id.id}}/xaa_aa_work_switch"/>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-3 custom-text">
+                        <h5>Overview photo placement inverter + work switch</h5>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-3">
+                        <button aria-label="Edit" class="fa fa-pencil pull-right fa-lg edit_button" title="Edit" ></button>
+                        <img class="img img-fluid" id="xaa_aa_photo_placement_inverter" t-attf-src="/web/image/question.formulier/{{formulier_id.id}}/xaa_aa_photo_placement_inverter"/>
+                    </div>
+                </div>
+                <div class="form-group row form-field">
+                    <div class="col-lg-3 col-md-3 col-sm-3 custom-text">
+                        <h5>Photo display inverter in operation</h5>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-3">
+                        <button aria-label="Edit" class="fa fa-pencil pull-right fa-lg edit_button" title="Edit" ></button>
+                        <img class="img img-fluid" id="xaa_aa_inverter_in_operation" t-attf-src="/web/image/question.formulier/{{formulier_id.id}}/xaa_aa_inverter_in_operation"/>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-3 custom-text">
+                        <h5>Photo display inverter internet</h5>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-3">
+                        <button aria-label="Edit" class="fa fa-pencil pull-right fa-lg edit_button" title="Edit" ></button>
+                        <img class="img img-fluid" id="xaa_aa_inverter_internet" t-attf-src="/web/image/question.formulier/{{formulier_id.id}}/xaa_aa_inverter_internet"/>
+                    </div>
+                </div>
+                <div class="form-group row form-field">
+                    <div class="col-lg-3 col-md-3 col-sm-3 custom-text">
+                        <h5>Photo meter cupboard opened with automatic</h5>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-3">
+                        <button aria-label="Edit" class="fa fa-pencil pull-right fa-lg edit_button" title="Edit" ></button>
+                        <img class="img img-fluid" id="xaa_aa_cupboard_opened" t-attf-src="/web/image/question.formulier/{{formulier_id.id}}/xaa_aa_cupboard_opened"/>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-3 custom-text">
+                        <h5>Meter cupboard closed</h5>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-3">
+                        <button aria-label="Edit" class="fa fa-pencil pull-right fa-lg edit_button" title="Edit" ></button>
+                        <img class="img img-fluid" id="xaa_aa_cupboard_closed" t-attf-src="/web/image/question.formulier/{{formulier_id.id}}/xaa_aa_cupboard_closed"/>
+                    </div>
+                </div>
+                <div class="form-group row form-field">
+                    <div class="col-lg-3 col-md-3 col-sm-3 custom-text">
+                        <h5>Photo serial number inverter</h5>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-3">
+                        <button aria-label="Edit" class="fa fa-pencil pull-right fa-lg edit_button" title="Edit" ></button>
+                        <img class="img img-fluid" id="xaa_aa_inverter_serial_number" t-attf-src="/web/image/question.formulier/{{formulier_id.id}}/xaa_aa_inverter_serial_number"/>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-3 custom-text">
+                        <h5>Photo serial numbers optimizers (Readable!)</h5>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-3">
+                        <button aria-label="Edit" class="fa fa-pencil pull-right fa-lg edit_button" title="Edit" ></button>
+                        <img class="img img-fluid" id="xaa_aa_optimizers_serial_number" t-attf-src="/web/image/question.formulier/{{formulier_id.id}}/xaa_aa_optimizers_serial_number"/>
+                    </div>
+                </div>
+            </t>
+        </xpath>
+    </template>
+
+</odoo>

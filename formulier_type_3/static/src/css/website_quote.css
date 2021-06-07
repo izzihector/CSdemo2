@@ -1,0 +1,20 @@
+@media (max-width: 500px) {
+    #quote_conclusion_tab_1{
+        margin-left: 2% !important;
+    }
+    #quote_conclusion_tab_1 a{
+        font-size: 12px !important;
+    }
+    #quote_photo_tab_2{
+        margin-left: 2% !important;
+    }
+    #quote_conclusion_tab_2 a{
+        font-size: 12px !important;
+    }
+    .quote_template_header{
+        top: 3% !important;
+    }
+}
+.d-none{
+    display: none;
+}

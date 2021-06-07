@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="iso_question_closing" name="ISO Closing Questions">
+        <div class="div_padding_left">
+           <div class="row form-group mt32">
+                <div class="col-lg-12 col-md-12 col-sm-12 ">
+                    <div class="form_lable mt16">
+                        <label class="montserrat-extrabold_24">
+                            Do you have a monumental building, or a building where a permit is required to carry out these activities?
+                        </label>
+                    </div>
+                </div>
+                <div class="col-lg-8 col-md-10 col-sm-12 checkbox_div ">
+                    <div>
+                        <div class="checkbox mb8 mt16">
+                            <input type="radio" class="radio_design" name="xaa_aa_quote_iso_monumental_building" t-att-checked="formulier_id.xaa_aa_quote_iso_monumental_building == 'nee'" value="nee"/>
+                            <label class="ng-binding col-form-label ml16" for="xaa_aa_quote_iso_monumental_building">nee
+                            </label>
+                        </div>
+                        <div class="checkbox mb8">
+                            <input type="radio" class="radio_design" name="xaa_aa_quote_iso_monumental_building" t-att-checked="formulier_id.xaa_aa_quote_iso_monumental_building == 'ja'" value="ja"/>
+                            <label class="ng-binding col-form-label ml16" for="xaa_aa_quote_iso_monumental_building">ja
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row form-group mt32">
+                <div class="col-lg-12 col-md-12 col-sm-12">
+                    <div class="form_lable mt16">
+                        <label class="montserrat-extrabold_24">
+                            Do you have a rental or owner-occupied home?
+                        </label>
+                    </div>
+                </div>
+                <div class="col-lg-8 col-md-10 col-sm-12 checkbox_div">
+                    <div>
+                        <div class="checkbox mb8 mt16">
+                            <input type="radio" class="radio_design" name="xaa_aa_quote_iso_rental_owner_home" t-att-checked="formulier_id.xaa_aa_quote_iso_rental_owner_home == 'koop'" value="koop"/>
+                            <label class="ng-binding col-form-label ml16" for="xaa_aa_quote_iso_rental_owner_home">koop
+                            </label>
+                        </div>
+                        <div class="checkbox mb8">
+                            <input type="radio" class="radio_design" name="xaa_aa_quote_iso_rental_owner_home" t-att-checked="formulier_id.xaa_aa_quote_iso_rental_owner_home == 'huur'" value="huur"/>
+                            <label class="ng-binding col-form-label ml16" for="xaa_aa_quote_iso_rental_owner_home">huur
+                            </label>
+                        </div>
+                        <div class="checkbox mb8">
+                            <input type="radio" class="radio_design" name="xaa_aa_quote_iso_rental_owner_home" t-att-checked="formulier_id.xaa_aa_quote_iso_rental_owner_home == 'De woning moet nog worden aangekocht'" value="De woning moet nog worden aangekocht"/>
+                            <label class="ng-binding col-form-label ml16" for="xaa_aa_quote_iso_rental_owner_home">De woning moet nog worden aangekocht
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group mt32">
+                <div class="col-lg-12 col-md-12 col-sm-12 ">
+                    <div class="form_lable mt16">
+                        <label class="montserrat-extrabold_24">
+                            Perhaps there are other things you think are important that we need to know to properly perform insulation. You can indicate these matters in the field below.
+                        </label>
+                        <span class="montserrat_regular mt4 ml8">(not required)</span>
+                    </div>
+                </div>
+                <div class="col-lg-5 col-md-6 col-sm-8 mt8 mb16">
+                    <textarea rows="4" name="xaa_aa_quote_iso_insulation_description" class="form-control"><t t-esc="formulier_id.xaa_aa_quote_iso_insulation_description"/></textarea>
+                </div>
+            </div>
+            <div class="form-group row mt64" id="next_privious">
+                <div class="col-md-5 col-lg-4 col-sm-6 col-6">
+                    <a class="btn-privoius mt16"
+                        data-id="iso_property_details_id"
+                        type="Button" t-att-value="formulier_id.id">
+                        <i class="fa fa-chevron-left" aria-hidden="false"/>Previous step
+                    </a>
+                </div>
+                <div class="col-md-4 col-lg-4 col-sm-5 col-6 quotation_tab_next">
+                    <button class="btn btn-next mt16 mr16"
+                        data-id="iso_photos_house_id" type="Button"
+                        t-att-value="formulier_id.id" style="left:-10px;">
+                        Next step
+                    </button>
+                </div>
+            </div>
+        </div>
+    </template>
+</odoo>
