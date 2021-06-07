@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data noupdate="1">
+
+        <!-- Product Data -->
+        <record id="data_product_data" model="product.template">
+            <field name="name">Custom Addon Product</field>
+            <field name="standard_price">500.0</field>
+            <field name="list_price">750.0</field>
+            <field name="type">consu</field>
+            <field name="weight">0.01</field>
+            <field name="uom_id" ref="uom.product_uom_unit"/>
+            <field name="uom_po_id" ref="uom.product_uom_unit"/>
+            <field name="description_sale">160x80cm, with large legs.</field>
+        </record>
+
+    </data>
+</odoo>
