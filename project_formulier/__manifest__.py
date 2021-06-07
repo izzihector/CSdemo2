@@ -20,7 +20,7 @@
     3. Add buttons on opportunity for open online PF and form view of PF.
     4. Many fields filled from opportunity into PF record. like partner, address, mobile etc.
     5. Add project formulier tab on user form (many configuration), this values are useful for online pf operation.
-    6. For the open online PF, user require PF ID and Access token
+    6. For the open online PF, user require PF ID and Access token.
     7. Back to edit and Back to opportunity link add on online PF for redirect on that.
     8. Upload many images on online pf(From Extra Images Tab), Also user can delete it.
     9. Upload many videos on online pf(From Videos Tab), Also user can delete it.
