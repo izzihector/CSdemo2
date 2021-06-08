@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="email_compose_message_wizard_form_inherit" model="ir.ui.view">
+            <field name="name">mail.compose.message.form.inherit</field>
+            <field name="model">mail.compose.message</field>
+            <field name="inherit_id" ref="mail.email_compose_message_wizard_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='email_from']" position="after">
+                    <label for="follower_names" string="Followers" attrs="{'invisible': [('is_log', '=', True)]}" groups="base.group_user"/>
+                    <div groups="base.group_user" attrs="{'invisible': [('is_log', '=', True)]}">
+                        <field name="follower_names" readonly="True" attrs="{'invisible': [('composition_mode', '!=', 'comment')]}"/>
+                    </div>
+                </xpath>
+            </field>
+        </record>
+    </data>
+</odoo>
