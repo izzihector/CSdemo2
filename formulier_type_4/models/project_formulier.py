@@ -19,7 +19,7 @@ class ProjectFormulier(models.Model):
     xaa_aa_roof_type_one = fields.Selection([
         ('Schuin', 'Schuin'),
         ('Plat', 'Plat'),],
-        string='Roof type.')
+        string='Roof type')
     xaa_aa_roof_type_two = fields.Selection([
         ('Schuin', 'Schuin'),
         ('Plat', 'Plat'),],
