@@ -8,7 +8,7 @@
 
 {
     'name' : 'Show Mail Followers',
-    'version': '14.0.0.9',
+    'version': '14.0.1.0',
     'summary': 'show Mail Followers in mail composer form',
     'category': 'products',
     'description': """ This Module Allowes to you See Followers on Mail Form""",
